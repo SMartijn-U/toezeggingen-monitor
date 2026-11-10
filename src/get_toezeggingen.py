@@ -1,5 +1,5 @@
 import requests
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from collections import Counter
 
 
@@ -116,6 +116,81 @@ from datetime import datetime, timezone
 
 
 from datetime import datetime, timezone
+
+def get_recent_afgedane_toezeggingen(
+    aantal_dagen=14
+):
+    url = f"{BASE_URL}/Toezegging"
+
+    nu = datetime.now(timezone.utc)
+    vanaf = nu - timedelta(days=aantal_dagen)
+
+    vanaf_datum = vanaf.strftime(
+        "%Y-%m-%dT00:00:00Z"
+    )
+
+    alle_toezeggingen = []
+    skip = 0
+    batch_size = 250
+
+    print(
+        f"Recent afgedane toezeggingen "
+        f"ophalen vanaf: {vanaf_datum}"
+    )
+
+    while True:
+        params = {
+            "$filter": (
+                "Status eq 'Afgedaan' "
+                f"and GewijzigdOp ge {vanaf_datum} "
+                "and Verwijderd eq false"
+            ),
+            "$top": str(batch_size),
+            "$skip": str(skip),
+        }
+
+        response = requests.get(
+            url,
+            params=params,
+            timeout=60
+        )
+
+        response.raise_for_status()
+
+        data = response.json()
+        batch = data.get("value", [])
+
+        alle_toezeggingen.extend(batch)
+
+        print(
+            f"Recent afgedaan opgehaald: "
+            f"{len(batch)} "
+            f"(totaal: {len(alle_toezeggingen)})"
+        )
+
+        if len(batch) < batch_size:
+            break
+
+        skip += batch_size
+
+    return alle_toezeggingen
+
+def combineer_toezeggingen(
+    actuele_toezeggingen,
+    recent_afgedane_toezeggingen
+):
+    per_nummer = {}
+
+    for toezegging in (
+        actuele_toezeggingen
+        + recent_afgedane_toezeggingen
+    ):
+        nummer = toezegging.get("Nummer")
+
+        if nummer:
+            per_nummer[nummer] = toezegging
+
+    return list(per_nummer.values())
 
 def get_relevante_activiteiten():
     url = f"{BASE_URL}/Activiteit"
@@ -523,6 +598,27 @@ if __name__ == "__main__":
     
     toezeggingen = get_open_toezeggingen()
 
+        recent_afgedaan = (
+        get_recent_afgedane_toezeggingen(
+            aantal_dagen=14
+        )
+    )
+
+    print(
+        f"Recent afgedane toezeggingen: "
+        f"{len(recent_afgedaan)}"
+    )
+
+    toezeggingen = combineer_toezeggingen(
+        toezeggingen,
+        recent_afgedaan
+    )
+
+    print(
+        f"Totaal te onderzoeken toezeggingen: "
+        f"{len(toezeggingen)}"
+    )
+    
     print(
         f"Alle open/deels afgedane toezeggingen: "
         f"{len(toezeggingen)}"
