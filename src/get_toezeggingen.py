@@ -3,8 +3,7 @@ from datetime import datetime, timezone
 from collections import Counter
 
 
-BASE_URL = "https://gegevensmagazijn.tweedekamer.nl/OData/v4/2.0"
-V5_BASE_URL = "https://gegevensmagazijn.tweedekamer.nl/OData/v5"
+BASE_URL = "https://gegevensmagazijn.tweedekamer.nl/OData/v5"
 
 
 def get_odata_paginated(
@@ -53,7 +52,7 @@ def get_volgcommissie_actoren():
     return get_odata_paginated(
         entity="ActiviteitActor",
         odata_filter=(
-            "Relatie eq 'Volgcommissie' "
+            "Rol eq 'Volgcommissie' "
             "and Verwijderd eq false"
         )
     )
@@ -74,7 +73,7 @@ def get_open_toezeggingen():
     while True:
         params = {
             "$filter": (
-                "(Status eq 'Openstaand' or Status eq 'Deels Voldaan') "
+                "(Status eq 'Openstaand' or Status eq 'Deels Afgedaan') "
                 "and Verwijderd eq false"
             ),
             "$top": str(batch_size),
@@ -105,90 +104,6 @@ from datetime import datetime, timezone
 
 
 from datetime import datetime, timezone
-
-def test_deels_voldaan():
-    url = f"{BASE_URL}/Toezegging"
-
-    params = {
-        "$filter": (
-            "Status eq 'Deels Voldaan' "
-            "and Verwijderd eq false"
-        ),
-        "$top": "10",
-    }
-
-    response = requests.get(
-        url,
-        params=params,
-        timeout=60
-    )
-
-    response.raise_for_status()
-
-    data = response.json()
-    resultaten = data.get("value", [])
-
-    print("\nTEST DEELS VOLDAAN:")
-    print(
-        "Aantal resultaten in test:",
-        len(resultaten)
-    )
-
-    for toezegging in resultaten:
-        print(
-            toezegging.get("Nummer"),
-            "|",
-            toezegging.get("Status"),
-            "|",
-            toezegging.get("Tekst"),
-        )
-
-def test_v5_toezeggingen():
-    url = f"{V5_BASE_URL}/Toezegging"
-
-    alle_resultaten = []
-    skip = 0
-    batch_size = 250
-
-    while True:
-        params = {
-            "$top": str(batch_size),
-            "$skip": str(skip),
-            "$filter": "Verwijderd eq false",
-        }
-
-        response = requests.get(
-            url,
-            params=params,
-            timeout=60
-        )
-
-        response.raise_for_status()
-
-        data = response.json()
-        batch = data.get("value", [])
-
-        alle_resultaten.extend(batch)
-
-        print(
-            f"V5-test: {len(batch)} opgehaald "
-            f"(totaal {len(alle_resultaten)})"
-        )
-
-        if len(batch) < batch_size:
-            break
-
-        skip += batch_size
-
-    print("\nSTATUSWAARDEN IN ODATA V5:")
-
-    statussen = Counter(
-        toezegging.get("Status", "GEEN STATUS")
-        for toezegging in alle_resultaten
-    )
-
-    for status, aantal in statussen.most_common():
-        print(f"{status}: {aantal}")
 
 def get_relevante_activiteiten():
     url = f"{BASE_URL}/Activiteit"
@@ -367,7 +282,7 @@ def get_ienw_toezeggingen(
 
         soort = activiteit.get("Soort", "")
         voortouw = (
-            activiteit.get("Voortouwnaam") or ""
+            activiteit.get("VoortouwCommissieNaam") or ""
         ).strip().lower()
 
         is_ienw = False
@@ -456,9 +371,6 @@ def get_ienw_toezeggingen(
 
 if __name__ == "__main__":
     print("Openstaande toezeggingen ophalen...")
-
-    test_deels_voldaan()
-    test_v5_toezeggingen()
     
     toezeggingen = get_open_toezeggingen()
 
