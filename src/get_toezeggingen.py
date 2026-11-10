@@ -594,14 +594,29 @@ def get_ienw_toezeggingen(
     return ienw
 
 if __name__ == "__main__":
-    print("Openstaande toezeggingen ophalen...")
-    
+    print("Openstaande en deels afgedane toezeggingen ophalen...")
+
     toezeggingen = get_open_toezeggingen()
 
-        recent_afgedaan = (
-        get_recent_afgedane_toezeggingen(
-            aantal_dagen=14
-        )
+    print(
+        f"Alle open/deels afgedane toezeggingen: "
+        f"{len(toezeggingen)}"
+    )
+
+    alle_statussen = Counter(
+        toezegging.get("Status", "Onbekend")
+        for toezegging in toezeggingen
+    )
+
+    print("\nSTATUS ALLE OPGEHAALDE TOEZEGGINGEN:")
+
+    for status, aantal in alle_statussen.most_common():
+        print(f"{status}: {aantal}")
+
+    print("\nRecent afgedane toezeggingen ophalen...")
+
+    recent_afgedaan = get_recent_afgedane_toezeggingen(
+        aantal_dagen=14
     )
 
     print(
@@ -618,20 +633,6 @@ if __name__ == "__main__":
         f"Totaal te onderzoeken toezeggingen: "
         f"{len(toezeggingen)}"
     )
-    
-    print(
-        f"Alle open/deels afgedane toezeggingen: "
-        f"{len(toezeggingen)}"
-    )
-    alle_statussen = Counter(
-        toezegging.get("Status", "Onbekend")
-        for toezegging in toezeggingen
-    )
-
-    print("\nSTATUS ALLE OPGEHAALDE TOEZEGGINGEN:")
-
-    for status, aantal in alle_statussen.most_common():
-        print(f"{status}: {aantal}")
 
     print("\nRelevante activiteiten ophalen...")
 
