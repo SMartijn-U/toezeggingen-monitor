@@ -38,6 +38,9 @@ jobs:
       - name: Test ophalen actuele toezeggingen
         run: python src/get_toezeggingen.py
 
+      - name: Test ophalen Kamerbrieven
+        run: python src/get_kamerbrieven.py
+
       - name: RSS-feed genereren
         run: python src/generate_feed.py
 
