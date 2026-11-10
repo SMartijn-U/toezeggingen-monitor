@@ -1,1 +1,47 @@
+name: Genereer en publiceer RSS-feeds
 
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "15 6 * * 1"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository ophalen
+        uses: actions/checkout@v6
+
+      - name: Python instellen
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Benodigde pakketten installeren
+        run: pip install -r requirements.txt
+
+      - name: RSS-feed genereren
+        run: python src/generate_feed.py
+
+      - name: GitHub Pages instellen
+        uses: actions/configure-pages@v5
+
+      - name: Publicatiemap uploaden
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+
+      - name: Publiceren op GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
