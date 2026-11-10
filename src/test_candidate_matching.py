@@ -89,6 +89,8 @@ if __name__ == "__main__":
             positie,
             "|",
             toezegging.get("Nummer"),
+            "| status:",
+            toezegging.get("Status"),
             "| score:",
             round(
                 kandidaat["score"],
