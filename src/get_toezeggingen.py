@@ -146,37 +146,49 @@ def test_deels_voldaan():
 def test_v5_toezeggingen():
     url = f"{V5_BASE_URL}/Toezegging"
 
-    params = {
-        "$top": "20",
-        "$filter": "Verwijderd eq false",
-    }
+    alle_resultaten = []
+    skip = 0
+    batch_size = 250
 
-    response = requests.get(
-        url,
-        params=params,
-        timeout=60
-    )
+    while True:
+        params = {
+            "$top": str(batch_size),
+            "$skip": str(skip),
+            "$filter": "Verwijderd eq false",
+        }
 
-    response.raise_for_status()
+        response = requests.get(
+            url,
+            params=params,
+            timeout=60
+        )
 
-    data = response.json()
-    resultaten = data.get("value", [])
+        response.raise_for_status()
 
-    print("\nTEST ODATA V5:")
-    print("Aantal resultaten:", len(resultaten))
+        data = response.json()
+        batch = data.get("value", [])
+
+        alle_resultaten.extend(batch)
+
+        print(
+            f"V5-test: {len(batch)} opgehaald "
+            f"(totaal {len(alle_resultaten)})"
+        )
+
+        if len(batch) < batch_size:
+            break
+
+        skip += batch_size
+
+    print("\nSTATUSWAARDEN IN ODATA V5:")
 
     statussen = Counter(
         toezegging.get("Status", "GEEN STATUS")
-        for toezegging in resultaten
+        for toezegging in alle_resultaten
     )
 
-    print("Statuswaarden:")
-    for status, aantal in statussen.items():
+    for status, aantal in statussen.most_common():
         print(f"{status}: {aantal}")
-
-    if resultaten:
-        print("\nEERSTE V5-RECORD:")
-        print(resultaten[0])
 
 def get_relevante_activiteiten():
     url = f"{BASE_URL}/Activiteit"
