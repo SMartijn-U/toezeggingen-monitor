@@ -105,6 +105,42 @@ from datetime import datetime, timezone
 
 from datetime import datetime, timezone
 
+def test_deels_voldaan():
+    url = f"{BASE_URL}/Toezegging"
+
+    params = {
+        "$filter": (
+            "Status eq 'Deels Voldaan' "
+            "and Verwijderd eq false"
+        ),
+        "$top": "10",
+    }
+
+    response = requests.get(
+        url,
+        params=params,
+        timeout=60
+    )
+
+    response.raise_for_status()
+
+    data = response.json()
+    resultaten = data.get("value", [])
+
+    print("\nTEST DEELS VOLDAAN:")
+    print(
+        "Aantal resultaten in test:",
+        len(resultaten)
+    )
+
+    for toezegging in resultaten:
+        print(
+            toezegging.get("Nummer"),
+            "|",
+            toezegging.get("Status"),
+            "|",
+            toezegging.get("Tekst"),
+        )
 
 def get_relevante_activiteiten():
     url = f"{BASE_URL}/Activiteit"
@@ -373,6 +409,8 @@ def get_ienw_toezeggingen(
 if __name__ == "__main__":
     print("Openstaande toezeggingen ophalen...")
 
+    test_deels_voldaan()
+    
     toezeggingen = get_open_toezeggingen()
 
     print(
