@@ -1,5 +1,6 @@
 import requests
 from datetime import datetime, timezone
+from collections import Counter
 
 
 BASE_URL = "https://gegevensmagazijn.tweedekamer.nl/OData/v4/2.0"
@@ -196,6 +197,7 @@ def get_ienw_toezeggingen(
     zonder_activiteit = 0
     activiteit_niet_gevonden = 0
     plenair_zonder_ienw_volgcommissie = 0
+    niet_gevonden_records = []
 
     activiteiten_op_nummer = {
         activiteit.get("Nummer"): activiteit
@@ -269,6 +271,14 @@ def get_ienw_toezeggingen(
 
         if not activiteit:
             activiteit_niet_gevonden += 1
+
+            niet_gevonden_records.append({
+                "Nummer": toezegging.get("Nummer"),
+                "Status": toezegging.get("Status"),
+                "ActiviteitNummer": activiteit_nummer,
+                "Tekst": toezegging.get("Tekst"),
+            })
+
             continue
 
         soort = activiteit.get("Soort", "")
@@ -342,6 +352,22 @@ def get_ienw_toezeggingen(
         f"{plenair_zonder_ienw_volgcommissie}"
     )
 
+    print("\nNIET-GEVONDEN ACTIVITEITEN:")
+
+    if niet_gevonden_records:
+        for record in niet_gevonden_records:
+            print(
+                record.get("Nummer"),
+                "|",
+                record.get("Status"),
+                "|",
+                record.get("ActiviteitNummer"),
+                "|",
+                record.get("Tekst"),
+            )
+    else:
+        print("Geen.")
+    
     return ienw
 
 if __name__ == "__main__":
@@ -392,6 +418,58 @@ if __name__ == "__main__":
     )
 
     print(f"IenW-toezeggingen: {len(ienw)}")
+    redenen = Counter(
+        toezegging.get("Selectiereden", "Onbekend")
+        for toezegging in ienw
+    )
+
+    print("\nSELECTIE PER REDEN:")
+
+    for reden, aantal in redenen.most_common():
+        print(f"{reden}: {aantal}")
+    soorten = Counter(
+        toezegging["Activiteit"].get(
+            "Soort",
+            "Onbekend"
+        )
+        for toezegging in ienw
+    )
+
+    print("\nSELECTIE PER ACTIVITEITSOORT:")
+
+    for soort, aantal in soorten.most_common():
+        print(f"{soort}: {aantal}")
+    statussen = Counter(
+        toezegging.get("Status", "Onbekend")
+        for toezegging in ienw
+    )
+
+    print("\nSELECTIE PER STATUS:")
+
+    for status, aantal in statussen.most_common():
+        print(f"{status}: {aantal}")
+    nummers = [
+        toezegging.get("Nummer")
+        for toezegging in ienw
+        if toezegging.get("Nummer")
+    ]
+
+    nummer_tellingen = Counter(nummers)
+
+    dubbele_nummers = [
+        nummer
+        for nummer, aantal in nummer_tellingen.items()
+        if aantal > 1
+    ]
+
+    print(
+        f"\nDubbele toezeggingnummers: "
+        f"{len(dubbele_nummers)}"
+    )
+
+    if dubbele_nummers:
+        for nummer in dubbele_nummers:
+            print("Dubbel:", nummer)
 
     print("\nEERSTE 20 IENW-TOEZEGGINGEN:\n")
 
