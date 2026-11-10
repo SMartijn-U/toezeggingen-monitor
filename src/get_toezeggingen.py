@@ -40,33 +40,66 @@ def get_activiteit(activiteit_nummer):
 
     return resultaten[0]
 
+def get_ienw_toezeggingen(toezeggingen):
+    ienw = []
+    zonder_activiteit = 0
+    activiteit_niet_gevonden = 0
+
+    for toezegging in toezeggingen:
+        activiteit_nummer = toezegging.get("ActiviteitNummer")
+
+        if not activiteit_nummer:
+            zonder_activiteit += 1
+            continue
+
+        activiteit = get_activiteit(activiteit_nummer)
+
+        if not activiteit:
+            activiteit_niet_gevonden += 1
+            continue
+
+        voortouw = activiteit.get("Voortouwnaam", "")
+
+        if (
+            voortouw
+            and voortouw.strip().lower()
+            == "vaste commissie voor infrastructuur en waterstaat"
+        ):
+            toezegging["Activiteit"] = activiteit
+            ienw.append(toezegging)
+
+    print(f"Zonder ActiviteitNummer: {zonder_activiteit}")
+    print(f"Activiteit niet gevonden: {activiteit_niet_gevonden}")
+
+    return ienw
+
 if __name__ == "__main__":
     toezeggingen = get_open_toezeggingen()
 
-    print(f"Aantal opgehaalde toezeggingen: {len(toezeggingen)}")
+    print(
+        f"Alle open/deels voldane toezeggingen: "
+        f"{len(toezeggingen)}"
+    )
 
-    if toezeggingen:
-        eerste = toezeggingen[0]
+    ienw = get_ienw_toezeggingen(toezeggingen)
 
-        print("\nEERSTE TOEZEGGING:")
-        print("Nummer:", eerste.get("Nummer"))
-        print("ActiviteitNummer:", eerste.get("ActiviteitNummer"))
-        print("Tekst:", eerste.get("Tekst"))
+    print(f"IenW-toezeggingen: {len(ienw)}")
 
-        activiteit_nummer = eerste.get("ActiviteitNummer")
+    print("\nEERSTE 10 IENW-TOEZEGGINGEN:\n")
 
-        if activiteit_nummer:
-            activiteit = get_activiteit(activiteit_nummer)
+    for toezegging in ienw[:10]:
+        activiteit = toezegging["Activiteit"]
 
-            print("\nGEKOPPELDE ACTIVITEIT:")
-
-            if activiteit:
-                print("Nummer:", activiteit.get("Nummer"))
-                print("Soort:", activiteit.get("Soort"))
-                print("Onderwerp:", activiteit.get("Onderwerp"))
-                print("Voortouwnaam:", activiteit.get("Voortouwnaam"))
-                print("Voortouwafkorting:", activiteit.get("Voortouwafkorting"))
-            else:
-                print("Geen activiteit gevonden.")
-        else:
-            print("Deze toezegging heeft geen ActiviteitNummer.")
+        print(
+            toezegging.get("Nummer"),
+            "|",
+            toezegging.get("Status"),
+            "|",
+            activiteit.get("Nummer"),
+            "|",
+            activiteit.get("Soort"),
+            "|",
+            activiteit.get("Onderwerp"),
+            "|",
+            activiteit.get("Voortouwnaam"),
+        )
