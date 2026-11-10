@@ -5,6 +5,18 @@ from collections import Counter
 
 BASE_URL = "https://gegevensmagazijn.tweedekamer.nl/OData/v5"
 
+RELEVANTE_ACTIVITEITSOORTEN = {
+    "Commissiedebat",
+    "Notaoverleg",
+    "Wetgevingsoverleg",
+    "Plenair debat (debat)",
+    "Plenair debat (dertigledendebat)",
+    "Plenair debat (initiatiefwetgeving)",
+    "Plenair debat (interpellatiedebat)",
+    "Plenair debat (overig)",
+    "Plenair debat (tweeminutendebat)",
+    "Plenair debat (wetgeving)",
+}
 
 def get_odata_paginated(
     entity,
@@ -108,19 +120,6 @@ from datetime import datetime, timezone
 def get_relevante_activiteiten():
     url = f"{BASE_URL}/Activiteit"
 
-    relevante_soorten = [
-        "Commissiedebat",
-        "Notaoverleg",
-        "Wetgevingsoverleg",
-        "Plenair debat (debat)",
-        "Plenair debat (dertigledendebat)",
-        "Plenair debat (initiatiefwetgeving)",
-        "Plenair debat (interpellatiedebat)",
-        "Plenair debat (overig)",
-        "Plenair debat (tweeminutendebat)",
-        "Plenair debat (wetgeving)",
-    ]
-
     vandaag = datetime.now(timezone.utc)
 
     try:
@@ -139,7 +138,7 @@ def get_relevante_activiteiten():
 
     soort_filter = " or ".join(
         f"Soort eq '{soort}'"
-        for soort in relevante_soorten
+        for soort in RELEVANTE_ACTIVITEITSOORTEN
     )
 
     volledig_filter = (
@@ -184,6 +183,156 @@ def get_relevante_activiteiten():
         skip += batch_size
 
     return alle_activiteiten
+
+def get_activiteit_op_nummer(activiteit_nummer):
+    url = f"{BASE_URL}/Activiteit"
+
+    params = {
+        "$filter": (
+            f"Nummer eq '{activiteit_nummer}' "
+            "and Verwijderd eq false"
+        ),
+        "$top": "1",
+    }
+
+    try:
+        response = requests.get(
+            url,
+            params=params,
+            timeout=60
+        )
+
+        response.raise_for_status()
+
+        data = response.json()
+        resultaten = data.get("value", [])
+
+        if not resultaten:
+            return None
+
+        return resultaten[0]
+
+    except requests.RequestException as fout:
+        print(
+            f"FOUT bij ophalen activiteit "
+            f"{activiteit_nummer}: {fout}"
+        )
+
+        return None
+
+def bepaal_ontbrekende_activiteitnummers(
+    toezeggingen,
+    activiteiten
+):
+    bekende_nummers = {
+        activiteit.get("Nummer")
+        for activiteit in activiteiten
+        if activiteit.get("Nummer")
+    }
+
+    ontbrekende_nummers = {
+        toezegging.get("ActiviteitNummer")
+        for toezegging in toezeggingen
+        if (
+            toezegging.get("ActiviteitNummer")
+            and toezegging.get("ActiviteitNummer")
+            not in bekende_nummers
+        )
+    }
+
+    return sorted(ontbrekende_nummers)
+
+def vul_ontbrekende_activiteiten_aan(
+    toezeggingen,
+    activiteiten
+):
+    ontbrekende_nummers = (
+        bepaal_ontbrekende_activiteitnummers(
+            toezeggingen,
+            activiteiten
+        )
+    )
+
+    print(
+        f"\nOntbrekende unieke activiteitnummers "
+        f"voor fallback: {len(ontbrekende_nummers)}"
+    )
+
+    aanvullende_activiteiten = []
+    uitgesloten_soorten = Counter()
+    werkelijk_niet_gevonden = []
+
+    for activiteit_nummer in ontbrekende_nummers:
+        activiteit = get_activiteit_op_nummer(
+            activiteit_nummer
+        )
+
+        if not activiteit:
+            werkelijk_niet_gevonden.append(
+                activiteit_nummer
+            )
+            continue
+
+        soort = activiteit.get("Soort", "Onbekend")
+
+        if soort not in RELEVANTE_ACTIVITEITSOORTEN:
+            uitgesloten_soorten[soort] += 1
+
+            print(
+                f"Fallback uitgesloten: "
+                f"{activiteit_nummer} | {soort}"
+            )
+
+            continue
+
+        aanvullende_activiteiten.append(
+            activiteit
+        )
+
+        print(
+            f"Fallback toegevoegd: "
+            f"{activiteit_nummer} | "
+            f"{soort} | "
+            f"{activiteit.get('Onderwerp')}"
+        )
+
+    bestaande_ids = {
+        activiteit.get("Id")
+        for activiteit in activiteiten
+        if activiteit.get("Id")
+    }
+
+    for activiteit in aanvullende_activiteiten:
+        if activiteit.get("Id") not in bestaande_ids:
+            activiteiten.append(activiteit)
+
+    print(
+        f"\nRelevante activiteiten toegevoegd "
+        f"via fallback: "
+        f"{len(aanvullende_activiteiten)}"
+    )
+
+    print("\nUITGESLOTEN FALLBACK-ACTIVITEITEN:")
+
+    if uitgesloten_soorten:
+        for soort, aantal in (
+            uitgesloten_soorten.most_common()
+        ):
+            print(f"{soort}: {aantal}")
+    else:
+        print("Geen.")
+
+    print("\nWERKELIJK NIET GEVONDEN ACTIVITEITEN:")
+
+    if werkelijk_niet_gevonden:
+        for activiteit_nummer in (
+            werkelijk_niet_gevonden
+        ):
+            print(activiteit_nummer)
+    else:
+        print("Geen.")
+
+    return activiteiten
 
 def get_ienw_toezeggingen(
     toezeggingen,
@@ -375,7 +524,7 @@ if __name__ == "__main__":
     toezeggingen = get_open_toezeggingen()
 
     print(
-        f"Alle open/deels voldane toezeggingen: "
+        f"Alle open/deels afgedane toezeggingen: "
         f"{len(toezeggingen)}"
     )
     alle_statussen = Counter(
@@ -397,6 +546,22 @@ if __name__ == "__main__":
         f"{len(activiteiten)}"
     )
 
+    print(
+        "\nOntbrekende activiteiten gericht ophalen..."
+    )
+
+    activiteiten = (
+        vul_ontbrekende_activiteiten_aan(
+            toezeggingen,
+            activiteiten
+        )
+    )
+
+    print(
+        f"Totaal relevante activiteiten "
+        f"na fallback: {len(activiteiten)}"
+    )
+    
     print("\nVolgcommissies ophalen...")
 
     volgcommissie_actoren = (
