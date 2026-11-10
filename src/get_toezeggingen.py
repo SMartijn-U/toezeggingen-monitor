@@ -41,29 +41,54 @@ def get_open_toezeggingen():
 
     return alle_toezeggingen
 
-def get_activiteit(activiteit_nummer):
+def get_activiteiten():
     url = f"{BASE_URL}/Activiteit"
 
-    params = {
-        "$filter": f"Nummer eq '{activiteit_nummer}'",
-        "$top": "1"
-    }
+    alle_activiteiten = []
+    skip = 0
+    batch_size = 250
 
-    response = requests.get(url, params=params, timeout=60)
-    response.raise_for_status()
+    while True:
+        params = {
+            "$top": str(batch_size),
+            "$skip": str(skip)
+        }
 
-    data = response.json()
-    resultaten = data.get("value", [])
+        response = requests.get(url, params=params, timeout=60)
+        response.raise_for_status()
 
-    if not resultaten:
-        return None
+        data = response.json()
+        batch = data.get("value", [])
 
-    return resultaten[0]
+        alle_activiteiten.extend(batch)
 
-def get_ienw_toezeggingen(toezeggingen):
+        print(
+            f"Pagina activiteiten opgehaald: {len(batch)} "
+            f"(totaal: {len(alle_activiteiten)})"
+        )
+
+        if len(batch) < batch_size:
+            break
+
+        skip += batch_size
+
+    return alle_activiteiten
+
+def get_ienw_toezeggingen(toezeggingen, activiteiten):
     ienw = []
     zonder_activiteit = 0
     activiteit_niet_gevonden = 0
+
+    activiteiten_op_nummer = {
+        activiteit.get("Nummer"): activiteit
+        for activiteit in activiteiten
+        if activiteit.get("Nummer")
+    }
+
+    print(
+        f"Activiteiten in index: "
+        f"{len(activiteiten_op_nummer)}"
+    )
 
     for toezegging in toezeggingen:
         activiteit_nummer = toezegging.get("ActiviteitNummer")
@@ -72,7 +97,9 @@ def get_ienw_toezeggingen(toezeggingen):
             zonder_activiteit += 1
             continue
 
-        activiteit = get_activiteit(activiteit_nummer)
+        activiteit = activiteiten_op_nummer.get(
+            activiteit_nummer
+        )
 
         if not activiteit:
             activiteit_niet_gevonden += 1
@@ -89,11 +116,16 @@ def get_ienw_toezeggingen(toezeggingen):
             ienw.append(toezegging)
 
     print(f"Zonder ActiviteitNummer: {zonder_activiteit}")
-    print(f"Activiteit niet gevonden: {activiteit_niet_gevonden}")
+    print(
+        f"Activiteit niet gevonden: "
+        f"{activiteit_niet_gevonden}"
+    )
 
     return ienw
 
 if __name__ == "__main__":
+    print("Openstaande toezeggingen ophalen...")
+
     toezeggingen = get_open_toezeggingen()
 
     print(
@@ -101,7 +133,21 @@ if __name__ == "__main__":
         f"{len(toezeggingen)}"
     )
 
-    ienw = get_ienw_toezeggingen(toezeggingen)
+    print("\nActiviteiten ophalen...")
+
+    activiteiten = get_activiteiten()
+
+    print(
+        f"Totaal opgehaalde activiteiten: "
+        f"{len(activiteiten)}"
+    )
+
+    print("\nIenW-selectie maken...")
+
+    ienw = get_ienw_toezeggingen(
+        toezeggingen,
+        activiteiten
+    )
 
     print(f"IenW-toezeggingen: {len(ienw)}")
 
