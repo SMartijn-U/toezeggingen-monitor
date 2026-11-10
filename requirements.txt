@@ -1,1 +1,5 @@
-
+requests==2.32.3
+feedgen==1.0.0
+python-dateutil==2.9.0.post0
+pypdf==5.1.0
+python-docx==1.1.2
