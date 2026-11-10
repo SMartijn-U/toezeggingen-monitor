@@ -7,19 +7,39 @@ BASE_URL = "https://gegevensmagazijn.tweedekamer.nl/OData/v4/2.0"
 def get_open_toezeggingen():
     url = f"{BASE_URL}/Toezegging"
 
-    params = {
-        "$filter": (
-            "(Status eq 'Openstaand' or Status eq 'Deels Voldaan') "
-            "and Verwijderd eq false"
-        ),
-        "$top": "250"
-    }
+    alle_toezeggingen = []
+    skip = 0
+    batch_size = 250
 
-    response = requests.get(url, params=params, timeout=60)
-    response.raise_for_status()
+    while True:
+        params = {
+            "$filter": (
+                "(Status eq 'Openstaand' or Status eq 'Deels Voldaan') "
+                "and Verwijderd eq false"
+            ),
+            "$top": str(batch_size),
+            "$skip": str(skip)
+        }
 
-    data = response.json()
-    return data.get("value", [])
+        response = requests.get(url, params=params, timeout=60)
+        response.raise_for_status()
+
+        data = response.json()
+        batch = data.get("value", [])
+
+        alle_toezeggingen.extend(batch)
+
+        print(
+            f"Pagina opgehaald: {len(batch)} toezeggingen "
+            f"(totaal: {len(alle_toezeggingen)})"
+        )
+
+        if len(batch) < batch_size:
+            break
+
+        skip += batch_size
+
+    return alle_toezeggingen
 
 def get_activiteit(activiteit_nummer):
     url = f"{BASE_URL}/Activiteit"
