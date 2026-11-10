@@ -27,9 +27,6 @@ if __name__ == "__main__":
 
     print(f"Aantal opgehaalde toezeggingen: {len(toezeggingen)}")
 
-    for toezegging in toezeggingen[:5]:
-        print(
-            toezegging.get("Nummer"),
-            toezegging.get("Status"),
-            toezegging.get("Tekst"),
-        )
+    if toezeggingen:
+        print("\nVOLLEDIG EERSTE RECORD:\n")
+        print(toezeggingen[0])
