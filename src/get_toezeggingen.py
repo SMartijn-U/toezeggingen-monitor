@@ -4,6 +4,7 @@ from collections import Counter
 
 
 BASE_URL = "https://gegevensmagazijn.tweedekamer.nl/OData/v4/2.0"
+V5_BASE_URL = "https://gegevensmagazijn.tweedekamer.nl/OData/v5"
 
 
 def get_odata_paginated(
@@ -141,6 +142,41 @@ def test_deels_voldaan():
             "|",
             toezegging.get("Tekst"),
         )
+
+def test_v5_toezeggingen():
+    url = f"{V5_BASE_URL}/Toezegging"
+
+    params = {
+        "$top": "20",
+        "$filter": "Verwijderd eq false",
+    }
+
+    response = requests.get(
+        url,
+        params=params,
+        timeout=60
+    )
+
+    response.raise_for_status()
+
+    data = response.json()
+    resultaten = data.get("value", [])
+
+    print("\nTEST ODATA V5:")
+    print("Aantal resultaten:", len(resultaten))
+
+    statussen = Counter(
+        toezegging.get("Status", "GEEN STATUS")
+        for toezegging in resultaten
+    )
+
+    print("Statuswaarden:")
+    for status, aantal in statussen.items():
+        print(f"{status}: {aantal}")
+
+    if resultaten:
+        print("\nEERSTE V5-RECORD:")
+        print(resultaten[0])
 
 def get_relevante_activiteiten():
     url = f"{BASE_URL}/Activiteit"
@@ -410,6 +446,7 @@ if __name__ == "__main__":
     print("Openstaande toezeggingen ophalen...")
 
     test_deels_voldaan()
+    test_v5_toezeggingen()
     
     toezeggingen = get_open_toezeggingen()
 
