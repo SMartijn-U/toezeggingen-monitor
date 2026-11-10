@@ -44,6 +44,9 @@ jobs:
       - name: Test downloaden en uitlezen document
         run: python src/test_document_download.py
 
+      - name: Test kandidaatselectie
+        run: python src/test_candidate_matching.py        
+
       - name: RSS-feed genereren
         run: python src/generate_feed.py
 
