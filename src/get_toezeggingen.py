@@ -379,6 +379,15 @@ if __name__ == "__main__":
         f"Alle open/deels voldane toezeggingen: "
         f"{len(toezeggingen)}"
     )
+    alle_statussen = Counter(
+        toezegging.get("Status", "Onbekend")
+        for toezegging in toezeggingen
+    )
+
+    print("\nSTATUS ALLE OPGEHAALDE TOEZEGGINGEN:")
+
+    for status, aantal in alle_statussen.most_common():
+        print(f"{status}: {aantal}")
 
     print("\nRelevante activiteiten ophalen...")
 
