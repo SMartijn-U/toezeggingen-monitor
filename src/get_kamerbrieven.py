@@ -1,6 +1,8 @@
 import requests
 from datetime import datetime, timedelta, timezone
 
+from document_text import get_document_text
+
 
 BASE_URL = "https://gegevensmagazijn.tweedekamer.nl/OData/v5"
 
@@ -101,3 +103,30 @@ if __name__ == "__main__":
             "| ID:",
             document.get("Id"),
         )
+    
+    print(
+        "\nTEST VOLLEDIGE DOCUMENTTEKST:\n"
+    )
+
+    for document in documenten[:5]:
+        try:
+            tekst = get_document_text(document)
+
+            print(
+                document.get("Nummer"),
+                "|",
+                document.get("Soort"),
+                "|",
+                len(tekst),
+                "tekens",
+                "| OK"
+            )
+
+        except Exception as fout:
+            print(
+                document.get("Nummer"),
+                "|",
+                document.get("Soort"),
+                "| FOUT:",
+                fout
+            )
