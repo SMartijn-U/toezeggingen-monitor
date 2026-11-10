@@ -1,1 +1,16 @@
-
+{
+  "odata_base_url": "https://gegevensmagazijn.tweedekamer.nl/OData/v4/2.0",
+  "statuses": [
+    "Openstaand",
+    "Deels Voldaan"
+  ],
+  "commissions": {
+    "IenW": {
+      "name": "Vaste commissie voor Infrastructuur en Waterstaat",
+      "feed_file": "ienw.xml"
+    }
+  },
+  "minimum_report_score": 70,
+  "high_confidence_score": 90,
+  "maximum_items_per_feed": 100
+}
