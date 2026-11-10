@@ -21,16 +21,6 @@ def get_open_toezeggingen():
     data = response.json()
     return data.get("value", [])
 
-
-if __name__ == "__main__":
-    toezeggingen = get_open_toezeggingen()
-
-    print(f"Aantal opgehaalde toezeggingen: {len(toezeggingen)}")
-
-    if toezeggingen:
-        print("\nVOLLEDIG EERSTE RECORD:\n")
-        print(toezeggingen[0])
-
 def get_activiteit(activiteit_nummer):
     url = f"{BASE_URL}/Activiteit"
 
@@ -49,3 +39,34 @@ def get_activiteit(activiteit_nummer):
         return None
 
     return resultaten[0]
+
+if __name__ == "__main__":
+    toezeggingen = get_open_toezeggingen()
+
+    print(f"Aantal opgehaalde toezeggingen: {len(toezeggingen)}")
+
+    if toezeggingen:
+        eerste = toezeggingen[0]
+
+        print("\nEERSTE TOEZEGGING:")
+        print("Nummer:", eerste.get("Nummer"))
+        print("ActiviteitNummer:", eerste.get("ActiviteitNummer"))
+        print("Tekst:", eerste.get("Tekst"))
+
+        activiteit_nummer = eerste.get("ActiviteitNummer")
+
+        if activiteit_nummer:
+            activiteit = get_activiteit(activiteit_nummer)
+
+            print("\nGEKOPPELDE ACTIVITEIT:")
+
+            if activiteit:
+                print("Nummer:", activiteit.get("Nummer"))
+                print("Soort:", activiteit.get("Soort"))
+                print("Onderwerp:", activiteit.get("Onderwerp"))
+                print("Voortouwnaam:", activiteit.get("Voortouwnaam"))
+                print("Voortouwafkorting:", activiteit.get("Voortouwafkorting"))
+            else:
+                print("Geen activiteit gevonden.")
+        else:
+            print("Deze toezegging heeft geen ActiviteitNummer.")
