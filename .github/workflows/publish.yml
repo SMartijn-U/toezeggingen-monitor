@@ -31,6 +31,9 @@ jobs:
       - name: Benodigde pakketten installeren
         run: pip install -r requirements.txt
 
+      - name: Test ophalen actuele toezeggingen
+        run: python src/get_toezeggingen.py
+
       - name: RSS-feed genereren
         run: python src/generate_feed.py
 
