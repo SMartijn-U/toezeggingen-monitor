@@ -155,7 +155,7 @@ KANDIDAAT-TOEZEGGINGEN
 def roep_gemini_aan(
     client,
     prompt,
-    max_pogingen_per_model=3
+    max_pogingen_per_model=2
 ):
     laatste_fout = None
 
