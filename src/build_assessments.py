@@ -7,6 +7,15 @@ from document_text import get_document_text
 from evidence_validator import valideer_beoordeling
 from gemini_assessor import beoordeel_document
 
+from datetime import datetime, timezone
+
+from state_store import (
+    laad_historie,
+    schrijf_historie,
+    laad_gepubliceerde_resultaten,
+    schrijf_gepubliceerde_resultaten,
+)
+
 
 INPUT_PATH = Path(
     "data/candidates.json"
@@ -52,6 +61,11 @@ RAPPORTAGECATEGORIEEN = {
 }
 
 
+def nu_iso():
+    return datetime.now(
+        timezone.utc
+    ).isoformat()
+
 def laad_kandidaten():
     if not INPUT_PATH.exists():
         raise FileNotFoundError(
@@ -65,35 +79,79 @@ def laad_kandidaten():
     )
 
 
-def selecteer_pilotdocumenten(data):
+def selecteer_pilotdocumenten(
+    data,
+    historie
+):
     documenten = data.get(
         "documenten",
         []
     )
 
+    per_nummer = {
+        document.get(
+            "documentnummer"
+        ): document
+        for document in documenten
+        if document.get(
+            "documentnummer"
+        )
+    }
+
     geselecteerd = []
 
-    # De bekende luchtvaartbrief
-    # altijd eerst opnemen.
+    # 1. Eerst documenten die eerder
+    # door bijvoorbeeld een Gemini-503
+    # niet verwerkt konden worden.
+    for nummer in historie[
+        "wacht_op_herhaling"
+    ]:
+        document = per_nummer.get(
+            nummer
+        )
+
+        if not document:
+            continue
+
+        if nummer in historie[
+            "verwerkt"
+        ]:
+            continue
+
+        geselecteerd.append(
+            document
+        )
+
+        if (
+            len(geselecteerd)
+            >= MAX_DOCUMENTEN
+        ):
+            return geselecteerd
+
+    # 2. Daarna nieuwe documenten.
     for document in documenten:
         if (
-            document.get("documentnummer")
-            == BEKEND_TESTDOCUMENT
+            len(geselecteerd)
+            >= MAX_DOCUMENTEN
         ):
-            geselecteerd.append(document)
-            break
-
-    # Aanvullen met andere documenten.
-    for document in documenten:
-        if len(geselecteerd) >= MAX_DOCUMENTEN:
             break
 
         nummer = document.get(
             "documentnummer"
         )
 
+        if not nummer:
+            continue
+
+        if nummer in historie[
+            "verwerkt"
+        ]:
+            continue
+
         reeds_geselecteerd = any(
-            bestaand.get("documentnummer")
+            bestaand.get(
+                "documentnummer"
+            )
             == nummer
             for bestaand in geselecteerd
         )
@@ -104,7 +162,6 @@ def selecteer_pilotdocumenten(data):
             )
 
     return geselecteerd
-
 
 def maak_documentmetadata(document):
     return {
@@ -139,11 +196,6 @@ def maak_beoordelingsrecord(
         documenttekst
     )
 
-    positief = (
-        beoordeling.oordeel
-        in POSITIEVE_OORDELEN
-    )
-
     status_registratie = kandidaat.get(
         "status"
     )
@@ -154,6 +206,11 @@ def maak_beoordelingsrecord(
             "Openstaand",
             "Deels Afgedaan",
         }
+    )
+
+    positief = (
+        beoordeling.oordeel
+        in POSITIEVE_OORDELEN
     )
 
     publiceerbaar = (
@@ -365,6 +422,124 @@ def verwerk_document(document):
     }
 
 
+def bewaar_publiceerbare_resultaten(
+    document_resultaat,
+    gepubliceerde_resultaten
+):
+    resultaten = gepubliceerde_resultaten[
+        "resultaten"
+    ]
+
+    documentnummer = (
+        document_resultaat.get(
+            "documentnummer"
+        )
+    )
+
+    for beoordeling in (
+        document_resultaat.get(
+            "beoordelingen",
+            []
+        )
+    ):
+        if not beoordeling.get(
+            "publiceerbaar"
+        ):
+            continue
+
+        toezeggingnummer = (
+            beoordeling.get(
+                "toezeggingnummer"
+            )
+        )
+
+        sleutel = (
+            f"{toezeggingnummer}|"
+            f"{documentnummer}"
+        )
+
+        if sleutel in resultaten:
+            continue
+
+        resultaten[sleutel] = {
+            "sleutel":
+                sleutel,
+
+            "eerste_signalering":
+                nu_iso(),
+
+            "toezeggingnummer":
+                toezeggingnummer,
+
+            "status_registratie":
+                beoordeling.get(
+                    "status_registratie"
+                ),
+
+            "documentnummer":
+                documentnummer,
+
+            "documentsoort":
+                document_resultaat.get(
+                    "documentsoort"
+                ),
+
+            "documentdatum":
+                document_resultaat.get(
+                    "datum"
+                ),
+
+            "documentonderwerp":
+                document_resultaat.get(
+                    "onderwerp"
+                ),
+
+            "oordeel":
+                beoordeling.get(
+                    "oordeel"
+                ),
+
+            "rapportagecategorie":
+                beoordeling.get(
+                    "rapportagecategorie"
+                ),
+
+            "expliciete_verwijzing":
+                beoordeling.get(
+                    "expliciete_verwijzing"
+                ),
+
+            "gedekte_onderdelen":
+                beoordeling.get(
+                    "gedekte_onderdelen"
+                ),
+
+            "ontbrekende_onderdelen":
+                beoordeling.get(
+                    "ontbrekende_onderdelen"
+                ),
+
+            "bewijsfragmenten":
+                beoordeling.get(
+                    "bewijsfragmenten"
+                ),
+
+            "motivering":
+                beoordeling.get(
+                    "motivering"
+                ),
+
+            "bewijsvalidatie":
+                beoordeling.get(
+                    "bewijsvalidatie"
+                ),
+        }
+
+        print(
+            "Nieuwe RSS-kandidaat bewaard:",
+            sleutel
+        )
+
 def schrijf_output(
     resultaten,
     fouten
@@ -462,9 +637,16 @@ def schrijf_output(
 def main():
     data = laad_kandidaten()
 
+    historie = laad_historie()
+
+    gepubliceerde_resultaten = (
+        laad_gepubliceerde_resultaten()
+    )
+
     documenten = (
         selecteer_pilotdocumenten(
-            data
+            data,
+            historie
         )
     )
 
@@ -509,13 +691,47 @@ def main():
             resultaten.append(
                 resultaat
             )
+            nummer = document.get(
+                "documentnummer"
+            )
+
+            historie[
+                "verwerkt"
+            ][nummer] = {
+                "datum_verwerkt":
+                    nu_iso(),
+
+                "documentdatum":
+                    document.get(
+                        "datum"
+                    ),
+
+                "onderwerp":
+                    document.get(
+                        "onderwerp"
+                    ),
+            }
+
+            historie[
+                "wacht_op_herhaling"
+            ].pop(
+                nummer,
+                None
+            )
+
+            bewaar_publiceerbare_resultaten(
+                resultaat,
+                gepubliceerde_resultaten
+            )            
 
         except Exception as fout:
+            nummer = document.get(
+                "documentnummer"
+            )
+
             fout_record = {
                 "documentnummer":
-                    document.get(
-                        "documentnummer"
-                    ),
+                    nummer,
 
                 "onderwerp":
                     document.get(
@@ -535,6 +751,56 @@ def main():
                 fout_record
             )
 
+            # Kijk of dit document al eerder
+            # in de wachtrij stond.
+            eerder = historie[
+                "wacht_op_herhaling"
+            ].get(
+                nummer,
+                {}
+            )
+
+            # Tel deze mislukte poging erbij op.
+            pogingen = (
+                eerder.get(
+                    "pogingen",
+                    0
+                )
+                + 1
+            )
+
+            # Bewaar het document in de wachtrij
+            # voor een volgende GitHub-run.
+            historie[
+                "wacht_op_herhaling"
+            ][nummer] = {
+                "pogingen":
+                    pogingen,
+
+                "laatste_poging":
+                    nu_iso(),
+
+                "documentdatum":
+                    document.get(
+                        "datum"
+                    ),
+
+                "onderwerp":
+                    document.get(
+                        "onderwerp"
+                    ),
+
+                "laatste_fout":
+                    str(fout),
+            }
+
+            print(
+                "Document in wachtrij geplaatst:",
+                nummer,
+                "| pogingen:",
+                pogingen
+            )
+
         # Gratis Gemini-tier ontlasten.
         if index < len(documenten):
             wachttijd = 30
@@ -551,6 +817,13 @@ def main():
         schrijf_output(
             resultaten,
             fouten
+        )
+        schrijf_historie(
+            historie
+        )
+
+        schrijf_gepubliceerde_resultaten(
+            gepubliceerde_resultaten
         )
 
     print("\nPILOT SAMENVATTING:")
