@@ -1,11 +1,17 @@
 import os
+import random
+import time
+
 from typing import Literal
 
 from google import genai
 from pydantic import BaseModel, Field
 
 
-MODEL = "gemini-3.6-flash"
+MODELLEN = [
+    "gemini-3.6-flash",
+    "gemini-3.5-flash-lite",
+]
 
 
 class Beoordeling(BaseModel):
@@ -146,6 +152,95 @@ KANDIDAAT-TOEZEGGINGEN
 {kandidaten_blok}
 """
 
+def roep_gemini_aan(
+    client,
+    prompt,
+    max_pogingen_per_model=3
+):
+    laatste_fout = None
+
+    for model in MODELLEN:
+        print(
+            f"Gemini-model proberen: {model}"
+        )
+
+        for poging in range(
+            1,
+            max_pogingen_per_model + 1
+        ):
+            try:
+                response = (
+                    client.models.generate_content(
+                        model=model,
+                        contents=prompt,
+                        config={
+                            "response_mime_type":
+                                "application/json",
+                            "response_schema":
+                                Beoordelingen,
+                        },
+                    )
+                )
+
+                print(
+                    f"Gemini geslaagd met: "
+                    f"{model}"
+                )
+
+                return response, model
+
+            except Exception as fout:
+                laatste_fout = fout
+
+                fouttekst = str(fout).lower()
+
+                tijdelijk = (
+                    "503" in fouttekst
+                    or "unavailable" in fouttekst
+                    or "high demand" in fouttekst
+                    or "429" in fouttekst
+                    or "resource_exhausted"
+                    in fouttekst
+                )
+
+                if not tijdelijk:
+                    raise
+
+                print(
+                    f"Tijdelijke Gemini-fout "
+                    f"met {model}. "
+                    f"Poging {poging} van "
+                    f"{max_pogingen_per_model}."
+                )
+
+                if (
+                    poging
+                    < max_pogingen_per_model
+                ):
+                    wachttijd = (
+                        5 * (2 ** (poging - 1))
+                        + random.uniform(0, 2)
+                    )
+
+                    print(
+                        f"{wachttijd:.1f} "
+                        f"seconden wachten..."
+                    )
+
+                    time.sleep(
+                        wachttijd
+                    )
+
+        print(
+            f"{model} blijft onbeschikbaar. "
+            f"Fallbackmodel proberen."
+        )
+
+    raise RuntimeError(
+        "Alle Gemini-modellen zijn "
+        "tijdelijk onbeschikbaar. "
+        f"Laatste fout: {laatste_fout}"
+    )
 
 def beoordeel_document(
     document,
@@ -171,17 +266,22 @@ def beoordeel_document(
         kandidaten
     )
 
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=prompt,
-        config={
-            "response_mime_type":
-                "application/json",
-            "response_schema":
-                Beoordelingen,
-        },
+    response, gebruikt_model = (
+        roep_gemini_aan(
+            client,
+            prompt
+        )
     )
 
-    return Beoordelingen.model_validate_json(
-        response.text
+    resultaat = (
+        Beoordelingen.model_validate_json(
+            response.text
+        )
     )
+
+    print(
+        f"Beoordeling uitgevoerd met: "
+        f"{gebruikt_model}"
+    )
+
+    return resultaat
