@@ -19,10 +19,6 @@ jobs:
   generate:
     runs-on: ubuntu-latest
 
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - name: Repository ophalen
         uses: actions/checkout@v6
@@ -88,7 +84,15 @@ jobs:
           name: github-pages
           path: public
           retention-days: 1
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
 
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
       - name: Publiceren op GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
