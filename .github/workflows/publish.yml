@@ -4,16 +4,19 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: "15 6 * * 1"
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    - cron: "17 5 * * *"
+    - cron: "17 11 * * *"
+    - cron: "17 17 * * *"
+    - cron: "17 23 * * *"
 
 concurrency:
-  group: pages
+  group: toezeggingen-monitor
   cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   generate:
@@ -77,6 +80,15 @@ jobs:
         run: |
           echo "Bestanden die naar Pages gaan:"
           find public -maxdepth 3 -type f -print
+
+      - name: Bewaar monitorstatus
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/assessment_history.json
+          git add data/published_results.json
+          git diff --cached --quiet || git commit -m "Werk monitorstatus bij"
+          git push
 
       - name: Publicatiemap uploaden
         id: upload
