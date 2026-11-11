@@ -17,23 +17,24 @@ def main():
         api_key=api_key
     )
 
-    response = client.models.generate_content(
-        model="gemini-3.8-flash",
-        contents=(
-            "Antwoord uitsluitend met "
-            "het woord: werkt"
-        ),
-    )
+    print("Beschikbare modellen opvragen...")
 
-    print(
-        "Gemini-verbinding geslaagd."
-    )
+    geschikte_modellen = []
 
-    print(
-        "Antwoord:",
-        response.text
-    )
+    for model in client.models.list():
+        naam = model.name or ""
 
+        if "flash" not in naam.lower():
+            continue
 
-if __name__ == "__main__":
-    main()
+        geschikte_modellen.append(naam)
+
+    print("\nBESCHIKBARE FLASH-MODELLEN:")
+
+    for naam in geschikte_modellen:
+        print(naam)
+
+    if not geschikte_modellen:
+        raise RuntimeError(
+            "Geen Flash-model beschikbaar."
+        )
