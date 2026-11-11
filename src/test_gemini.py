@@ -3,6 +3,9 @@ import os
 from google import genai
 
 
+MODEL = "gemini-3.6-flash"
+
+
 def main():
     api_key = os.environ.get(
         "GEMINI_API_KEY"
@@ -17,24 +20,26 @@ def main():
         api_key=api_key
     )
 
-    print("Beschikbare modellen opvragen...")
+    print(
+        f"Gemini-model testen: {MODEL}"
+    )
 
-    geschikte_modellen = []
+    response = client.models.generate_content(
+        model=MODEL,
+        contents=(
+            "Antwoord uitsluitend met "
+            "het woord: werkt"
+        ),
+    )
 
-    for model in client.models.list():
-        naam = model.name or ""
+    print(
+        "Gemini-verbinding geslaagd."
+    )
 
-        if "flash" in naam.lower():
-            geschikte_modellen.append(naam)
-
-    print("\nBESCHIKBARE FLASH-MODELLEN:")
-
-    if not geschikte_modellen:
-        print("Geen Flash-modellen gevonden.")
-        return
-
-    for naam in geschikte_modellen:
-        print(naam)
+    print(
+        "Antwoord:",
+        response.text
+    )
 
 
 if __name__ == "__main__":
