@@ -24,17 +24,18 @@ def main():
     for model in client.models.list():
         naam = model.name or ""
 
-        if "flash" not in naam.lower():
-            continue
-
-        geschikte_modellen.append(naam)
+        if "flash" in naam.lower():
+            geschikte_modellen.append(naam)
 
     print("\nBESCHIKBARE FLASH-MODELLEN:")
+
+    if not geschikte_modellen:
+        print("Geen Flash-modellen gevonden.")
+        return
 
     for naam in geschikte_modellen:
         print(naam)
 
-    if not geschikte_modellen:
-        raise RuntimeError(
-            "Geen Flash-model beschikbaar."
-        )
+
+if __name__ == "__main__":
+    main()
