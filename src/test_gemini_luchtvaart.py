@@ -4,6 +4,9 @@ from pathlib import Path
 from document_text import get_document_text
 from gemini_assessor import beoordeel_document
 
+from evidence_validator import (
+    valideer_beoordeling
+)
 
 CANDIDATES_PATH = Path(
     "data/candidates.json"
@@ -111,6 +114,61 @@ def main():
         print(
             "Motivering:",
             beoordeling.motivering
+        )
+
+        # Controleer of de bewijsfragmenten
+        # letterlijk in de brief voorkomen.
+        validatie = valideer_beoordeling(
+            beoordeling,
+            documenttekst
+        )
+
+        print(
+            "Bewijsvalidatie:",
+            validatie["aantal_geldig"],
+            "/",
+            validatie["aantal_fragmenten"],
+            "fragmenten letterlijk gevonden"
+        )
+
+        for fragment_resultaat in (
+            validatie["fragmenten"]
+        ):
+            status = (
+                "GELDIG"
+                if fragment_resultaat["geldig"]
+                else "NIET GEVONDEN"
+            )
+
+            print(
+                "   ",
+                status,
+                "|",
+                fragment_resultaat["fragment"],
+            )
+
+        # HARDE VEILIGHEIDSREGEL:
+        # een positief oordeel mag alleen worden
+        # gepubliceerd als alle bewijsfragmenten
+        # daadwerkelijk in het document staan.
+        positieve_oordelen = {
+            "zeker_afgedaan",
+            "zeer_waarschijnlijk_afgedaan",
+            "waarschijnlijk_afgedaan",
+            "mogelijk_deels_afgedaan",
+        }
+
+        publiceerbaar = True
+
+        if (
+            beoordeling.oordeel in positieve_oordelen
+            and not validatie["alle_geldig"]
+        ):
+            publiceerbaar = False
+
+        print(
+            "Publiceerbaar:",
+            publiceerbaar
         )
 
         print()
