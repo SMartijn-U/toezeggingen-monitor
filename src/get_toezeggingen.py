@@ -1,4 +1,6 @@
 import requests
+import time
+
 from datetime import datetime, timedelta, timezone
 from collections import Counter
 
@@ -17,6 +19,60 @@ RELEVANTE_ACTIVITEITSOORTEN = {
     "Plenair debat (tweeminutendebat)",
     "Plenair debat (wetgeving)",
 }
+
+def get_met_retries(
+    url,
+    params=None,
+    timeout=60,
+    max_pogingen=5
+):
+    for poging in range(
+        1,
+        max_pogingen + 1
+    ):
+        try:
+            response = requests.get(
+                url,
+                params=params,
+                timeout=timeout
+            )
+
+            if response.status_code < 500:
+                response.raise_for_status()
+                return response
+
+            print(
+                f"Tijdelijke serverfout "
+                f"{response.status_code}. "
+                f"Poging {poging} van "
+                f"{max_pogingen}."
+            )
+
+        except (
+            requests.ConnectionError,
+            requests.Timeout
+        ) as fout:
+            print(
+                f"Tijdelijke netwerkfout: "
+                f"{fout}. "
+                f"Poging {poging} van "
+                f"{max_pogingen}."
+            )
+
+        if poging < max_pogingen:
+            wachttijd = 2 ** poging
+
+            print(
+                f"{wachttijd} seconden wachten "
+                f"voor nieuwe poging..."
+            )
+
+            time.sleep(wachttijd)
+
+    raise RuntimeError(
+        f"OData-verzoek mislukt na "
+        f"{max_pogingen} pogingen: {url}"
+    )
 
 def get_odata_paginated(
     entity,
@@ -37,12 +93,11 @@ def get_odata_paginated(
         if odata_filter:
             params["$filter"] = odata_filter
 
-        response = requests.get(
+        response = get_met_retries(
             url,
             params=params,
             timeout=60
         )
-        response.raise_for_status()
 
         data = response.json()
         batch = data.get("value", [])
@@ -92,8 +147,11 @@ def get_open_toezeggingen():
             "$skip": str(skip)
         }
 
-        response = requests.get(url, params=params, timeout=60)
-        response.raise_for_status()
+        response = get_met_retries(
+            url,
+            params=params,
+            timeout=60
+        )
 
         data = response.json()
         batch = data.get("value", [])
@@ -149,13 +207,11 @@ def get_recent_afgedane_toezeggingen(
             "$skip": str(skip),
         }
 
-        response = requests.get(
+        response = get_met_retries(
             url,
             params=params,
             timeout=60
         )
-
-        response.raise_for_status()
 
         data = response.json()
         batch = data.get("value", [])
@@ -235,12 +291,11 @@ def get_relevante_activiteiten():
             "$skip": str(skip),
         }
 
-        response = requests.get(
+        response = get_met_retries(
             url,
             params=params,
             timeout=60
         )
-        response.raise_for_status()
 
         data = response.json()
         batch = data.get("value", [])
