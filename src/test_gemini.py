@@ -1,9 +1,16 @@
 import os
 
 from google import genai
+from pydantic import BaseModel
 
 
 MODEL = "gemini-3.6-flash"
+
+
+class TestBeoordeling(BaseModel):
+    oordeel: str
+    score: int
+    motivering: str
 
 
 def main():
@@ -21,24 +28,49 @@ def main():
     )
 
     print(
-        f"Gemini-model testen: {MODEL}"
+        f"Structured output testen met: "
+        f"{MODEL}"
     )
 
     response = client.models.generate_content(
         model=MODEL,
         contents=(
-            "Antwoord uitsluitend met "
-            "het woord: werkt"
+            "Geef als oordeel exact 'test'. "
+            "Geef als score exact 42. "
+            "Leg in één korte zin uit dat "
+            "dit een technische test is."
         ),
+        config={
+            "response_mime_type":
+                "application/json",
+            "response_schema":
+                TestBeoordeling,
+        },
+    )
+
+    resultaat = (
+        TestBeoordeling.model_validate_json(
+            response.text
+        )
     )
 
     print(
-        "Gemini-verbinding geslaagd."
+        "Structured output geslaagd."
     )
 
     print(
-        "Antwoord:",
-        response.text
+        "Oordeel:",
+        resultaat.oordeel
+    )
+
+    print(
+        "Score:",
+        resultaat.score
+    )
+
+    print(
+        "Motivering:",
+        resultaat.motivering
     )
 
 
