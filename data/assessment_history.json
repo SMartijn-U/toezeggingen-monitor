@@ -49,7 +49,60 @@
       "datum_verwerkt": "2026-11-11T18:34:10.567438+00:00",
       "documentdatum": "2026-11-10T00:00:00+01:00",
       "onderwerp": "Appreciaties gewijzigde moties ingediend bij de begrotingsbehandeling van de begroting van Klimaat en Groene Groei op 5 november 2026"
+    },
+    "2026D56212": {
+      "datum_verwerkt": "2026-11-11T19:15:22.891835+00:00",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "onderwerp": "Cybersecuritybeeld Nederland 2026 en Voortgang Nederlandse Cybersecuritystrategie"
+    },
+    "2026D56673": {
+      "datum_verwerkt": "2026-11-11T19:16:16.634085+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Kwartaalrapportage lopende EU- wetgevingsvoorstellen op JBZ-terrein van het derde kwartaal 2026"
+    },
+    "2026D56328": {
+      "datum_verwerkt": "2026-11-11T19:17:02.976879+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Beleidsagenda Energieopslag 2026"
+    },
+    "2026D56206": {
+      "datum_verwerkt": "2026-11-11T19:17:56.660889+00:00",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "onderwerp": "Reactie op de motie van de leden Grinwis en Flach over een raming van de AOW-uitgavengroei en de EMU-schuld in 2060 (Kamerstuk 36915-20)"
+    },
+    "2026D56962": {
+      "datum_verwerkt": "2026-11-11T19:18:38.230339+00:00",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "onderwerp": "Adviesrapport Zorginstituut: ”Hoort het eten en drinken in het Wlz-pakket thuis?”"
+    },
+    "2026D56241": {
+      "datum_verwerkt": "2026-11-11T19:19:18.600719+00:00",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over wetswijziging Pachtwet in 2007 en afschaffing 65-leeftijdsgrens en toezegging gedaan tijdens het commissiedebat verdienvermogen en grondbeleid van 14 oktober 2026 over pacht en de verkoop van gronden in Rolde"
+    },
+    "2026D56272": {
+      "datum_verwerkt": "2026-11-11T19:19:59.319613+00:00",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "onderwerp": "Nationale aanpak taskforce drones en kabinetsreactie op het rapport van het Versnellingsnetwerk drones"
+    },
+    "2026D56161": {
+      "datum_verwerkt": "2026-11-11T19:21:03.213853+00:00",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "onderwerp": "Reactie op het rapport ‘Jongvolwassenen met jeugdhulp en de inzet van proactieve noodhulp’"
+    },
+    "2026D56521": {
+      "datum_verwerkt": "2026-11-11T19:22:39.810691+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Hoofdlijnen sociaal overleg"
     }
   },
-  "wacht_op_herhaling": {}
+  "wacht_op_herhaling": {
+    "2026D56653": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-11T19:21:58.337878+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Nederlandse inzet bij de Toetsingsconferentie van de CCW",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    }
+  }
 }
