@@ -54,6 +54,11 @@ jobs:
       - name: Bouw kandidatenbestand
         run: python src/build_candidates.py
 
+      - name: Test Gemini op luchtvaartbrief
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python src/test_gemini_luchtvaart.py
+
       - name: Valideer kandidaatselectie
         run: python src/validate_candidates.py
 
