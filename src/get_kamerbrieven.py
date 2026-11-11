@@ -1,7 +1,7 @@
-import requests
 from datetime import datetime, timedelta, timezone
 
 from document_text import get_document_text
+from odata import get_met_retries
 
 
 BASE_URL = "https://gegevensmagazijn.tweedekamer.nl/OData/v5"
@@ -41,7 +41,7 @@ def get_recente_documenten(aantal_dagen=7):
 
     alle_documenten = []
     skip = 0
-    batch_size = 250
+    batch_size = 100
 
     while True:
         params = {
@@ -50,13 +50,11 @@ def get_recente_documenten(aantal_dagen=7):
             "$skip": str(skip),
         }
 
-        response = requests.get(
+        response = get_met_retries(
             url,
             params=params,
             timeout=60
         )
-
-        response.raise_for_status()
 
         data = response.json()
         batch = data.get("value", [])
