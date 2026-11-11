@@ -34,11 +34,6 @@ jobs:
       - name: Controleer Python-syntax
         run: python -m compileall -q src
 
-      - name: Test Gemini verbinding
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python src/test_gemini.py
-
       - name: Test ophalen actuele toezeggingen
         run: python src/get_toezeggingen.py
 
@@ -54,21 +49,22 @@ jobs:
       - name: Bouw kandidatenbestand
         run: python src/build_candidates.py
 
-      - name: Test Gemini op luchtvaartbrief
+      - name: Bouw pilotbeoordelingen
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python src/test_gemini_luchtvaart.py
+        run: python src/build_assessments.py
 
       - name: Valideer kandidaatselectie
         run: python src/validate_candidates.py
 
-      - name: Upload kandidaat- en validatiebestanden
+      - name: Upload analysebestanden
         uses: actions/upload-artifact@v4
         with:
-          name: kandidaatselectie
+          name: toezeggingenanalyse
           path: |
             data/candidates.json
             data/validation.json
+            data/assessments.json
           retention-days: 7
 
       - name: RSS-feed genereren
