@@ -1,3 +1,125 @@
 {
-  "resultaten": {}
+  "resultaten": {
+    "TZ202605-005|2026D56295": {
+      "sleutel": "TZ202605-005|2026D56295",
+      "eerste_signalering": "2026-11-11T18:27:44.484559+00:00",
+      "toezeggingnummer": "TZ202605-005",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D56295",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "documentonderwerp": "Aanpak verduurzaming luchtvaart",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informeren hoe de coalitieafspraak over het CO2-plafond voor Schiphol en Lelystad wordt geborgd",
+        "Appreciatie van de NLR-inventarisatie over de CO2-uitstoot van Lelystad Airport"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Hieronder wordt invulling gegeven aan de toezegging aan het lid Kostić om de Tweede Kamer te informeren over hoe de afspraak uit het coalitieafspraak wordt geborgd.",
+        "Met deze brief wordt ook invulling gegeven aan de toezegging aan het lid Kostić om een appreciatie te geven van de eerdere NLR-inventarisatie over de CO2-uitstoot van Lelystad Airport in opdracht van Stichting Natuur en Milieu"
+      ],
+      "motivering": "Het document geeft expliciet invulling aan zowel de borging van de coalitieafspraak inzake het CO2-plafond als aan de gevraagde appreciatie van het eerdere NLR-rapport over Lelystad Airport.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Hieronder wordt invulling gegeven aan de toezegging aan het lid Kostić om de Tweede Kamer te informeren over hoe de afspraak uit het coalitieafspraak wordt geborgd.",
+            "geldig": true
+          },
+          {
+            "fragment": "Met deze brief wordt ook invulling gegeven aan de toezegging aan het lid Kostić om een appreciatie te geven van de eerdere NLR-inventarisatie over de CO2-uitstoot van Lelystad Airport in opdracht van Stichting Natuur en Milieu",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "TZ202610-191|2026D56295": {
+      "sleutel": "TZ202610-191|2026D56295",
+      "eerste_signalering": "2026-11-11T18:27:44.484567+00:00",
+      "toezeggingnummer": "TZ202610-191",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D56295",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "documentonderwerp": "Aanpak verduurzaming luchtvaart",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Bijvoegen van het NLR-rapport over de haalbaarheid van het CO2-plafond",
+        "Toelichting op de verschillen tussen het NLR-rapport en de KEV"
+      ],
+      "ontbrekende_onderdelen": [
+        "Een concrete tijdlijn voor de eventuele invoering van het CO2-plafond"
+      ],
+      "bewijsfragmenten": [
+        "Dit rapport is als bijlage bij deze brief gevoegd.",
+        "en de toezegging aan het lid Köse om inzicht te geven in de verschillen tussen de KEV en NLR-rapportage.",
+        "De Kamer wordt hierover voor het eind van het jaar geïnformeerd conform de motie van het lid Grinwis c.s.."
+      ],
+      "motivering": "Het document bevat het NLR-rapport als bijlage en licht de verschillen tussen de NLR-raming en de KEV toe. Voor de concrete invulling/tijdlijn van eventuele stok-achter-de-deur-maatregelen (invoering) wordt verwezen naar een latere brief voor het eind van het jaar.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Dit rapport is als bijlage bij deze brief gevoegd.",
+            "geldig": true
+          },
+          {
+            "fragment": "en de toezegging aan het lid Köse om inzicht te geven in de verschillen tussen de KEV en NLR-rapportage.",
+            "geldig": true
+          },
+          {
+            "fragment": "De Kamer wordt hierover voor het eind van het jaar geïnformeerd conform de motie van het lid Grinwis c.s..",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "TZ202610-190|2026D56295": {
+      "sleutel": "TZ202610-190|2026D56295",
+      "eerste_signalering": "2026-11-11T18:27:44.484572+00:00",
+      "toezeggingnummer": "TZ202610-190",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D56295",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "documentonderwerp": "Aanpak verduurzaming luchtvaart",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Procesupdate over het ontzwavelen van kerosine",
+        "Beantwoording van de vraag over zwavelpercentages in SAF"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Tijdens het commissiedebat luchtvaart op 7 oktober jl. is een procesupdate over het ontzwavelen van kerosine toegezegd aan lid Bolhuis, inclusief een antwoord op de vraag hoe het zit met de percentages zwavel in SAF.",
+        "Zoals beschreven in de Staat van de Luchtvaart 2026 bevat SAF zelf namelijk geen tot bijna geen zwavel."
+      ],
+      "motivering": "In het document wordt onder het kopje 'SAF en zwavel' expliciet gereageerd op het toezeggingsverzoek van het lid Bolhuis, inclusief de procesupdate voor de onderzoeken en de uitleg rondom zwavelpercentages in SAF.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens het commissiedebat luchtvaart op 7 oktober jl. is een procesupdate over het ontzwavelen van kerosine toegezegd aan lid Bolhuis, inclusief een antwoord op de vraag hoe het zit met de percentages zwavel in SAF.",
+            "geldig": true
+          },
+          {
+            "fragment": "Zoals beschreven in de Staat van de Luchtvaart 2026 bevat SAF zelf namelijk geen tot bijna geen zwavel.",
+            "geldig": true
+          }
+        ]
+      }
+    }
+  }
 }

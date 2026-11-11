@@ -1,4 +1,55 @@
 {
-  "verwerkt": {},
+  "verwerkt": {
+    "2026D55846": {
+      "datum_verwerkt": "2026-11-11T18:26:09.871566+00:00",
+      "documentdatum": "2026-11-05T00:00:00+01:00",
+      "onderwerp": "Vergoeding Enhertu voor maagkanker en Skyclarys"
+    },
+    "2026D56295": {
+      "datum_verwerkt": "2026-11-11T18:27:44.484535+00:00",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "onderwerp": "Aanpak verduurzaming luchtvaart"
+    },
+    "2026D56428": {
+      "datum_verwerkt": "2026-11-11T18:28:36.943442+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Rapport van de Inspectie Overheidsinformatie en Erfgoed ‘Toegang tot overheidsinformatie in het gedrang; Urgente knelpunten in de overbrenging van papieren en digitale archieven’ "
+    },
+    "2026D55920": {
+      "datum_verwerkt": "2026-11-11T18:29:27.345130+00:00",
+      "documentdatum": "2026-11-05T00:00:00+01:00",
+      "onderwerp": "Reactie op een burgerbrief over petitie gevolgen gestegen brandstofprijzen voor taxi- en zorgvervoer"
+    },
+    "2026D56528": {
+      "datum_verwerkt": "2026-11-11T18:30:11.000656+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Inzet voor internationale aandacht voor een internationale dag met betrekking tot huwelijkse gevangenschap "
+    },
+    "2026D56671": {
+      "datum_verwerkt": "2026-11-11T18:30:52.571215+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Aanpak drugscriminaliteit"
+    },
+    "2026D57018": {
+      "datum_verwerkt": "2026-11-11T18:31:55.399050+00:00",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "onderwerp": "Beleidskader hervestiging 2026-2027"
+    },
+    "2026D57241": {
+      "datum_verwerkt": "2026-11-11T18:32:41.558139+00:00",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "onderwerp": "Geannoteerde agenda informele ministeriële bijeenkomst consumentenbeleid 20 november 2026"
+    },
+    "2026D56454": {
+      "datum_verwerkt": "2026-11-11T18:33:23.211850+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting"
+    },
+    "2026D56826": {
+      "datum_verwerkt": "2026-11-11T18:34:10.567438+00:00",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "onderwerp": "Appreciaties gewijzigde moties ingediend bij de begrotingsbehandeling van de begroting van Klimaat en Groene Groei op 5 november 2026"
+    }
+  },
   "wacht_op_herhaling": {}
 }
