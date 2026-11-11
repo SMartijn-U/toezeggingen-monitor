@@ -17,7 +17,7 @@ OUTPUT_PATH = Path(
 )
 
 
-MAX_DOCUMENTEN = 5
+MAX_DOCUMENTEN = 10
 MAX_KANDIDATEN_PER_DOCUMENT = 10
 
 BEKEND_TESTDOCUMENT = "2026D56295"
@@ -144,9 +144,22 @@ def maak_beoordelingsrecord(
         in POSITIEVE_OORDELEN
     )
 
+    status_registratie = kandidaat.get(
+        "status"
+    )
+
+    status_nog_actief = (
+        status_registratie
+        in {
+            "Openstaand",
+            "Deels Afgedaan",
+        }
+    )
+
     publiceerbaar = (
         positief
         and validatie["alle_geldig"]
+        and status_nog_actief
     )
 
     categorie = (
@@ -524,12 +537,14 @@ def main():
 
         # Gratis Gemini-tier ontlasten.
         if index < len(documenten):
+            wachttijd = 30
+            
             print(
-                "10 seconden wachten voor "
-                "het volgende document..."
+                f"{wachttijd} seconden wachten "
+                f"voor het volgende document..."
             )
 
-            time.sleep(10)
+            time.sleep(wachttijd)
 
         # Tussenresultaten na ieder document
         # veiligstellen.
