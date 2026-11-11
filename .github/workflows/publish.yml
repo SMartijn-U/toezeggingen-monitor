@@ -48,7 +48,17 @@ jobs:
         run: python src/test_document_download.py
 
       - name: Test kandidaatselectie
-        run: python src/test_candidate_matching.py        
+        run: python src/test_candidate_matching.py
+
+      - name: Bouw kandidatenbestand
+        run: python src/build_candidates.py
+
+      - name: Upload kandidatenbestand
+        uses: actions/upload-artifact@v4
+        with:
+          name: kandidaatselectie
+          path: data/candidates.json
+          retention-days: 7
 
       - name: RSS-feed genereren
         run: python src/generate_feed.py
