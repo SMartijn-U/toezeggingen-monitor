@@ -38,6 +38,11 @@ jobs:
       - name: Controleer Python-syntax
         run: python -m compileall -q src
 
+      - name: Test Gemini verbinding
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python src/test_gemini.py
+
       - name: Test ophalen actuele toezeggingen
         run: python src/get_toezeggingen.py
 
