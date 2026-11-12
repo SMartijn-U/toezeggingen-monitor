@@ -641,27 +641,35 @@ def get_toezeggingen_per_commissie(
     plenair_zonder_volgcommissie = 0
     niet_gevonden_records = []
 
-    gezochte_afkorting = (
+    gezochte_commissie = (
         commissie_afkorting
         or ""
     ).strip().lower()
 
-    if not gezochte_afkorting:
+    if not gezochte_commissie:
         raise ValueError(
             "commissie_afkorting mag niet leeg zijn."
         )
 
-    # Zoek de commissiegegevens die horen bij
-    # de opgegeven afkorting.
     doelcommissies = [
         commissie
         for commissie in commissies
         if (
-            commissie.get("Afkorting")
-            or ""
-        ).strip().lower()
-        == gezochte_afkorting
+            (
+                commissie.get("Afkorting")
+                or ""
+            ).strip().lower()
+            == gezochte_commissie
+        )
+        or (
+            (
+                commissie.get("Slug")
+                or ""
+            ).strip().lower()
+            == gezochte_commissie
+        )
     ]
+
 
     if not doelcommissies:
         beschikbare_afkortingen = sorted({
@@ -674,11 +682,9 @@ def get_toezeggingen_per_commissie(
         })
 
         raise ValueError(
-            f"Commissie met afkorting "
+            f"Commissie met afkorting of slug "
             f"'{commissie_afkorting}' "
-            f"niet gevonden. "
-            f"Beschikbaar: "
-            f"{', '.join(beschikbare_afkortingen)}"
+            f"niet gevonden."
         )
 
     # Mogelijke representaties van de commissie.
@@ -694,6 +700,11 @@ def get_toezeggingen_per_commissie(
             or ""
         ).strip().lower()
 
+        slug = (
+            commissie.get("Slug")
+            or ""
+        ).strip().lower()
+        
         naam_nl = (
             commissie.get("NaamNL")
             or ""
@@ -702,6 +713,11 @@ def get_toezeggingen_per_commissie(
         if afkorting:
             doelcommissie_identifiers.add(
                 afkorting
+            )
+
+        if slug:
+            doelcommissie_identifiers.add(
+                slug
             )
 
         if naam_nl:
@@ -718,6 +734,11 @@ def get_toezeggingen_per_commissie(
         or commissie_afkorting
     ).strip()
 
+    commissie_slug = (
+        doelcommissies[0].get("Slug")
+        or nette_afkorting
+    ).strip().lower()
+    
     activiteiten_op_nummer = {
         activiteit.get("Nummer"):
             activiteit
@@ -911,6 +932,10 @@ def get_toezeggingen_per_commissie(
                 "CommissieAfkorting"
             ] = nette_afkorting
 
+            geselecteerde_toezegging[
+                "CommissieSlug"
+            ] = commissie_slug
+
             geselecteerd.append(
                 geselecteerde_toezegging
             )
@@ -988,7 +1013,7 @@ def get_ienw_toezeggingen(
         activiteiten,
         volgcommissie_actoren,
         commissies,
-        commissie_afkorting="IenW",
+        commissie_afkorting="ienw",
     )
         
 if __name__ == "__main__":
