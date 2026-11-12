@@ -309,56 +309,69 @@
       "datum_verwerkt": "2026-11-12T15:54:39.827820+00:00",
       "documentdatum": "2026-11-09T00:00:00+01:00",
       "onderwerp": "Appreciatie van de gewijzigde motie van de leden Kostić en Teunissen over inzetten op het stimuleren van de beschikbaarheid van pfas-vrije geneesmiddelen en medische hulpmiddelen (t.v.v. 37020-XII-41)"
+    },
+    "2026D57075": {
+      "datum_verwerkt": "2026-11-12T16:17:49.879080+00:00",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "onderwerp": "Instemming deelname aan technische briefing over het wetsvoorstel tot wijziging van de Coordinatiewet uitzonderingstoestanden in verband met de modernisering daarvan (Kamerstuk 36994)"
+    },
+    "2026D56191": {
+      "datum_verwerkt": "2026-11-12T16:18:43.844047+00:00",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "onderwerp": "Kabinetsinzet Europees centrum voor kritieke grondstoffen"
+    },
+    "2026D57682": {
+      "datum_verwerkt": "2026-11-12T16:21:06.261068+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Afschrift brief aan de Eerste Kamer betreffende mijn reactie op vragen naar aanleiding van de brief over de toekomst van onderzoek met apen in Nederland"
+    },
+    "2026D57727": {
+      "datum_verwerkt": "2026-11-12T16:23:54.596622+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over het acute zorglandschap staat onder zware druk "
     }
   },
   "wacht_op_herhaling": {
     "2026D57557": {
-      "pogingen": 3,
-      "laatste_poging": "2026-11-12T15:38:48.709779+00:00",
+      "pogingen": 4,
+      "laatste_poging": "2026-11-12T16:15:33.665499+00:00",
       "documentdatum": "2026-11-12T00:00:00+01:00",
       "onderwerp": "Multibandverdeling voor mobiele communicatie",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
     },
     "2026D57662": {
-      "pogingen": 2,
-      "laatste_poging": "2026-11-12T15:40:36.577861+00:00",
+      "pogingen": 3,
+      "laatste_poging": "2026-11-12T16:16:58.803490+00:00",
       "documentdatum": "2026-11-12T00:00:00+01:00",
       "onderwerp": "Verdeling middelen versterking rechtsstaat",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
     },
-    "2026D57075": {
-      "pogingen": 2,
-      "laatste_poging": "2026-11-12T15:55:42.213226+00:00",
-      "documentdatum": "2026-11-11T00:00:00+01:00",
-      "onderwerp": "Instemming deelname aan technische briefing over het wetsvoorstel tot wijziging van de Coordinatiewet uitzonderingstoestanden in verband met de modernisering daarvan (Kamerstuk 36994)",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
-    },
-    "2026D56191": {
-      "pogingen": 2,
-      "laatste_poging": "2026-11-12T15:56:42.312914+00:00",
-      "documentdatum": "2026-11-06T00:00:00+01:00",
-      "onderwerp": "Kabinetsinzet Europees centrum voor kritieke grondstoffen",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
-    },
     "2026D57701": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-12T15:57:41.247869+00:00",
+      "pogingen": 2,
+      "laatste_poging": "2026-11-12T16:19:52.169921+00:00",
       "documentdatum": "2026-11-12T00:00:00+01:00",
       "onderwerp": "Schriftelijke beantwoording openstaande vragen gesteld tijdens de tweede termijn van het commissiedebat Tuinbouw en Biotechnologie van 4 november 2026",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
     },
-    "2026D57682": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-12T15:58:33.629286+00:00",
-      "documentdatum": "2026-11-12T00:00:00+01:00",
-      "onderwerp": "Afschrift brief aan de Eerste Kamer betreffende mijn reactie op vragen naar aanleiding van de brief over de toekomst van onderzoek met apen in Nederland",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
-    },
     "2026D56183": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-12T15:59:32.752555+00:00",
+      "pogingen": 2,
+      "laatste_poging": "2026-11-12T16:21:58.455078+00:00",
       "documentdatum": "2026-11-06T00:00:00+01:00",
       "onderwerp": "Reactie op verzoek commissie inzake blokkeren van burgerinitiatief voor asielopvang door gemeente Neder-Betuwe",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "2026D57750": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-12T16:22:59.917234+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Verzoek tot het verplaatsen van het commissiedebat van 2 december 2026 over ruimtevaart",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "2026D57718": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-12T16:25:14.310077+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Toezichtrapport 2025 over het toezicht op het CAK door de Nederlandse Zorgautoriteit",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
     }
   }
