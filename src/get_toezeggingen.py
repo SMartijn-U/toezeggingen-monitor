@@ -627,36 +627,115 @@ def vul_ontbrekende_activiteiten_aan(
 
     return activiteiten
 
-def get_ienw_toezeggingen(
+def get_toezeggingen_per_commissie(
     toezeggingen,
     activiteiten,
     volgcommissie_actoren,
-    commissies
+    commissies,
+    commissie_afkorting
 ):
-    ienw = []
+    geselecteerd = []
 
     zonder_activiteit = 0
     activiteit_niet_gevonden = 0
-    plenair_zonder_ienw_volgcommissie = 0
+    plenair_zonder_volgcommissie = 0
     niet_gevonden_records = []
 
+    gezochte_afkorting = (
+        commissie_afkorting
+        or ""
+    ).strip().lower()
+
+    if not gezochte_afkorting:
+        raise ValueError(
+            "commissie_afkorting mag niet leeg zijn."
+        )
+
+    # Zoek de commissiegegevens die horen bij
+    # de opgegeven afkorting.
+    doelcommissies = [
+        commissie
+        for commissie in commissies
+        if (
+            commissie.get("Afkorting")
+            or ""
+        ).strip().lower()
+        == gezochte_afkorting
+    ]
+
+    if not doelcommissies:
+        beschikbare_afkortingen = sorted({
+            (
+                commissie.get("Afkorting")
+                or ""
+            ).strip()
+            for commissie in commissies
+            if commissie.get("Afkorting")
+        })
+
+        raise ValueError(
+            f"Commissie met afkorting "
+            f"'{commissie_afkorting}' "
+            f"niet gevonden. "
+            f"Beschikbaar: "
+            f"{', '.join(beschikbare_afkortingen)}"
+        )
+
+    # Mogelijke representaties van de commissie.
+    # Bijvoorbeeld:
+    # - ienw
+    # - vaste commissie voor infrastructuur
+    #   en waterstaat
+    doelcommissie_identifiers = set()
+
+    for commissie in doelcommissies:
+        afkorting = (
+            commissie.get("Afkorting")
+            or ""
+        ).strip().lower()
+
+        naam_nl = (
+            commissie.get("NaamNL")
+            or ""
+        ).strip().lower()
+
+        if afkorting:
+            doelcommissie_identifiers.add(
+                afkorting
+            )
+
+        if naam_nl:
+            doelcommissie_identifiers.add(
+                naam_nl
+            )
+
+    # Gebruik één nette afkorting voor logging
+    # en opgeslagen selectieredenen.
+    nette_afkorting = (
+        doelcommissies[0].get(
+            "Afkorting"
+        )
+        or commissie_afkorting
+    ).strip()
+
     activiteiten_op_nummer = {
-        activiteit.get("Nummer"): activiteit
+        activiteit.get("Nummer"):
+            activiteit
         for activiteit in activiteiten
         if activiteit.get("Nummer")
     }
 
     commissies_op_id = {
-        commissie.get("Id"): commissie
+        commissie.get("Id"):
+            commissie
         for commissie in commissies
         if commissie.get("Id")
     }
 
-    # Maak per activiteit een verzameling van volgcommissies.
+    # Maak per activiteit een verzameling
+    # van volgcommissies.
     volgcommissies_per_activiteit = {}
 
-    # Alleen actorrecords bewaren die horen bij de
-    # relevante activiteiten van de afgelopen vijf jaar.
     relevante_activiteit_ids = {
         activiteit.get("Id")
         for activiteit in activiteiten
@@ -664,70 +743,104 @@ def get_ienw_toezeggingen(
     }
 
     for actor in volgcommissie_actoren:
-        activiteit_id = actor.get("Activiteit_Id")
-        commissie_id = actor.get("Commissie_Id")
+        activiteit_id = actor.get(
+            "Activiteit_Id"
+        )
 
-        if activiteit_id not in relevante_activiteit_ids:
+        commissie_id = actor.get(
+            "Commissie_Id"
+        )
+
+        if (
+            activiteit_id
+            not in relevante_activiteit_ids
+        ):
             continue
 
-        commissie = commissies_op_id.get(commissie_id)
+        commissie = commissies_op_id.get(
+            commissie_id
+        )
 
         if not commissie:
             continue
 
-        commissie_afkorting = (
-            commissie.get("Afkorting") or ""
+        actor_afkorting = (
+            commissie.get("Afkorting")
+            or ""
         ).strip().lower()
 
-        commissie_naam = (
-            commissie.get("NaamNL") or ""
+        actor_naam = (
+            commissie.get("NaamNL")
+            or ""
         ).strip().lower()
 
         activiteit_commissies = (
-            volgcommissies_per_activiteit.setdefault(
+            volgcommissies_per_activiteit
+            .setdefault(
                 activiteit_id,
                 set()
             )
         )
 
-        activiteit_commissies.add(
-            commissie_afkorting
-        )
-        activiteit_commissies.add(
-            commissie_naam
-        )
+        if actor_afkorting:
+            activiteit_commissies.add(
+                actor_afkorting
+            )
+
+        if actor_naam:
+            activiteit_commissies.add(
+                actor_naam
+            )
 
     for toezegging in toezeggingen:
-        activiteit_nummer = toezegging.get(
-            "ActiviteitNummer"
+        activiteit_nummer = (
+            toezegging.get(
+                "ActiviteitNummer"
+            )
         )
 
         if not activiteit_nummer:
             zonder_activiteit += 1
             continue
 
-        activiteit = activiteiten_op_nummer.get(
-            activiteit_nummer
+        activiteit = (
+            activiteiten_op_nummer.get(
+                activiteit_nummer
+            )
         )
 
         if not activiteit:
             activiteit_niet_gevonden += 1
 
             niet_gevonden_records.append({
-                "Nummer": toezegging.get("Nummer"),
-                "Status": toezegging.get("Status"),
-                "ActiviteitNummer": activiteit_nummer,
-                "Tekst": toezegging.get("Tekst"),
+                "Nummer":
+                    toezegging.get("Nummer"),
+
+                "Status":
+                    toezegging.get("Status"),
+
+                "ActiviteitNummer":
+                    activiteit_nummer,
+
+                "Tekst":
+                    toezegging.get("Tekst"),
             })
 
             continue
 
-        soort = activiteit.get("Soort", "")
+        soort = activiteit.get(
+            "Soort",
+            ""
+        )
+
         voortouw = (
-            activiteit.get("VoortouwCommissieNaam") or ""
+            activiteit.get(
+                "VoortouwCommissieNaam"
+            )
+            or ""
         ).strip().lower()
 
-        is_ienw = False
+        is_geselecteerd = False
         selectiereden = None
 
         # Route 1: commissieactiviteiten.
@@ -738,59 +851,110 @@ def get_ienw_toezeggingen(
         }:
             if (
                 voortouw
-                == "vaste commissie voor infrastructuur en waterstaat"
+                in doelcommissie_identifiers
             ):
-                is_ienw = True
-                selectiereden = "IenW is voortouwcommissie"
+                is_geselecteerd = True
+
+                selectiereden = (
+                    f"{nette_afkorting} "
+                    f"is voortouwcommissie"
+                )
 
         # Route 2: plenaire debatten.
-        elif soort.startswith("Plenair debat"):
-            activiteit_id = activiteit.get("Id")
+        elif soort.startswith(
+            "Plenair debat"
+        ):
+            activiteit_id = activiteit.get(
+                "Id"
+            )
 
             volgcommissies = (
-                volgcommissies_per_activiteit.get(
+                volgcommissies_per_activiteit
+                .get(
                     activiteit_id,
                     set()
                 )
             )
 
             if (
-                "ienw" in volgcommissies
-                or (
-                    "vaste commissie voor infrastructuur "
-                    "en waterstaat"
-                ) in volgcommissies
+                doelcommissie_identifiers
+                & volgcommissies
             ):
-                is_ienw = True
-                selectiereden = "IenW is volgcommissie"
-            else:
-                plenair_zonder_ienw_volgcommissie += 1
+                is_geselecteerd = True
 
-        if is_ienw:
-            toezegging["Activiteit"] = activiteit
-            toezegging["Selectiereden"] = selectiereden
-            ienw.append(toezegging)
+                selectiereden = (
+                    f"{nette_afkorting} "
+                    f"is volgcommissie"
+                )
+
+            else:
+                plenair_zonder_volgcommissie += 1
+
+        if is_geselecteerd:
+            # Maak een kopie. Daardoor kan dezelfde
+            # toezegging later veilig voor meerdere
+            # commissies worden geselecteerd zonder
+            # dat velden elkaar overschrijven.
+            geselecteerde_toezegging = dict(
+                toezegging
+            )
+
+            geselecteerde_toezegging[
+                "Activiteit"
+            ] = activiteit
+
+            geselecteerde_toezegging[
+                "Selectiereden"
+            ] = selectiereden
+
+            geselecteerde_toezegging[
+                "CommissieAfkorting"
+            ] = nette_afkorting
+
+            geselecteerd.append(
+                geselecteerde_toezegging
+            )
+
+    print(
+        f"\nSELECTIE COMMISSIE: "
+        f"{nette_afkorting}"
+    )
+
+    print(
+        f"Commissie-identifiers: "
+        f"{sorted(doelcommissie_identifiers)}"
+    )
 
     print(
         f"Activiteiten in index: "
         f"{len(activiteiten_op_nummer)}"
     )
+
     print(
         f"Activiteiten met volgcommissie: "
         f"{len(volgcommissies_per_activiteit)}"
     )
+
     print(
         f"Zonder ActiviteitNummer: "
         f"{zonder_activiteit}"
     )
+
     print(
         f"Activiteit niet gevonden: "
         f"{activiteit_niet_gevonden}"
     )
+
     print(
-        f"Plenaire activiteiten zonder IenW "
-        f"als volgcommissie: "
-        f"{plenair_zonder_ienw_volgcommissie}"
+        f"Plenaire activiteiten zonder "
+        f"{nette_afkorting} als volgcommissie: "
+        f"{plenair_zonder_volgcommissie}"
+    )
+
+    print(
+        f"Geselecteerde toezeggingen "
+        f"voor {nette_afkorting}: "
+        f"{len(geselecteerd)}"
     )
 
     print("\nNIET-GEVONDEN ACTIVITEITEN:")
@@ -802,15 +966,31 @@ def get_ienw_toezeggingen(
                 "|",
                 record.get("Status"),
                 "|",
-                record.get("ActiviteitNummer"),
+                record.get(
+                    "ActiviteitNummer"
+                ),
                 "|",
                 record.get("Tekst"),
             )
     else:
         print("Geen.")
-    
-    return ienw
 
+    return geselecteerd
+
+def get_ienw_toezeggingen(
+    toezeggingen,
+    activiteiten,
+    volgcommissie_actoren,
+    commissies
+):
+    return get_toezeggingen_per_commissie(
+        toezeggingen,
+        activiteiten,
+        volgcommissie_actoren,
+        commissies,
+        commissie_afkorting="IenW",
+    )
+        
 if __name__ == "__main__":
     print("Openstaande en deels afgedane toezeggingen ophalen...")
 
