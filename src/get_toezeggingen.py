@@ -627,6 +627,20 @@ def vul_ontbrekende_activiteiten_aan(
 
     return activiteiten
 
+def maak_commissie_slug(afkorting):
+    if not afkorting:
+        return ""
+
+    slug = (
+        afkorting
+        .strip()
+        .lower()
+        .replace("&", "en")
+        .replace(" ", "")
+    )
+
+    return slug
+
 def get_toezeggingen_per_commissie(
     toezeggingen,
     activiteiten,
@@ -651,35 +665,38 @@ def get_toezeggingen_per_commissie(
             "commissie_afkorting mag niet leeg zijn."
         )
 
-    doelcommissies = [
-        commissie
-        for commissie in commissies
-        if (
-            (
-                commissie.get("Afkorting")
-                or ""
-            ).strip().lower()
-            == gezochte_commissie
-        )
-        or (
-            (
-                commissie.get("Slug")
-                or ""
-            ).strip().lower()
-            == gezochte_commissie
-        )
-    ]
+    doelcommissies = []
 
+    for commissie in commissies:
+        afkorting = (
+            commissie.get("Afkorting")
+            or ""
+        ).strip()
+
+        afkorting_norm = (
+            afkorting.lower()
+        )
+
+        slug = maak_commissie_slug(
+            afkorting
+        )
+
+        if (
+            afkorting_norm
+            == gezochte_commissie
+            or slug
+            == gezochte_commissie
+        ):
+            doelcommissies.append(
+                commissie
+            )
 
     if not doelcommissies:
-        beschikbare_afkortingen = sorted({
-            (
-                commissie.get("Afkorting")
-                or ""
-            ).strip()
-            for commissie in commissies
-            if commissie.get("Afkorting")
-        })
+        raise ValueError(
+            f"Actuele commissie met afkorting "
+            f"of slug '{commissie_afkorting}' "
+            f"niet gevonden."
+        )
 
         raise ValueError(
             f"Commissie met afkorting of slug "
@@ -700,10 +717,11 @@ def get_toezeggingen_per_commissie(
             or ""
         ).strip().lower()
 
-        slug = (
-            commissie.get("Slug")
-            or ""
-        ).strip().lower()
+        slug = maak_commissie_slug(
+            commissie.get(
+                "Afkorting"
+            )
+        )
         
         naam_nl = (
             commissie.get("NaamNL")
@@ -735,9 +753,12 @@ def get_toezeggingen_per_commissie(
     ).strip()
 
     commissie_slug = (
-        doelcommissies[0].get("Slug")
-        or nette_afkorting
-    ).strip().lower()
+        maak_commissie_slug(
+            doelcommissies[0].get(
+                "Afkorting"
+            )
+        )
+    )
     
     activiteiten_op_nummer = {
         activiteit.get("Nummer"):
