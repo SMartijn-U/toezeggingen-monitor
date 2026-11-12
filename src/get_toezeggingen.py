@@ -130,6 +130,44 @@ def get_commissies():
         odata_filter="Verwijderd eq false"
     )
 
+def get_actuele_vaste_commissies():
+    commissies = get_odata_paginated(
+        entity="Commissie",
+        odata_filter=(
+            "Inhoudsopgave eq 'Vaste commissies' "
+            "and Verwijderd eq false"
+        )
+    )
+
+    actuele_commissies = []
+
+    for commissie in commissies:
+        datum_inactief = (
+            commissie.get("DatumInactief")
+        )
+
+        # Alleen commissies die volgens de
+        # registratie nog actief zijn.
+        if (
+            datum_inactief
+            and not datum_inactief.startswith(
+                "0001-01-01"
+            )
+        ):
+            continue
+
+        actuele_commissies.append(
+            commissie
+        )
+
+    actuele_commissies.sort(
+        key=lambda commissie: (
+            commissie.get("NaamNL") or ""
+        )
+    )
+
+    return actuele_commissies
+
 def get_open_toezeggingen():
     url = f"{BASE_URL}/Toezegging"
 
@@ -733,6 +771,32 @@ if __name__ == "__main__":
         f"Commissies: {len(commissies)}"
     )
 
+    print(
+        "\nACTUELE VASTE COMMISSIES:\n"
+    )
+
+    vaste_commissies = (
+        get_actuele_vaste_commissies()
+    )
+
+    for commissie in vaste_commissies:
+        print(
+            commissie.get("Id"),
+            "|",
+            commissie.get("Afkorting"),
+            "|",
+            commissie.get("NaamNL"),
+            "| actief vanaf:",
+            commissie.get("DatumActief"),
+            "| inactief:",
+            commissie.get("DatumInactief"),
+        )
+
+    print(
+        f"\nAantal actuele vaste commissies: "
+        f"{len(vaste_commissies)}"
+    )
+    
     print("\nIenW-selectie maken...")
 
     ienw = get_ienw_toezeggingen(
