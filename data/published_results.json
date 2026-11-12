@@ -152,6 +152,40 @@
           }
         ]
       }
+    },
+    "TZ202606-045|2026D56999": {
+      "sleutel": "TZ202606-045|2026D56999",
+      "eerste_signalering": "2026-11-12T13:39:43.448224+00:00",
+      "toezeggingnummer": "TZ202606-045",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D56999",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "documentonderwerp": "Gemeenschappelijke verklaring inzake de samenwerking op het gebied van Duits-Nederlands spoorvervoer ",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "betrekken van ProRail bij samenwerking en kaderstelling"
+      ],
+      "ontbrekende_onderdelen": [
+        "specifieke brief met aanbevelingen van ProRail en de pilot meenemen in kaderovereenkomsten"
+      ],
+      "bewijsfragmenten": [
+        "De stuurgroep kan per geval bepalen of vertegenwoordigers van de spoorwegsector, zoals de infrastructuurbeheerders, worden uitgenodigd."
+      ],
+      "motivering": "Het document noemt wel de betrekking van ProRail bij de samenwerking rondom het Derde spoor, maar het behandelt niet expliciet de toezegging over de brief met aanbevelingen van ProRail en de pilot in het kader van kaderovereenkomsten.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "De stuurgroep kan per geval bepalen of vertegenwoordigers van de spoorwegsector, zoals de infrastructuurbeheerders, worden uitgenodigd.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }

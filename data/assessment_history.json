@@ -244,7 +244,64 @@
       "datum_verwerkt": "2026-11-12T08:46:32.079398+00:00",
       "documentdatum": "2026-11-06T00:00:00+01:00",
       "onderwerp": "Kabinetsreactie op het SER-advies over werk en AI"
+    },
+    "2026D57572": {
+      "datum_verwerkt": "2026-11-12T13:32:19.922622+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Schriftelijke antwoorden op vragen gesteld tijdens de eerste termijn van de begrotingsbehandeling van Economische Zaken op 14 oktober 2026"
+    },
+    "2026D57582": {
+      "datum_verwerkt": "2026-11-12T13:33:27.807324+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Kabinetsreactie Evaluatie Wet normering topinkomens 2021-2025"
+    },
+    "2026D56916": {
+      "datum_verwerkt": "2026-11-12T13:38:01.976318+00:00",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over position paper GGD GHOR Nederland inzake geitenhouderijen en gezondheid omwonenden"
+    },
+    "2026D56225": {
+      "datum_verwerkt": "2026-11-12T13:39:02.881087+00:00",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "onderwerp": "Derde voortgangsrapportage programma Veilig inkopen (voorheen ABRO)"
+    },
+    "2026D56999": {
+      "datum_verwerkt": "2026-11-12T13:39:43.448208+00:00",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "onderwerp": "Gemeenschappelijke verklaring inzake de samenwerking op het gebied van Duits-Nederlands spoorvervoer "
+    },
+    "2026D56260": {
+      "datum_verwerkt": "2026-11-12T13:41:17.727834+00:00",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "onderwerp": "Uitvoeringsconsequenties latere invoering lagere regelgeving asielzoekers en werk"
+    },
+    "2026D57320": {
+      "datum_verwerkt": "2026-11-12T13:46:40.330988+00:00",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over de Brandbrief 'Acute crisis jeugdhulpverlening - Honderden gezinnen in de kou'"
     }
   },
-  "wacht_op_herhaling": {}
+  "wacht_op_herhaling": {
+    "2026D57557": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-12T13:36:17.946331+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Multibandverdeling voor mobiele communicatie",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "2026D56185": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-12T13:37:13.478853+00:00",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "onderwerp": "Beleidsreactie WODC-onderzoek naar de externe openbaarheid van strafzittingen in relatie tot de belangen van privacy en veiligheid",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "2026D56677": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-12T13:45:52.633998+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Verslag van een schriftelijk overleg over de Nederlandse Voedsel- en Warenautoriteit (NVWA)(Kamerstuk 33835, nr. 262)",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    }
+  }
 }
