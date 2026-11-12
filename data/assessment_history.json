@@ -389,50 +389,57 @@
       "datum_verwerkt": "2026-11-12T19:12:50.719139+00:00",
       "documentdatum": "2026-11-11T00:00:00+01:00",
       "onderwerp": "Geannoteerde agenda Landbouw- en Visserijraad 23 en 24 november 2026"
-    }
-  },
-  "wacht_op_herhaling": {
+    },
     "2026D57750": {
-      "pogingen": 3,
-      "laatste_poging": "2026-11-12T19:08:11.934462+00:00",
+      "datum_verwerkt": "2026-11-12T22:55:46.554417+00:00",
       "documentdatum": "2026-11-12T00:00:00+01:00",
-      "onderwerp": "Verzoek tot het verplaatsen van het commissiedebat van 2 december 2026 over ruimtevaart",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+      "onderwerp": "Verzoek tot het verplaatsen van het commissiedebat van 2 december 2026 over ruimtevaart"
     },
     "2026D56536": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-12T19:09:00.411970+00:00",
+      "datum_verwerkt": "2026-11-12T22:56:40.367030+00:00",
       "documentdatum": "2026-11-09T00:00:00+01:00",
-      "onderwerp": "Reactie op verzoek commissie over voorgenomen eigen bijdrage voor jeugdhulp vanaf 2028",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+      "onderwerp": "Reactie op verzoek commissie over voorgenomen eigen bijdrage voor jeugdhulp vanaf 2028"
     },
     "2026D56538": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-12T19:10:32.613946+00:00",
+      "datum_verwerkt": "2026-11-12T22:57:21.019220+00:00",
       "documentdatum": "2026-11-09T00:00:00+01:00",
-      "onderwerp": "Geannoteerde agenda Transportraad d.d. 30 november te Brussel",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+      "onderwerp": "Geannoteerde agenda Transportraad d.d. 30 november te Brussel"
     },
     "2026D56562": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-12T19:11:22.338396+00:00",
+      "datum_verwerkt": "2026-11-12T23:04:28.098462+00:00",
       "documentdatum": "2026-11-09T00:00:00+01:00",
-      "onderwerp": "Memorie van toelichting",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+      "onderwerp": "Memorie van toelichting"
     },
     "2026D56308": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-12T19:13:46.227098+00:00",
+      "datum_verwerkt": "2026-11-12T23:05:16.446214+00:00",
       "documentdatum": "2026-11-09T00:00:00+01:00",
-      "onderwerp": "Aanwijzing van vijf nieuwe Nationaal Grootschalige Woningbouwlocaties voor de middellange termijn",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+      "onderwerp": "Aanwijzing van vijf nieuwe Nationaal Grootschalige Woningbouwlocaties voor de middellange termijn"
     },
     "2026D56985": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-12T19:14:38.963891+00:00",
+      "datum_verwerkt": "2026-11-12T23:05:57.581039+00:00",
       "documentdatum": "2026-11-10T00:00:00+01:00",
-      "onderwerp": "Publicatie besluit Woo-verzoek inzake de bezuinigingen op de juridische begeleiding van asielzoekers door Stichting Vluchtelingenwerk Nederland",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+      "onderwerp": "Publicatie besluit Woo-verzoek inzake de bezuinigingen op de juridische begeleiding van asielzoekers door Stichting Vluchtelingenwerk Nederland"
+    },
+    "2026D56620": {
+      "datum_verwerkt": "2026-11-12T23:08:19.297387+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over verduurzaming potgrond en substraten"
+    },
+    "2026D56337": {
+      "datum_verwerkt": "2026-11-12T23:09:08.020169+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Verslag jaarvergadering Asian Infrastructure Investment Bank 2026"
+    },
+    "2026D56624": {
+      "datum_verwerkt": "2026-11-12T23:09:57.541819+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Geannoteerde agenda voor de Raad Buitenlandse Zaken Defensie (RBZ Defensie) van 17 november 2026"
+    },
+    "2026D57510": {
+      "datum_verwerkt": "2026-11-12T23:10:38.928569+00:00",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "onderwerp": "Schriftelijke antwoorden op vragen gesteld tijdens de eerste termijn van de begrotingsbehandeling van Buitenlandse Zaken op 11 november 2026"
     }
-  }
+  },
+  "wacht_op_herhaling": {}
 }
