@@ -1,6 +1,8 @@
 import requests
 import time
 
+import re
+
 from datetime import datetime, timedelta, timezone
 from collections import Counter
 
@@ -129,6 +131,28 @@ def get_commissies():
         entity="Commissie",
         odata_filter="Verwijderd eq false"
     )
+
+def maak_commissieslug(commissie):
+    afkorting = (
+        commissie.get("Afkorting")
+        or commissie.get("Id")
+        or ""
+    )
+
+    slug = afkorting.lower()
+
+    slug = slug.replace(
+        "&",
+        "en"
+    )
+
+    slug = re.sub(
+        r"[^a-z0-9]+",
+        "-",
+        slug
+    )
+
+    return slug.strip("-")
 
 def get_actuele_vaste_commissies(
     commissies
@@ -857,8 +881,15 @@ if __name__ == "__main__":
             commissie.get("Id"),
             "|",
             commissie.get("Afkorting"),
+            "| slug:",
+            maak_commissieslug(
+                commissie
+            ),
             "|",
-            commissie.get("NaamNL"),
+            (
+                commissie.get("NaamNL")
+                or commissie.get("NaamWebNL")
+            ),
             "| actief vanaf:",
             commissie.get("DatumActief"),
             "| inactief:",
