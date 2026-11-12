@@ -263,6 +263,36 @@ def get_actuele_vaste_commissies(
 
     return actuele_commissies
 
+def maak_commissie_index(
+    vaste_commissies
+):
+    index = {}
+
+    for commissie in vaste_commissies:
+        commissie_id = commissie.get(
+            "Id"
+        )
+
+        if not commissie_id:
+            continue
+
+        index[commissie_id] = {
+            "id": commissie_id,
+            "afkorting": commissie.get(
+                "Afkorting"
+            ),
+            "naam": (
+                commissie.get("NaamNL")
+                or commissie.get("NaamWebNL")
+                or ""
+            ).strip(),
+            "slug": maak_commissieslug(
+                commissie
+            ),
+        }
+
+    return index
+
 def get_open_toezeggingen():
     url = f"{BASE_URL}/Toezegging"
 
@@ -896,6 +926,35 @@ if __name__ == "__main__":
             commissie.get("DatumInactief"),
         )
 
+    commissie_index = (
+        maak_commissie_index(
+            vaste_commissies
+        )
+    )
+
+    print(
+        f"\nActuele commissie-ID's "
+        f"in index: "
+        f"{len(commissie_index)}"
+    )
+
+    print(
+        "\nCONTROLE COMMISSIE-INDEX:\n"
+    )
+
+    for commissie_id, gegevens in (
+        commissie_index.items()
+    ):
+        print(
+            commissie_id,
+            "|",
+            gegevens["afkorting"],
+            "|",
+            gegevens["slug"],
+            "|",
+            gegevens["naam"],
+        )
+    
     print(
         f"\nAantal actuele vaste commissies: "
         f"{len(vaste_commissies)}"
