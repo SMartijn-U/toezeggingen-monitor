@@ -94,15 +94,57 @@
       "datum_verwerkt": "2026-11-11T19:22:39.810691+00:00",
       "documentdatum": "2026-11-09T00:00:00+01:00",
       "onderwerp": "Hoofdlijnen sociaal overleg"
+    },
+    "2026D56653": {
+      "datum_verwerkt": "2026-11-12T03:54:57.449448+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Nederlandse inzet bij de Toetsingsconferentie van de CCW"
+    },
+    "2026D56710": {
+      "datum_verwerkt": "2026-11-12T03:55:43.060046+00:00",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "onderwerp": "Rijksinzet haven- en industriecluster Moerdijk"
+    },
+    "2026D56287": {
+      "datum_verwerkt": "2026-11-12T03:56:24.461779+00:00",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "onderwerp": "Voortgang versterking positie arbeidsmigranten"
+    },
+    "2026D56378": {
+      "datum_verwerkt": "2026-11-12T03:57:04.964468+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Onafhankelijke evaluatie Nationaal Burgerberaad Klimaat"
+    },
+    "2026D56573": {
+      "datum_verwerkt": "2026-11-12T03:57:45.059080+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Verslag Milieuraad 12 oktober 2026 te Luxemburg"
+    },
+    "2026D56200": {
+      "datum_verwerkt": "2026-11-12T03:58:33.602417+00:00",
+      "documentdatum": "2026-11-06T00:00:00+01:00",
+      "onderwerp": "Fiche: Raadsaanbeveling voor cardiovasculaire gezondheidscontroles"
+    },
+    "2026D56601": {
+      "datum_verwerkt": "2026-11-12T03:59:15.185945+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Ondersteuning van onafhankelijke Russische media in ballingschap"
+    },
+    "2026D56550": {
+      "datum_verwerkt": "2026-11-12T04:00:04.921775+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Aanpak Weerbare Economie"
+    },
+    "2026D56906": {
+      "datum_verwerkt": "2026-11-12T04:00:46.034973+00:00",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over hoofddoelen van het kabinetsbeleid voor het Ministerie van Buitenlandse Zaken in opvolging van de motie van het lid Van der Lee (Kamerstuk 36740-7)"
+    },
+    "2026D57326": {
+      "datum_verwerkt": "2026-11-12T04:01:28.205220+00:00",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "onderwerp": "Beantwoording vragen commissie over opzet periodieke rapportage Wmo 2015"
     }
   },
-  "wacht_op_herhaling": {
-    "2026D56653": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-11T19:21:58.337878+00:00",
-      "documentdatum": "2026-11-09T00:00:00+01:00",
-      "onderwerp": "Nederlandse inzet bij de Toetsingsconferentie van de CCW",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
-    }
-  }
+  "wacht_op_herhaling": {}
 }

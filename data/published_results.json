@@ -120,6 +120,38 @@
           }
         ]
       }
+    },
+    "TZ202610-092|2026D56573": {
+      "sleutel": "TZ202610-092|2026D56573",
+      "eerste_signalering": "2026-11-12T03:57:45.059095+00:00",
+      "toezeggingnummer": "TZ202610-092",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D56573",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "documentonderwerp": "Verslag Milieuraad 12 oktober 2026 te Luxemburg",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "schriftelijk reageren op de aanbevelingen uit de Wetenschapstoets over de ETS Herziening"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Daarnaast wordt u bij dit verslag geïnformeerd over de reactie van het kabinet op de aanbevelingen uit de Wetenschapstoets over de ETS Herziening"
+      ],
+      "motivering": "In de brief wordt expliciet aangegeven dat de Kamer wordt geïnformeerd over de reactie van het kabinet op de aanbevelingen uit de Wetenschapstoets over de ETS Herziening, waarmee dit onderdeel is afgedaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Daarnaast wordt u bij dit verslag geïnformeerd over de reactie van het kabinet op de aanbevelingen uit de Wetenschapstoets over de ETS Herziening",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
