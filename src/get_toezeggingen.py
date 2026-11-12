@@ -130,30 +130,98 @@ def get_commissies():
         odata_filter="Verwijderd eq false"
     )
 
-def get_actuele_vaste_commissies():
-    commissies = get_odata_paginated(
-        entity="Commissie",
-        odata_filter=(
-            "Inhoudsopgave eq 'Vaste commissies' "
-            "and Verwijderd eq false"
-        )
-    )
+def get_actuele_vaste_commissies(
+    commissies
+):
+    vandaag = datetime.now(
+        timezone.utc
+    ).date()
 
     actuele_commissies = []
 
     for commissie in commissies:
-        datum_inactief = (
-            commissie.get("DatumInactief")
+        # In OData v5 heet het voormalige
+        # veld Inhoudsopgave nu Soort.
+        soort = (
+            commissie.get("Soort")
+            or ""
+        ).strip()
+
+        if soort != "Vaste commissies":
+            continue
+
+        if commissie.get("Verwijderd") is True:
+            continue
+
+        datum_actief = commissie.get(
+            "DatumActief"
         )
 
-        # Alleen commissies die volgens de
-        # registratie nog actief zijn.
+        datum_inactief = commissie.get(
+            "DatumInactief"
+        )
+
+        # Een toekomstige commissie is nog
+        # niet actief.
+        if (
+            datum_actief
+            and not datum_actief.startswith(
+                "0001-01-01"
+            )
+        ):
+            try:
+                actief_vanaf = (
+                    datetime.fromisoformat(
+                        datum_actief.replace(
+                            "Z",
+                            "+00:00"
+                        )
+                    ).date()
+                )
+
+                if actief_vanaf > vandaag:
+                    continue
+
+            except ValueError:
+                print(
+                    "WAARSCHUWING: ongeldige "
+                    "DatumActief:",
+                    commissie.get("Afkorting"),
+                    datum_actief
+                )
+
+        # Geen DatumInactief of een nuldatum
+        # betekent dat de commissie nog actief is.
+        is_inactief = False
+
         if (
             datum_inactief
             and not datum_inactief.startswith(
                 "0001-01-01"
             )
         ):
+            try:
+                inactief_vanaf = (
+                    datetime.fromisoformat(
+                        datum_inactief.replace(
+                            "Z",
+                            "+00:00"
+                        )
+                    ).date()
+                )
+
+                if inactief_vanaf <= vandaag:
+                    is_inactief = True
+
+            except ValueError:
+                print(
+                    "WAARSCHUWING: ongeldige "
+                    "DatumInactief:",
+                    commissie.get("Afkorting"),
+                    datum_inactief
+                )
+
+        if is_inactief:
             continue
 
         actuele_commissies.append(
@@ -162,7 +230,10 @@ def get_actuele_vaste_commissies():
 
     actuele_commissies.sort(
         key=lambda commissie: (
-            commissie.get("NaamNL") or ""
+            commissie.get("NaamNL")
+            or commissie.get("NaamWebNL")
+            or commissie.get("Afkorting")
+            or ""
         )
     )
 
@@ -776,7 +847,9 @@ if __name__ == "__main__":
     )
 
     vaste_commissies = (
-        get_actuele_vaste_commissies()
+        get_actuele_vaste_commissies(
+            commissies
+        )
     )
 
     for commissie in vaste_commissies:
