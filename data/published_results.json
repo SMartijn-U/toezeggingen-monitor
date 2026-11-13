@@ -186,6 +186,190 @@
           }
         ]
       }
+    },
+    "TZ202610-157|2026D57089": {
+      "sleutel": "TZ202610-157|2026D57089",
+      "eerste_signalering": "2026-11-13T13:17:59.955759+00:00",
+      "toezeggingnummer": "TZ202610-157",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57089",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "documentonderwerp": "MIRT-brief november 2026",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Blijven opnemen van MIRT-projecten waarvan de financiering vervalt in toekomstige MIRT-brieven om het langetermijnperspectief voor regio's te tonen."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Hiermee is ook invulling gegeven aan de toezegging aan het lid Boelsma-Hoekstra om de MIRT-projecten waarvoor in de prioriteringsbrief van 16 oktober jl. de financiering vervalt te zullen blijven opnemen in de toekomstige MIRT-brieven, zodat de verschillende regio's kunnen zien wat het perspectief is voor de langere termijn."
+      ],
+      "motivering": "In de brief wordt expliciet bevestigd en onderbouwd dat de MIRT-projecten waarvoor de financiering is komen te vervallen, worden opgenomen en in beeld blijven zodat regio's het langetermijnperspectief kunnen inzien. Hiermee is volledig voldaan aan de toezegging.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Hiermee is ook invulling gegeven aan de toezegging aan het lid Boelsma-Hoekstra om de MIRT-projecten waarvoor in de prioriteringsbrief van 16 oktober jl. de financiering vervalt te zullen blijven opnemen in de toekomstige MIRT-brieven, zodat de verschillende regio's kunnen zien wat het perspectief is voor de langere termijn.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "TZ202610-041|2026D57089": {
+      "sleutel": "TZ202610-041|2026D57089",
+      "eerste_signalering": "2026-11-13T13:17:59.955767+00:00",
+      "toezeggingnummer": "TZ202610-041",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57089",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "documentonderwerp": "MIRT-brief november 2026",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Concreet onderzoek naar cofinanciering tussen Rijk en decentrale overheden inzake de Maas- en de Waalbrug terugkoppelen in de MIRT-brief."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Daarnaast zijn in 2019 maatregelen aan de Maas- en Waalbrug ook onderzocht als mogelijke bovenwettelijke maatregelen. Met geschatte kosten van (inmiddels) € 12 – € 22,5 miljoen overschrijden die ruim het beschikbare budget. Daarmee is er geen budget om deze maatregelen uit te voeren en in het licht van de prioritering van het MF en DF is er geen ruimte om dit budget aan te vullen. Hiermee is invulling gegeven aan de toezegging."
+      ],
+      "motivering": "De brief gaat in op het onderzoek naar de cofinanciering voor de Maas- en Waalbrug en koppelt de uitkomst (onvoldoende budget in het licht van de prioritering) helder terug aan de Kamer.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Daarnaast zijn in 2019 maatregelen aan de Maas- en Waalbrug ook onderzocht als mogelijke bovenwettelijke maatregelen. Met geschatte kosten van (inmiddels) € 12 – € 22,5 miljoen overschrijden die ruim het beschikbare budget. Daarmee is er geen budget om deze maatregelen uit te voeren en in het licht van de prioritering van het MF en DF is er geen ruimte om dit budget aan te vullen. Hiermee is invulling gegeven aan de toezegging.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "TZ202610-155|2026D57089": {
+      "sleutel": "TZ202610-155|2026D57089",
+      "eerste_signalering": "2026-11-13T13:17:59.955772+00:00",
+      "toezeggingnummer": "TZ202610-155",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57089",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "documentonderwerp": "MIRT-brief november 2026",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informeren over de voortgang van de realisatie van de afspraken m.b.t. de ontsluiting van woningen.",
+        "Informeren over de gesignaleerde risico's daarbij."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Tevens is aan het lid Van Leijen toegezegd om de Kamer te informeren over de voortgang van de realisatie van de afspraken met betrekking tot de ontsluiting van woningen en de gesignaleerde risico’s daarbij.",
+        "De resultaten uit de voortgangsrapportage over 2025 laten zien dat met de bouw van circa 100.000 woningen is gestart. De rapportage is als bijlage bij deze brief opgenomen.",
+        "De rapportage laat ook zien dat gemeenten risico’s zien, zowel externe (bijvoorbeeld prijsstijgingen) als interne (bijvoorbeeld capaciteit), die de voortgang van de door hen uitgevoerde projecten kunnen beïnvloeden."
+      ],
+      "motivering": "De brief besteedt via de voortgangsrapportage van het programma WoMo uitgebreid aandacht aan zowel de realisatie van de ontsluiting van woningen als aan de daarbij gesignaleerde risico's.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tevens is aan het lid Van Leijen toegezegd om de Kamer te informeren over de voortgang van de realisatie van de afspraken met betrekking tot de ontsluiting van woningen en de gesignaleerde risico’s daarbij.",
+            "geldig": true
+          },
+          {
+            "fragment": "De resultaten uit de voortgangsrapportage over 2025 laten zien dat met de bouw van circa 100.000 woningen is gestart. De rapportage is als bijlage bij deze brief opgenomen.",
+            "geldig": true
+          },
+          {
+            "fragment": "De rapportage laat ook zien dat gemeenten risico’s zien, zowel externe (bijvoorbeeld prijsstijgingen) als interne (bijvoorbeeld capaciteit), die de voortgang van de door hen uitgevoerde projecten kunnen beïnvloeden.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "TZ202606-043|2026D57089": {
+      "sleutel": "TZ202606-043|2026D57089",
+      "eerste_signalering": "2026-11-13T13:17:59.955776+00:00",
+      "toezeggingnummer": "TZ202606-043",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57089",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "documentonderwerp": "MIRT-brief november 2026",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Bezien of processen en afwegingskader voldoende borging bieden om kapitaalvernietiging te voorkomen.",
+        "Verbeteringen in kaart brengen en de Kamer hierover informeren via de MIRT-brief."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "In het CD Spoor van 3 juni jl. is aan de Kamer toegezegd om te bezien of de processen en het afwegingskader binnen het ministerie voldoende borging bieden om kapitaalvernietiging te voorkomen, verbeteringen in kaart te brengen en de Kamer hierover in de MIRT-brief te informeren.",
+        "Zoals ook in antwoorden op de Kamervragen naar aanleiding hiervan is aangegeven, zit het voorkomen van desinvesteringen in goed raakvlakmanagement. Dat heeft in dit geval voldoende plaatsgevonden. Ook in de bredere projectenportefeuille zijn geen indicaties dat dit onvoldoende geborgd is."
+      ],
+      "motivering": "De brief behandelt specifiek de vraag over de borging tegen kapitaalvernietiging rond spoorknoop Haarlem en de bredere portefeuille en koppelt de bevindingen terug aan de Kamer.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In het CD Spoor van 3 juni jl. is aan de Kamer toegezegd om te bezien of de processen en het afwegingskader binnen het ministerie voldoende borging bieden om kapitaalvernietiging te voorkomen, verbeteringen in kaart te brengen en de Kamer hierover in de MIRT-brief te informeren.",
+            "geldig": true
+          },
+          {
+            "fragment": "Zoals ook in antwoorden op de Kamervragen naar aanleiding hiervan is aangegeven, zit het voorkomen van desinvesteringen in goed raakvlakmanagement. Dat heeft in dit geval voldoende plaatsgevonden. Ook in de bredere projectenportefeuille zijn geen indicaties dat dit onvoldoende geborgd is.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "TZ202611-021|2026D57089": {
+      "sleutel": "TZ202611-021|2026D57089",
+      "eerste_signalering": "2026-11-13T13:17:59.955780+00:00",
+      "toezeggingnummer": "TZ202611-021",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57089",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "documentonderwerp": "MIRT-brief november 2026",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Beschrijving van de reeds gereserveerde bedragen voor militaire weg- en spoorcorridors."
+      ],
+      "ontbrekende_onderdelen": [
+        "Het eenduidig kunnen duiden van het resterende benodigde bedrag in totaal (het ontbreken hiervan wordt in de brief juist gemotiveerd doordat de herziening nog loopt)."
+      ],
+      "bewijsfragmenten": [
+        "Vooruitlopend daarop geldt dat met de prioritering binnen het MF twaalf objecten op prioritaire militaire wegcorridors vervangen gaan worden, waarbij deze objecten in lijn zullen worden gebracht met de militaire vereisten. Het gaat om een bedrag van in totaal € 721 miljoen.",
+        "Welk aandeel de hiervoor genoemde bedragen hebben in het benodigde totaal aan middelen voor militaire mobiliteit, kan op dit moment nog niet geduid worden vanwege hiervoor genoemde herziening van militaire vereisten en nog lopende onderzoeken."
+      ],
+      "motivering": "De brief geeft wel inzicht in de reeds vrijgemaakte bedragen (€ 721 miljoen voor wegen e.d.), maar kan het resterende totaalbedrag nog niet exact duiden omdat de militaire vereisten nog herzien worden. Daarmee is deze toezegging slechts deels of voorlopig behandeld.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Vooruitlopend daarop geldt dat met de prioritering binnen het MF twaalf objecten op prioritaire militaire wegcorridors vervangen gaan worden, waarbij deze objecten in lijn zullen worden gebracht met de militaire vereisten. Het gaat om een bedrag van in totaal € 721 miljoen.",
+            "geldig": true
+          },
+          {
+            "fragment": "Welk aandeel de hiervoor genoemde bedragen hebben in het benodigde totaal aan middelen voor militaire mobiliteit, kan op dit moment nog niet geduid worden vanwege hiervoor genoemde herziening van militaire vereisten en nog lopende onderzoeken.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
