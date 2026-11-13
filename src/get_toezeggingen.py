@@ -536,7 +536,6 @@ def bepaal_ontbrekende_activiteitnummers(
     return sorted(ontbrekende_nummers)
 
 def vul_ontbrekende_activiteiten_aan(
-    uitgesloten_activiteitnummers = set()
     toezeggingen,
     activiteiten
 ):
@@ -555,6 +554,7 @@ def vul_ontbrekende_activiteiten_aan(
     aanvullende_activiteiten = []
     uitgesloten_soorten = Counter()
     werkelijk_niet_gevonden = []
+    uitgesloten_activiteitnummers = set()
 
     for activiteit_nummer in ontbrekende_nummers:
         activiteit = get_activiteit_op_nummer(
@@ -631,8 +631,8 @@ def vul_ontbrekende_activiteiten_aan(
         print("Geen.")
 
     return (
-    activiteiten,
-    uitgesloten_activiteitnummers,
+        activiteiten,
+        uitgesloten_activiteitnummers,
     )
 
 def maak_commissie_slug(afkorting):
