@@ -536,6 +536,7 @@ def bepaal_ontbrekende_activiteitnummers(
     return sorted(ontbrekende_nummers)
 
 def vul_ontbrekende_activiteiten_aan(
+    uitgesloten_activiteitnummers = set()
     toezeggingen,
     activiteiten
 ):
@@ -571,6 +572,10 @@ def vul_ontbrekende_activiteiten_aan(
         if soort not in RELEVANTE_ACTIVITEITSOORTEN:
             uitgesloten_soorten[soort] += 1
 
+            uitgesloten_activiteitnummers.add(
+                activiteit_nummer
+            )
+            
             print(
                 f"Fallback uitgesloten: "
                 f"{activiteit_nummer} | {soort}"
@@ -625,7 +630,10 @@ def vul_ontbrekende_activiteiten_aan(
     else:
         print("Geen.")
 
-    return activiteiten
+    return (
+    activiteiten,
+    uitgesloten_activiteitnummers,
+    )
 
 def maak_commissie_slug(afkorting):
     if not afkorting:
@@ -646,12 +654,20 @@ def get_toezeggingen_per_commissie(
     activiteiten,
     volgcommissie_actoren,
     commissies,
-    commissie_afkorting
+    commissie_afkorting,
+    uitgesloten_activiteitnummers=None,
 ):
+    uitgesloten_activiteitnummers = (
+        uitgesloten_activiteitnummers
+        or set()
+    )    
     geselecteerd = []
 
     zonder_activiteit = 0
-    activiteit_niet_gevonden = 0
+    activiteit_bewust_uitgesloten = 0
+    activiteit_echt_niet_gevonden = 0
+
+    uitgesloten_records = []
     plenair_zonder_volgcommissie = 0
     niet_gevonden_records = []
 
@@ -695,12 +711,6 @@ def get_toezeggingen_per_commissie(
         raise ValueError(
             f"Actuele commissie met afkorting "
             f"of slug '{commissie_afkorting}' "
-            f"niet gevonden."
-        )
-
-        raise ValueError(
-            f"Commissie met afkorting of slug "
-            f"'{commissie_afkorting}' "
             f"niet gevonden."
         )
 
@@ -811,6 +821,10 @@ def get_toezeggingen_per_commissie(
             or ""
         ).strip().lower()
 
+        actor_slug = maak_commissie_slug(
+            commissie.get("Afkorting")
+        )        
+
         actor_naam = (
             commissie.get("NaamNL")
             or ""
@@ -827,6 +841,11 @@ def get_toezeggingen_per_commissie(
         if actor_afkorting:
             activiteit_commissies.add(
                 actor_afkorting
+            )
+
+        if actor_slug:
+            activiteit_commissies.add(
+                actor_slug
             )
 
         if actor_naam:
@@ -852,9 +871,7 @@ def get_toezeggingen_per_commissie(
         )
 
         if not activiteit:
-            activiteit_niet_gevonden += 1
-
-            niet_gevonden_records.append({
+            record = {
                 "Nummer":
                     toezegging.get("Nummer"),
 
@@ -866,7 +883,24 @@ def get_toezeggingen_per_commissie(
 
                 "Tekst":
                     toezegging.get("Tekst"),
-            })
+            }
+
+            if (
+                activiteit_nummer
+                in uitgesloten_activiteitnummers
+            ):
+                activiteit_bewust_uitgesloten += 1
+
+                uitgesloten_records.append(
+                    record
+                )
+
+            else:
+                activiteit_echt_niet_gevonden += 1
+
+                niet_gevonden_records.append(
+                    record
+                )
 
             continue
 
@@ -987,8 +1021,13 @@ def get_toezeggingen_per_commissie(
     )
 
     print(
-        f"Activiteit niet gevonden: "
-        f"{activiteit_niet_gevonden}"
+        f"Activiteit bewust uitgesloten: "
+        f"{activiteit_bewust_uitgesloten}"
+    )
+
+    print(
+        f"Activiteit werkelijk niet gevonden: "
+        f"{activiteit_echt_niet_gevonden}"
     )
 
     print(
@@ -1003,6 +1042,26 @@ def get_toezeggingen_per_commissie(
         f"{len(geselecteerd)}"
     )
 
+    print(
+        "\nBEWUST UITGESLOTEN ACTIVITEITEN:"
+    )
+
+    if uitgesloten_records:
+        for record in uitgesloten_records:
+            print(
+                record.get("Nummer"),
+                "|",
+                record.get("Status"),
+                "|",
+                record.get(
+                    "ActiviteitNummer"
+                ),
+                "|",
+                record.get("Tekst"),
+            )
+    else:
+        print("Geen.")
+    
     print("\nNIET-GEVONDEN ACTIVITEITEN:")
 
     if niet_gevonden_records:
@@ -1022,20 +1081,6 @@ def get_toezeggingen_per_commissie(
         print("Geen.")
 
     return geselecteerd
-
-def get_ienw_toezeggingen(
-    toezeggingen,
-    activiteiten,
-    volgcommissie_actoren,
-    commissies
-):
-    return get_toezeggingen_per_commissie(
-        toezeggingen,
-        activiteiten,
-        volgcommissie_actoren,
-        commissies,
-        commissie_afkorting="ienw",
-    )
         
 if __name__ == "__main__":
     print("Openstaande en deels afgedane toezeggingen ophalen...")
@@ -1091,7 +1136,7 @@ if __name__ == "__main__":
         "\nOntbrekende activiteiten gericht ophalen..."
     )
 
-    activiteiten = (
+    activiteiten, uitgesloten_activiteitnummers = (
         vul_ontbrekende_activiteiten_aan(
             toezeggingen,
             activiteiten
