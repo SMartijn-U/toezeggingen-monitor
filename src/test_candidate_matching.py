@@ -1,4 +1,4 @@
-    from get_toezeggingen import (
+from get_toezeggingen import (
     get_open_toezeggingen,
     get_recent_afgedane_toezeggingen,
     combineer_toezeggingen,
