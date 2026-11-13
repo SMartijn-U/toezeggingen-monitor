@@ -1233,11 +1233,15 @@ if __name__ == "__main__":
     
     print("\nIenW-selectie maken...")
 
-    ienw = get_ienw_toezeggingen(
+    ienw = get_toezeggingen_per_commissie(
         toezeggingen,
         activiteiten,
         volgcommissie_actoren,
-        commissies
+        commissies,
+        commissie_afkorting="ienw",
+        uitgesloten_activiteitnummers=(
+            uitgesloten_activiteitnummers
+        ),
     )
 
     print(f"IenW-toezeggingen: {len(ienw)}")
