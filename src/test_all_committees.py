@@ -10,6 +10,7 @@ from get_toezeggingen import (
     get_commissies,
     get_actuele_vaste_commissies,
     get_toezeggingen_per_commissie,
+    maak_commissie_slug,
 )
 
 
@@ -85,7 +86,9 @@ def main():
     )
 
     for commissie in actuele_commissies:
-        slug = commissie["Slug"]
+        slug = maak_commissie_slug(
+            commissie.get("Afkorting")
+        )
 
         geselecteerd = (
             get_toezeggingen_per_commissie(
