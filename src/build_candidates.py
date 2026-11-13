@@ -9,7 +9,7 @@ from get_toezeggingen import (
     vul_ontbrekende_activiteiten_aan,
     get_volgcommissie_actoren,
     get_commissies,
-    get_ienw_toezeggingen,
+    get_toezeggingen_per_commissie,
 )
 
 from get_kamerbrieven import (
