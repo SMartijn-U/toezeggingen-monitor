@@ -66,7 +66,7 @@ def bouw_ienw_toezeggingen():
         get_relevante_activiteiten()
     )
 
-    activiteiten = (
+    activiteiten, uitgesloten_activiteitnummers = (
         vul_ontbrekende_activiteiten_aan(
             toezeggingen,
             activiteiten
@@ -85,11 +85,15 @@ def bouw_ienw_toezeggingen():
 
     print("\nIenW-selectie maken...")
 
-    ienw = get_ienw_toezeggingen(
+    ienw = get_toezeggingen_per_commissie(
         toezeggingen,
         activiteiten,
         volgcommissie_actoren,
-        commissies
+        commissies,
+        commissie_afkorting="ienw",
+        uitgesloten_activiteitnummers=(
+            uitgesloten_activiteitnummers
+        ),
     )
 
     print(
