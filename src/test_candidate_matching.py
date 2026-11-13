@@ -1,4 +1,4 @@
-from get_toezeggingen import (
+    from get_toezeggingen import (
     get_open_toezeggingen,
     get_recent_afgedane_toezeggingen,
     combineer_toezeggingen,
@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
     activiteiten = get_relevante_activiteiten()
 
-    activiteiten = (
+    activiteiten, uitgesloten_activiteitnummers = (
         vul_ontbrekende_activiteiten_aan(
             toezeggingen,
             activiteiten
@@ -75,11 +75,15 @@ if __name__ == "__main__":
 
     commissies = get_commissies()
 
-    ienw = get_ienw_toezeggingen(
+    ienw = get_toezeggingen_per_commissie(
         toezeggingen,
         activiteiten,
         volgcommissie_actoren,
-        commissies
+        commissies,
+        commissie_afkorting="ienw",
+        uitgesloten_activiteitnummers=(
+            uitgesloten_activiteitnummers
+        ),
     )
 
     print(
