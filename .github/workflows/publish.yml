@@ -40,6 +40,9 @@ jobs:
       - name: Test ophalen actuele toezeggingen
         run: python src/get_toezeggingen.py
 
+      - name: Test gezamenlijke commissie-index
+        run: python src/test_commissie_index.py
+
       - name: Test ophalen relevante documenten
         run: python src/get_kamerbrieven.py
 
