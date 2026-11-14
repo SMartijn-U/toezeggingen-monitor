@@ -9,6 +9,8 @@ from get_toezeggingen import (
     vul_ontbrekende_activiteiten_aan,
     get_volgcommissie_actoren,
     get_commissies,
+    get_actuele_vaste_commissies,
+    maak_commissieslug,
     get_toezeggingen_per_commissie,
 )
 
@@ -34,7 +36,7 @@ AANTAL_DAGEN_AFGEDAAN = 14
 MAXIMUM_KANDIDATEN_PER_DOCUMENT = 15
 
 
-def bouw_ienw_toezeggingen():
+def bouw_toezeggingen_per_commissie():
     print(
         "\nActuele en recent afgedane "
         "toezeggingen ophalen..."
@@ -83,26 +85,102 @@ def bouw_ienw_toezeggingen():
 
     commissies = get_commissies()
 
-    print("\nIenW-selectie maken...")
-
-    ienw = get_toezeggingen_per_commissie(
-        toezeggingen,
-        activiteiten,
-        volgcommissie_actoren,
-        commissies,
-        commissie_afkorting="ienw",
-        uitgesloten_activiteitnummers=(
-            uitgesloten_activiteitnummers
-        ),
+    vaste_commissies = (
+        get_actuele_vaste_commissies(
+            commissies
+        )
     )
 
     print(
-        f"Te onderzoeken IenW-toezeggingen: "
-        f"{len(ienw)}"
+        f"Actuele vaste commissies: "
+        f"{len(vaste_commissies)}"
     )
 
-    return ienw
+    toezeggingen_per_commissie = {}
 
+    for commissie in vaste_commissies:
+        afkorting = (
+            commissie.get("Afkorting")
+            or ""
+        ).strip()
+
+        slug = maak_commissieslug(
+            commissie
+        )
+
+        if not afkorting or not slug:
+            print(
+                "WAARSCHUWING: commissie zonder "
+                "bruikbare afkorting of slug:",
+                commissie.get("Id")
+            )
+            continue
+
+        print(
+            f"\nSelectie maken voor "
+            f"{afkorting} | {slug}..."
+        )
+
+        selectie = (
+            get_toezeggingen_per_commissie(
+                toezeggingen,
+                activiteiten,
+                volgcommissie_actoren,
+                commissies,
+                commissie_afkorting=slug,
+                uitgesloten_activiteitnummers=(
+                    uitgesloten_activiteitnummers
+                ),
+            )
+        )
+
+        toezeggingen_per_commissie[slug] = {
+            "commissie_id": (
+                commissie.get("Id")
+            ),
+            "commissie_afkorting": (
+                afkorting
+            ),
+            "commissie_naam": (
+                commissie.get("NaamNL")
+                or commissie.get("NaamWebNL")
+                or ""
+            ).strip(),
+            "commissie_slug": slug,
+            "toezeggingen": selectie,
+        }
+
+        print(
+            f"{afkorting} | {slug} | "
+            f"{len(selectie)} toezeggingen"
+        )
+
+    totaal_selecties = sum(
+        len(gegevens["toezeggingen"])
+        for gegevens
+        in toezeggingen_per_commissie.values()
+    )
+
+    unieke_toezeggingen = {
+        toezegging.get("Nummer")
+        for gegevens
+        in toezeggingen_per_commissie.values()
+        for toezegging
+        in gegevens["toezeggingen"]
+        if toezegging.get("Nummer")
+    }
+
+    print(
+        f"\nTotaal commissieselecties: "
+        f"{totaal_selecties}"
+    )
+
+    print(
+        f"Unieke toezeggingen: "
+        f"{len(unieke_toezeggingen)}"
+    )
+
+    return toezeggingen_per_commissie
 
 def maak_kandidaat_record(
     document,
@@ -117,6 +195,21 @@ def maak_kandidaat_record(
 
     return {
         "positie": positie,
+        "commissie_afkorting": (
+            toezegging.get(
+                "CommissieAfkorting"
+            )
+        ),
+        "commissie_slug": (
+            toezegging.get(
+                "CommissieSlug"
+            )
+        ),
+        "selectiereden": (
+            toezegging.get(
+                "Selectiereden"
+            )
+        ),
         "toezeggingnummer": (
             toezegging.get("Nummer")
         ),
@@ -162,7 +255,7 @@ def maak_kandidaat_record(
 
 def verwerk_documenten(
     documenten,
-    toezeggingen
+    toezeggingen_per_commissie
 ):
     resultaten = []
     fouten = []
@@ -190,27 +283,80 @@ def verwerk_documenten(
                 document
             )
 
-            kandidaten = rangschik_kandidaten(
-                document,
-                tekst,
-                toezeggingen,
-                maximum=(
-                    MAXIMUM_KANDIDATEN_PER_DOCUMENT
-                )
-            )
+            commissieresultaten = []
 
-            kandidaat_records = [
-                maak_kandidaat_record(
+            for slug, commissiegegevens in (
+                toezeggingen_per_commissie.items()
+            ):
+                commissie_toezeggingen = (
+                    commissiegegevens[
+                        "toezeggingen"
+                    ]
+                )
+
+                if not commissie_toezeggingen:
+                    continue
+
+                kandidaten = rangschik_kandidaten(
                     document,
-                    kandidaat,
-                    positie
+                    tekst,
+                    commissie_toezeggingen,
+                    maximum=(
+                        MAXIMUM_KANDIDATEN_PER_DOCUMENT
+                    )
                 )
-                for positie, kandidaat
-                in enumerate(
-                    kandidaten,
-                    start=1
+
+                kandidaat_records = [
+                    maak_kandidaat_record(
+                        document,
+                        kandidaat,
+                        positie
+                    )
+                    for positie, kandidaat
+                    in enumerate(
+                        kandidaten,
+                        start=1
+                    )
+                ]
+
+                if not kandidaat_records:
+                    continue
+
+                commissieresultaten.append({
+                    "commissie_id": (
+                        commissiegegevens[
+                            "commissie_id"
+                        ]
+                    ),
+                    "commissie_afkorting": (
+                        commissiegegevens[
+                            "commissie_afkorting"
+                        ]
+                    ),
+                    "commissie_naam": (
+                        commissiegegevens[
+                            "commissie_naam"
+                        ]
+                    ),
+                    "commissie_slug": slug,
+                    "aantal_kandidaten": (
+                        len(kandidaat_records)
+                    ),
+                    "kandidaten": kandidaat_records,
+                })
+
+                beste = kandidaat_records[0]
+
+                print(
+                    "Beste kandidaat:",
+                    commissiegegevens[
+                        "commissie_afkorting"
+                    ],
+                    "|",
+                    beste["toezeggingnummer"],
+                    "| score:",
+                    beste["totale_score"]
                 )
-            ]
 
             resultaten.append({
                 "document_id": (
@@ -232,18 +378,10 @@ def verwerk_documenten(
                     document.get("ContentType")
                 ),
                 "aantal_tekens": len(tekst),
-                "kandidaten": kandidaat_records,
+                "commissies": (
+                    commissieresultaten
+                ),
             })
-
-            if kandidaat_records:
-                beste = kandidaat_records[0]
-
-                print(
-                    "Beste kandidaat:",
-                    beste["toezeggingnummer"],
-                    "| score:",
-                    beste["totale_score"]
-                )
 
         except Exception as fout:
             fout_record = {
@@ -269,8 +407,7 @@ def verwerk_documenten(
             )
 
     return resultaten, fouten
-
-
+    
 def schrijf_resultaten(
     documenten,
     resultaten,
@@ -314,7 +451,9 @@ def schrijf_resultaten(
 
 
 if __name__ == "__main__":
-    toezeggingen = bouw_ienw_toezeggingen()
+    toezeggingen_per_commissie = (
+        bouw_toezeggingen_per_commissie()
+    )
 
     print("\nRecente documenten ophalen...")
 
@@ -329,7 +468,7 @@ if __name__ == "__main__":
 
     resultaten, fouten = verwerk_documenten(
         documenten,
-        toezeggingen
+        toezeggingen_per_commissie
     )
 
     schrijf_resultaten(
@@ -355,7 +494,15 @@ if __name__ == "__main__":
         f"{len(fouten)}"
     )
 
+    aantal_kandidaatparen = sum(
+        len(commissie["kandidaten"])
+        for document in resultaten
+        for commissie in document[
+            "commissies"
+        ]
+    )
+
     print(
         f"Kandidaatparen opgeslagen: "
-        f"{sum(len(item['kandidaten']) for item in resultaten)}"
+        f"{aantal_kandidaatparen}"
     )
