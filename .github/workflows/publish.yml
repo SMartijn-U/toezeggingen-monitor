@@ -52,6 +52,9 @@ jobs:
       - name: Test kandidaatselectie
         run: python src/test_candidate_matching.py
 
+      - name: Controleer Python-syntax
+        run: python -m compileall -q src
+
       - name: Bouw kandidatenbestand
         run: python src/build_candidates.py
 
