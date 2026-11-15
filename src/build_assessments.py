@@ -26,8 +26,8 @@ OUTPUT_PATH = Path(
 )
 
 
-MAX_DOCUMENTEN = 10
-MAX_KANDIDATEN_PER_DOCUMENT = 10
+MAX_BEOORDELINGSEENHEDEN = 10
+MAX_KANDIDATEN_PER_COMMISSIE = 10
 
 BEKEND_TESTDOCUMENT = "2026D56295"
 
@@ -66,6 +66,15 @@ def nu_iso():
         timezone.utc
     ).isoformat()
 
+def maak_eenheidsleutel(
+    documentnummer,
+    commissie_slug
+):
+    return (
+        f"{commissie_slug}|"
+        f"{documentnummer}"
+    )
+
 def laad_kandidaten():
     if not INPUT_PATH.exists():
         raise FileNotFoundError(
@@ -79,7 +88,7 @@ def laad_kandidaten():
     )
 
 
-def selecteer_pilotdocumenten(
+def selecteer_beoordelingseenheden(
     data,
     historie
 ):
@@ -88,78 +97,127 @@ def selecteer_pilotdocumenten(
         []
     )
 
-    per_nummer = {
-        document.get(
-            "documentnummer"
-        ): document
-        for document in documenten
-        if document.get(
+    beschikbare_eenheden = {}
+
+    for document in documenten:
+        documentnummer = document.get(
             "documentnummer"
         )
-    }
 
-    geselecteerd = []
-
-    # 1. Eerst documenten die eerder
-    # door bijvoorbeeld een Gemini-503
-    # niet verwerkt konden worden.
-    for nummer in historie[
-        "wacht_op_herhaling"
-    ]:
-        document = per_nummer.get(
-            nummer
-        )
-
-        if not document:
+        if not documentnummer:
             continue
 
-        if nummer in historie[
+        for commissie in document.get(
+            "commissies",
+            []
+        ):
+            commissie_slug = commissie.get(
+                "commissie_slug"
+            )
+
+            kandidaten = commissie.get(
+                "kandidaten",
+                []
+            )
+
+            if (
+                not commissie_slug
+                or not kandidaten
+            ):
+                continue
+
+            sleutel = maak_eenheidsleutel(
+                documentnummer,
+                commissie_slug
+            )
+
+            beschikbare_eenheden[sleutel] = {
+                "sleutel": sleutel,
+                "document": document,
+                "commissie": commissie,
+            }
+
+    geselecteerd = []
+    geselecteerde_sleutels = set()
+
+    # Eerst eerder mislukte eenheden.
+    for sleutel in historie[
+        "wacht_op_herhaling"
+    ]:
+        eenheid = beschikbare_eenheden.get(
+            sleutel
+        )
+
+        if not eenheid:
+            continue
+
+        if sleutel in historie[
             "verwerkt"
         ]:
             continue
 
         geselecteerd.append(
-            document
+            eenheid
+        )
+
+        geselecteerde_sleutels.add(
+            sleutel
         )
 
         if (
             len(geselecteerd)
-            >= MAX_DOCUMENTEN
+            >= MAX_BEOORDELINGSEENHEDEN
         ):
             return geselecteerd
 
-    # 2. Daarna nieuwe documenten.
-    for document in documenten:
+    # Daarna nieuwe document-commissie-
+    # combinaties.
+    for sleutel, eenheid in (
+        beschikbare_eenheden.items()
+    ):
         if (
             len(geselecteerd)
-            >= MAX_DOCUMENTEN
+            >= MAX_BEOORDELINGSEENHEDEN
         ):
             break
 
-        nummer = document.get(
-            "documentnummer"
-        )
-
-        if not nummer:
-            continue
-
-        if nummer in historie[
+        if sleutel in historie[
             "verwerkt"
         ]:
             continue
 
-        reeds_geselecteerd = any(
-            bestaand.get(
+        if sleutel in geselecteerde_sleutels:
+            continue
+
+        documentnummer = (
+            eenheid["document"].get(
                 "documentnummer"
             )
-            == nummer
-            for bestaand in geselecteerd
         )
 
-        if not reeds_geselecteerd:
-            geselecteerd.append(
-                document
+        commissie_slug = (
+            eenheid["commissie"].get(
+                "commissie_slug"
             )
+        )
+
+        # Compatibiliteit met de oude historie:
+        # oude, reeds verwerkte IenW-documenten
+        # niet opnieuw verwerken.
+        if (
+            commissie_slug == "ienw"
+            and documentnummer
+            in historie["verwerkt"]
+        ):
+            continue
+
+        geselecteerd.append(
+            eenheid
+        )
+
+        geselecteerde_sleutels.add(
+            sleutel
+        )
 
     return geselecteerd
 
@@ -189,8 +247,10 @@ def maak_documentmetadata(document):
 def maak_beoordelingsrecord(
     beoordeling,
     kandidaat,
-    documenttekst
+    documenttekst,
+    commissie
 ):
+
     validatie = valideer_beoordeling(
         beoordeling,
         documenttekst
@@ -233,6 +293,31 @@ def maak_beoordelingsrecord(
         )
 
     return {
+        "commissie_id":
+            commissie.get(
+                "commissie_id"
+            ),
+
+        "commissie_afkorting":
+            commissie.get(
+                "commissie_afkorting"
+            ),
+
+        "commissie_naam":
+            commissie.get(
+                "commissie_naam"
+            ),
+
+        "commissie_slug":
+            commissie.get(
+                "commissie_slug"
+            ),
+
+        "selectiereden":
+            kandidaat.get(
+                "selectiereden"
+            ),
+
         "toezeggingnummer":
             beoordeling.toezeggingnummer,
 
@@ -274,14 +359,26 @@ def maak_beoordelingsrecord(
     }
 
 
-def verwerk_document(document):
-    nummer = document.get(
+def verwerk_beoordelingseenheid(
+    document,
+    commissie
+):
+    documentnummer = document.get(
         "documentnummer"
     )
 
+    commissie_afkorting = commissie.get(
+        "commissie_afkorting"
+    )
+
+    commissie_slug = commissie.get(
+        "commissie_slug"
+    )
+
     print(
-        f"\nDocument beoordelen: "
-        f"{nummer} | "
+        f"\nBeoordelingseenheid: "
+        f"{commissie_afkorting} | "
+        f"{documentnummer} | "
         f"{document.get('onderwerp')}"
     )
 
@@ -293,13 +390,14 @@ def verwerk_document(document):
         metadata
     )
 
-    kandidaten = document.get(
+    kandidaten = commissie.get(
         "kandidaten",
         []
-    )[:MAX_KANDIDATEN_PER_DOCUMENT]
+    )[:MAX_KANDIDATEN_PER_COMMISSIE]
 
     print(
-        f"Aantal kandidaten: "
+        f"Aantal kandidaten voor "
+        f"{commissie_afkorting}: "
         f"{len(kandidaten)}"
     )
 
@@ -314,10 +412,12 @@ def verwerk_document(document):
             "toezeggingnummer"
         ): kandidaat
         for kandidaat in kandidaten
+        if kandidaat.get(
+            "toezeggingnummer"
+        )
     }
 
     beoordelingen = []
-
     ontvangen_nummers = set()
 
     for beoordeling in (
@@ -348,7 +448,8 @@ def verwerk_document(document):
         record = maak_beoordelingsrecord(
             beoordeling,
             kandidaat,
-            documenttekst
+            documenttekst,
+            commissie
         )
 
         beoordelingen.append(
@@ -356,6 +457,8 @@ def verwerk_document(document):
         )
 
         print(
+            commissie_afkorting,
+            "|",
             nummer_toezegging,
             "|",
             record["oordeel"],
@@ -390,11 +493,33 @@ def verwerk_document(document):
         )
 
     return {
+        "verwerkingssleutel":
+            maak_eenheidsleutel(
+                documentnummer,
+                commissie_slug
+            ),
+
+        "commissie_id":
+            commissie.get(
+                "commissie_id"
+            ),
+
+        "commissie_afkorting":
+            commissie_afkorting,
+
+        "commissie_naam":
+            commissie.get(
+                "commissie_naam"
+            ),
+
+        "commissie_slug":
+            commissie_slug,
+
         "document_id":
             document.get("document_id"),
 
         "documentnummer":
-            nummer,
+            documentnummer,
 
         "documentsoort":
             document.get("documentsoort"),
@@ -436,6 +561,12 @@ def bewaar_publiceerbare_resultaten(
         )
     )
 
+    commissie_slug = (
+        document_resultaat.get(
+            "commissie_slug"
+        )
+    )
+    
     for beoordeling in (
         document_resultaat.get(
             "beoordelingen",
@@ -454,6 +585,7 @@ def bewaar_publiceerbare_resultaten(
         )
 
         sleutel = (
+            f"{commissie_slug}|"
             f"{toezeggingnummer}|"
             f"{documentnummer}"
         )
@@ -468,6 +600,29 @@ def bewaar_publiceerbare_resultaten(
             "eerste_signalering":
                 nu_iso(),
 
+            "commissie_id":
+                document_resultaat.get(
+                    "commissie_id"
+                ),
+
+            "commissie_afkorting":
+                document_resultaat.get(
+                    "commissie_afkorting"
+                ),
+
+            "commissie_naam":
+                document_resultaat.get(
+                    "commissie_naam"
+                ),
+
+            "commissie_slug":
+                commissie_slug,
+
+            "selectiereden":
+                beoordeling.get(
+                    "selectiereden"
+                ),
+            
             "toezeggingnummer":
                 toezeggingnummer,
 
@@ -560,6 +715,26 @@ def schrijf_output(
                 "publiceerbaar"
             ):
                 publiceerbare_resultaten.append({
+                    "commissie_id":
+                        document.get(
+                            "commissie_id"
+                        ),
+
+                    "commissie_afkorting":
+                        document.get(
+                            "commissie_afkorting"
+                        ),
+
+                    "commissie_naam":
+                        document.get(
+                            "commissie_naam"
+                        ),
+
+                    "commissie_slug":
+                        document.get(
+                            "commissie_slug"
+                        ),
+
                     "documentnummer":
                         document.get(
                             "documentnummer"
@@ -585,11 +760,11 @@ def schrijf_output(
 
     output = {
         "samenvatting": {
-            "maximum_documenten":
-                MAX_DOCUMENTEN,
+            "maximum_beoordelingseenheden":
+                MAX_BEOORDELINGSEENHEDEN,
 
-            "maximum_kandidaten_per_document":
-                MAX_KANDIDATEN_PER_DOCUMENT,
+            "maximum_kandidaten_per_commissie":
+                MAX_KANDIDATEN_PER_COMMISSIE,
 
             "documenten_verwerkt":
                 len(resultaten),
@@ -643,27 +818,32 @@ def main():
         laad_gepubliceerde_resultaten()
     )
 
-    documenten = (
-        selecteer_pilotdocumenten(
+    beoordelingseenheden = (
+        selecteer_beoordelingseenheden(
             data,
             historie
         )
     )
 
     print(
-        f"Pilotdocumenten geselecteerd: "
-        f"{len(documenten)}"
+        f"Beoordelingseenheden geselecteerd: "
+        f"{len(beoordelingseenheden)}"
     )
 
-    for document in documenten:
+    for eenheid in beoordelingseenheden:
+        document = eenheid["document"]
+        commissie = eenheid["commissie"]
+
         print(
             "-",
-            document.get(
-                "documentnummer"
+            eenheid["sleutel"],
+            "|",
+            commissie.get(
+                "commissie_afkorting"
             ),
             "|",
             document.get(
-                "documentsoort"
+                "documentnummer"
             ),
             "|",
             document.get(
@@ -674,18 +854,27 @@ def main():
     resultaten = []
     fouten = []
 
-    for index, document in enumerate(
-        documenten,
+    for index, eenheid in enumerate(
+        beoordelingseenheden,
         start=1
     ):
+        document = eenheid["document"]
+        commissie = eenheid["commissie"]
+        sleutel = eenheid["sleutel"]
+ 
         print(
-            f"\nPilotdocument "
-            f"{index}/{len(documenten)}"
+            f"\nBeoordelingseenheid "
+            f"{index}/"
+            f"{len(beoordelingseenheden)}"
         )
 
+
         try:
-            resultaat = verwerk_document(
-                document
+            resultaat = (
+                verwerk_beoordelingseenheid(
+                    document,
+                    commissie
+                )
             )
 
             resultaten.append(
@@ -697,7 +886,7 @@ def main():
 
             historie[
                 "verwerkt"
-            ][nummer] = {
+            ][sleutel] = {
                 "datum_verwerkt":
                     nu_iso(),
 
@@ -710,12 +899,22 @@ def main():
                     document.get(
                         "onderwerp"
                     ),
+
+                "commissie_slug":
+                    commissie.get(
+                        "commissie_slug"
+                    ),
+
+                "commissie_afkorting":
+                    commissie.get(
+                        "commissie_afkorting"
+                    ),
             }
 
             historie[
                 "wacht_op_herhaling"
             ].pop(
-                nummer,
+                sleutel,
                 None
             )
 
@@ -730,8 +929,21 @@ def main():
             )
 
             fout_record = {
+                "sleutel":
+                    sleutel,
+
                 "documentnummer":
                     nummer,
+
+                "commissie_slug":
+                    commissie.get(
+                        "commissie_slug"
+                    ),
+
+                "commissie_afkorting":
+                    commissie.get(
+                        "commissie_afkorting"
+                    ),
 
                 "onderwerp":
                     document.get(
@@ -756,7 +968,7 @@ def main():
             eerder = historie[
                 "wacht_op_herhaling"
             ].get(
-                nummer,
+                sleutel,
                 {}
             )
 
@@ -773,7 +985,7 @@ def main():
             # voor een volgende GitHub-run.
             historie[
                 "wacht_op_herhaling"
-            ][nummer] = {
+            ][sleutel] = {
                 "pogingen":
                     pogingen,
 
@@ -790,19 +1002,32 @@ def main():
                         "onderwerp"
                     ),
 
+                "commissie_slug":
+                    commissie.get(
+                        "commissie_slug"
+                    ),
+
+                "commissie_afkorting":
+                    commissie.get(
+                        "commissie_afkorting"
+                    ),
+                
                 "laatste_fout":
                     str(fout),
             }
 
             print(
-                "Document in wachtrij geplaatst:",
-                nummer,
+                "Beoordelingseenheid in "
+                "wachtrij geplaatst:",
+                sleutel,
                 "| pogingen:",
                 pogingen
             )
 
         # Gratis Gemini-tier ontlasten.
-        if index < len(documenten):
+        if index < len(
+            beoordelingseenheden
+        ):
             wachttijd = 30
             
             print(
@@ -829,12 +1054,12 @@ def main():
     print("\nPILOT SAMENVATTING:")
 
     print(
-        "Documenten verwerkt:",
+        "Beoordelingseenheden verwerkt:",
         len(resultaten)
     )
 
     print(
-        "Documenten met fout:",
+        "Beoordelingseenheden met fout:",
         len(fouten)
     )
 
