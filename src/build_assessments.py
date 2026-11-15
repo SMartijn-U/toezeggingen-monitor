@@ -98,6 +98,7 @@ def selecteer_beoordelingseenheden(
     )
 
     beschikbare_eenheden = {}
+    eenheden_per_document = {}
 
     for document in documenten:
         documentnummer = document.get(
@@ -106,6 +107,8 @@ def selecteer_beoordelingseenheden(
 
         if not documentnummer:
             continue
+
+        document_eenheden = []
 
         for commissie in document.get(
             "commissies",
@@ -131,16 +134,30 @@ def selecteer_beoordelingseenheden(
                 commissie_slug
             )
 
-            beschikbare_eenheden[sleutel] = {
+            eenheid = {
                 "sleutel": sleutel,
                 "document": document,
                 "commissie": commissie,
             }
 
+            beschikbare_eenheden[
+                sleutel
+            ] = eenheid
+
+            document_eenheden.append(
+                eenheid
+            )
+
+        if document_eenheden:
+            eenheden_per_document[
+                documentnummer
+            ] = document_eenheden
+
     geselecteerd = []
     geselecteerde_sleutels = set()
 
-    # Eerst eerder mislukte eenheden.
+    # 1. Mislukte beoordelingseenheden
+    # krijgen altijd voorrang.
     for sleutel in historie[
         "wacht_op_herhaling"
     ]:
@@ -170,44 +187,71 @@ def selecteer_beoordelingseenheden(
         ):
             return geselecteerd
 
-    # Daarna nieuwe document-commissie-
-    # combinaties.
-    for sleutel, eenheid in (
-        beschikbare_eenheden.items()
+    # 2. Nieuwe beoordelingseenheden
+    # round-robin over documenten.
+    #
+    # Eerst maximaal één commissie per
+    # document, daarna de tweede commissie
+    # per document, enzovoort.
+    ronde = 0
+
+    while (
+        len(geselecteerd)
+        < MAX_BEOORDELINGSEENHEDEN
     ):
-        if (
-            len(geselecteerd)
-            >= MAX_BEOORDELINGSEENHEDEN
+        iets_toegevoegd = False
+
+        for documentnummer, eenheden in (
+            eenheden_per_document.items()
         ):
-            break
+            if (
+                len(geselecteerd)
+                >= MAX_BEOORDELINGSEENHEDEN
+            ):
+                break
 
-        if sleutel in historie[
-            "verwerkt"
-        ]:
-            continue
+            if ronde >= len(eenheden):
+                continue
 
-        if sleutel in geselecteerde_sleutels:
-            continue
+            eenheid = eenheden[ronde]
+            sleutel = eenheid["sleutel"]
 
-        documentnummer = (
-            eenheid["document"].get(
-                "documentnummer"
+            if sleutel in historie[
+                "verwerkt"
+            ]:
+                continue
+
+            if sleutel in geselecteerde_sleutels:
+                continue
+
+            geselecteerd.append(
+                eenheid
             )
-        )
 
-        commissie_slug = (
-            eenheid["commissie"].get(
-                "commissie_slug"
+            geselecteerde_sleutels.add(
+                sleutel
             )
-        )
 
-        geselecteerd.append(
-            eenheid
-        )
+            iets_toegevoegd = True
 
-        geselecteerde_sleutels.add(
-            sleutel
-        )
+        ronde += 1
+
+        if not iets_toegevoegd:
+            # Er kan in deze ronde niets zijn
+            # toegevoegd omdat alle betreffende
+            # eenheden al verwerkt waren.
+            #
+            # Alleen stoppen als geen enkel
+            # document nog een volgende eenheid
+            # heeft.
+            nog_eenheden = any(
+                ronde < len(eenheden)
+                for eenheden
+                in eenheden_per_document.values()
+            )
+
+            if not nog_eenheden:
+                break
 
     return geselecteerd
 
