@@ -151,6 +151,84 @@ def schrijf_historie(historie):
         historie
     )
 
+def migreer_oude_gepubliceerde_resultaten(
+    gegevens
+):
+    resultaten = gegevens.get(
+        "resultaten",
+        {}
+    )
+
+    gemigreerd = {}
+    aantal_gemigreerd = 0
+
+    for sleutel, resultaat in (
+        resultaten.items()
+    ):
+        onderdelen = sleutel.split("|")
+
+        # Nieuwe sleutel:
+        # commissie_slug|toezeggingnummer|
+        # documentnummer
+        if len(onderdelen) == 3:
+            gemigreerd[sleutel] = resultaat
+            continue
+
+        # Oude sleutel:
+        # toezeggingnummer|documentnummer
+        if len(onderdelen) != 2:
+            print(
+                "WAARSCHUWING: onbekende "
+                "publicatiesleutel:",
+                sleutel
+            )
+
+            gemigreerd[sleutel] = resultaat
+            continue
+
+        toezeggingnummer = onderdelen[0]
+        documentnummer = onderdelen[1]
+
+        nieuwe_sleutel = (
+            f"ienw|"
+            f"{toezeggingnummer}|"
+            f"{documentnummer}"
+        )
+
+        nieuw_resultaat = dict(
+            resultaat
+        )
+
+        nieuw_resultaat[
+            "sleutel"
+        ] = nieuwe_sleutel
+
+        nieuw_resultaat.setdefault(
+            "commissie_slug",
+            "ienw"
+        )
+
+        nieuw_resultaat.setdefault(
+            "commissie_afkorting",
+            "I&W"
+        )
+
+        gemigreerd[
+            nieuwe_sleutel
+        ] = nieuw_resultaat
+
+        aantal_gemigreerd += 1
+
+    gegevens["resultaten"] = gemigreerd
+
+    if aantal_gemigreerd:
+        print(
+            "Oude gepubliceerde resultaten "
+            f"gemigreerd naar IenW: "
+            f"{aantal_gemigreerd}"
+        )
+
+    return gegevens
 
 def laad_gepubliceerde_resultaten():
     gegevens = laad_json(
@@ -163,6 +241,12 @@ def laad_gepubliceerde_resultaten():
     gegevens.setdefault(
         "resultaten",
         {}
+    )
+
+    gegevens = (
+        migreer_oude_gepubliceerde_resultaten(
+            gegevens
+        )
     )
 
     return gegevens
