@@ -196,10 +196,41 @@ def selecteer_beoordelingseenheden(
         eenheden_per_commissie.keys()
     )
 
+    laatste_commissie_slug = (
+        historie.get(
+            "round_robin",
+            {}
+        ).get(
+            "laatste_commissie_slug"
+        )
+    )
+
+    if (
+        laatste_commissie_slug
+        and laatste_commissie_slug
+        in commissie_slugs
+    ):
+        laatste_index = (
+            commissie_slugs.index(
+                laatste_commissie_slug
+            )
+        )
+
+        commissie_slugs = (
+            commissie_slugs[
+                laatste_index + 1:
+            ]
+            + commissie_slugs[
+                :laatste_index + 1
+            ]
+        )
+
     positie_per_commissie = {
         commissie_slug: 0
         for commissie_slug in commissie_slugs
     }
+
+    laatst_geselecteerde_commissie_slug = None
 
     while (
         len(geselecteerd)
@@ -247,6 +278,10 @@ def selecteer_beoordelingseenheden(
                     sleutel
                 )
 
+                laatst_geselecteerde_commissie_slug = (
+                    commissie_slug
+                )
+                
                 iets_toegevoegd = True
                 break
 
@@ -259,6 +294,16 @@ def selecteer_beoordelingseenheden(
 
         if not commissie_met_onverwerkte_eenheden:
             break
+
+    if laatst_geselecteerde_commissie_slug:
+        historie.setdefault(
+            "round_robin",
+            {}
+        )[
+            "laatste_commissie_slug"
+        ] = (
+            laatst_geselecteerde_commissie_slug
+        )
 
     return geselecteerd
 
