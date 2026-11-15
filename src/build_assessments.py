@@ -98,7 +98,7 @@ def selecteer_beoordelingseenheden(
     )
 
     beschikbare_eenheden = {}
-    eenheden_per_document = {}
+    eenheden_per_commissie = {}
 
     for document in documenten:
         documentnummer = document.get(
@@ -107,8 +107,6 @@ def selecteer_beoordelingseenheden(
 
         if not documentnummer:
             continue
-
-        document_eenheden = []
 
         for commissie in document.get(
             "commissies",
@@ -144,14 +142,12 @@ def selecteer_beoordelingseenheden(
                 sleutel
             ] = eenheid
 
-            document_eenheden.append(
+            eenheden_per_commissie.setdefault(
+                commissie_slug,
+                []
+            ).append(
                 eenheid
             )
-
-        if document_eenheden:
-            eenheden_per_document[
-                documentnummer
-            ] = document_eenheden
 
     geselecteerd = []
     geselecteerde_sleutels = set()
@@ -173,6 +169,9 @@ def selecteer_beoordelingseenheden(
         ]:
             continue
 
+        if sleutel in geselecteerde_sleutels:
+            continue
+
         geselecteerd.append(
             eenheid
         )
@@ -187,71 +186,79 @@ def selecteer_beoordelingseenheden(
         ):
             return geselecteerd
 
-    # 2. Nieuwe beoordelingseenheden
-    # round-robin over documenten.
+    # 2. Nieuwe beoordelingseenheden:
+    # round-robin over commissies.
     #
-    # Eerst maximaal één commissie per
-    # document, daarna de tweede commissie
-    # per document, enzovoort.
-    ronde = 0
+    # Per ronde wordt maximaal één nieuwe
+    # beoordelingseenheid per commissie
+    # toegevoegd.
+    commissie_slugs = list(
+        eenheden_per_commissie.keys()
+    )
+
+    positie_per_commissie = {
+        commissie_slug: 0
+        for commissie_slug in commissie_slugs
+    }
 
     while (
         len(geselecteerd)
         < MAX_BEOORDELINGSEENHEDEN
     ):
         iets_toegevoegd = False
+        commissie_met_onverwerkte_eenheden = False
 
-        for documentnummer, eenheden in (
-            eenheden_per_document.items()
-        ):
+        for commissie_slug in commissie_slugs:
             if (
                 len(geselecteerd)
                 >= MAX_BEOORDELINGSEENHEDEN
             ):
                 break
 
-            if ronde >= len(eenheden):
-                continue
+            eenheden = eenheden_per_commissie[
+                commissie_slug
+            ]
 
-            eenheid = eenheden[ronde]
-            sleutel = eenheid["sleutel"]
+            positie = positie_per_commissie[
+                commissie_slug
+            ]
 
-            if sleutel in historie[
-                "verwerkt"
-            ]:
-                continue
+            while positie < len(eenheden):
+                eenheid = eenheden[positie]
+                sleutel = eenheid["sleutel"]
 
-            if sleutel in geselecteerde_sleutels:
-                continue
+                positie += 1
 
-            geselecteerd.append(
-                eenheid
-            )
+                if sleutel in historie[
+                    "verwerkt"
+                ]:
+                    continue
 
-            geselecteerde_sleutels.add(
-                sleutel
-            )
+                if sleutel in geselecteerde_sleutels:
+                    continue
 
-            iets_toegevoegd = True
+                commissie_met_onverwerkte_eenheden = True
 
-        ronde += 1
+                geselecteerd.append(
+                    eenheid
+                )
+
+                geselecteerde_sleutels.add(
+                    sleutel
+                )
+
+                iets_toegevoegd = True
+                break
+
+            positie_per_commissie[
+                commissie_slug
+            ] = positie
 
         if not iets_toegevoegd:
-            # Er kan in deze ronde niets zijn
-            # toegevoegd omdat alle betreffende
-            # eenheden al verwerkt waren.
-            #
-            # Alleen stoppen als geen enkel
-            # document nog een volgende eenheid
-            # heeft.
-            nog_eenheden = any(
-                ronde < len(eenheden)
-                for eenheden
-                in eenheden_per_document.values()
-            )
+            break
 
-            if not nog_eenheden:
-                break
+        if not commissie_met_onverwerkte_eenheden:
+            break
 
     return geselecteerd
 
