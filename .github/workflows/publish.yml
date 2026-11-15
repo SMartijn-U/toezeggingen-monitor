@@ -54,6 +54,15 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python src/build_assessments.py
 
+      - name: Bewaar monitorstatus
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/assessment_history.json
+          git add data/published_results.json
+          git diff --cached --quiet || git commit -m "Werk monitorstatus bij"
+          git push
+
       - name: Valideer kandidaatselectie
         run: python src/validate_candidates.py
 
@@ -77,15 +86,6 @@ jobs:
         run: |
           echo "Bestanden die naar Pages gaan:"
           find public -maxdepth 3 -type f -print
-
-      - name: Bewaar monitorstatus
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/assessment_history.json
-          git add data/published_results.json
-          git diff --cached --quiet || git commit -m "Werk monitorstatus bij"
-          git push
 
       - name: Publicatiemap uploaden
         id: upload
