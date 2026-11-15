@@ -1133,7 +1133,80 @@
       "onderwerp": "Rapport van de Inspectie Overheidsinformatie en Erfgoed ‘Toegang tot overheidsinformatie in het gedrang; Urgente knelpunten in de overbrenging van papieren en digitale archieven’ ",
       "commissie_slug": "vws",
       "commissie_afkorting": "VWS"
+    },
+    "am|2026D56565": {
+      "datum_verwerkt": "2026-11-15T23:14:50.536111+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Voortgangsnotitie Aanpak Werk en Meedoen Nieuwkomers",
+      "commissie_slug": "am",
+      "commissie_afkorting": "AM"
+    },
+    "biza|2026D57018": {
+      "datum_verwerkt": "2026-11-15T23:15:28.975260+00:00",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "onderwerp": "Beleidskader hervestiging 2026-2027",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "buza|2026D57018": {
+      "datum_verwerkt": "2026-11-15T23:16:07.993244+00:00",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "onderwerp": "Beleidskader hervestiging 2026-2027",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "def|2026D57241": {
+      "datum_verwerkt": "2026-11-15T23:16:47.065970+00:00",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "onderwerp": "Geannoteerde agenda informele ministeriële bijeenkomst consumentenbeleid 20 november 2026",
+      "commissie_slug": "def",
+      "commissie_afkorting": "DEF"
+    },
+    "fin|2026D57018": {
+      "datum_verwerkt": "2026-11-15T23:17:26.565668+00:00",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "onderwerp": "Beleidskader hervestiging 2026-2027",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "jenv|2026D57018": {
+      "datum_verwerkt": "2026-11-15T23:18:04.619185+00:00",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "onderwerp": "Beleidskader hervestiging 2026-2027",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
+    },
+    "kr|2026D56528": {
+      "datum_verwerkt": "2026-11-15T23:18:42.606041+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Inzet voor internationale aandacht voor een internationale dag met betrekking tot huwelijkse gevangenschap ",
+      "commissie_slug": "kr",
+      "commissie_afkorting": "KR"
+    },
+    "lvvn|2026D56671": {
+      "datum_verwerkt": "2026-11-15T23:19:20.250113+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Aanpak drugscriminaliteit",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "ocw|2026D56528": {
+      "datum_verwerkt": "2026-11-15T23:20:03.335891+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Inzet voor internationale aandacht voor een internationale dag met betrekking tot huwelijkse gevangenschap ",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "vws|2026D56528": {
+      "datum_verwerkt": "2026-11-15T23:20:41.858289+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Inzet voor internationale aandacht voor een internationale dag met betrekking tot huwelijkse gevangenschap ",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
     }
   },
-  "wacht_op_herhaling": {}
+  "wacht_op_herhaling": {},
+  "round_robin": {
+    "laatste_commissie_slug": "vws"
+  }
 }

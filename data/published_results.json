@@ -390,6 +390,53 @@
       },
       "commissie_slug": "ienw",
       "commissie_afkorting": "I&W"
+    },
+    "am|TZ202604-206|2026D56565": {
+      "sleutel": "am|TZ202604-206|2026D56565",
+      "eerste_signalering": "2026-11-15T23:14:50.536129+00:00",
+      "commissie_id": "75337852-6240-4696-83ab-c543ee05cf45",
+      "commissie_afkorting": "AM",
+      "commissie_naam": "Vaste commissie voor Asiel en Migratie",
+      "commissie_slug": "am",
+      "selectiereden": "AM is voortouwcommissie",
+      "toezeggingnummer": "TZ202604-206",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D56565",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "documentonderwerp": "Voortgangsnotitie Aanpak Werk en Meedoen Nieuwkomers",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Informeren van de Kamer over de Meedoenbalies in de asielzoekerscentra"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Tot voor kort beschikten 38 van de ruim 100 reguliere COA-locaties over een Meedoenbalie. Het aantal wordt dit najaar uitgebreid naar 50 door 12 nieuwe balies te openen.",
+        "In 2027 wil het kabinet verder met de doorontwikkeling van de Meedoenbalies, zodat de doelen uit onze aanpak Werk en Meedoen Nieuwkomers optimaal ondersteund worden.",
+        "Daarom inventariseert de minister van Werk en Participatie, samen met zijn ketenpartners, wat nodig is om arbeidstoeleiding een vast onderdeel te maken van het concept van de Meedoenbalies in samenwerking met het COA."
+      ],
+      "motivering": "In het document wordt de Kamer uitvoerig geïnformeerd over de actuele stand van zaken, geplande uitbreiding en verdere doorontwikkeling van de Meedoenbalies in de opvanglocaties (azc's), evenals de specifieke rol en inventarisatie van de minister van Werk en Participatie daarin. De toezegging is hiermee volledig nagekomen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tot voor kort beschikten 38 van de ruim 100 reguliere COA-locaties over een Meedoenbalie. Het aantal wordt dit najaar uitgebreid naar 50 door 12 nieuwe balies te openen.",
+            "geldig": true
+          },
+          {
+            "fragment": "In 2027 wil het kabinet verder met de doorontwikkeling van de Meedoenbalies, zodat de doelen uit onze aanpak Werk en Meedoen Nieuwkomers optimaal ondersteund worden.",
+            "geldig": true
+          },
+          {
+            "fragment": "Daarom inventariseert de minister van Werk en Participatie, samen met zijn ketenpartners, wat nodig is om arbeidstoeleiding een vast onderdeel te maken van het concept van de Meedoenbalies in samenwerking met het COA.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
