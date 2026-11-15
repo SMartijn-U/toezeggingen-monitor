@@ -1,40 +1,31 @@
-import json
 from datetime import datetime, timezone
-from email.utils import format_datetime
 from html import escape
 from pathlib import Path
 
 from feedgen.feed import FeedGenerator
 
-
-RESULTS_PATH = Path(
-    "data/published_results.json"
+from get_toezeggingen import (
+    get_commissies,
+    get_actuele_vaste_commissies,
+    maak_commissieslug,
 )
 
-HISTORY_PATH = Path(
-    "data/assessment_history.json"
+from state_store import (
+    laad_historie,
+    laad_gepubliceerde_resultaten,
 )
 
-FEED_PATH = Path(
-    "public/feeds/ienw.xml"
-)
 
-STATUS_FEED_PATH = Path(
-    "public/feeds/ienw-status.xml"
+FEEDS_MAP = Path(
+    "public/feeds"
 )
 
 MAX_ITEMS = 200
 
-
-def laad_json(path, standaard):
-    if not path.exists():
-        return standaard
-
-    return json.loads(
-        path.read_text(
-            encoding="utf-8"
-        )
-    )
+BASIS_URL = (
+    "https://SMartijn-U.github.io/"
+    "toezeggingen-monitor/feeds"
+)
 
 
 def parse_datum(waarde):
@@ -63,7 +54,11 @@ def maak_beschrijving(resultaat):
     )
 
     bewijs_html = "".join(
-        f"<blockquote>{escape(fragment)}</blockquote>"
+        (
+            f"<blockquote>"
+            f"{escape(fragment)}"
+            f"</blockquote>"
+        )
         for fragment in bewijs[:3]
     )
 
@@ -71,50 +66,123 @@ def maak_beschrijving(resultaat):
 
     if ontbreekt:
         ontbreekt_html = (
-            "<p><strong>Nog ontbrekend:</strong></p>"
+            "<p><strong>"
+            "Nog ontbrekend:"
+            "</strong></p>"
             "<ul>"
             + "".join(
-                f"<li>{escape(item)}</li>"
+                (
+                    f"<li>"
+                    f"{escape(item)}"
+                    f"</li>"
+                )
                 for item in ontbreekt
             )
             + "</ul>"
         )
 
     return f"""
-<p><strong>Geautomatiseerde signalering
-van een mogelijke afdoening.</strong></p>
+<p><strong>
+Geautomatiseerde signalering van
+een mogelijke afdoening.
+</strong></p>
+
+<p>
+<strong>Commissie:</strong>
+{escape(
+    resultaat.get(
+        "commissie_afkorting",
+        ""
+    )
+)}
+<br>
+{escape(
+    resultaat.get(
+        "commissie_naam",
+        ""
+    )
+)}
+</p>
 
 <p>
 <strong>Toezegging:</strong>
-{escape(resultaat.get("toezeggingnummer", ""))}
+{escape(
+    resultaat.get(
+        "toezeggingnummer",
+        ""
+    )
+)}
 <br>
 <strong>Status registratie:</strong>
-{escape(resultaat.get("status_registratie", ""))}
+{escape(
+    resultaat.get(
+        "status_registratie",
+        ""
+    )
+)}
+</p>
+
+<p>
+<strong>Herkomst commissieselectie:</strong>
+{escape(
+    resultaat.get(
+        "selectiereden",
+        ""
+    )
+)}
 </p>
 
 <p>
 <strong>Document:</strong>
-{escape(resultaat.get("documentnummer", ""))}
+{escape(
+    resultaat.get(
+        "documentnummer",
+        ""
+    )
+)}
 <br>
-{escape(resultaat.get("documentonderwerp", ""))}
+{escape(
+    resultaat.get(
+        "documentonderwerp",
+        ""
+    )
+)}
 <br>
 <strong>Datum:</strong>
-{escape(resultaat.get("documentdatum", ""))}
+{escape(
+    resultaat.get(
+        "documentdatum",
+        ""
+    )
+)}
 </p>
 
 <p>
 <strong>Oordeel monitor:</strong>
-{escape(resultaat.get("rapportagecategorie", ""))}
+{escape(
+    resultaat.get(
+        "rapportagecategorie",
+        ""
+    )
+)}
 </p>
 
 <p>
 <strong>Motivering:</strong><br>
-{escape(resultaat.get("motivering", ""))}
+{escape(
+    resultaat.get(
+        "motivering",
+        ""
+    )
+)}
 </p>
 
 {ontbreekt_html}
 
-<p><strong>Bewijs uit het document:</strong></p>
+<p>
+<strong>Bewijs uit het document:</strong>
+</p>
+
 {bewijs_html}
 
 <p>
@@ -126,20 +194,65 @@ toezegging blijft noodzakelijk.
 """
 
 
-def genereer_ienw_feed():
-    gegevens = laad_json(
-        RESULTS_PATH,
-        {
-            "resultaten": {}
-        }
+def maak_commissiegegevens():
+    commissies = get_commissies()
+
+    vaste_commissies = (
+        get_actuele_vaste_commissies(
+            commissies
+        )
     )
 
-    resultaten = list(
-        gegevens.get(
-            "resultaten",
-            {}
-        ).values()
-    )
+    commissiegegevens = []
+
+    for commissie in vaste_commissies:
+        slug = maak_commissieslug(
+            commissie
+        )
+
+        afkorting = (
+            commissie.get("Afkorting")
+            or slug.upper()
+        ).strip()
+
+        naam = (
+            commissie.get("NaamNL")
+            or commissie.get("NaamWebNL")
+            or afkorting
+        ).strip()
+
+        if not slug:
+            continue
+
+        commissiegegevens.append({
+            "commissie_id":
+                commissie.get("Id"),
+
+            "commissie_slug":
+                slug,
+
+            "commissie_afkorting":
+                afkorting,
+
+            "commissie_naam":
+                naam,
+        })
+
+    return commissiegegevens
+
+
+def selecteer_resultaten(
+    alle_resultaten,
+    commissie_slug
+):
+    resultaten = [
+        resultaat
+        for resultaat
+        in alle_resultaten.values()
+        if resultaat.get(
+            "commissie_slug"
+        ) == commissie_slug
+    ]
 
     resultaten.sort(
         key=lambda item:
@@ -150,29 +263,54 @@ def genereer_ienw_feed():
         reverse=True
     )
 
-    resultaten = resultaten[
-        :MAX_ITEMS
+    return resultaten[:MAX_ITEMS]
+
+
+def genereer_commissiefeed(
+    commissie,
+    alle_resultaten
+):
+    slug = commissie[
+        "commissie_slug"
     ]
+
+    afkorting = commissie[
+        "commissie_afkorting"
+    ]
+
+    naam = commissie[
+        "commissie_naam"
+    ]
+
+    resultaten = selecteer_resultaten(
+        alle_resultaten,
+        slug
+    )
+
+    feed_url = (
+        f"{BASIS_URL}/{slug}.xml"
+    )
+
+    feed_path = (
+        FEEDS_MAP / f"{slug}.xml"
+    )
 
     fg = FeedGenerator()
 
-    feed_url = (
-        "https://SMartijn-U.github.io/"
-        "toezeggingen-monitor/feeds/ienw.xml"
+    fg.id(
+        feed_url
     )
-
-    fg.id(feed_url)
 
     fg.title(
         "Mogelijke afdoeningen "
-        "toezeggingen IenW"
+        f"toezeggingen {afkorting}"
     )
 
     fg.description(
-        "Geautomatiseerde signaleringen van "
-        "mogelijke afdoeningen van toezeggingen "
-        "op het terrein van de commissie "
-        "Infrastructuur en Waterstaat."
+        "Geautomatiseerde signaleringen "
+        "van mogelijke afdoeningen van "
+        "toezeggingen voor "
+        f"{naam}."
     )
 
     fg.link(
@@ -180,25 +318,31 @@ def genereer_ienw_feed():
         rel="self"
     )
 
-    fg.language("nl")
+    fg.language(
+        "nl"
+    )
 
     for resultaat in resultaten:
         sleutel = resultaat.get(
             "sleutel"
         )
 
-        fe = fg.add_entry()
+        if not sleutel:
+            continue
 
-        fe.id(
+        item = fg.add_entry()
+
+        item.id(
             sleutel
         )
 
-        fe.title(
-            f"{resultaat.get('toezeggingnummer')} | "
+        item.title(
+            f"{resultaat.get('toezeggingnummer')} "
+            f"| "
             f"{resultaat.get('rapportagecategorie')}"
         )
 
-        fe.description(
+        item.description(
             maak_beschrijving(
                 resultaat
             )
@@ -210,64 +354,90 @@ def genereer_ienw_feed():
             )
         )
 
-        fe.published(
+        item.published(
             signalering
         )
 
-        fe.updated(
+        item.updated(
             signalering
         )
 
-    FEED_PATH.parent.mkdir(
+    feed_path.parent.mkdir(
         parents=True,
         exist_ok=True
     )
 
     fg.rss_file(
-        FEED_PATH,
+        feed_path,
         pretty=True
     )
 
     print(
-        f"IenW-feed aangemaakt met "
-        f"{len(resultaten)} items."
+        f"{afkorting}-feed aangemaakt met "
+        f"{len(resultaten)} items: "
+        f"{feed_path}"
     )
 
 
-def genereer_statusfeed():
-    historie = laad_json(
-        HISTORY_PATH,
-        {
-            "verwerkt": {},
-            "wacht_op_herhaling": {},
-        }
+def tel_sleutels_met_slug(
+    verzameling,
+    commissie_slug
+):
+    voorvoegsel = (
+        f"{commissie_slug}|"
     )
 
-    gepubliceerd = laad_json(
-        RESULTS_PATH,
-        {
-            "resultaten": {}
-        }
-    )
-
-    aantal_verwerkt = len(
-        historie.get(
-            "verwerkt",
-            {}
+    return sum(
+        1
+        for sleutel
+        in verzameling
+        if sleutel.startswith(
+            voorvoegsel
         )
     )
 
-    aantal_wachtrij = len(
-        historie.get(
-            "wacht_op_herhaling",
-            {}
+
+def genereer_statusfeed(
+    commissie,
+    historie,
+    alle_resultaten
+):
+    slug = commissie[
+        "commissie_slug"
+    ]
+
+    afkorting = commissie[
+        "commissie_afkorting"
+    ]
+
+    verwerkt = historie.get(
+        "verwerkt",
+        {}
+    )
+
+    wachtrij = historie.get(
+        "wacht_op_herhaling",
+        {}
+    )
+
+    aantal_verwerkt = (
+        tel_sleutels_met_slug(
+            verwerkt,
+            slug
         )
     )
 
-    aantal_resultaten = len(
-        gepubliceerd.get(
-            "resultaten",
-            {}
+    aantal_wachtrij = (
+        tel_sleutels_met_slug(
+            wachtrij,
+            slug
+        )
+    )
+
+    aantal_resultaten = (
+        tel_sleutels_met_slug(
+            alle_resultaten,
+            slug
         )
     )
 
@@ -275,24 +445,32 @@ def genereer_statusfeed():
         timezone.utc
     )
 
-    fg = FeedGenerator()
-
     feed_url = (
-        "https://SMartijn-U.github.io/"
-        "toezeggingen-monitor/feeds/"
-        "ienw-status.xml"
+        f"{BASIS_URL}/"
+        f"{slug}-status.xml"
     )
 
-    fg.id(feed_url)
+    feed_path = (
+        FEEDS_MAP
+        / f"{slug}-status.xml"
+    )
+
+    fg = FeedGenerator()
+
+    fg.id(
+        feed_url
+    )
 
     fg.title(
         "Technische status "
-        "IenW-toezeggingenmonitor"
+        f"{afkorting}-toezeggingenmonitor"
     )
 
     fg.description(
-        "Technische uitvoeringsstatus van "
-        "de automatische toezeggingenmonitor."
+        "Technische uitvoeringsstatus "
+        "van de automatische "
+        "toezeggingenmonitor voor "
+        f"{afkorting}."
     )
 
     fg.link(
@@ -300,12 +478,15 @@ def genereer_statusfeed():
         rel="self"
     )
 
-    fg.language("nl")
+    fg.language(
+        "nl"
+    )
 
     item = fg.add_entry()
 
     item.id(
-        f"status-{nu.isoformat()}"
+        f"status-{slug}-"
+        f"{nu.isoformat()}"
     )
 
     item.title(
@@ -322,33 +503,84 @@ def genereer_statusfeed():
 
     item.description(
         f"""
-<p><strong>Monitorrun voltooid</strong></p>
+<p><strong>
+Monitorrun voltooid
+</strong></p>
+
 <ul>
-<li>Documenten succesvol verwerkt:
-{aantal_verwerkt}</li>
-<li>Documenten in wachtrij:
-{aantal_wachtrij}</li>
-<li>Gepubliceerde signaleringen:
-{aantal_resultaten}</li>
+<li>
+Beoordelingseenheden succesvol verwerkt:
+{aantal_verwerkt}
+</li>
+<li>
+Beoordelingseenheden in wachtrij:
+{aantal_wachtrij}
+</li>
+<li>
+Gepubliceerde signaleringen:
+{aantal_resultaten}
+</li>
 </ul>
 """
     )
 
-    STATUS_FEED_PATH.parent.mkdir(
+    feed_path.parent.mkdir(
         parents=True,
         exist_ok=True
     )
 
     fg.rss_file(
-        STATUS_FEED_PATH,
+        feed_path,
         pretty=True
     )
 
     print(
-        "Statusfeed aangemaakt."
+        f"Statusfeed voor {afkorting} "
+        f"aangemaakt: {feed_path}"
+    )
+
+
+def main():
+    gepubliceerde_gegevens = (
+        laad_gepubliceerde_resultaten()
+    )
+
+    alle_resultaten = (
+        gepubliceerde_gegevens.get(
+            "resultaten",
+            {}
+        )
+    )
+
+    historie = laad_historie()
+
+    commissies = (
+        maak_commissiegegevens()
+    )
+
+    print(
+        f"Actuele vaste commissies voor "
+        f"RSS-generatie: "
+        f"{len(commissies)}"
+    )
+
+    for commissie in commissies:
+        genereer_commissiefeed(
+            commissie,
+            alle_resultaten
+        )
+
+        genereer_statusfeed(
+            commissie,
+            historie,
+            alle_resultaten
+        )
+
+    print(
+        f"\nRSS-generatie voltooid voor "
+        f"{len(commissies)} commissies."
     )
 
 
 if __name__ == "__main__":
-    genereer_ienw_feed()
-    genereer_statusfeed()
+    main()
