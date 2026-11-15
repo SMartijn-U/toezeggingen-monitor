@@ -52,6 +52,9 @@ jobs:
       - name: Droge migratiecontrole
         run: python src/test_committee_migration.py
 
+      - name: Stop na droge migratiecontrole
+        run: exit 1
+
       - name: Bouw pilotbeoordelingen
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
