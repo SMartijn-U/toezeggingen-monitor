@@ -1,7 +1,7 @@
 {
   "resultaten": {
-    "TZ202605-005|2026D56295": {
-      "sleutel": "TZ202605-005|2026D56295",
+    "ienw|TZ202605-005|2026D56295": {
+      "sleutel": "ienw|TZ202605-005|2026D56295",
       "eerste_signalering": "2026-11-11T18:27:44.484559+00:00",
       "toezeggingnummer": "TZ202605-005",
       "status_registratie": "Openstaand",
@@ -36,10 +36,12 @@
             "geldig": true
           }
         ]
-      }
+      },
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
     },
-    "TZ202610-191|2026D56295": {
-      "sleutel": "TZ202610-191|2026D56295",
+    "ienw|TZ202610-191|2026D56295": {
+      "sleutel": "ienw|TZ202610-191|2026D56295",
       "eerste_signalering": "2026-11-11T18:27:44.484567+00:00",
       "toezeggingnummer": "TZ202610-191",
       "status_registratie": "Openstaand",
@@ -81,10 +83,12 @@
             "geldig": true
           }
         ]
-      }
+      },
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
     },
-    "TZ202610-190|2026D56295": {
-      "sleutel": "TZ202610-190|2026D56295",
+    "ienw|TZ202610-190|2026D56295": {
+      "sleutel": "ienw|TZ202610-190|2026D56295",
       "eerste_signalering": "2026-11-11T18:27:44.484572+00:00",
       "toezeggingnummer": "TZ202610-190",
       "status_registratie": "Openstaand",
@@ -119,10 +123,12 @@
             "geldig": true
           }
         ]
-      }
+      },
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
     },
-    "TZ202610-092|2026D56573": {
-      "sleutel": "TZ202610-092|2026D56573",
+    "ienw|TZ202610-092|2026D56573": {
+      "sleutel": "ienw|TZ202610-092|2026D56573",
       "eerste_signalering": "2026-11-12T03:57:45.059095+00:00",
       "toezeggingnummer": "TZ202610-092",
       "status_registratie": "Openstaand",
@@ -151,10 +157,12 @@
             "geldig": true
           }
         ]
-      }
+      },
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
     },
-    "TZ202606-045|2026D56999": {
-      "sleutel": "TZ202606-045|2026D56999",
+    "ienw|TZ202606-045|2026D56999": {
+      "sleutel": "ienw|TZ202606-045|2026D56999",
       "eerste_signalering": "2026-11-12T13:39:43.448224+00:00",
       "toezeggingnummer": "TZ202606-045",
       "status_registratie": "Openstaand",
@@ -185,10 +193,12 @@
             "geldig": true
           }
         ]
-      }
+      },
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
     },
-    "TZ202610-157|2026D57089": {
-      "sleutel": "TZ202610-157|2026D57089",
+    "ienw|TZ202610-157|2026D57089": {
+      "sleutel": "ienw|TZ202610-157|2026D57089",
       "eerste_signalering": "2026-11-13T13:17:59.955759+00:00",
       "toezeggingnummer": "TZ202610-157",
       "status_registratie": "Openstaand",
@@ -217,10 +227,12 @@
             "geldig": true
           }
         ]
-      }
+      },
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
     },
-    "TZ202610-041|2026D57089": {
-      "sleutel": "TZ202610-041|2026D57089",
+    "ienw|TZ202610-041|2026D57089": {
+      "sleutel": "ienw|TZ202610-041|2026D57089",
       "eerste_signalering": "2026-11-13T13:17:59.955767+00:00",
       "toezeggingnummer": "TZ202610-041",
       "status_registratie": "Openstaand",
@@ -249,10 +261,12 @@
             "geldig": true
           }
         ]
-      }
+      },
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
     },
-    "TZ202610-155|2026D57089": {
-      "sleutel": "TZ202610-155|2026D57089",
+    "ienw|TZ202610-155|2026D57089": {
+      "sleutel": "ienw|TZ202610-155|2026D57089",
       "eerste_signalering": "2026-11-13T13:17:59.955772+00:00",
       "toezeggingnummer": "TZ202610-155",
       "status_registratie": "Openstaand",
@@ -292,10 +306,12 @@
             "geldig": true
           }
         ]
-      }
+      },
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
     },
-    "TZ202606-043|2026D57089": {
-      "sleutel": "TZ202606-043|2026D57089",
+    "ienw|TZ202606-043|2026D57089": {
+      "sleutel": "ienw|TZ202606-043|2026D57089",
       "eerste_signalering": "2026-11-13T13:17:59.955776+00:00",
       "toezeggingnummer": "TZ202606-043",
       "status_registratie": "Openstaand",
@@ -330,10 +346,12 @@
             "geldig": true
           }
         ]
-      }
+      },
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
     },
-    "TZ202611-021|2026D57089": {
-      "sleutel": "TZ202611-021|2026D57089",
+    "ienw|TZ202611-021|2026D57089": {
+      "sleutel": "ienw|TZ202611-021|2026D57089",
       "eerste_signalering": "2026-11-13T13:17:59.955780+00:00",
       "toezeggingnummer": "TZ202611-021",
       "status_registratie": "Openstaand",
@@ -369,7 +387,9 @@
             "geldig": true
           }
         ]
-      }
+      },
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
     }
   }
 }
