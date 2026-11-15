@@ -34,7 +34,7 @@ OUTPUT_PATH = Path(
 AANTAL_DAGEN_DOCUMENTEN = 7
 AANTAL_DAGEN_AFGEDAAN = 14
 MAXIMUM_KANDIDATEN_PER_DOCUMENT = 10
-
+MINIMUM_KANDIDAATSCORE = 0.04
 
 def bouw_toezeggingen_per_commissie():
     print(
@@ -345,6 +345,28 @@ def verwerk_documenten(
                     )
                 )
 
+                kandidaten = [
+                    kandidaat
+                    for kandidaat in kandidaten
+                    if kandidaat.get(
+                        "score",
+                        0.0
+                    ) >= MINIMUM_KANDIDAATSCORE
+                ]
+
+                print(
+                    "Kandidaten boven minimumscore:",
+                    commissiegegevens[
+                        "commissie_afkorting"
+                    ],
+                    "|",
+                    nummer,
+                    "| minimum:",
+                    MINIMUM_KANDIDAATSCORE,
+                    "| aantal:",
+                    len(kandidaten)
+                )
+                
                 kandidaat_records = [
                     maak_kandidaat_record(
                         document,
@@ -472,6 +494,9 @@ def schrijf_resultaten(
             "aantal_fouten": len(fouten),
             "maximum_kandidaten_per_document": (
                 MAXIMUM_KANDIDATEN_PER_DOCUMENT
+            ),
+            "minimum_kandidaatscore": (
+                MINIMUM_KANDIDAATSCORE
             ),
             "opmerking": (
                 "De scores meten tekstuele overeenkomst "
