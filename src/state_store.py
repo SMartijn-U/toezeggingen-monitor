@@ -61,6 +61,63 @@ def schrijf_json_atomair(
         path
     )
 
+def migreer_oude_historie(
+    historie
+):
+    verwerkt = historie.get(
+        "verwerkt",
+        {}
+    )
+
+    gemigreerd = {}
+    aantal_gemigreerd = 0
+
+    for sleutel, gegevens in (
+        verwerkt.items()
+    ):
+        # Nieuwe sleutels bevatten al een
+        # commissie_slug, bijvoorbeeld:
+        # ienw|2026D56295
+        if "|" in sleutel:
+            gemigreerd[sleutel] = gegevens
+            continue
+
+        # De bestaande historie is opgebouwd
+        # toen alleen IenW werd beoordeeld.
+        nieuwe_sleutel = (
+            f"ienw|{sleutel}"
+        )
+
+        nieuwe_gegevens = dict(
+            gegevens
+        )
+
+        nieuwe_gegevens.setdefault(
+            "commissie_slug",
+            "ienw"
+        )
+
+        nieuwe_gegevens.setdefault(
+            "commissie_afkorting",
+            "I&W"
+        )
+
+        gemigreerd[
+            nieuwe_sleutel
+        ] = nieuwe_gegevens
+
+        aantal_gemigreerd += 1
+
+    historie["verwerkt"] = gemigreerd
+
+    if aantal_gemigreerd:
+        print(
+            f"Oude historievermeldingen "
+            f"gemigreerd naar IenW: "
+            f"{aantal_gemigreerd}"
+        )
+
+    return historie
 
 def laad_historie():
     gegevens = laad_json(
@@ -79,6 +136,10 @@ def laad_historie():
     gegevens.setdefault(
         "wacht_op_herhaling",
         {}
+    )
+
+    gegevens = migreer_oude_historie(
+        gegevens
     )
 
     return gegevens
