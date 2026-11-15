@@ -84,6 +84,16 @@ en een lijst met kandidaat-toezeggingen.
 
 Beoordeel IEDERE toezegging afzonderlijk.
 
+Je mag uitsluitend de hieronder opgenomen
+kandidaat-toezeggingen beoordelen.
+
+Geef voor iedere aangeleverde kandidaat exact
+één beoordeling terug.
+
+Voeg nooit zelf een toezegging toe, ook niet
+wanneer in het document een andere toezegging
+expliciet wordt genoemd.
+
 BELANGRIJKE REGELS:
 
 1. Zoek niet alleen naar het toezeggingnummer.
