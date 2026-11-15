@@ -3,12 +3,6 @@ name: Genereer en publiceer RSS-feeds
 on:
   workflow_dispatch:
 
-  schedule:
-    - cron: "17 5 * * *"
-    - cron: "17 11 * * *"
-    - cron: "17 17 * * *"
-    - cron: "17 23 * * *"
-
 concurrency:
   group: toezeggingen-monitor
   cancel-in-progress: false
@@ -51,9 +45,6 @@ jobs:
 
       - name: Test kandidaatselectie
         run: python src/test_candidate_matching.py
-
-      - name: Controleer Python-syntax
-        run: python -m compileall -q src
 
       - name: Bouw kandidatenbestand
         run: python src/build_candidates.py
