@@ -252,6 +252,45 @@ def maak_kandidaat_record(
         ),
     }
 
+def toon_scoreverdeling(
+    kandidaat_records,
+    commissie_afkorting,
+    documentnummer
+):
+    grenzen = [
+        0.01,
+        0.02,
+        0.03,
+        0.04,
+        0.05,
+        0.075,
+        0.10,
+    ]
+
+    scores = [
+        kandidaat.get(
+            "totale_score",
+            0.0
+        )
+        for kandidaat in kandidaat_records
+    ]
+
+    print(
+        "SCOREVERDELING:",
+        commissie_afkorting,
+        "|",
+        documentnummer,
+        "| beste:",
+        max(scores) if scores else 0.0,
+        "|",
+        " | ".join(
+            (
+                f">={grens:.3f}: "
+                f"{sum(score >= grens for score in scores)}"
+            )
+            for grens in grenzen
+        )
+    )
 
 def verwerk_documenten(
     documenten,
@@ -321,6 +360,14 @@ def verwerk_documenten(
 
                 if not kandidaat_records:
                     continue
+
+                toon_scoreverdeling(
+                    kandidaat_records,
+                    commissiegegevens[
+                        "commissie_afkorting"
+                    ],
+                    nummer
+                )
 
                 commissieresultaten.append({
                     "commissie_id": (
