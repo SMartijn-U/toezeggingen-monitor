@@ -993,6 +993,76 @@
       "onderwerp": "Aanpak Weerbare Economie",
       "commissie_slug": "am",
       "commissie_afkorting": "AM"
+    },
+    "am|2026D56906": {
+      "datum_verwerkt": "2026-11-15T20:21:01.755574+00:00",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over hoofddoelen van het kabinetsbeleid voor het Ministerie van Buitenlandse Zaken in opvolging van de motie van het lid Van der Lee (Kamerstuk 36740-7)",
+      "commissie_slug": "am",
+      "commissie_afkorting": "AM"
+    },
+    "biza|2026D56528": {
+      "datum_verwerkt": "2026-11-15T20:21:49.981968+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Inzet voor internationale aandacht voor een internationale dag met betrekking tot huwelijkse gevangenschap ",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "bho|2026D56528": {
+      "datum_verwerkt": "2026-11-15T20:22:31.015836+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Inzet voor internationale aandacht voor een internationale dag met betrekking tot huwelijkse gevangenschap ",
+      "commissie_slug": "bho",
+      "commissie_afkorting": "BHO"
+    },
+    "buza|2026D56528": {
+      "datum_verwerkt": "2026-11-15T20:23:11.605717+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Inzet voor internationale aandacht voor een internationale dag met betrekking tot huwelijkse gevangenschap ",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "def|2026D56528": {
+      "datum_verwerkt": "2026-11-15T20:23:51.146855+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Inzet voor internationale aandacht voor een internationale dag met betrekking tot huwelijkse gevangenschap ",
+      "commissie_slug": "def",
+      "commissie_afkorting": "DEF"
+    },
+    "diza|2026D56528": {
+      "datum_verwerkt": "2026-11-15T20:24:31.721460+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Inzet voor internationale aandacht voor een internationale dag met betrekking tot huwelijkse gevangenschap ",
+      "commissie_slug": "diza",
+      "commissie_afkorting": "DiZa"
+    },
+    "ez|2026D56528": {
+      "datum_verwerkt": "2026-11-15T20:25:12.423476+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Inzet voor internationale aandacht voor een internationale dag met betrekking tot huwelijkse gevangenschap ",
+      "commissie_slug": "ez",
+      "commissie_afkorting": "EZ"
+    },
+    "eu|2026D56528": {
+      "datum_verwerkt": "2026-11-15T20:25:53.115530+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Inzet voor internationale aandacht voor een internationale dag met betrekking tot huwelijkse gevangenschap ",
+      "commissie_slug": "eu",
+      "commissie_afkorting": "EU"
+    },
+    "fin|2026D56528": {
+      "datum_verwerkt": "2026-11-15T20:26:34.125954+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Inzet voor internationale aandacht voor een internationale dag met betrekking tot huwelijkse gevangenschap ",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "jenv|2026D56528": {
+      "datum_verwerkt": "2026-11-15T20:27:15.750672+00:00",
+      "documentdatum": "2026-11-09T00:00:00+01:00",
+      "onderwerp": "Inzet voor internationale aandacht voor een internationale dag met betrekking tot huwelijkse gevangenschap ",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
     }
   },
   "wacht_op_herhaling": {}
