@@ -201,16 +201,6 @@ def selecteer_beoordelingseenheden(
             )
         )
 
-        # Compatibiliteit met de oude historie:
-        # oude, reeds verwerkte IenW-documenten
-        # niet opnieuw verwerken.
-        if (
-            commissie_slug == "ienw"
-            and documentnummer
-            in historie["verwerkt"]
-        ):
-            continue
-
         geselecteerd.append(
             eenheid
         )
