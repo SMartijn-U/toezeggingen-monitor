@@ -31,12 +31,6 @@ jobs:
       - name: Controleer Python-syntax
         run: python -m compileall -q src
 
-      - name: Droge migratiecontrole
-        run: python src/test_committee_migration.py
-
-      - name: Stop na droge migratiecontrole
-        run: exit 1
-
       - name: Test ophalen actuele toezeggingen
         run: python src/get_toezeggingen.py
 
@@ -54,6 +48,12 @@ jobs:
 
       - name: Bouw kandidatenbestand
         run: python src/build_candidates.py
+
+      - name: Droge migratiecontrole
+        run: python src/test_committee_migration.py
+
+      - name: Stop na droge migratiecontrole
+        run: exit 1
 
       - name: Bouw pilotbeoordelingen
         env:
