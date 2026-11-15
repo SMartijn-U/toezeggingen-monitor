@@ -125,6 +125,9 @@ def laad_historie():
         {
             "verwerkt": {},
             "wacht_op_herhaling": {},
+            "round_robin": {
+                "laatste_commissie_slug": None,
+            },
         }
     )
 
@@ -138,13 +141,23 @@ def laad_historie():
         {}
     )
 
+    gegevens.setdefault(
+        "round_robin",
+        {
+            "laatste_commissie_slug": None,
+        }
+    )
+
+    gegevens["round_robin"].setdefault(
+        "laatste_commissie_slug",
+        None
+    )
+
     gegevens = migreer_oude_historie(
         gegevens
     )
 
     return gegevens
-
-
 def schrijf_historie(historie):
     schrijf_json_atomair(
         HISTORY_PATH,
