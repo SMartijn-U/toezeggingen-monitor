@@ -48,7 +48,10 @@ def laad_kandidaten():
 def verzamel_datum_matches(data):
     matches = []
 
-    for document in data.get("documenten", []):
+    for document in data.get(
+        "documenten",
+        []
+    ):
         documentdatum = datumdeel(
             document.get("datum")
         )
@@ -56,49 +59,106 @@ def verzamel_datum_matches(data):
         if not documentdatum:
             continue
 
-        for kandidaat in document.get(
-            "kandidaten",
+        for commissie in document.get(
+            "commissies",
             []
         ):
-            if kandidaat.get("status") != "Afgedaan":
-                continue
-
-            nakomingsdatum = datumdeel(
-                kandidaat.get("datum_nakoming")
+            commissie_slug = (
+                commissie.get(
+                    "commissie_slug"
+                )
             )
 
-            if not nakomingsdatum:
-                continue
+            commissie_afkorting = (
+                commissie.get(
+                    "commissie_afkorting"
+                )
+            )
 
-            if nakomingsdatum != documentdatum:
-                continue
+            commissie_naam = (
+                commissie.get(
+                    "commissie_naam"
+                )
+            )
 
-            matches.append({
-                "documentnummer": (
-                    document.get("documentnummer")
-                ),
-                "documentsoort": (
-                    document.get("documentsoort")
-                ),
-                "documentdatum": documentdatum,
-                "onderwerp": (
-                    document.get("onderwerp")
-                ),
-                "toezeggingnummer": (
+            for kandidaat in commissie.get(
+                "kandidaten",
+                []
+            ):
+                if (
+                    kandidaat.get("status")
+                    != "Afgedaan"
+                ):
+                    continue
+
+                nakomingsdatum = datumdeel(
                     kandidaat.get(
-                        "toezeggingnummer"
+                        "datum_nakoming"
                     )
-                ),
-                "positie": kandidaat.get("positie"),
-                "score": kandidaat.get(
-                    "totale_score"
-                ),
-                "toezeggingstekst": (
-                    kandidaat.get(
-                        "toezeggingstekst"
-                    )
-                ),
-            })
+                )
+
+                if not nakomingsdatum:
+                    continue
+
+                if (
+                    nakomingsdatum
+                    != documentdatum
+                ):
+                    continue
+
+                matches.append({
+                    "commissie_slug":
+                        commissie_slug,
+
+                    "commissie_afkorting":
+                        commissie_afkorting,
+
+                    "commissie_naam":
+                        commissie_naam,
+
+                    "selectiereden":
+                        kandidaat.get(
+                            "selectiereden"
+                        ),
+
+                    "documentnummer":
+                        document.get(
+                            "documentnummer"
+                        ),
+
+                    "documentsoort":
+                        document.get(
+                            "documentsoort"
+                        ),
+
+                    "documentdatum":
+                        documentdatum,
+
+                    "onderwerp":
+                        document.get(
+                            "onderwerp"
+                        ),
+
+                    "toezeggingnummer":
+                        kandidaat.get(
+                            "toezeggingnummer"
+                        ),
+
+                    "positie":
+                        kandidaat.get(
+                            "positie"
+                        ),
+
+                    "score":
+                        kandidaat.get(
+                            "totale_score"
+                        ),
+
+                    "toezeggingstekst":
+                        kandidaat.get(
+                            "toezeggingstekst"
+                        ),
+                })
 
     return matches
 
@@ -109,23 +169,40 @@ def bereken_statistieken(matches):
         for match in matches
     }
 
-    beste_positie_per_toezegging = {}
+    unieke_commissie_toezeggingen = {
+        (
+            match["commissie_slug"],
+            match["toezeggingnummer"],
+        )
+        for match in matches
+    }
+
+    beste_positie_per_combinatie = {}
 
     for match in matches:
-        nummer = match["toezeggingnummer"]
-        positie = match["positie"]
-
-        vorige = beste_positie_per_toezegging.get(
-            nummer
+        sleutel = (
+            match["commissie_slug"],
+            match["toezeggingnummer"],
         )
 
-        if vorige is None or positie < vorige:
-            beste_positie_per_toezegging[
-                nummer
+        positie = match["positie"]
+
+        vorige = (
+            beste_positie_per_combinatie.get(
+                sleutel
+            )
+        )
+
+        if (
+            vorige is None
+            or positie < vorige
+        ):
+            beste_positie_per_combinatie[
+                sleutel
             ] = positie
 
     posities = list(
-        beste_positie_per_toezegging.values()
+        beste_positie_per_combinatie.values()
     )
 
     totaal = len(posities)
@@ -169,6 +246,9 @@ def bereken_statistieken(matches):
         "unieke_toezeggingen": len(
             unieke_toezeggingen
         ),
+        "unieke_commissie_toezeggingen": len(
+            unieke_commissie_toezeggingen
+        ),
         "top_1": {
             "aantal": top_1,
             "percentage": percentage(top_1),
@@ -184,10 +264,6 @@ def bereken_statistieken(matches):
         "top_10": {
             "aantal": top_10,
             "percentage": percentage(top_10),
-        },
-        "top_15": {
-            "aantal": top_15,
-            "percentage": percentage(top_15),
         },
         "positie_verdeling": dict(
             sorted(
@@ -220,6 +296,8 @@ def toon_bekende_luchtvaartmatches(
             gevonden = True
 
             print(
+                match["commissie_afkorting"],
+                "|",
                 match["documentnummer"],
                 "|",
                 match["documentdatum"],
@@ -295,12 +373,19 @@ if __name__ == "__main__":
         ]
     )
 
+    print(
+        "Unieke commissie-"
+        "toezeggingcombinaties:",
+        statistieken[
+            "unieke_commissie_toezeggingen"
+        ]
+    )
+    
     for grens in [
         "top_1",
         "top_3",
         "top_5",
         "top_10",
-        "top_15",
     ]:
         waarde = statistieken[grens]
 
