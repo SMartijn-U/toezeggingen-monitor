@@ -52,11 +52,6 @@ jobs:
       - name: Droge migratiecontrole
         run: python src/test_committee_migration.py
 
-      - name: Tijdelijke stop voor round-robincontrole
-        run: |
-          echo "STOP: round-robinselectie controleren voor Gemini."
-          exit 1
-
       - name: Bouw pilotbeoordelingen
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
