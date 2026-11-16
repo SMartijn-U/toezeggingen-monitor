@@ -3,6 +3,9 @@ name: Genereer en publiceer RSS-feeds
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: "0 5 * * 1-6"
+
 concurrency:
   group: toezeggingen-monitor
   cancel-in-progress: false
