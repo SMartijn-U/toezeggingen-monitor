@@ -1203,10 +1203,80 @@
       "onderwerp": "Inzet voor internationale aandacht voor een internationale dag met betrekking tot huwelijkse gevangenschap ",
       "commissie_slug": "vws",
       "commissie_afkorting": "VWS"
+    },
+    "vro|2026D57241": {
+      "datum_verwerkt": "2026-11-16T13:17:11.775487+00:00",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "onderwerp": "Geannoteerde agenda informele ministeriële bijeenkomst consumentenbeleid 20 november 2026",
+      "commissie_slug": "vro",
+      "commissie_afkorting": "VRO"
+    },
+    "kgg|2026D56826": {
+      "datum_verwerkt": "2026-11-16T13:18:26.299886+00:00",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "onderwerp": "Appreciaties gewijzigde moties ingediend bij de begrotingsbehandeling van de begroting van Klimaat en Groene Groei op 5 november 2026",
+      "commissie_slug": "kgg",
+      "commissie_afkorting": "KGG"
+    },
+    "am|2026D57985": {
+      "datum_verwerkt": "2026-11-16T13:19:44.591983+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Beleidsreactie op OVV-rapport 'Kinderen in nood'",
+      "commissie_slug": "am",
+      "commissie_afkorting": "AM"
+    },
+    "biza|2026D58106": {
+      "datum_verwerkt": "2026-11-16T13:21:27.160342+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "bho|2026D58106": {
+      "datum_verwerkt": "2026-11-16T13:22:26.695929+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "bho",
+      "commissie_afkorting": "BHO"
+    },
+    "buza|2026D58106": {
+      "datum_verwerkt": "2026-11-16T13:23:22.964448+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "def|2026D58106": {
+      "datum_verwerkt": "2026-11-16T13:24:26.487085+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "def",
+      "commissie_afkorting": "DEF"
+    },
+    "diza|2026D58106": {
+      "datum_verwerkt": "2026-11-16T13:25:17.560512+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "diza",
+      "commissie_afkorting": "DiZa"
+    },
+    "ez|2026D58106": {
+      "datum_verwerkt": "2026-11-16T13:26:18.493507+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "ez",
+      "commissie_afkorting": "EZ"
+    },
+    "eu|2026D58106": {
+      "datum_verwerkt": "2026-11-16T13:27:14.532447+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "eu",
+      "commissie_afkorting": "EU"
     }
   },
   "wacht_op_herhaling": {},
   "round_robin": {
-    "laatste_commissie_slug": "vws"
+    "laatste_commissie_slug": "eu"
   }
 }
