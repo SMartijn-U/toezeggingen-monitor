@@ -149,6 +149,29 @@ def selecteer_beoordelingseenheden(
                 eenheid
             )
 
+    for eenheden in (
+        eenheden_per_commissie.values()
+    ):
+        eenheden.sort(
+            key=lambda eenheid: max(
+                (
+                    kandidaat.get(
+                        "totale_score",
+                        0.0
+                    )
+                    for kandidaat
+                    in eenheid[
+                        "commissie"
+                    ].get(
+                        "kandidaten",
+                        []
+                    )
+                ),
+                default=0.0
+            ),
+            reverse=True
+        )
+    
     geselecteerd = []
     geselecteerde_sleutels = set()
 
