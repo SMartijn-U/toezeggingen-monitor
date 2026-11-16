@@ -332,8 +332,16 @@ def genereer_commissiefeed(
 
         item = fg.add_entry()
 
+        delen = sleutel.split("|", 1)
+
+        item_id = "|".join([
+            delen[0],
+            afkorting,
+            delen[1],
+        ])
+
         item.id(
-            sleutel
+            item_id
         )
 
         item.title(
