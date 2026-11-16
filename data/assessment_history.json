@@ -1273,10 +1273,83 @@
       "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
       "commissie_slug": "eu",
       "commissie_afkorting": "EU"
+    },
+    "fin|2026D58106": {
+      "datum_verwerkt": "2026-11-16T14:08:23.089063+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "ienw|2026D58106": {
+      "datum_verwerkt": "2026-11-16T14:09:35.394830+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "jenv|2026D58106": {
+      "datum_verwerkt": "2026-11-16T14:10:32.562237+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
+    },
+    "kr|2026D58106": {
+      "datum_verwerkt": "2026-11-16T14:11:25.224771+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "kr",
+      "commissie_afkorting": "KR"
+    },
+    "lvvn|2026D58106": {
+      "datum_verwerkt": "2026-11-16T14:12:35.489085+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "szw|2026D58106": {
+      "datum_verwerkt": "2026-11-16T14:14:02.987075+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "vws|2026D58106": {
+      "datum_verwerkt": "2026-11-16T14:14:48.998220+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "vro|2026D56826": {
+      "datum_verwerkt": "2026-11-16T14:15:58.825329+00:00",
+      "documentdatum": "2026-11-10T00:00:00+01:00",
+      "onderwerp": "Appreciaties gewijzigde moties ingediend bij de begrotingsbehandeling van de begroting van Klimaat en Groene Groei op 5 november 2026",
+      "commissie_slug": "vro",
+      "commissie_afkorting": "VRO"
+    },
+    "kgg|2026D57750": {
+      "datum_verwerkt": "2026-11-16T14:16:43.918899+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Verzoek tot het verplaatsen van het commissiedebat van 2 december 2026 over ruimtevaart",
+      "commissie_slug": "kgg",
+      "commissie_afkorting": "KGG"
     }
   },
-  "wacht_op_herhaling": {},
+  "wacht_op_herhaling": {
+    "ocw|2026D58106": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-16T14:13:20.944886+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    }
+  },
   "round_robin": {
-    "laatste_commissie_slug": "eu"
+    "laatste_commissie_slug": "kgg"
   }
 }
