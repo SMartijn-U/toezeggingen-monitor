@@ -1336,6 +1336,55 @@
       "onderwerp": "Verzoek tot het verplaatsen van het commissiedebat van 2 december 2026 over ruimtevaart",
       "commissie_slug": "kgg",
       "commissie_afkorting": "KGG"
+    },
+    "ocw|2026D57522": {
+      "datum_verwerkt": "2026-11-16T15:32:07.072046+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Uitstel toezending antwoorden op vragen commissie over onderzoek vermogensgrenzen kwijtschelding lokale belastingen (Kamerstuk 24515-846)",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "vws|2026D57682": {
+      "datum_verwerkt": "2026-11-16T15:37:30.851098+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Afschrift brief aan de Eerste Kamer betreffende mijn reactie op vragen naar aanleiding van de brief over de toekomst van onderzoek met apen in Nederland",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "buza|2026D57101": {
+      "datum_verwerkt": "2026-11-16T15:40:37.787337+00:00",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "onderwerp": "Reactie op een aantal openstaande schriftelijke verzoeken van de commissie over o.a. het rapport “Toekomstverkenningen van de Europese Veiligheidsarchitectuur”",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "szw|2026D57759": {
+      "datum_verwerkt": "2026-11-16T15:44:45.149800+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Stand van zaken moties en toezeggingen over o.a. ‘Integratie en Maatschappelijke samenhang’ - beleidsartikel 13 van de begroting van Sociale Zaken en Werkgelegenheid ",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "bho|2026D57953": {
+      "datum_verwerkt": "2026-11-16T15:45:50.839216+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Geannoteerde Agenda Raad Buitenlandse Zaken Handel van 30 november 2026",
+      "commissie_slug": "bho",
+      "commissie_afkorting": "BHO"
+    },
+    "eu|2026D57737": {
+      "datum_verwerkt": "2026-11-16T15:46:43.328063+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Kwartaalrapportage EU-wetgevingsonderhandeling Q3 2026 ",
+      "commissie_slug": "eu",
+      "commissie_afkorting": "EU"
+    },
+    "fin|2026D57075": {
+      "datum_verwerkt": "2026-11-16T15:48:53.753390+00:00",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "onderwerp": "Instemming deelname aan technische briefing over het wetsvoorstel tot wijziging van de Coordinatiewet uitzonderingstoestanden in verband met de modernisering daarvan (Kamerstuk 36994)",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
     }
   },
   "wacht_op_herhaling": {
@@ -1347,9 +1396,36 @@
       "commissie_slug": "ocw",
       "commissie_afkorting": "OCW",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "am|2026D58089": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-16T15:41:25.394433+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Voortgang uitvoering Asiel- en Migratiepact",
+      "commissie_slug": "am",
+      "commissie_afkorting": "AM",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "ienw|2026D58145": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-16T15:47:29.861881+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "diza|2026D57241": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-16T15:48:14.311491+00:00",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "onderwerp": "Geannoteerde agenda informele ministeriële bijeenkomst consumentenbeleid 20 november 2026",
+      "commissie_slug": "diza",
+      "commissie_afkorting": "DiZa",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "kgg"
+    "laatste_commissie_slug": "fin"
   }
 }
