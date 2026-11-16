@@ -1137,7 +1137,7 @@ def main():
             gepubliceerde_resultaten
         )
 
-    print("\nPILOT SAMENVATTING:")
+    print("\nBEOORDELINGSSAMENVATTING:")
 
     print(
         "Beoordelingseenheden verwerkt:",
