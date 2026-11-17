@@ -1155,32 +1155,60 @@ def main():
                 pogingen
             )
 
-        # Gratis Gemini-tier ontlasten.
-        if index < len(
-            beoordelingseenheden
-        ):
-            wachttijd = 30
-            
-            print(
-                f"{wachttijd} seconden wachten "
-                f"voor het volgende document..."
-            )
-
-            time.sleep(wachttijd)
-
-        # Tussenresultaten na ieder document
+        # Tussenresultaten na iedere
+        # beoordelingseenheid lokaal
         # veiligstellen.
+        print(
+            "Tussenresultaten opslaan...",
+            flush=True
+        )
+
         schrijf_output(
             resultaten,
             fouten
         )
+
+        print(
+            "Beoordelingshistorie opslaan...",
+            flush=True
+        )
+
         schrijf_historie(
             historie
+        )
+
+        print(
+            "Gepubliceerde resultaten opslaan...",
+            flush=True
         )
 
         schrijf_gepubliceerde_resultaten(
             gepubliceerde_resultaten
         )
+
+        print(
+            "Tussenresultaten volledig opgeslagen.",
+            flush=True
+        )
+
+        # Gratis Gemini-tier ontlasten.
+        if index < len(
+            beoordelingseenheden
+        ):
+            wachttijd = 30
+
+            print(
+                f"{wachttijd} seconden wachten "
+                f"voor het volgende document...",
+                flush=True
+            )
+
+            time.sleep(wachttijd)
+
+            print(
+                "Wachttijd voltooid.",
+                flush=True
+            )
 
     print("\nBEOORDELINGSSAMENVATTING:")
 
