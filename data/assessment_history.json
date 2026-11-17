@@ -1385,6 +1385,69 @@
       "onderwerp": "Instemming deelname aan technische briefing over het wetsvoorstel tot wijziging van de Coordinatiewet uitzonderingstoestanden in verband met de modernisering daarvan (Kamerstuk 36994)",
       "commissie_slug": "fin",
       "commissie_afkorting": "FIN"
+    },
+    "am|2026D58089": {
+      "datum_verwerkt": "2026-11-17T16:45:05.836879+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Voortgang uitvoering Asiel- en Migratiepact",
+      "commissie_slug": "am",
+      "commissie_afkorting": "AM"
+    },
+    "biza|2026D57537": {
+      "datum_verwerkt": "2026-11-17T16:47:59.109923+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Reactie op definitief advies AcICT Stelsel Toegang",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "ienw|2026D57963": {
+      "datum_verwerkt": "2026-11-17T16:50:40.290393+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Ontwerpbesluit houdende wijziging van verschillende algemene maatregelen van bestuur voor het opnemen van voorschriften voor lichte elektrische voertuigen",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "am|2026D58182": {
+      "datum_verwerkt": "2026-11-17T16:53:07.820692+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Strafonderbreking en aanpak terugkeer criminele vreemdelingen",
+      "commissie_slug": "am",
+      "commissie_afkorting": "AM"
+    },
+    "diza|2026D57572": {
+      "datum_verwerkt": "2026-11-17T16:55:49.739378+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Schriftelijke antwoorden op vragen gesteld tijdens de eerste termijn van de begrotingsbehandeling van Economische Zaken op 14 oktober 2026",
+      "commissie_slug": "diza",
+      "commissie_afkorting": "DiZa"
+    },
+    "ez|2026D57572": {
+      "datum_verwerkt": "2026-11-17T17:00:35.528870+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Schriftelijke antwoorden op vragen gesteld tijdens de eerste termijn van de begrotingsbehandeling van Economische Zaken op 14 oktober 2026",
+      "commissie_slug": "ez",
+      "commissie_afkorting": "EZ"
+    },
+    "def|2026D58404": {
+      "datum_verwerkt": "2026-11-17T17:04:55.202474+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Ontwikkelingen Russische veiligheidsdreiging",
+      "commissie_slug": "def",
+      "commissie_afkorting": "DEF"
+    },
+    "ocw|2026D58428": {
+      "datum_verwerkt": "2026-11-17T17:06:05.492874+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Reflectie Regeringscommissaris seksueel grensoverschrijdend gedrag en seksueel geweld op het NAP ",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "vws|2026D57320": {
+      "datum_verwerkt": "2026-11-17T17:06:49.966383+00:00",
+      "documentdatum": "2026-11-11T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over de Brandbrief 'Acute crisis jeugdhulpverlening - Honderden gezinnen in de kou'",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
     }
   },
   "wacht_op_herhaling": {
@@ -1395,15 +1458,6 @@
       "onderwerp": "Reactie op de aangenomen motie lid Meulenkamp c.s. over maatregelen om de verantwoordings- en controlelasten voor medeoverheden bij SPUK's te verminderen (Kamerstuk 36800-B-32)",
       "commissie_slug": "ocw",
       "commissie_afkorting": "OCW",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
-    },
-    "am|2026D58089": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-16T15:41:25.394433+00:00",
-      "documentdatum": "2026-11-16T00:00:00+01:00",
-      "onderwerp": "Voortgang uitvoering Asiel- en Migratiepact",
-      "commissie_slug": "am",
-      "commissie_afkorting": "AM",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
     },
     "ienw|2026D58145": {
@@ -1423,9 +1477,18 @@
       "commissie_slug": "diza",
       "commissie_afkorting": "DiZa",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "buza|2026D57953": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-17T17:02:14.611885+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Geannoteerde Agenda Raad Buitenlandse Zaken Handel van 30 november 2026",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "fin"
+    "laatste_commissie_slug": "vws"
   }
 }

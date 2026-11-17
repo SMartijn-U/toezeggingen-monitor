@@ -437,6 +437,178 @@
           }
         ]
       }
+    },
+    "ienw|TZ202605-079|2026D57963": {
+      "sleutel": "ienw|TZ202605-079|2026D57963",
+      "eerste_signalering": "2026-11-17T16:50:40.290419+00:00",
+      "commissie_id": "44c341a0-ae41-4f51-9c81-1f94d2fd1107",
+      "commissie_afkorting": "I&W",
+      "commissie_naam": "Vaste commissie voor Infrastructuur en Waterstaat",
+      "commissie_slug": "ienw",
+      "selectiereden": "I&W is voortouwcommissie",
+      "toezeggingnummer": "TZ202605-079",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57963",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Ontwerpbesluit houdende wijziging van verschillende algemene maatregelen van bestuur voor het opnemen van voorschriften voor lichte elektrische voertuigen",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Het onderbrengen van diverse voertuigtypen (zoals BSO-bussen, Segways, e-steps en zware elektrische bakfietsen) in de voertuigcategorie LEV"
+      ],
+      "ontbrekende_onderdelen": [
+        "Een expliciete analyse of rapportage over het integraal beschouwen van alle kleine voertuigen met een motor als LEV"
+      ],
+      "bewijsfragmenten": [
+        "Voor voertuigen die nu nog vallen onder de voertuigcategorie bijzondere bromfietsen (zoals BSO-bussen, Segways en elektrische steps) maar straks LEVs worden",
+        "omdat deze voertuigen met dit besluit ook komen te vallen onder de voertuigcategorie LEVs."
+      ],
+      "motivering": "Het ontwerpbesluit regelt dat verschillende specifieke lichte/kleine voertuigen en zware bakfietsen onder de voertuigcategorie LEVs gaan vallen. Er wordt in het document echter niet expliciet gerapporteerd over een brede verkenning naar het kwalificeren van alle kleine voertuigen met een motor als LEV.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Voor voertuigen die nu nog vallen onder de voertuigcategorie bijzondere bromfietsen (zoals BSO-bussen, Segways en elektrische steps) maar straks LEVs worden",
+            "geldig": true
+          },
+          {
+            "fragment": "omdat deze voertuigen met dit besluit ook komen te vallen onder de voertuigcategorie LEVs.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ienw|TZ202509-038|2026D57963": {
+      "sleutel": "ienw|TZ202509-038|2026D57963",
+      "eerste_signalering": "2026-11-17T16:50:40.290442+00:00",
+      "commissie_id": "44c341a0-ae41-4f51-9c81-1f94d2fd1107",
+      "commissie_afkorting": "I&W",
+      "commissie_naam": "Vaste commissie voor Infrastructuur en Waterstaat",
+      "commissie_slug": "ienw",
+      "selectiereden": "I&W is voortouwcommissie",
+      "toezeggingnummer": "TZ202509-038",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57963",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Ontwerpbesluit houdende wijziging van verschillende algemene maatregelen van bestuur voor het opnemen van voorschriften voor lichte elektrische voertuigen",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Het voorleggen van het ontwerpbesluit (AMvB) met daarin de helmplicht voor 12- tot 18-jarigen op elektrische fietsen en LEVs aan de Kamer"
+      ],
+      "ontbrekende_onderdelen": [
+        "Het voorleggen van het besluit nadat het advies van de Raad van State is ontvangen (het besluit is nu aangeboden in het kader van de voorhangprocedure, voordat het naar de Raad van State gaat)"
+      ],
+      "bewijsfragmenten": [
+        "Met dit besluit wordt de helmplicht voor bestuurders en passagiers van fietsen met trapondersteuning (zoals fatbikes) en licht elektrische voertuigen (zoals e-steps), voor zover die personen jonger zijn dan 18 jaar, ingevoerd.",
+        "biedt de Kamer de mogelijkheid zich uit te spreken over het ontwerpbesluit voordat het aan de Afdeling advisering van de Raad van State zal worden voorgelegd"
+      ],
+      "motivering": "De AMvB waarin de helmplicht voor 12- tot 18-jarigen op elektrische fietsen is opgenomen wordt aan de Kamer aangeboden. Dit betreft echter de voorhangprocedure voordat het ontwerpbesluit aan de Raad van State wordt voorgelegd, en dus nog niet het moment nadat het advies van de Raad van State is ontvangen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met dit besluit wordt de helmplicht voor bestuurders en passagiers van fietsen met trapondersteuning (zoals fatbikes) en licht elektrische voertuigen (zoals e-steps), voor zover die personen jonger zijn dan 18 jaar, ingevoerd.",
+            "geldig": true
+          },
+          {
+            "fragment": "biedt de Kamer de mogelijkheid zich uit te spreken over het ontwerpbesluit voordat het aan de Afdeling advisering van de Raad van State zal worden voorgelegd",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "am|TZ202609-071|2026D58182": {
+      "sleutel": "am|TZ202609-071|2026D58182",
+      "eerste_signalering": "2026-11-17T16:53:07.820718+00:00",
+      "commissie_id": "75337852-6240-4696-83ab-c543ee05cf45",
+      "commissie_afkorting": "AM",
+      "commissie_naam": "Vaste commissie voor Asiel en Migratie",
+      "commissie_slug": "am",
+      "selectiereden": "AM is voortouwcommissie",
+      "toezeggingnummer": "TZ202609-071",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58182",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Strafonderbreking en aanpak terugkeer criminele vreemdelingen",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "brief sturen voor de begrotingsbehandeling van Asiel en Migratie",
+        "brief over de Duitse aanpak van criminele vreemdelingen en statushouders",
+        "mogelijkheden voor Nederland verkennen"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Tijdens het commissiedebat Vreemdelingen- en asielbeleid van 10 september jl. heb ik toegezegd uw Kamer voor de begrotingsbehandeling van Asiel en Migratie een brief te sturen over de Duitse aanpak van criminele vreemdelingen en statushouders en de mogelijkheden voor Nederland.",
+        "Met deze brief geef ik, mede namens de staatssecretaris van Justitie en Veiligheid, invulling aan mijn toezegging en reageer ik op voornoemde motie."
+      ],
+      "motivering": "De minister heeft een brief gestuurd voorafgaand aan de begrotingsbehandeling van Asiel en Migratie waarin uitgebreid wordt ingegaan op de Duitse aanpak (Baden-Württemberg) van criminele vreemdelingen en de mogelijke implicaties en vervolgverkenningen voor de Nederlandse praktijk. Hiermee zijn alle onderdelen van de toezegging volledig nagekomen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens het commissiedebat Vreemdelingen- en asielbeleid van 10 september jl. heb ik toegezegd uw Kamer voor de begrotingsbehandeling van Asiel en Migratie een brief te sturen over de Duitse aanpak van criminele vreemdelingen en statushouders en de mogelijkheden voor Nederland.",
+            "geldig": true
+          },
+          {
+            "fragment": "Met deze brief geef ik, mede namens de staatssecretaris van Justitie en Veiligheid, invulling aan mijn toezegging en reageer ik op voornoemde motie.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "def|TZ202303-041|2026D58404": {
+      "sleutel": "def|TZ202303-041|2026D58404",
+      "eerste_signalering": "2026-11-17T17:04:55.202516+00:00",
+      "commissie_id": "524d5de6-83dd-4754-9e1e-c10fc49ad9be",
+      "commissie_afkorting": "DEF",
+      "commissie_naam": "Vaste commissie voor Defensie",
+      "commissie_slug": "def",
+      "selectiereden": "DEF is volgcommissie",
+      "toezeggingnummer": "TZ202303-041",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58404",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "documentonderwerp": "Ontwikkelingen Russische veiligheidsdreiging",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Informatie over inzet binnen EU-verband en afstemming met de G7 inzake Russische tegoeden"
+      ],
+      "ontbrekende_onderdelen": [
+        "Ontwikkelingen binnen de G20",
+        "Gedetailleerde uitwerking van de juridische en praktische mogelijkheden tot confiscatie"
+      ],
+      "bewijsfragmenten": [
+        "Het kabinet zet zich in lijn hiermee binnen de EU – en in afstemming met G7 – in voor de inzet van de geïmmobiliseerde tegoeden van de Russische Centrale Bank."
+      ],
+      "motivering": "In de brief wordt kort genoemd dat het kabinet zich in EU-verband en in afstemming met de G7 inzet voor het gebruik van geïmmobiliseerde tegoeden. Er wordt echter niet ingegaan op de G20 of op een nadere uiteenzetting van de mogelijkheden tot confisqueren.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Het kabinet zet zich in lijn hiermee binnen de EU – en in afstemming met G7 – in voor de inzet van de geïmmobiliseerde tegoeden van de Russische Centrale Bank.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
