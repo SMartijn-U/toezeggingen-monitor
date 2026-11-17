@@ -12,6 +12,10 @@ RELEVANTE_DOCUMENTSOORTEN = {
     "Memorie van toelichting",
 }
 
+DEBUG_ZAAK_ID = (
+    "6ba22160-2371-4f6b-a106-1be884f2e409"
+)
+
 def verrijk_document_met_zaakcommissies(
     document
 ):
@@ -87,12 +91,28 @@ def get_zaakcommissies(zaak_id):
 
     data = response.json()
 
-    resultaten = []
-
-    for actor in data.get(
+    actors = data.get(
         "value",
         []
-    ):
+    )
+
+    if zaak_id == DEBUG_ZAAK_ID:
+        print(
+            "\nDEBUG ZAAKACTOREN:",
+            zaak_id,
+            "| aantal:",
+            len(actors)
+        )
+
+        for actor in actors:
+            print(
+                "DEBUG ZAAKACTOR:",
+                actor
+            )
+
+    resultaten = []
+
+    for actor in actors:
         relatie = actor.get(
             "Relatie"
         )
