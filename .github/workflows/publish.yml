@@ -58,7 +58,8 @@ jobs:
       - name: Bouw beoordelingen
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python src/build_assessments.py
+          PYTHONUNBUFFERED: "1"
+        run: python -u src/build_assessments.py
 
       - name: Bewaar monitorstatus
         run: |
