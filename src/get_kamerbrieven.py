@@ -75,12 +75,7 @@ def get_zaakcommissies(zaak_id):
 
     params = {
         "$filter": (
-            f"Zaak_Id eq {zaak_id} "
-            "and Verwijderd eq false "
-            "and ("
-            "Relatie eq 'Voortouwcommissie' "
-            "or Relatie eq 'Volgcommissie'"
-            ")"
+            f"Zaak_Id eq {zaak_id}"
         ),
     }
 
@@ -98,6 +93,16 @@ def get_zaakcommissies(zaak_id):
         "value",
         []
     ):
+        relatie = actor.get(
+            "Relatie"
+        )
+
+        if relatie not in {
+            "Voortouwcommissie",
+            "Volgcommissie",
+        }:
+            continue
+
         commissie_id = actor.get(
             "Commissie_Id"
         )
@@ -127,9 +132,7 @@ def get_zaakcommissies(zaak_id):
             ),
 
             "rol":
-                actor.get(
-                    "Relatie"
-                ),
+                relatie,
         })
 
     return resultaten
