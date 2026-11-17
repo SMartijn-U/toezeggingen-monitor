@@ -192,10 +192,6 @@ def get_recente_documenten(aantal_dagen=7):
             for document in batch
         ]
 
-        alle_documenten.extend(batch)data = response.json()
-        
-        batch = data.get("value", [])
-
         alle_documenten.extend(batch)
 
         print(
