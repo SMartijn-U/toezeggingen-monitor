@@ -228,7 +228,7 @@ def roep_gemini_aan(
                     < max_pogingen_per_model
                 ):
                     wachttijd = (
-                        5 * (2 ** (poging - 1))
+                        15 * (3 ** (poging - 1))
                         + random.uniform(0, 2)
                     )
 
