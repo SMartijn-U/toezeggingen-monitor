@@ -511,26 +511,26 @@ def verwerk_beoordelingseenheid(
     )
 
     for kandidaat in kandidaten:
-    print(
-        "KANDIDAAT GEMINI:",
-        commissie_afkorting,
-        "|",
-        kandidaat.get(
-            "toezeggingnummer"
-        ),
-        "| tfidf:",
-        kandidaat.get(
-            "tfidf_score"
-        ),
-        "| bonus:",
-        kandidaat.get(
-            "bonus"
-        ),
-        "| totaal:",
-        kandidaat.get(
-            "totale_score"
-        ),
-    )
+        print(
+            "KANDIDAAT GEMINI:",
+            commissie_afkorting,
+            "|",
+            kandidaat.get(
+                "toezeggingnummer"
+            ),
+            "| tfidf:",
+            kandidaat.get(
+                "tfidf_score"
+            ),
+            "| bonus:",
+            kandidaat.get(
+                "bonus"
+            ),
+            "| totaal:",
+            kandidaat.get(
+                "totale_score"
+            ),
+        )
     
     resultaat = beoordeel_document(
         document,
