@@ -55,11 +55,6 @@ jobs:
       - name: Droge migratiecontrole
         run: python src/test_committee_migration.py
 
-      - name: Tijdelijke stop na commissieoverlapcontrole
-        run: |
-           echo "STOP: commissieoverlap en kandidaatselectie controleren."
-           exit 1
-
       - name: Bouw beoordelingen
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
