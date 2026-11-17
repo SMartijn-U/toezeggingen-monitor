@@ -12,6 +12,125 @@ RELEVANTE_DOCUMENTSOORTEN = {
     "Memorie van toelichting",
 }
 
+def verrijk_document_met_zaakcommissies(
+    document
+):
+    zaak_ids = []
+    zaak_commissies = []
+    zaak_commissie_ids = set()
+
+    for zaak in document.get(
+        "Zaak",
+        []
+    ):
+        zaak_id = zaak.get("Id")
+
+        if zaak_id:
+            zaak_ids.append(
+                zaak_id
+            )
+
+        for actor in zaak.get(
+            "ZaakActor",
+            []
+        ):
+            relatie = actor.get(
+                "Relatie"
+            )
+
+            if relatie not in {
+                "Voortouwcommissie",
+                "Volgcommissie",
+            }:
+                continue
+
+            commissie_id = actor.get(
+                "Commissie_Id"
+            )
+
+            commissie = actor.get(
+                "Commissie"
+            ) or {}
+
+            if not commissie_id:
+                commissie_id = commissie.get(
+                    "Id"
+                )
+
+            if not commissie_id:
+                continue
+
+            sleutel = (
+                zaak_id,
+                commissie_id,
+                relatie,
+            )
+
+            bestaand = {
+                (
+                    item.get("zaak_id"),
+                    item.get("commissie_id"),
+                    item.get("rol"),
+                )
+                for item in zaak_commissies
+            }
+
+            if sleutel in bestaand:
+                continue
+
+            zaak_commissie_ids.add(
+                commissie_id
+            )
+
+            zaak_commissies.append({
+                "zaak_id":
+                    zaak_id,
+
+                "commissie_id":
+                    commissie_id,
+
+                "commissie_afkorting": (
+                    actor.get(
+                        "ActorAfkorting"
+                    )
+                    or commissie.get(
+                        "Afkorting"
+                    )
+                    or ""
+                ),
+
+                "commissie_naam": (
+                    actor.get(
+                        "ActorNaam"
+                    )
+                    or commissie.get(
+                        "NaamNL"
+                    )
+                    or commissie.get(
+                        "NaamWebNL"
+                    )
+                    or ""
+                ),
+
+                "rol":
+                    relatie,
+            })
+
+    document[
+        "ZaakIds"
+    ] = zaak_ids
+
+    document[
+        "ZaakCommissieIds"
+    ] = sorted(
+        zaak_commissie_ids
+    )
+
+    document[
+        "ZaakCommissies"
+    ] = zaak_commissies
+
+    return document
 
 def get_recente_documenten(aantal_dagen=7):
     url = f"{BASE_URL}/Document"
@@ -46,6 +165,13 @@ def get_recente_documenten(aantal_dagen=7):
     while True:
         params = {
             "$filter": volledig_filter,
+            "$expand": (
+                "Zaak("
+                "$expand=ZaakActor("
+                "$expand=Commissie"
+                ")"
+                ")"
+            ),
             "$top": str(batch_size),
             "$skip": str(skip),
         }
@@ -57,6 +183,17 @@ def get_recente_documenten(aantal_dagen=7):
         )
 
         data = response.json()
+        batch = data.get("value", [])
+
+        batch = [
+            verrijk_document_met_zaakcommissies(
+                document
+            )
+            for document in batch
+        ]
+
+        alle_documenten.extend(batch)data = response.json()
+        
         batch = data.get("value", [])
 
         alle_documenten.extend(batch)
@@ -100,6 +237,27 @@ if __name__ == "__main__":
             document.get("ContentType"),
             "| ID:",
             document.get("Id"),
+            "| zaken:",
+            document.get(
+                "ZaakIds",
+                []
+            ),
+            "| zaakcommissies:",
+            [
+                (
+                    commissie.get(
+                        "commissie_afkorting"
+                    ),
+                    commissie.get(
+                        "rol"
+                    ),
+                )
+                for commissie
+                in document.get(
+                    "ZaakCommissies",
+                    []
+                )
+            ],
         )
     
     print(
