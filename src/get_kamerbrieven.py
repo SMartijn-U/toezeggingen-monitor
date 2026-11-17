@@ -16,105 +16,43 @@ def verrijk_document_met_zaakcommissies(
     document
 ):
     zaak_ids = []
-    zaak_commissies = []
-    zaak_commissie_ids = set()
 
     for zaak in document.get(
         "Zaak",
         []
     ):
-        zaak_id = zaak.get("Id")
+        zaak_id = zaak.get(
+            "Id"
+        )
 
         if zaak_id:
             zaak_ids.append(
                 zaak_id
             )
 
-        for actor in zaak.get(
-            "ZaakActor",
-            []
-        ):
-            relatie = actor.get(
-                "Relatie"
+    zaak_commissies = []
+    zaak_commissie_ids = set()
+
+    for zaak_id in zaak_ids:
+        commissies = get_zaakcommissies(
+            zaak_id
+        )
+
+        for commissie in commissies:
+            commissie_id = commissie.get(
+                "commissie_id"
             )
-
-            if relatie not in {
-                "Voortouwcommissie",
-                "Volgcommissie",
-            }:
-                continue
-
-            commissie_id = actor.get(
-                "Commissie_Id"
-            )
-
-            commissie = actor.get(
-                "Commissie"
-            ) or {}
 
             if not commissie_id:
-                commissie_id = commissie.get(
-                    "Id"
-                )
-
-            if not commissie_id:
-                continue
-
-            sleutel = (
-                zaak_id,
-                commissie_id,
-                relatie,
-            )
-
-            bestaand = {
-                (
-                    item.get("zaak_id"),
-                    item.get("commissie_id"),
-                    item.get("rol"),
-                )
-                for item in zaak_commissies
-            }
-
-            if sleutel in bestaand:
                 continue
 
             zaak_commissie_ids.add(
                 commissie_id
             )
 
-            zaak_commissies.append({
-                "zaak_id":
-                    zaak_id,
-
-                "commissie_id":
-                    commissie_id,
-
-                "commissie_afkorting": (
-                    actor.get(
-                        "ActorAfkorting"
-                    )
-                    or commissie.get(
-                        "Afkorting"
-                    )
-                    or ""
-                ),
-
-                "commissie_naam": (
-                    actor.get(
-                        "ActorNaam"
-                    )
-                    or commissie.get(
-                        "NaamNL"
-                    )
-                    or commissie.get(
-                        "NaamWebNL"
-                    )
-                    or ""
-                ),
-
-                "rol":
-                    relatie,
-            })
+            zaak_commissies.append(
+                commissie
+            )
 
     document[
         "ZaakIds"
@@ -131,6 +69,70 @@ def verrijk_document_met_zaakcommissies(
     ] = zaak_commissies
 
     return document
+
+def get_zaakcommissies(zaak_id):
+    url = f"{BASE_URL}/ZaakActor"
+
+    params = {
+        "$filter": (
+            f"Zaak_Id eq {zaak_id} "
+            "and Verwijderd eq false "
+            "and ("
+            "Relatie eq 'Voortouwcommissie' "
+            "or Relatie eq 'Volgcommissie'"
+            ")"
+        ),
+    }
+
+    response = get_met_retries(
+        url,
+        params=params,
+        timeout=60
+    )
+
+    data = response.json()
+
+    resultaten = []
+
+    for actor in data.get(
+        "value",
+        []
+    ):
+        commissie_id = actor.get(
+            "Commissie_Id"
+        )
+
+        if not commissie_id:
+            continue
+
+        resultaten.append({
+            "zaak_id":
+                zaak_id,
+
+            "commissie_id":
+                commissie_id,
+
+            "commissie_afkorting": (
+                actor.get(
+                    "ActorAfkorting"
+                )
+                or ""
+            ),
+
+            "commissie_naam": (
+                actor.get(
+                    "ActorNaam"
+                )
+                or ""
+            ),
+
+            "rol":
+                actor.get(
+                    "Relatie"
+                ),
+        })
+
+    return resultaten
 
 def get_recente_documenten(aantal_dagen=7):
     url = f"{BASE_URL}/Document"
@@ -165,13 +167,7 @@ def get_recente_documenten(aantal_dagen=7):
     while True:
         params = {
             "$filter": volledig_filter,
-            "$expand": (
-                "Zaak("
-                "$expand=ZaakActor("
-                "$expand=Commissie"
-                ")"
-                ")"
-            ),
+            "$expand": "Zaak",
             "$top": str(batch_size),
             "$skip": str(skip),
         }
