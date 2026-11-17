@@ -287,6 +287,35 @@ def verwerk_documenten(
             for slug, commissiegegevens in (
                 toezeggingen_per_commissie.items()
             ):
+                commissie_id = (
+                    commissiegegevens.get(
+                        "commissie_id"
+                    )
+                )
+
+                zaak_commissie_ids = set(
+                    document.get(
+                        "ZaakCommissieIds",
+                        []
+                    )
+                )
+
+                if not zaak_commissie_ids:
+                    print(
+                        "COMMISSIEFILTER:",
+                        nummer,
+                        "| geen zaakcommissies; "
+                        "document overgeslagen"
+                    )
+                    break
+
+                if (
+                    not commissie_id
+                    or commissie_id
+                    not in zaak_commissie_ids
+                ):
+                    continue
+
                 commissie_toezeggingen = (
                     commissiegegevens[
                         "toezeggingen"
@@ -296,6 +325,32 @@ def verwerk_documenten(
                 if not commissie_toezeggingen:
                     continue
 
+                print(
+                    "COMMISSIEOVERLAP:",
+                    nummer,
+                    "|",
+                    commissiegegevens[
+                        "commissie_afkorting"
+                    ],
+                    "| commissie-ID:",
+                    commissie_id,
+                    "| zaakcommissies:",
+                    [
+                        (
+                            item.get(
+                                "commissie_afkorting"
+                            ),
+                            item.get(
+                                "rol"
+                            ),
+                        )
+                        for item in document.get(
+                            "ZaakCommissies",
+                            []
+                        )
+                    ]
+                )
+        
                 kandidaten = rangschik_kandidaten(
                     document,
                     tekst,
