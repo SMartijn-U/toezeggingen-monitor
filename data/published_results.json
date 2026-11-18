@@ -1338,6 +1338,98 @@
           }
         ]
       }
+    },
+    "eu|TZ202605-049|2026D58152": {
+      "sleutel": "eu|TZ202605-049|2026D58152",
+      "eerste_signalering": "2026-11-18T10:49:59.736817+00:00",
+      "commissie_id": "c58607ca-914d-4c14-b911-76ee39ca3dda",
+      "commissie_afkorting": "EU",
+      "commissie_naam": "Vaste commissie voor Europese Zaken",
+      "commissie_slug": "eu",
+      "selectiereden": "EU is voortouwcommissie",
+      "toezeggingnummer": "TZ202605-049",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58152",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Kabinetsappreciatie Commissiemededeling 'Voorbereiden op een bredereUnie",
+      "oordeel": "waarschijnlijk_afgedaan",
+      "rapportagecategorie": "Mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Informatie over de stand van zaken ten aanzien van graduele toetreding (geleidelijke integratie) van EU-kandidaat-lidstaten",
+        "Informatie over ontwikkelingen en waarborgen ten aanzien van nieuwe toetredingsverdragen"
+      ],
+      "ontbrekende_onderdelen": [
+        "Specifieke verzending of adressering voorafgaand aan de Raad Algemene Zaken van juni"
+      ],
+      "bewijsfragmenten": [
+        "Deze brief bevat een kabinetsappreciatie van de onderwerpen die door de Commissie worden benoemd in de mededeling.",
+        "De Commissie identificeert vier prioritaire gebieden met mogelijkheden voor meer geleidelijke integratie.",
+        "De Commissie onderstreept dat waarborgen in toetredingsverdragen kunnen helpen om op te treden tegen ernstige tekortkomingen in de naleving van lidmaatschapsverplichtingen"
+      ],
+      "motivering": "Het document geeft een uitgebreide toelichting en appreciatie van zowel de stand van zaken rond geleidelijke integratie (graduele toetreding) als de waarborgen in nieuwe toetredingsverdragen. Aangezien de brief dateert van 16 november 2026 ter voorbereiding op het Commissiedebat van 26 november, wordt de Raad Algemene Zaken van juni niet specifiek vermeld, maar de inhoudelijke onderwerpen van de toezegging worden grondig behandeld.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Deze brief bevat een kabinetsappreciatie van de onderwerpen die door de Commissie worden benoemd in de mededeling.",
+            "geldig": true
+          },
+          {
+            "fragment": "De Commissie identificeert vier prioritaire gebieden met mogelijkheden voor meer geleidelijke integratie.",
+            "geldig": true
+          },
+          {
+            "fragment": "De Commissie onderstreept dat waarborgen in toetredingsverdragen kunnen helpen om op te treden tegen ernstige tekortkomingen in de naleving van lidmaatschapsverplichtingen",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vro|TZ202611-083|2026D58536": {
+      "sleutel": "vro|TZ202611-083|2026D58536",
+      "eerste_signalering": "2026-11-18T10:58:00.235807+00:00",
+      "commissie_id": "48c117dc-4dd3-410e-ac30-14437c2a2f08",
+      "commissie_afkorting": "VRO",
+      "commissie_naam": "Vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+      "commissie_slug": "vro",
+      "selectiereden": "VRO is voortouwcommissie",
+      "toezeggingnummer": "TZ202611-083",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58536",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "documentonderwerp": "Toezegging gedaan tijdens het debat grondbeleid van 11 november 2026, over de onroerendezaakbelasting ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Het sturen van een brief voorafgaand aan het debat over de Staat van de Volkshuisvesting over de verhouding tussen de OZB en andere regelingen"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "In het debat over grondbeleid van 11 november 2026 heb ik toegezegd om voorafgaand aan het debat over de Staat van de Volkshuisvesting op 19 november 2026 een brief te sturen over hoe de onroerendezaakbelasting (ozb) en andere regelingen zich tot elkaar verhouden.",
+        "Met deze brief informeer ik u over de verhouding tussen kostenverhaal en de ozb en tussen baatbelasting en de ozb."
+      ],
+      "motivering": "Met deze brief van 17 november 2026 informeert de minister de Kamer voorafgaand aan het debat van 19 november 2026 over de verhouding tussen de OZB en andere regelingen (met name kostenverhaal en baatbelasting). Daarmee is de toezegging volledig nagekomen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In het debat over grondbeleid van 11 november 2026 heb ik toegezegd om voorafgaand aan het debat over de Staat van de Volkshuisvesting op 19 november 2026 een brief te sturen over hoe de onroerendezaakbelasting (ozb) en andere regelingen zich tot elkaar verhouden.",
+            "geldig": true
+          },
+          {
+            "fragment": "Met deze brief informeer ik u over de verhouding tussen kostenverhaal en de ozb en tussen baatbelasting en de ozb.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }

@@ -1588,6 +1588,76 @@
       "onderwerp": "Verdeling middelen versterking rechtsstaat",
       "commissie_slug": "jenv",
       "commissie_afkorting": "J&V"
+    },
+    "eu|2026D58152": {
+      "datum_verwerkt": "2026-11-18T10:49:59.736796+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Kabinetsappreciatie Commissiemededeling 'Voorbereiden op een bredereUnie",
+      "commissie_slug": "eu",
+      "commissie_afkorting": "EU"
+    },
+    "fin|2026D57772": {
+      "datum_verwerkt": "2026-11-18T10:51:08.676991+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Reactie op het verzoek van het lid Eerdmans, gedaan tijdens het debat over het Pakket Belastingplan 2027 van 12 november 2026, over de samenloop tussen twee amendementen bij het pakket Belastingplan 2027 ",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "biza|2026D58331": {
+      "datum_verwerkt": "2026-11-18T10:51:48.478021+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Tussenuitkomst onderzoek takenpakket medeoverheden",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "ienw|2026D58097": {
+      "datum_verwerkt": "2026-11-18T10:52:24.215806+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over Lelystad Airport",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "buza|2026D58145": {
+      "datum_verwerkt": "2026-11-18T10:53:00.569334+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "ocw|2026D57817": {
+      "datum_verwerkt": "2026-11-18T10:53:33.328227+00:00",
+      "documentdatum": "2026-11-13T00:00:00+01:00",
+      "onderwerp": "Emancipatiemonitor 2026",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "bho|2026D57737": {
+      "datum_verwerkt": "2026-11-18T10:54:08.341206+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Kwartaalrapportage EU-wetgevingsonderhandeling Q3 2026 ",
+      "commissie_slug": "bho",
+      "commissie_afkorting": "BHO"
+    },
+    "szw|2026D58223": {
+      "datum_verwerkt": "2026-11-18T10:55:16.147564+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Kabinetsreactie initiatiefnota van het lid Ceder over het effectiever oplossen en duurzaam voorkomen van problematische schulden (Kamerstuk 36909-2)",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "vws|2026D57727": {
+      "datum_verwerkt": "2026-11-18T10:56:46.903125+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over het acute zorglandschap staat onder zware druk ",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "vro|2026D58536": {
+      "datum_verwerkt": "2026-11-18T10:58:00.235787+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Toezegging gedaan tijdens het debat grondbeleid van 11 november 2026, over de onroerendezaakbelasting ",
+      "commissie_slug": "vro",
+      "commissie_afkorting": "VRO"
     }
   },
   "wacht_op_herhaling": {
@@ -1620,6 +1690,6 @@
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "jenv"
+    "laatste_commissie_slug": "vro"
   }
 }
