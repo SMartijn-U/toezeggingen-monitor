@@ -4,7 +4,12 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: "0 5 * * 1-6"
+    # Maandag t/m vrijdag: 1x vroeg
+    - cron: "0 5 * * 1-5"
+
+    # Zaterdag en zondag: 2x per dag
+    - cron: "0 5 * * 6,0"
+    - cron: "0 13 * * 6,0"
 
 concurrency:
   group: toezeggingen-monitor
