@@ -1430,6 +1430,210 @@
           }
         ]
       }
+    },
+    "kgg|TZ202610-151|2026D58862": {
+      "sleutel": "kgg|TZ202610-151|2026D58862",
+      "eerste_signalering": "2026-11-18T12:12:44.835875+00:00",
+      "commissie_id": "4e2ced14-ec17-43f1-8b5f-4eadc05b4589",
+      "commissie_afkorting": "KGG",
+      "commissie_naam": "Vaste commissie voor Klimaat en Groene Groei",
+      "commissie_slug": "kgg",
+      "selectiereden": "KGG is voortouwcommissie",
+      "toezeggingnummer": "TZ202610-151",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58862",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "documentonderwerp": "Verslag Energieraad 29 oktober 2026 (Luxemburg)",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "In het verslag van de Energieraad ingaan op amortisatie",
+        "Bestaande inzichten en verschillende vormen toelichten"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Conform de toezegging aan de Kamer tijdens het Commissiedebat over de Energieraad van 14 oktober jl. deelt het kabinet hierbij opnieuw het amortisatierapport over het elektriciteitsnet.",
+        "Dit rapport beschrijft de mogelijkheid om netkosten anders te verdelen over tijd.",
+        "Volgens dit rapport is amortisatie slechts in enkele scenario’s in beperkte mate en met beperkte impact mogelijk."
+      ],
+      "motivering": "In de brief en het bijgevoegde verslag wordt expliciet ingegaan op de toezegging gedaan tijdens het commissiedebat van 14 oktober om in het verslag van de Energieraad in te gaan op amortisatie, bestaande inzichten en de verschillende vormen. Het amortisatierapport en de toelichting hierop zijn volledig opgenomen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Conform de toezegging aan de Kamer tijdens het Commissiedebat over de Energieraad van 14 oktober jl. deelt het kabinet hierbij opnieuw het amortisatierapport over het elektriciteitsnet.",
+            "geldig": true
+          },
+          {
+            "fragment": "Dit rapport beschrijft de mogelijkheid om netkosten anders te verdelen over tijd.",
+            "geldig": true
+          },
+          {
+            "fragment": "Volgens dit rapport is amortisatie slechts in enkele scenario’s in beperkte mate en met beperkte impact mogelijk.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "jenv|TZ202610-203|2026D58891": {
+      "sleutel": "jenv|TZ202610-203|2026D58891",
+      "eerste_signalering": "2026-11-18T12:13:41.827041+00:00",
+      "commissie_id": "14cac666-51cb-4154-80da-9b0e2eeb5014",
+      "commissie_afkorting": "J&V",
+      "commissie_naam": "Vaste commissie voor Justitie en Veiligheid",
+      "commissie_slug": "jenv",
+      "selectiereden": "J&V is voortouwcommissie",
+      "toezeggingnummer": "TZ202610-203",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58891",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "documentonderwerp": "Verhoogde inzet aanpak van ongewenste buitenlandse inmenging en aanverwante vraagstukken",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "De minister van OCW informeert de Kamer in het eerste kwartaal 2027 over het traject van toezicht op weekendscholen."
+      ],
+      "ontbrekende_onderdelen": [
+        "De minister van Buitenlandse Zaken informeert de Kamer op korte termijn over zijn rol hierin."
+      ],
+      "bewijsfragmenten": [
+        "De staatssecretaris van OCW zal uw Kamer hierover in het eerste kwartaal van 2027 informeren."
+      ],
+      "motivering": "Het onderdeel over de informatievoorziening door de minister/staatssecretaris van OCW in het eerste kwartaal van 2027 is gedekt in de tekst. Het onderdeel over de minister van Buitenlandse Zaken die op korte termijn informeert over zijn rol wordt niet expliciet als afgeronde actie in deze brief teruggevonden (er wordt wel genoemd dat diplomatiek contact één van de instrumenten is), waardoor de toezgging slechts deels is behandeld.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "De staatssecretaris van OCW zal uw Kamer hierover in het eerste kwartaal van 2027 informeren.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "jenv|TZ202610-200|2026D58891": {
+      "sleutel": "jenv|TZ202610-200|2026D58891",
+      "eerste_signalering": "2026-11-18T12:13:41.827051+00:00",
+      "commissie_id": "14cac666-51cb-4154-80da-9b0e2eeb5014",
+      "commissie_afkorting": "J&V",
+      "commissie_naam": "Vaste commissie voor Justitie en Veiligheid",
+      "commissie_slug": "jenv",
+      "selectiereden": "J&V is voortouwcommissie",
+      "toezeggingnummer": "TZ202610-200",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58891",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "documentonderwerp": "Verhoogde inzet aanpak van ongewenste buitenlandse inmenging en aanverwante vraagstukken",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Aankondiging dat de Kamer in het eerste kwartaal van 2027 wordt geïnformeerd over de vervolgstappen."
+      ],
+      "ontbrekende_onderdelen": [
+        "Daadwerkelijke oplevering van de inhoudelijke informatie en de uitkomsten zelf (het document kondigt deze informatie slechts aan voor het eerste kwartaal van 2027)."
+      ],
+      "bewijsfragmenten": [
+        "In het eerste kwartaal van 2027 informeer ik uw Kamer over de vervolgstappen van het wetgevingstraject en de uitkomsten van de gesprekken met onder andere Frankrijk en België."
+      ],
+      "motivering": "Het document kondigt aan dat de Kamer in het eerste kwartaal van 2027 zal worden geïnformeerd over de vervolgstappen. Volgens de regels is een toezegging niet afgedaan wanneer het document alleen aankondigt dat de informatie later komt.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In het eerste kwartaal van 2027 informeer ik uw Kamer over de vervolgstappen van het wetgevingstraject en de uitkomsten van de gesprekken met onder andere Frankrijk en België.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "jenv|TZ202610-199|2026D58891": {
+      "sleutel": "jenv|TZ202610-199|2026D58891",
+      "eerste_signalering": "2026-11-18T12:13:41.827059+00:00",
+      "commissie_id": "14cac666-51cb-4154-80da-9b0e2eeb5014",
+      "commissie_afkorting": "J&V",
+      "commissie_naam": "Vaste commissie voor Justitie en Veiligheid",
+      "commissie_slug": "jenv",
+      "selectiereden": "J&V is voortouwcommissie",
+      "toezeggingnummer": "TZ202610-199",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58891",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "documentonderwerp": "Verhoogde inzet aanpak van ongewenste buitenlandse inmenging en aanverwante vraagstukken",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informatie over de ontwikkelingen rondom het wetgevingstraject en de interim-mogelijkheid (Wpg)."
+      ],
+      "ontbrekende_onderdelen": [
+        "Informatie die voor het einde van het jaar wordt verstrekt (deze brief is van november, maar de planning voor het wetsvoorstel wordt pas rond zomerreces 2027 voorzien en de brief zelf biedt een planning voor begin 2027)."
+      ],
+      "bewijsfragmenten": [
+        "Daarom wordt de vormgeving van een tijdelijke constructie op grond van de Wpg bij de politie momenteel verder uitgelopen."
+      ],
+      "motivering": "Het document geeft wel al standinformatie over de vertrouwenslijn en de interim-mogelijkheid (Wpg), maar de toezegging behelst specifieke termijnen en volledige afronding/rapportage die hier deels worden toegelicht als planning voor de toekomst.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Daarom wordt de vormgeving van een tijdelijke constructie op grond van de Wpg bij de politie momenteel verder uitgelopen.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202512-039|2026D58554": {
+      "sleutel": "ocw|TZ202512-039|2026D58554",
+      "eerste_signalering": "2026-11-18T12:18:24.122699+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202512-039",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58554",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "documentonderwerp": "Impuls en voortgang Versterkte aanpak lhbtiq+- veiligheid 2026 - 2029",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Voortgangsrapportage Versterkte aanpak lhbtiq+-veiligheid wordt aangeboden."
+      ],
+      "ontbrekende_onderdelen": [
+        "Expliciete terugkeer van Roze in Blauw in deze specifieke rapportage is niet uitgewerkt als apart onderdeel in de aangeboden tekst."
+      ],
+      "bewijsfragmenten": [
+        "Zoals aan uw Kamer is toegezegd, wordt u via bijgevoegde rapportage op de hoogte gebracht van de inzet en de voortgang van de Versterkte aanpak in het jaar 2026."
+      ],
+      "motivering": "Het document meldt dat de voortgangsrapportage van de Versterkte aanpak lhbtiq+-veiligheid 2026 is bijgevoegd. Hiermee is het hoofdonderdeel van de toezegging (de voortgangsrapportage) geleverd. Het specifieke element over 'Roze in Blauw' is echter niet expliciet terug te vinden als onderdeel van de geleverde rapportage in de tekst van deze brief, waardoor het oordeel op 'mogelijk_deels_afgedaan' uitkomt.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Zoals aan uw Kamer is toegezegd, wordt u via bijgevoegde rapportage op de hoogte gebracht van de inzet en de voortgang van de Versterkte aanpak in het jaar 2026.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }

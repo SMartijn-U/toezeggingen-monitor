@@ -1658,6 +1658,76 @@
       "onderwerp": "Toezegging gedaan tijdens het debat grondbeleid van 11 november 2026, over de onroerendezaakbelasting ",
       "commissie_slug": "vro",
       "commissie_afkorting": "VRO"
+    },
+    "kgg|2026D58862": {
+      "datum_verwerkt": "2026-11-18T12:12:44.835853+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Verslag Energieraad 29 oktober 2026 (Luxemburg)",
+      "commissie_slug": "kgg",
+      "commissie_afkorting": "KGG"
+    },
+    "jenv|2026D58891": {
+      "datum_verwerkt": "2026-11-18T12:13:41.827021+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Verhoogde inzet aanpak van ongewenste buitenlandse inmenging en aanverwante vraagstukken",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
+    },
+    "eu|2026D58068": {
+      "datum_verwerkt": "2026-11-18T12:14:08.148602+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Kabinetsappreciatie van de Commissiemededeling 'Voorbereiden op een bredere Unie'",
+      "commissie_slug": "eu",
+      "commissie_afkorting": "EU"
+    },
+    "fin|2026D57647": {
+      "datum_verwerkt": "2026-11-18T12:14:53.151003+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Appreciaties moties en amendementen pakket belastingplan 2027",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "ienw|2026D58901": {
+      "datum_verwerkt": "2026-11-18T12:15:13.942933+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Wijziging van Bijlage I bij de Europese Overeenkomst inzake internationale hoofdverkeerswegen (AGR); Genève, 31 oktober 2024",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "buza|2026D58903": {
+      "datum_verwerkt": "2026-11-18T12:18:02.706756+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Briefwisseling houdende een verdrag tussen het Koninkrijk der Nederlanden en de Verenigde Naties inzake de “United Nations Strategic Force Generation and Capability Workshop”, te Breda, Nederland, van 16 tot en met 20 november 2026; New York, 9 november 2026",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "ocw|2026D58554": {
+      "datum_verwerkt": "2026-11-18T12:18:24.122677+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Impuls en voortgang Versterkte aanpak lhbtiq+- veiligheid 2026 - 2029",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "vro|2026D58029": {
+      "datum_verwerkt": "2026-11-18T12:18:59.848343+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "16e voortgangsrapportage Binnenhof Renovatie",
+      "commissie_slug": "vro",
+      "commissie_afkorting": "VRO"
+    },
+    "jenv|2026D58462": {
+      "datum_verwerkt": "2026-11-18T12:19:18.271840+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Uitvoering van de motie van het lid El Abassi over afzien van de voorgenomen verhoging van verkeersboetes (Kamerstuk 29279-1074)",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
+    },
+    "eu|2026D57879": {
+      "datum_verwerkt": "2026-11-18T12:19:36.879372+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Addendum op de Geannoteerde Agenda voor de Raad Buitenlandse Zaken van 16 november 2026 ",
+      "commissie_slug": "eu",
+      "commissie_afkorting": "EU"
     }
   },
   "wacht_op_herhaling": {
@@ -1690,6 +1760,6 @@
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "vro"
+    "laatste_commissie_slug": "eu"
   }
 }
