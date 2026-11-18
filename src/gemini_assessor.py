@@ -14,6 +14,11 @@ MODELLEN = [
     "gemini-3.5-flash-lite",
 ]
 
+MAX_POGINGEN_PER_MODEL = {
+    "gemini-3.6-flash": 1,
+    "gemini-3.8-flash": 1,
+    "gemini-3.5-flash-lite": 2,
+}
 
 class Beoordeling(BaseModel):
     toezeggingnummer: str
@@ -165,19 +170,25 @@ KANDIDAAT-TOEZEGGINGEN
 
 def roep_gemini_aan(
     client,
-    prompt,
-    max_pogingen_per_model=2
+    prompt
 ):
     laatste_fout = None
 
     for model in MODELLEN:
+        max_pogingen = (
+            MAX_POGINGEN_PER_MODEL.get(
+                model,
+                1
+            )
+        )
+
         print(
             f"Gemini-model proberen: {model}"
         )
 
         for poging in range(
             1,
-            max_pogingen_per_model + 1
+            max_pogingen + 1
         ):
             try:
                 response = (
@@ -221,15 +232,12 @@ def roep_gemini_aan(
                     f"Tijdelijke Gemini-fout "
                     f"met {model}. "
                     f"Poging {poging} van "
-                    f"{max_pogingen_per_model}."
+                    f"{max_pogingen}."
                 )
 
-                if (
-                    poging
-                    < max_pogingen_per_model
-                ):
+                if poging < max_pogingen:
                     wachttijd = (
-                        15 * (3 ** (poging - 1))
+                        15
                         + random.uniform(0, 2)
                     )
 
