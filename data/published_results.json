@@ -609,6 +609,426 @@
           }
         ]
       }
+    },
+    "kgg|TZ202509-015|2026D58055": {
+      "sleutel": "kgg|TZ202509-015|2026D58055",
+      "eerste_signalering": "2026-11-18T08:00:25.121892+00:00",
+      "commissie_id": "4e2ced14-ec17-43f1-8b5f-4eadc05b4589",
+      "commissie_afkorting": "KGG",
+      "commissie_naam": "Vaste commissie voor Klimaat en Groene Groei",
+      "commissie_slug": "kgg",
+      "selectiereden": "KGG is voortouwcommissie",
+      "toezeggingnummer": "TZ202509-015",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58055",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Reactie van het kabinet op het advies van het IGH inzake klimaatverandering",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Uitgebreide kabinetsreactie op het advies van het Internationaal Gerechtshof inzake klimaatverandering en internationaal recht"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Zoals toegezegd ontvangt uw Kamer hierbij, mede namens de minister van Klimaat en Groene Groei, de minister van Buitenlandse Handel en Ontwikkelingssamenwerking en de minister van Infrastructuur en Waterstaat de reactie van het kabinet op het advies van het Internationaal Gerechtshof (IGH) van 23 juli 2025 inzake klimaatverandering en internationaal recht.",
+        "De bijlage bevat een uitgebreide analyse waarbij de belangrijkste juridische aspecten van het advies worden weergegeven."
+      ],
+      "motivering": "Het document bevat de gevraagde uitgebreide reactie van het kabinet op het advies van het IGH inzake klimaatverandering en de juridische verplichtingen van staten. Hiermee is de toezegging volledig nagekomen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Zoals toegezegd ontvangt uw Kamer hierbij, mede namens de minister van Klimaat en Groene Groei, de minister van Buitenlandse Handel en Ontwikkelingssamenwerking en de minister van Infrastructuur en Waterstaat de reactie van het kabinet op het advies van het Internationaal Gerechtshof (IGH) van 23 juli 2025 inzake klimaatverandering en internationaal recht.",
+            "geldig": true
+          },
+          {
+            "fragment": "De bijlage bevat een uitgebreide analyse waarbij de belangrijkste juridische aspecten van het advies worden weergegeven.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vro|TZ202604-023|2026D57925": {
+      "sleutel": "vro|TZ202604-023|2026D57925",
+      "eerste_signalering": "2026-11-18T08:01:47.120451+00:00",
+      "commissie_id": "48c117dc-4dd3-410e-ac30-14437c2a2f08",
+      "commissie_afkorting": "VRO",
+      "commissie_naam": "Vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+      "commissie_slug": "vro",
+      "selectiereden": "VRO is voortouwcommissie",
+      "toezeggingnummer": "TZ202604-023",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57925",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Meer aandacht geven aan grondstofwinning en bijbehorende ruimtevraag in de definitieve Nota Ruimte"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Met TZ202604-023 heb ik het lid Van Asten toegezegd om in de definitieve Nota Ruimte meer aandacht te geven aan grondstofwinning en de bijbehorende ruimtevraag.",
+        "Deze toezegging heb ik uitgevoerd met de aanscherpingen in het thema Economie en energie en de sectorale paragraaf Grondstoffen en circulair;"
+      ],
+      "motivering": "De minister geeft aan dat de toezegging is uitgevoerd middels aanscherpingen in het thema Economie en energie en de sectorale paragraaf Grondstoffen en circulair van de bijbehorende Nota Ruimte.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met TZ202604-023 heb ik het lid Van Asten toegezegd om in de definitieve Nota Ruimte meer aandacht te geven aan grondstofwinning en de bijbehorende ruimtevraag.",
+            "geldig": true
+          },
+          {
+            "fragment": "Deze toezegging heb ik uitgevoerd met de aanscherpingen in het thema Economie en energie en de sectorale paragraaf Grondstoffen en circulair;",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vro|TZ202604-020|2026D57925": {
+      "sleutel": "vro|TZ202604-020|2026D57925",
+      "eerste_signalering": "2026-11-18T08:01:47.120462+00:00",
+      "commissie_id": "48c117dc-4dd3-410e-ac30-14437c2a2f08",
+      "commissie_afkorting": "VRO",
+      "commissie_naam": "Vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+      "commissie_slug": "vro",
+      "selectiereden": "VRO is voortouwcommissie",
+      "toezeggingnummer": "TZ202604-020",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57925",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Juridisch laten toetsen van waterpeilen in veenweidegebieden op voorzienbaarheid en mogelijke problemen",
+        "Terugkomen op de juridische toets in de Nota Ruimte"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Met TZ202604-020 heb ik het lid Wiersma toegezegd om juridisch te laten toetsen of de formulering van waterpeilen in veenweidegebieden in de Ontwerp-Nota Ruimte leidt tot voorzienbaarheid en mensen in de problemen brengt.",
+        "Deze toezegging heb ik uitgevoerd.",
+        "Hieronder licht ik het advies van de Landsadvocaat over nadeelcompensatie bij peilverhoging in veenweidegebieden toe;"
+      ],
+      "motivering": "De minister heeft de juridische toetsing door de Landsadvocaat laten uitvoeren, licht de uitkomsten inhoudelijk toe in de brief en heeft het advies bijgevoegd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met TZ202604-020 heb ik het lid Wiersma toegezegd om juridisch te laten toetsen of de formulering van waterpeilen in veenweidegebieden in de Ontwerp-Nota Ruimte leidt tot voorzienbaarheid en mensen in de problemen brengt.",
+            "geldig": true
+          },
+          {
+            "fragment": "Deze toezegging heb ik uitgevoerd.",
+            "geldig": true
+          },
+          {
+            "fragment": "Hieronder licht ik het advies van de Landsadvocaat over nadeelcompensatie bij peilverhoging in veenweidegebieden toe;",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vro|TZ202604-018|2026D57925": {
+      "sleutel": "vro|TZ202604-018|2026D57925",
+      "eerste_signalering": "2026-11-18T08:01:47.120475+00:00",
+      "commissie_id": "48c117dc-4dd3-410e-ac30-14437c2a2f08",
+      "commissie_afkorting": "VRO",
+      "commissie_naam": "Vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+      "commissie_slug": "vro",
+      "selectiereden": "VRO is voortouwcommissie",
+      "toezeggingnummer": "TZ202604-018",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57925",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Terugkomen op keuzes voor industrie en verdeling van de ruimte in de herijking van de Nota Ruimte"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Met TZ202604-018 heb ik uw Kamer toegezegd in de herijking van de Nota Ruimte terug te komen op welke keuze er gemaakt moet worden op het gebied van industrie en de verdeling van de ruimte.",
+        "Deze toezegging heb ik uitgevoerd met de aanscherpingen in de Nota Ruimte in het thema Economie en energie, bouwsteen Verduurzamen, beschermen en versterken van energie-intensieve haven- en industrieclusters;"
+      ],
+      "motivering": "De toezegging is afgedaan doordat de keuzes over de industrie en ruimteverdeling zijn verwerkt in de definitieve Nota Ruimte.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met TZ202604-018 heb ik uw Kamer toegezegd in de herijking van de Nota Ruimte terug te komen op welke keuze er gemaakt moet worden op het gebied van industrie en de verdeling van de ruimte.",
+            "geldig": true
+          },
+          {
+            "fragment": "Deze toezegging heb ik uitgevoerd met de aanscherpingen in de Nota Ruimte in het thema Economie en energie, bouwsteen Verduurzamen, beschermen en versterken van energie-intensieve haven- en industrieclusters;",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vro|TZ202604-024|2026D57925": {
+      "sleutel": "vro|TZ202604-024|2026D57925",
+      "eerste_signalering": "2026-11-18T08:01:47.120480+00:00",
+      "commissie_id": "48c117dc-4dd3-410e-ac30-14437c2a2f08",
+      "commissie_afkorting": "VRO",
+      "commissie_naam": "Vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+      "commissie_slug": "vro",
+      "selectiereden": "VRO is voortouwcommissie",
+      "toezeggingnummer": "TZ202604-024",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57925",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Meer aandacht besteden aan de ruimte voor het mkb in de definitieve Nota Ruimte"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Met TZ202604-024 heb ik het lid Steen toegezegd om in de definitieve Nota Ruimte meer aandacht te besteden aan de ruimte voor het mkb.",
+        "Deze toezegging heb ik uitgevoerd met de aanscherpingen in het thema Economie en energie, in de bouwsteen Toekomstbestendig maken van alle bedrijventerreinen, waarin in algemene zin wordt ingegaan op de ruimtevraag van bedrijven;"
+      ],
+      "motivering": "De toezegging is uitgevoerd door de opname van verduidelijkingen en aanscherpingen over de ruimtevraag van bedrijven en het mkb in de Nota Ruimte.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met TZ202604-024 heb ik het lid Steen toegezegd om in de definitieve Nota Ruimte meer aandacht te besteden aan de ruimte voor het mkb.",
+            "geldig": true
+          },
+          {
+            "fragment": "Deze toezegging heb ik uitgevoerd met de aanscherpingen in het thema Economie en energie, in de bouwsteen Toekomstbestendig maken van alle bedrijventerreinen, waarin in algemene zin wordt ingegaan op de ruimtevraag van bedrijven;",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vro|TZ202604-021|2026D57925": {
+      "sleutel": "vro|TZ202604-021|2026D57925",
+      "eerste_signalering": "2026-11-18T08:01:47.120487+00:00",
+      "commissie_id": "48c117dc-4dd3-410e-ac30-14437c2a2f08",
+      "commissie_afkorting": "VRO",
+      "commissie_naam": "Vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+      "commissie_slug": "vro",
+      "selectiereden": "VRO is voortouwcommissie",
+      "toezeggingnummer": "TZ202604-021",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57925",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "In gesprek gaan met de deltacommissaris over woningbouw op locaties kwetsbaar voor klimaatrisico's",
+        "Terugkomen op dit onderwerp bij de definitieve Nota Ruimte"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Met TZ202604-021 heb ik uw Kamer toegezegd om in gesprek te gaan met de Deltacommissaris om mij te laten bijpraten over woningbouw op locaties die kwetsbaar zijn voor klimaatrisico's.",
+        "Dit gesprek heeft plaatsgevonden;"
+      ],
+      "motivering": "De minister bevestigt dat het gesprek met de Deltacommissaris heeft plaatsgevonden en rapporteert hierover bij de aanbieding van de Nota Ruimte.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met TZ202604-021 heb ik uw Kamer toegezegd om in gesprek te gaan met de Deltacommissaris om mij te laten bijpraten over woningbouw op locaties die kwetsbaar zijn voor klimaatrisico's.",
+            "geldig": true
+          },
+          {
+            "fragment": "Dit gesprek heeft plaatsgevonden;",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vro|TZ202604-014|2026D57925": {
+      "sleutel": "vro|TZ202604-014|2026D57925",
+      "eerste_signalering": "2026-11-18T08:01:47.120494+00:00",
+      "commissie_id": "48c117dc-4dd3-410e-ac30-14437c2a2f08",
+      "commissie_afkorting": "VRO",
+      "commissie_naam": "Vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+      "commissie_slug": "vro",
+      "selectiereden": "VRO is voortouwcommissie",
+      "toezeggingnummer": "TZ202604-014",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57925",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Werkbezoek aan regio Emmen in het kader van VISTA-classificatie",
+        "Verslag doen aan de Kamer"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Met TZ202604-014 heb ik het lid De Groot toegezegd op werkbezoek te gaan naar de regio Emmen in het kader van de VISTA-classificatie.",
+        "Zoals ik reeds in het commissidebat Ruimtelijke Ordening van 11 juni heb toegelicht, ben ik op 1 juni jl. op bezoek geweest in Emmen."
+      ],
+      "motivering": "De minister meldt dat het werkbezoek aan Emmen op 1 juni heeft plaatsgevonden en dat hierover verslag is gedaan aan de Kamer.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met TZ202604-014 heb ik het lid De Groot toegezegd op werkbezoek te gaan naar de regio Emmen in het kader van de VISTA-classificatie.",
+            "geldig": true
+          },
+          {
+            "fragment": "Zoals ik reeds in het commissidebat Ruimtelijke Ordening van 11 juni heb toegelicht, ben ik op 1 juni jl. op bezoek geweest in Emmen.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vro|TZ202606-183|2026D57925": {
+      "sleutel": "vro|TZ202606-183|2026D57925",
+      "eerste_signalering": "2026-11-18T08:01:47.120500+00:00",
+      "commissie_id": "48c117dc-4dd3-410e-ac30-14437c2a2f08",
+      "commissie_afkorting": "VRO",
+      "commissie_naam": "Vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+      "commissie_slug": "vro",
+      "selectiereden": "VRO is voortouwcommissie",
+      "toezeggingnummer": "TZ202606-183",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57925",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Delen van de concept-definitieve Nota Ruimte met de Kamer voorafgaand aan het commissiedebat Ruimtelijke Ordening"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Met TZ202606-183 heb ik uw Kamer toegezegd om voorafgaand aan het commissiedebat Ruimtelijke Ordening op 26 november de concept-definitieve Nota Ruimte met de Kamer te delen.",
+        "Deze toezegging heb ik uitgevoerd met deze brief en bijgevoegde Nota Ruimte;"
+      ],
+      "motivering": "De minister stuurt bij deze brief de (concept-)definitieve Nota Ruimte mee aan de Kamer voorafgaand aan het debat van 26 november.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met TZ202606-183 heb ik uw Kamer toegezegd om voorafgaand aan het commissiedebat Ruimtelijke Ordening op 26 november de concept-definitieve Nota Ruimte met de Kamer te delen.",
+            "geldig": true
+          },
+          {
+            "fragment": "Deze toezegging heb ik uitgevoerd met deze brief en bijgevoegde Nota Ruimte;",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "lvvn|TZ202607-158|2026D58363": {
+      "sleutel": "lvvn|TZ202607-158|2026D58363",
+      "eerste_signalering": "2026-11-18T08:09:11.311084+00:00",
+      "commissie_id": "d8c4982c-be0d-4d55-a6a7-074b3f8dd5ab",
+      "commissie_afkorting": "LVVN",
+      "commissie_naam": "Vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "commissie_slug": "lvvn",
+      "selectiereden": "LVVN is volgcommissie",
+      "toezeggingnummer": "TZ202607-158",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58363",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief moties, toezeggingen, en verzoeken LVVN-commissie met betrekking tot aanpak landbouw, natuur en stikstof ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Update geven over het proces rondom een hedendaags referentiemoment na de zomer"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Met deze brief voldoe ik aan de toezegging om uw Kamer na de zomer een update te geven over het proces rondom een hedendaags referentiemoment."
+      ],
+      "motivering": "De minister geeft in de brief een update over het proces en de uitwerking van een nieuwe referentiesituatie (hedendaags referentiemoment) en geeft expliciet aan dat met de brief aan de toezegging is voldaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met deze brief voldoe ik aan de toezegging om uw Kamer na de zomer een update te geven over het proces rondom een hedendaags referentiemoment.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "jenv|TZ202610-204|2026D57759": {
+      "sleutel": "jenv|TZ202610-204|2026D57759",
+      "eerste_signalering": "2026-11-18T08:10:37.386666+00:00",
+      "commissie_id": "14cac666-51cb-4154-80da-9b0e2eeb5014",
+      "commissie_afkorting": "J&V",
+      "commissie_naam": "Vaste commissie voor Justitie en Veiligheid",
+      "commissie_slug": "jenv",
+      "selectiereden": "J&V is voortouwcommissie",
+      "toezeggingnummer": "TZ202610-204",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57759",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "documentonderwerp": "Stand van zaken moties en toezeggingen over o.a. ‘Integratie en Maatschappelijke samenhang’ - beleidsartikel 13 van de begroting van Sociale Zaken en Werkgelegenheid ",
+      "oordeel": "waarschijnlijk_afgedaan",
+      "rapportagecategorie": "Mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Het versturen van een Kamerbrief over integratie en OBI door de minister van Werk en Participatie voorafgaand aan 16 november 2026"
+      ],
+      "ontbrekende_onderdelen": [
+        "Expliciete vermelding van het WGO over Inburgering en integratie op 16 november"
+      ],
+      "bewijsfragmenten": [
+        "Met deze Kamerbrief voldoe ik aan beide verzoeken."
+      ],
+      "motivering": "De minister van Werk en Participatie heeft op 12 november 2026 een Kamerbrief gestuurd over integratie en de openstaande vragen uit het commissiedebat OBI. Hoewel de brief vlak voor 16 november is verzonden en de inhoud aansluit bij het onderwerp, wordt de specifieke datum van het WGO (16 november) niet expliciet in de tekst genoemd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met deze Kamerbrief voldoe ik aan beide verzoeken.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }

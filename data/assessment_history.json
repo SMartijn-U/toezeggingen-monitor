@@ -1448,6 +1448,76 @@
       "onderwerp": "Reactie op verzoek commissie over de Brandbrief 'Acute crisis jeugdhulpverlening - Honderden gezinnen in de kou'",
       "commissie_slug": "vws",
       "commissie_afkorting": "VWS"
+    },
+    "buza|2026D57953": {
+      "datum_verwerkt": "2026-11-18T07:59:10.877078+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Geannoteerde Agenda Raad Buitenlandse Zaken Handel van 30 november 2026",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "kgg|2026D58055": {
+      "datum_verwerkt": "2026-11-18T08:00:25.121875+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie van het kabinet op het advies van het IGH inzake klimaatverandering",
+      "commissie_slug": "kgg",
+      "commissie_afkorting": "KGG"
+    },
+    "vro|2026D57925": {
+      "datum_verwerkt": "2026-11-18T08:01:47.120423+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
+      "commissie_slug": "vro",
+      "commissie_afkorting": "VRO"
+    },
+    "kr|2026D58145": {
+      "datum_verwerkt": "2026-11-18T08:03:21.917123+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "kr",
+      "commissie_afkorting": "KR"
+    },
+    "lvvn|2026D58363": {
+      "datum_verwerkt": "2026-11-18T08:09:11.311062+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Verzamelbrief moties, toezeggingen, en verzoeken LVVN-commissie met betrekking tot aanpak landbouw, natuur en stikstof ",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "jenv|2026D57759": {
+      "datum_verwerkt": "2026-11-18T08:10:37.386643+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Stand van zaken moties en toezeggingen over o.a. ‘Integratie en Maatschappelijke samenhang’ - beleidsartikel 13 van de begroting van Sociale Zaken en Werkgelegenheid ",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
+    },
+    "eu|2026D57953": {
+      "datum_verwerkt": "2026-11-18T08:11:28.200178+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Geannoteerde Agenda Raad Buitenlandse Zaken Handel van 30 november 2026",
+      "commissie_slug": "eu",
+      "commissie_afkorting": "EU"
+    },
+    "fin|2026D57771": {
+      "datum_verwerkt": "2026-11-18T08:12:27.909462+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Reactie op het verzoek van de leden Vermeer en Markuszower, gedaan tijdens het debat over het Pakket Belastingplan 2027 van 12 november 2026",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "biza|2026D58698": {
+      "datum_verwerkt": "2026-11-18T08:13:57.357001+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Reactie op het Informatieverzoek van het lid Vermeer gedaan tijdens het Debat Pakket Belastingplan 2027 d.d. 12 november 2026 en informatieverzoeken van de leden Klaver en Wilders gedaan tijdens de regeling van werkzaamheden d.d. 17 november 2026 over de ontstane politieke situatie",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "ienw|2026D58260": {
+      "datum_verwerkt": "2026-11-18T08:14:59.522996+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Wijzigingen van de Bijlagen I en II van de Europese Overeenkomst inzake belangrijke lijnen voor het internationaal gecombineerd vervoer en daarmee samenhangende installaties (AGTC); Genève, 18 oktober 2024",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
     }
   },
   "wacht_op_herhaling": {
@@ -1477,18 +1547,9 @@
       "commissie_slug": "diza",
       "commissie_afkorting": "DiZa",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
-    },
-    "buza|2026D57953": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-17T17:02:14.611885+00:00",
-      "documentdatum": "2026-11-16T00:00:00+01:00",
-      "onderwerp": "Geannoteerde Agenda Raad Buitenlandse Zaken Handel van 30 november 2026",
-      "commissie_slug": "buza",
-      "commissie_afkorting": "BUZA",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "vws"
+    "laatste_commissie_slug": "ienw"
   }
 }
