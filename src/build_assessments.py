@@ -1195,7 +1195,7 @@ def main():
         if index < len(
             beoordelingseenheden
         ):
-            wachttijd = 30
+            wachttijd = 15
 
             print(
                 f"{wachttijd} seconden wachten "
