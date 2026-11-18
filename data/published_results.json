@@ -1029,6 +1029,315 @@
           }
         ]
       }
+    },
+    "am|TZ202502-110|2026D58131": {
+      "sleutel": "am|TZ202502-110|2026D58131",
+      "eerste_signalering": "2026-11-18T08:42:20.545936+00:00",
+      "commissie_id": "75337852-6240-4696-83ab-c543ee05cf45",
+      "commissie_afkorting": "AM",
+      "commissie_naam": "Vaste commissie voor Asiel en Migratie",
+      "commissie_slug": "am",
+      "selectiereden": "AM is volgcommissie",
+      "toezeggingnummer": "TZ202502-110",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58131",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Voortgang aanpak overlastgevende asielzoekers",
+      "oordeel": "waarschijnlijk_afgedaan",
+      "rapportagecategorie": "Mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informeren van de Kamer per brief over de afstemming en uitkomst rondom het bevorderen van de aangiftebereidheid in het openbaar vervoer",
+        "Opnemen van het onderwerp aangiftebereidheid in het convenant Sociale Veiligheid Openbaar Vervoer 2027-2031 samen met IenW"
+      ],
+      "ontbrekende_onderdelen": [
+        "Inhoudelijke details over de specifieke maatregelen om de aangiftebereidheid te verhogen (deze volgen bij het definitieve convenant)"
+      ],
+      "bewijsfragmenten": [
+        "Met betrekking tot de aangiftebereidheid bij overtredingen in het openbaar vervoer kan worden gemeld dat dit onderwerp wordt opgenomen in het convenant Sociale Veiligheid in het Openbaar Vervoer 2027-2031.",
+        "Daarmee wordt gestand gedaan aan de toezegging van 13 februari 2025 om de aangiftebereidheid in het openbaar vervoer te bevorderen."
+      ],
+      "motivering": "In de brief wordt expliciet verwezen naar de toezegging van 13 februari 2025. De minister meldt dat de uitkomst van het overleg met IenW is dat het bevorderen van de aangiftebereidheid wordt opgenomen in het convenant Sociale Veiligheid Openbaar Vervoer 2027-2031. Omdat de concrete invulling en uitwerking van het convenant op korte termijn nog apart aan de Kamer zal worden gezonden, is de toezegging waarschijnlijk afgedaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met betrekking tot de aangiftebereidheid bij overtredingen in het openbaar vervoer kan worden gemeld dat dit onderwerp wordt opgenomen in het convenant Sociale Veiligheid in het Openbaar Vervoer 2027-2031.",
+            "geldig": true
+          },
+          {
+            "fragment": "Daarmee wordt gestand gedaan aan de toezegging van 13 februari 2025 om de aangiftebereidheid in het openbaar vervoer te bevorderen.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "buza|TZ202610-111|2026D58404": {
+      "sleutel": "buza|TZ202610-111|2026D58404",
+      "eerste_signalering": "2026-11-18T08:46:28.622075+00:00",
+      "commissie_id": "4e995993-6961-4d0b-b054-ae2ab9e93b1b",
+      "commissie_afkorting": "BUZA",
+      "commissie_naam": "Vaste commissie voor Buitenlandse Zaken",
+      "commissie_slug": "buza",
+      "selectiereden": "BUZA is voortouwcommissie",
+      "toezeggingnummer": "TZ202610-111",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58404",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "documentonderwerp": "Ontwikkelingen Russische veiligheidsdreiging",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informatie over scenario's voor hybride aanvallen",
+        "Nederlandse inzet op het voorstel voor een Europese Veiligheidsraad"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "is tijdens het Commissiedebat Raad Buitenlandse Zaken van 12 oktober jl. toegezegd de Kamer nader te informeren over scenario’s voor hybride aanvallen en de Nederlandse inzet op het voorstel voor een Europese Veiligheidsraad.",
+        "Het kabinet kijkt daarnaast met interesse naar het voorstel van Commissie voorzitter Von der Leyen voor een Europese Veiligheidsraad.",
+        "Dit beeld strookt met de door de diensten verwachte toename van Russische hybride acties in de ‘grijze zone’."
+      ],
+      "motivering": "In de brief wordt expliciet gerefereerd aan de toezegging uit het Commissiedebat Raad Buitenlandse Zaken van 12 oktober. Beide onderdelen van de toezegging worden behandeld: er wordt uitgebreid ingegaan op de hybride dreigingen/acties en scenario's in de 'grijze zone', en het standpunt/de inzet van het kabinet inzake de Europese Veiligheidsraad wordt toegelicht.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "is tijdens het Commissiedebat Raad Buitenlandse Zaken van 12 oktober jl. toegezegd de Kamer nader te informeren over scenario’s voor hybride aanvallen en de Nederlandse inzet op het voorstel voor een Europese Veiligheidsraad.",
+            "geldig": true
+          },
+          {
+            "fragment": "Het kabinet kijkt daarnaast met interesse naar het voorstel van Commissie voorzitter Von der Leyen voor een Europese Veiligheidsraad.",
+            "geldig": true
+          },
+          {
+            "fragment": "Dit beeld strookt met de door de diensten verwachte toename van Russische hybride acties in de ‘grijze zone’.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202610-067|2026D58641": {
+      "sleutel": "ocw|TZ202610-067|2026D58641",
+      "eerste_signalering": "2026-11-18T08:47:42.224456+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202610-067",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58641",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "documentonderwerp": "Mediabegrotingsbrief 2027",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Reactie op de gedane toezegging en toelichting dat het onderwerp betrokken wordt bij het verwerken van de consultatiereacties."
+      ],
+      "ontbrekende_onderdelen": [
+        "Inhoudelijke uitkomst/richting over het wel of niet vastleggen van publiek-private samenwerking in de Mediawet."
+      ],
+      "bewijsfragmenten": [
+        "Toegezegd werd om te onderzoeken wat het zou betekenen om publiek-private samenwerking vast te leggen in de Mediawet.",
+        "Ik wil dit onderwerp in zijn geheel bezien en zal op dit punt terugkomen in de definitieve versie van het wetsvoorstel."
+      ],
+      "motivering": "De minister verwijst expliciet naar de toezegging, maar geeft aan dat zij de consultatiereacties nog verwerkt en op het inhoudelijke punt zal terugkomen in de definitieve versie van het wetsvoorstel. Omdat het inhoudelijke oordeel is uitgesteld, is de toezegging hooguit deels afgedaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Toegezegd werd om te onderzoeken wat het zou betekenen om publiek-private samenwerking vast te leggen in de Mediawet.",
+            "geldig": true
+          },
+          {
+            "fragment": "Ik wil dit onderwerp in zijn geheel bezien en zal op dit punt terugkomen in de definitieve versie van het wetsvoorstel.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202601-086|2026D58641": {
+      "sleutel": "ocw|TZ202601-086|2026D58641",
+      "eerste_signalering": "2026-11-18T08:47:42.224468+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202601-086",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58641",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "documentonderwerp": "Mediabegrotingsbrief 2027",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Toelichting op de publiek-private samenwerking met streamingdiensten",
+        "Toelichting op de benchmark voor overhead/organisatiekosten bij de landelijke publieke omroep"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Samenwerking publieke omroep met streamingdiensten",
+        "Ik geef uitvoering aan de oproep tot een norm voor overhead door een benchmark voor de organisatiekosten in te voeren van 12 tot 16 procent van de totale lasten."
+      ],
+      "motivering": "Het document behandelt in paragraaf 6.1 uitgebreid de samenwerking van de publieke omroep met streamingdiensten en geeft in paragraaf 2 een concrete toelichting op de invoering van de benchmark voor overhead (organisatiekosten). Alle toegezegde onderdelen zijn geleverd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Samenwerking publieke omroep met streamingdiensten",
+            "geldig": true
+          },
+          {
+            "fragment": "Ik geef uitvoering aan de oproep tot een norm voor overhead door een benchmark voor de organisatiekosten in te voeren van 12 tot 16 procent van de totale lasten.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202610-066|2026D58641": {
+      "sleutel": "ocw|TZ202610-066|2026D58641",
+      "eerste_signalering": "2026-11-18T08:47:42.224477+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202610-066",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58641",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "documentonderwerp": "Mediabegrotingsbrief 2027",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Nieuwe stand van zaken van de actieagenda RTL-NPO-Talpa",
+        "Informatie over de samenwerking met streamingdiensten"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "geef ik u hierbij een nieuwe stand van zaken.",
+        "Samenwerking publieke omroep met streamingdiensten"
+      ],
+      "motivering": "In paragraaf 6.1 wordt expliciet verwezen naar de toezegging en wordt een uitgebreide update gegeven van de actieagenda met NPO, RTL en Talpa, alsmede van de samenwerking met streamingdiensten.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "geef ik u hierbij een nieuwe stand van zaken.",
+            "geldig": true
+          },
+          {
+            "fragment": "Samenwerking publieke omroep met streamingdiensten",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "bho|TZ202607-121|2026D58206": {
+      "sleutel": "bho|TZ202607-121|2026D58206",
+      "eerste_signalering": "2026-11-18T08:48:39.113014+00:00",
+      "commissie_id": "90f412fa-d124-49d1-a550-37a4220b0b69",
+      "commissie_afkorting": "BHO",
+      "commissie_naam": "Vaste commissie voor Buitenlandse Handel en Ontwikkelingssamenwerking",
+      "commissie_slug": "bho",
+      "selectiereden": "BHO is voortouwcommissie",
+      "toezeggingnummer": "TZ202607-121",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58206",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Reactie op verzoek commissie over begroting 2027 bevindingen rapporteurs",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Het opnemen van factsheets over revolverende fondsen in de begroting"
+      ],
+      "ontbrekende_onderdelen": [
+        "Meenemen van mate van revolverendheid en uitvoeringskosten in evaluaties en factsheets",
+        "Overzicht van dotaties en onttrekkingen in de memorie van toelichting en het jaarverslag",
+        "Voortgang van fondsen zonder exitstrategie in de factsheets"
+      ],
+      "bewijsfragmenten": [
+        "merken zij op dat de informatie in factsheets in de bijlage van de begroting staat opgenomen",
+        "De informatieverstrekking en toelichting over de fondsen, zoals met de rapporteurs besproken en bij deze begroting opgenomen, blijft in komende jaarverslagen en begrotingen uiteraard in stand"
+      ],
+      "motivering": "Het document bevestigt dat factsheets van revolverende fondsen zijn opgenomen in de begroting en gehandhaafd blijven. De specifieke onderdelen zoals de mate van revolverendheid, uitvoeringskosten, overzichten van dotaties en onttrekkingen en fondsen zonder exitstrategie worden in dit document echter niet inhoudelijk uitgewerkt of aantoonbaar geleverd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "merken zij op dat de informatie in factsheets in de bijlage van de begroting staat opgenomen",
+            "geldig": true
+          },
+          {
+            "fragment": "De informatieverstrekking en toelichting over de fondsen, zoals met de rapporteurs besproken en bij deze begroting opgenomen, blijft in komende jaarverslagen en begrotingen uiteraard in stand",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vro|TZ202604-036|2026D58015": {
+      "sleutel": "vro|TZ202604-036|2026D58015",
+      "eerste_signalering": "2026-11-18T08:57:55.156078+00:00",
+      "commissie_id": "48c117dc-4dd3-410e-ac30-14437c2a2f08",
+      "commissie_afkorting": "VRO",
+      "commissie_naam": "Vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+      "commissie_slug": "vro",
+      "selectiereden": "VRO is voortouwcommissie",
+      "toezeggingnummer": "TZ202604-036",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58015",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Interdepartementaal Beleidsonderzoek (IBO) energietransitie woningvoorraad 2050",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Het IBO energietransitie woningvoorraad 2050 is toegezonden"
+      ],
+      "ontbrekende_onderdelen": [
+        "Specifieke aandacht voor de NPLV-gebieden is niet expliciet aangetoond in het geleverde document",
+        "Kabinetsreactie volgt pas later dit jaar"
+      ],
+      "bewijsfragmenten": [
+        "Hierbij bied ik uw Kamer het eindrapport aan van het Interdepartementaal Beleidsonderzoek (IBO) energietransitie woningvoorraad 2050, ‘Nieuwe energie’."
+      ],
+      "motivering": "Het eindrapport van het Interdepartementaal Beleidsonderzoek (IBO) energietransitie woningvoorraad 2050 is aan de Kamer aangeboden, waarmee dat deel is afgedaan. Echter wordt er in de brief niet ingegaan op de specifieke toezegging over de NPLV-gebieden en wordt de kabinetsreactie pas voor later dit jaar aangekondigd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Hierbij bied ik uw Kamer het eindrapport aan van het Interdepartementaal Beleidsonderzoek (IBO) energietransitie woningvoorraad 2050, ‘Nieuwe energie’.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }

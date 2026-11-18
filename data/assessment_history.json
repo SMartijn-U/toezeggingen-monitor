@@ -1518,6 +1518,76 @@
       "onderwerp": "Wijzigingen van de Bijlagen I en II van de Europese Overeenkomst inzake belangrijke lijnen voor het internationaal gecombineerd vervoer en daarmee samenhangende installaties (AGTC); Genève, 18 oktober 2024",
       "commissie_slug": "ienw",
       "commissie_afkorting": "I&W"
+    },
+    "am|2026D58131": {
+      "datum_verwerkt": "2026-11-18T08:42:20.545912+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Voortgang aanpak overlastgevende asielzoekers",
+      "commissie_slug": "am",
+      "commissie_afkorting": "AM"
+    },
+    "diza|2026D58391": {
+      "datum_verwerkt": "2026-11-18T08:44:28.815379+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Geannoteerde Agenda Formele Telecomraad 1 december 2026",
+      "commissie_slug": "diza",
+      "commissie_afkorting": "DiZa"
+    },
+    "buza|2026D58404": {
+      "datum_verwerkt": "2026-11-18T08:46:28.622054+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Ontwikkelingen Russische veiligheidsdreiging",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "ocw|2026D58641": {
+      "datum_verwerkt": "2026-11-18T08:47:42.224439+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Mediabegrotingsbrief 2027",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "bho|2026D58206": {
+      "datum_verwerkt": "2026-11-18T08:48:39.112997+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over begroting 2027 bevindingen rapporteurs",
+      "commissie_slug": "bho",
+      "commissie_afkorting": "BHO"
+    },
+    "szw|2026D57944": {
+      "datum_verwerkt": "2026-11-18T08:50:40.225488+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Meerjarenplan 2027-2030 Nederlandse Arbeidsinspectie",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "vws|2026D57848": {
+      "datum_verwerkt": "2026-11-18T08:51:44.922213+00:00",
+      "documentdatum": "2026-11-13T00:00:00+01:00",
+      "onderwerp": "Kabinetsreactie op het bericht 'Vernietiging dreigt voor dossiers van patiënten met postcovid en Q-koorts'",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "vro|2026D58015": {
+      "datum_verwerkt": "2026-11-18T08:57:55.156059+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Interdepartementaal Beleidsonderzoek (IBO) energietransitie woningvoorraad 2050",
+      "commissie_slug": "vro",
+      "commissie_afkorting": "VRO"
+    },
+    "lvvn|2026D58748": {
+      "datum_verwerkt": "2026-11-18T08:59:06.762046+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie vijf concrete en meetbare hoofddoelen voor deze kabinetsperiode",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "jenv|2026D57662": {
+      "datum_verwerkt": "2026-11-18T09:00:22.061150+00:00",
+      "documentdatum": "2026-11-12T00:00:00+01:00",
+      "onderwerp": "Verdeling middelen versterking rechtsstaat",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
     }
   },
   "wacht_op_herhaling": {
@@ -1550,6 +1620,6 @@
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "ienw"
+    "laatste_commissie_slug": "jenv"
   }
 }
