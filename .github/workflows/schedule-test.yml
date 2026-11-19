@@ -1,0 +1,16 @@
+name: Test automatische planning
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "35 9 19 11 *"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Toon starttijd
+        run: |
+          echo "Scheduled workflow gestart"
+          date -u
