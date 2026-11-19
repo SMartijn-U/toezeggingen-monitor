@@ -10,6 +10,9 @@ on:
     # Zaterdag en zondag: twee runs per dag
     - cron: "17 5 * * 6,0"
     - cron: "17 13 * * 6,0"
+
+    # Tijdelijke test: vandaag 09:35 NL
+    - cron: "35 8 19 11 *"
     
 concurrency:
   group: toezeggingen-monitor
