@@ -139,11 +139,37 @@ BELANGRIJKE REGELS:
     omdat de status "Afgedaan" luidt.
 
 11. Geef maximaal drie bewijsfragmenten.
+    Gebruik alleen bewijsfragmenten die
+    daadwerkelijk nodig zijn om het oordeel
+    te onderbouwen.
 
-12. Ieder bewijsfragment moet een KORTE,
-    LETTERLIJKE passage uit het document zijn.
-    Verzin, parafraseer of corrigeer het
-    bewijsfragment niet.
+12. Ieder bewijsfragment moet een EXACTE,
+    LETTERLIJKE en AANEENGESLOTEN passage
+    uit het document zijn.
+
+    Neem de passage exact over zoals deze
+    in het document staat.
+
+    VERBODEN:
+    - een passage inkorten met "..." of "…";
+    - woorden of zinnen uit een passage
+      weglaten;
+    - meerdere losse passages samenvoegen;
+    - tekst parafraseren;
+    - spelling, interpunctie of formulering
+      corrigeren;
+    - zelf woorden aan het bewijsfragment
+      toevoegen.
+
+    Als een relevante passage te lang is,
+    kies dan een kortere aaneengesloten
+    passage die op zichzelf voldoende bewijs
+    levert.
+
+    Als geen geschikt letterlijk
+    bewijsfragment aanwezig is, geef dan
+    geen bewijsfragment voor dat onderdeel.
+
 
 DOCUMENT
 
