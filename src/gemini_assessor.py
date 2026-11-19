@@ -5,19 +5,19 @@ import time
 from typing import Literal
 
 from google import genai
+from google.genai import types
 from pydantic import BaseModel, Field
 
-
 MODELLEN = [
-    "gemini-3.6-flash",
-    "gemini-3.8-flash",
     "gemini-3.5-flash-lite",
+    "gemini-3.8-flash",
+    "gemini-3.6-flash",
 ]
 
 MAX_POGINGEN_PER_MODEL = {
-    "gemini-3.6-flash": 1,
-    "gemini-3.8-flash": 1,
     "gemini-3.5-flash-lite": 2,
+    "gemini-3.8-flash": 1,
+    "gemini-3.6-flash": 1,
 }
 
 class Beoordeling(BaseModel):
@@ -221,8 +221,9 @@ def roep_gemini_aan(
                     or "unavailable" in fouttekst
                     or "high demand" in fouttekst
                     or "429" in fouttekst
-                    or "resource_exhausted"
-                    in fouttekst
+                    or "resource_exhausted" in fouttekst
+                    or "timeout" in fouttekst
+                    or "timed out" in fouttekst
                 )
 
                 if not tijdelijk:
@@ -276,8 +277,12 @@ def beoordeel_document(
         )
 
     client = genai.Client(
-        api_key=api_key
+        api_key=api_key,
+        http_options=types.HttpOptions(
+            timeout=90_000
+        ),
     )
+
 
     prompt = maak_prompt(
         document,
