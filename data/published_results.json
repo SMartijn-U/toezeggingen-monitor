@@ -1795,6 +1795,136 @@
           }
         ]
       }
+    },
+    "lvvn|TZ202606-047|2026D59215": {
+      "sleutel": "lvvn|TZ202606-047|2026D59215",
+      "eerste_signalering": "2026-11-19T20:02:26.691184+00:00",
+      "commissie_id": "d8c4982c-be0d-4d55-a6a7-074b3f8dd5ab",
+      "commissie_afkorting": "LVVN",
+      "commissie_naam": "Vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "commissie_slug": "lvvn",
+      "selectiereden": "LVVN is voortouwcommissie",
+      "toezeggingnummer": "TZ202606-047",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59215",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "documentonderwerp": "Uitwerking agrarisch natuurbeheer",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Aangeven of de minister voornemens is een beheerpakket voor voedselbossen op te stellen zodat deze in aanmerking komen voor een ANLb vergoeding."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Ik heb lid-Den Hollander toegezegd (TZ202606-047) aan te geven of ik voornemens ben een beheerpakket voor voedselbossen op te stellen zodat deze in aanmerking komen voor een ANLb vergoeding.",
+        "Op dit moment onderzoekt mijn ministerie samen met de Stichting Voedselbosbouw Nederland wat de meest passende manier zou kunnen zijn om de vestiging van deze vorm van landbouw, die vaak veel waarde heeft voor beschermde soorten en de biodiversiteit, en zodoende ook relevant is voor de doelsoorten van het agrarisch natuurbeheer, te ondersteunen."
+      ],
+      "motivering": "De minister geeft in de brief expliciet aan dat hij lid-Den Hollander heeft toegezegd (TZ202606-047) om aan te geven of hij voornemens is een beheerpakket voor voedselbossen op te stellen. Hij licht toe dat het ministerie onderzoekt wat de meest passende manier is om de vestiging van voedselbossen te ondersteunen (waarbij ook naar het ANLb wordt gekeken) en beschouwt de toezegging hiermee als afgedaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Ik heb lid-Den Hollander toegezegd (TZ202606-047) aan te geven of ik voornemens ben een beheerpakket voor voedselbossen op te stellen zodat deze in aanmerking komen voor een ANLb vergoeding.",
+            "geldig": true
+          },
+          {
+            "fragment": "Op dit moment onderzoekt mijn ministerie samen met de Stichting Voedselbosbouw Nederland wat de meest passende manier zou kunnen zijn om de vestiging van deze vorm van landbouw, die vaak veel waarde heeft voor beschermde soorten en de biodiversiteit, en zodoende ook relevant is voor de doelsoorten van het agrarisch natuurbeheer, te ondersteunen.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202607-030|2026D59469": {
+      "sleutel": "szw|TZ202607-030|2026D59469",
+      "eerste_signalering": "2026-11-19T20:02:44.481535+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "toezeggingnummer": "TZ202607-030",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59469",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "documentonderwerp": "Toezicht op UWV",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "het sturen van een brief kort na de zomer met opties voor het houden van toezicht op het UWV"
+      ],
+      "ontbrekende_onderdelen": [
+        "een tijdlijn",
+        "wat volgens de regering de beste optie is"
+      ],
+      "bewijsfragmenten": [
+        "Tijdens het commissiedebat uitvoeringsproblematiek UWV van 1 juli 2026 heb ik toegezegd om kort na de zomer een brief te sturen met aanvullende opties voor het houden van toezicht op het UWV.",
+        "In deze brief informeer ik u hierover."
+      ],
+      "motivering": "De minister heeft de toegezegde brief gestuurd over de opties voor het houden van toezicht op het UWV. Uit de tekst blijkt echter niet dat er een expliciete tijdlijn en een expliciet oordeel van de regering over wat de beste optie is zijn opgenomen, waardoor deze onderdelen ontbreken en de toezegging slechts deels is afgedaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens het commissiedebat uitvoeringsproblematiek UWV van 1 juli 2026 heb ik toegezegd om kort na de zomer een brief te sturen met aanvullende opties voor het houden van toezicht op het UWV.",
+            "geldig": true
+          },
+          {
+            "fragment": "In deze brief informeer ik u hierover.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202601-081|2026D59488": {
+      "sleutel": "ocw|TZ202601-081|2026D59488",
+      "eerste_signalering": "2026-11-19T20:07:44.572222+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202601-081",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59488",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "documentonderwerp": "Monitor representatie 2025 Commissariaat voor de Media",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "het voornemen tot hervorming van de landelijke publieke omroep wordt aangestipt in de context van de internetconsultatie."
+      ],
+      "ontbrekende_onderdelen": [
+        "reactie op reeds bestaande verkenningen en onderzoeken",
+        "stand van zaken van de aangenomen moties",
+        "bredere verkenning naar het toezichtmodel waaronder het Spaanse toezichtmodel",
+        "toelichting op het ledencriterium",
+        "constructies rondom dubbele functies en een afkoeltermijn voor bestuurders"
+      ],
+      "bewijsfragmenten": [
+        "In het voorstel voor de hervorming van de landelijke publieke omroep dat op 11 september in internetconsultatie is gedaan, introduceer ik het wettelijk vereiste dat perspectieven van gemarginaliseerde gemeenschappen beter meegenomen worden in het media-aanbod van de landelijke publieke omroep."
+      ],
+      "motivering": "Het document meldt dat op 11 september een voorstel voor de hervorming van de landelijke publieke omroep in internetconsultatie is gedaan en noemt dat hierin een wettelijk vereiste wordt geïntroduceerd. Echter, de specifieke onderdelen zoals een reactie op bestaande verkenningen, de stand van zaken van moties, de verkenning naar het toezichtmodel (inclusief het Spaanse model), het ledencriterium, dubbele functies en een afkoeltermijn komen niet aan de orde. Daarom is de toezegging slechts deels behandeld.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In het voorstel voor de hervorming van de landelijke publieke omroep dat op 11 september in internetconsultatie is gedaan, introduceer ik het wettelijk vereiste dat perspectieven van gemarginaliseerde gemeenschappen beter meegenomen worden in het media-aanbod van de landelijke publieke omroep.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }

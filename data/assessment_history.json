@@ -1945,6 +1945,69 @@
       "onderwerp": "Reactie op verzoek commissie over werk, inkomen en participatie van mensen met een beperking",
       "commissie_slug": "szw",
       "commissie_afkorting": "SZW"
+    },
+    "buza|2026D59017": {
+      "datum_verwerkt": "2026-11-19T20:02:09.479290+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Wijzigingen van de Bijlage bij het Verdrag inzake het vergemakkelijken van het internationale verkeer ter zee, 1965; Londen, 27 maart 2026",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "lvvn|2026D59215": {
+      "datum_verwerkt": "2026-11-19T20:02:26.691150+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Uitwerking agrarisch natuurbeheer",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "szw|2026D59469": {
+      "datum_verwerkt": "2026-11-19T20:02:44.481512+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Toezicht op UWV",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "buza|2026D59452": {
+      "datum_verwerkt": "2026-11-19T20:03:01.153441+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Geannoteerde agenda voor de Ministeriële Raad van de OVSE van 3 en 4 december 2026",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "ienw|2026D59483": {
+      "datum_verwerkt": "2026-11-19T20:05:42.394399+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Onderzoek gedeeltelijk PFAS-lozingsverbod en vervolg",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "biza|2026D59455": {
+      "datum_verwerkt": "2026-11-19T20:06:52.455439+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Aanvulling aangekondigde vereenvoudigingswet",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "ocw|2026D59509": {
+      "datum_verwerkt": "2026-11-19T20:07:09.655240+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Rapport Identiteits- en documentfraude in de context van kennisveiligheid",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "ocw|2026D59440": {
+      "datum_verwerkt": "2026-11-19T20:07:26.679216+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Interimauditrapport 2026 Ministerie van Onderwijs Cultuur en Wetenschap (VIII)  ADR",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "ocw|2026D59488": {
+      "datum_verwerkt": "2026-11-19T20:07:44.572204+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Monitor representatie 2025 Commissariaat voor de Media",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
     }
   },
   "wacht_op_herhaling": {
@@ -1974,27 +2037,9 @@
       "commissie_slug": "diza",
       "commissie_afkorting": "DiZa",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
-    },
-    "buza|2026D59017": {
-      "pogingen": 2,
-      "laatste_poging": "2026-11-19T15:23:58.442637+00:00",
-      "documentdatum": "2026-11-17T00:00:00+01:00",
-      "onderwerp": "Wijzigingen van de Bijlage bij het Verdrag inzake het vergemakkelijken van het internationale verkeer ter zee, 1965; Londen, 27 maart 2026",
-      "commissie_slug": "buza",
-      "commissie_afkorting": "BUZA",
-      "laatste_fout": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}"
-    },
-    "lvvn|2026D59215": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-19T15:25:43.727580+00:00",
-      "documentdatum": "2026-11-19T00:00:00+01:00",
-      "onderwerp": "Uitwerking agrarisch natuurbeheer",
-      "commissie_slug": "lvvn",
-      "commissie_afkorting": "LVVN",
-      "laatste_fout": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}"
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "lvvn"
+    "laatste_commissie_slug": "ocw"
   }
 }
