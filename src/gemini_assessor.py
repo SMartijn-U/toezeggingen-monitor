@@ -244,10 +244,14 @@ def roep_gemini_aan(
 
                 tijdelijk = (
                     "503" in fouttekst
+                    or "504" in fouttekst
                     or "unavailable" in fouttekst
                     or "high demand" in fouttekst
                     or "429" in fouttekst
                     or "resource_exhausted" in fouttekst
+                    or "deadline_exceeded" in fouttekst
+                    or "deadline exceeded" in fouttekst
+                    or "deadline expired" in fouttekst
                     or "timeout" in fouttekst
                     or "timed out" in fouttekst
                 )
