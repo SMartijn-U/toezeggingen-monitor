@@ -1634,6 +1634,167 @@
           }
         ]
       }
+    },
+    "def|TZ202302-017|2026D59210": {
+      "sleutel": "def|TZ202302-017|2026D59210",
+      "eerste_signalering": "2026-11-19T13:45:31.265620+00:00",
+      "commissie_id": "524d5de6-83dd-4754-9e1e-c10fc49ad9be",
+      "commissie_afkorting": "DEF",
+      "commissie_naam": "Vaste commissie voor Defensie",
+      "commissie_slug": "def",
+      "selectiereden": "DEF is voortouwcommissie",
+      "toezeggingnummer": "TZ202302-017",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59210",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "documentonderwerp": "Nationaal Programma Defensie Industrie en Innovatie",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Er is sprake van aandacht voor de maritieme sector en de wisselwerking met de interdepartementale sectoragenda maritieme maakindustrie."
+      ],
+      "ontbrekende_onderdelen": [
+        "Een specifieke informatieverstrekking door de minister van EZK over de vormgeving van de strategie maritieme maakindustrie op korte termijn."
+      ],
+      "bewijsfragmenten": [
+        "Eveneens wordt voor de maritieme sector nadrukkelijk gekeken naar de wisselwerking met de maatregelen uit de interdepartementale sectoragenda maritieme maakindustrie."
+      ],
+      "motivering": "Het document meldt dat wordt gekeken naar de wisselwerking met de interdepartementale sectoragenda maritieme maakindustrie, maar geeft geen brede of expliciete informatie over de specifieke vormgeving van de strategie van de maritieme maakindustrie door de minister van EZK.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Eveneens wordt voor de maritieme sector nadrukkelijk gekeken naar de wisselwerking met de maatregelen uit de interdepartementale sectoragenda maritieme maakindustrie.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202607-059|2026D58978": {
+      "sleutel": "szw|TZ202607-059|2026D58978",
+      "eerste_signalering": "2026-11-19T13:47:40.841596+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "toezeggingnummer": "TZ202607-059",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58978",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "documentonderwerp": "Leidraad beoordeling arbeidsrelaties bij inhuur Rijksoverheid",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Het sturen van de leidraad inhuur Rijksoverheid aan de Kamer"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "ontvangt u bijgaand de aangepaste leidraad beoordeling arbeidsrelaties bij inhuur Rijksoverheid."
+      ],
+      "motivering": "De minister heeft de toegezegde leidraad inhuur Rijksoverheid als bijlage bij de brief aan de Kamer gezonden, waarmee de toezegging volledig is nagekomen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "ontvangt u bijgaand de aangepaste leidraad beoordeling arbeidsrelaties bij inhuur Rijksoverheid.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "buza|TZ202610-111|2026D59161": {
+      "sleutel": "buza|TZ202610-111|2026D59161",
+      "eerste_signalering": "2026-11-19T13:48:06.144571+00:00",
+      "commissie_id": "4e995993-6961-4d0b-b054-ae2ab9e93b1b",
+      "commissie_afkorting": "BUZA",
+      "commissie_naam": "Vaste commissie voor Buitenlandse Zaken",
+      "commissie_slug": "buza",
+      "selectiereden": "BUZA is voortouwcommissie",
+      "toezeggingnummer": "TZ202610-111",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59161",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "documentonderwerp": "Reactie op verzoek commissie over scenario's hybride aanvallen en Europese Veiligheidsraad",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "nader ingaan op scenario's voor hybride aanvallen",
+        "inzet op het voorstel voor een Europese Veiligheidsraad"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Conform het verzoek van de vaste commissie voor Buitenlandse Zaken wordt uw Kamer via deze brief nader geïnformeerd over: scenario’s voor hybride aanvallen en de Nederlandse inzet ten aanzien van het voorstel voor een Europese Veiligheidsraad.",
+        "In dat kader kijkt het kabinet met interesse naar het voorstel van Commissievoorzitter Von der Leyen voor een Europese Veiligheidsraad."
+      ],
+      "motivering": "De brief informeert de Kamer expliciet over de scenario's voor hybride aanvallen en de Nederlandse inzet ten aanzien van het voorstel voor een Europese Veiligheidsraad, waarmee alle onderdelen van de toezegging zijn afgedaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Conform het verzoek van de vaste commissie voor Buitenlandse Zaken wordt uw Kamer via deze brief nader geïnformeerd over: scenario’s voor hybride aanvallen en de Nederlandse inzet ten aanzien van het voorstel voor een Europese Veiligheidsraad.",
+            "geldig": true
+          },
+          {
+            "fragment": "In dat kader kijkt het kabinet met interesse naar het voorstel van Commissievoorzitter Von der Leyen voor een Europese Veiligheidsraad.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202405-012|2026D58937": {
+      "sleutel": "szw|TZ202405-012|2026D58937",
+      "eerste_signalering": "2026-11-19T13:49:15.372005+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "toezeggingnummer": "TZ202405-012",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58937",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "documentonderwerp": "Reactie op verzoek commissie over werk, inkomen en participatie van mensen met een beperking",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Inzicht geven in financiering van beschut werk, waaronder een nieuw verdeelmodel gebaseerd op gerealiseerde werkplekken."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Daarnaast wordt vanaf 2027 een nieuw verdeelmodel voor de rijksbijdrage beschut werk ingevoerd.",
+        "De nieuwe verdeelsleutel zal de middelen voor begeleiding en indirecte kosten beschut werk verdelen naar het aantal gerealiseerde werkplekken en het aantal inwoners met een positief advies beschut werk in een gemeente."
+      ],
+      "motivering": "De minister gaat in de brief uitgebreid in op de financiering van beschut werk en kondigt de invoering van een nieuw verdeelmodel aan per 2027, waarbij middelen worden verdeeld op basis van het aantal gerealiseerde werkplekken en inwoners met een advies beschut werk. Hiermee is dit onderdeel over de financiering op basis van realisatie behandeld.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Daarnaast wordt vanaf 2027 een nieuw verdeelmodel voor de rijksbijdrage beschut werk ingevoerd.",
+            "geldig": true
+          },
+          {
+            "fragment": "De nieuwe verdeelsleutel zal de middelen voor begeleiding en indirecte kosten beschut werk verdelen naar het aantal gerealiseerde werkplekken en het aantal inwoners met een positief advies beschut werk in een gemeente.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }

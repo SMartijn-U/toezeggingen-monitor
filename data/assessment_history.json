@@ -1868,6 +1868,90 @@
       "onderwerp": "Verslag ministeriele week opening 81e Algemene Vergadering van de Verenigde Naties",
       "commissie_slug": "buza",
       "commissie_afkorting": "BUZA"
+    },
+    "ienw|2026D59017": {
+      "datum_verwerkt": "2026-11-19T13:44:46.024287+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Wijzigingen van de Bijlage bij het Verdrag inzake het vergemakkelijken van het internationale verkeer ter zee, 1965; Londen, 27 maart 2026",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "vws|2026D58962": {
+      "datum_verwerkt": "2026-11-19T13:45:05.227237+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Geannoteerde agenda formele EU Gezondheidsraad 8 december 2026 ",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "def|2026D59210": {
+      "datum_verwerkt": "2026-11-19T13:45:31.265596+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Nationaal Programma Defensie Industrie en Innovatie",
+      "commissie_slug": "def",
+      "commissie_afkorting": "DEF"
+    },
+    "fin|2026D59168": {
+      "datum_verwerkt": "2026-11-19T13:45:56.279265+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Kabinetsreactie onderzoek ViDA Sira Consulting B.V. ",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "lvvn|2026D59215": {
+      "datum_verwerkt": "2026-11-19T13:46:24.941009+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Uitwerking agrarisch natuurbeheer",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "ez|2026D59075": {
+      "datum_verwerkt": "2026-11-19T13:46:50.124716+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Voortgang Convenant Beethoven",
+      "commissie_slug": "ez",
+      "commissie_afkorting": "EZ"
+    },
+    "kgg|2026D59060": {
+      "datum_verwerkt": "2026-11-19T13:47:15.557132+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Onderbouwing stikstofmaatregelen industrie (3.1. CW)",
+      "commissie_slug": "kgg",
+      "commissie_afkorting": "KGG"
+    },
+    "szw|2026D58978": {
+      "datum_verwerkt": "2026-11-19T13:47:40.841580+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Leidraad beoordeling arbeidsrelaties bij inhuur Rijksoverheid",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "buza|2026D59161": {
+      "datum_verwerkt": "2026-11-19T13:48:06.144553+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over scenario's hybride aanvallen en Europese Veiligheidsraad",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "ienw|2026D59075": {
+      "datum_verwerkt": "2026-11-19T13:48:30.843859+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Voortgang Convenant Beethoven",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "vws|2026D59308": {
+      "datum_verwerkt": "2026-11-19T13:48:49.883029+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Ontwikkeling van het Wmo-toezicht en IGJ rapportage over 2025",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "szw|2026D58937": {
+      "datum_verwerkt": "2026-11-19T13:49:15.371990+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over werk, inkomen en participatie van mensen met een beperking",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
     }
   },
   "wacht_op_herhaling": {
@@ -1897,6 +1981,15 @@
       "commissie_slug": "diza",
       "commissie_afkorting": "DiZa",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "buza|2026D59017": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-19T13:51:00.313456+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Wijzigingen van de Bijlage bij het Verdrag inzake het vergemakkelijken van het internationale verkeer ter zee, 1965; Londen, 27 maart 2026",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA",
+      "laatste_fout": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}"
     }
   },
   "round_robin": {
