@@ -4,10 +4,8 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: "17 5 * * *"
-    - cron: "17 11 * * *"
-    - cron: "17 17 * * *"
-    - cron: "17 23 * * *"
+    - cron: "23 14 * * *"
+    - cron: "53 20 * * *"
 
 concurrency:
   group: toezeggingen-monitor
