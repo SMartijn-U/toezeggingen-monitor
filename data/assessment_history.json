@@ -2008,6 +2008,146 @@
       "onderwerp": "Reactie op verzoek commissie over een stand-van-zakenbrief inzake het dossier Villa ExpertCare",
       "commissie_slug": "vws",
       "commissie_afkorting": "VWS"
+    },
+    "def|2026D59161": {
+      "datum_verwerkt": "2026-11-20T11:20:02.332795+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over scenario's hybride aanvallen en Europese Veiligheidsraad",
+      "commissie_slug": "def",
+      "commissie_afkorting": "DEF"
+    },
+    "ocw|2026D59075": {
+      "datum_verwerkt": "2026-11-20T11:20:22.133617+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Voortgang Convenant Beethoven",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "fin|2026D58622": {
+      "datum_verwerkt": "2026-11-20T11:20:39.018578+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Signaalbrief IBTD 'Afwegingen en waarborgen bij doorprocederen Belastingdienst'",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "bho|2026D59002": {
+      "datum_verwerkt": "2026-11-20T11:20:58.460903+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Intensivering van de inzet op onderwijs voor buitenlandse handel en ontwikkelingssamenwerking",
+      "commissie_slug": "bho",
+      "commissie_afkorting": "BHO"
+    },
+    "vro|2026D59075": {
+      "datum_verwerkt": "2026-11-20T11:21:15.801802+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Voortgang Convenant Beethoven",
+      "commissie_slug": "vro",
+      "commissie_afkorting": "VRO"
+    },
+    "lvvn|2026D58388": {
+      "datum_verwerkt": "2026-11-20T11:21:33.145982+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Verzamelbrief diergezondheid",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "ez|2026D58251": {
+      "datum_verwerkt": "2026-11-20T11:21:50.683568+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Geannoteerde agenda Raad voor Concurrentievermogen  3 en 4 december 2026 ",
+      "commissie_slug": "ez",
+      "commissie_afkorting": "EZ"
+    },
+    "jenv|2026D58223": {
+      "datum_verwerkt": "2026-11-20T11:22:07.386853+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Kabinetsreactie initiatiefnota van het lid Ceder over het effectiever oplossen en duurzaam voorkomen van problematische schulden (Kamerstuk 36909-2)",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
+    },
+    "ienw|2026D59483": {
+      "datum_verwerkt": "2026-11-20T11:22:27.853269+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Onderzoek gedeeltelijk PFAS-lozingsverbod en vervolg",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "szw|2026D59189": {
+      "datum_verwerkt": "2026-11-20T11:22:46.484493+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Invoeringstoets wijziging P-wet ten behoeve van werkvoorzieningen visueel beperkten",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "am|2026D58160": {
+      "datum_verwerkt": "2026-11-20T11:23:04.821220+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Diverse onderwerpen migratiebeleid",
+      "commissie_slug": "am",
+      "commissie_afkorting": "AM"
+    },
+    "buza|2026D58260": {
+      "datum_verwerkt": "2026-11-20T11:23:21.918190+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Wijzigingen van de Bijlagen I en II van de Europese Overeenkomst inzake belangrijke lijnen voor het internationaal gecombineerd vervoer en daarmee samenhangende installaties (AGTC); Genève, 18 oktober 2024",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "eu|2026D58251": {
+      "datum_verwerkt": "2026-11-20T11:23:38.661440+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Geannoteerde agenda Raad voor Concurrentievermogen  3 en 4 december 2026 ",
+      "commissie_slug": "eu",
+      "commissie_afkorting": "EU"
+    },
+    "vws|2026D59183": {
+      "datum_verwerkt": "2026-11-20T11:23:56.789247+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Voortgangsbrief seksuele gezondheid en aanpak onbedoelde en/of ongewenste zwangerschap",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "ocw|2026D59210": {
+      "datum_verwerkt": "2026-11-20T11:24:13.953018+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Nationaal Programma Defensie Industrie en Innovatie",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "fin|2026D58918": {
+      "datum_verwerkt": "2026-11-20T11:24:32.049643+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Uitvoeringsgevolgen verwerpen Pakket Belastingplan 2027",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "bho|2026D57885": {
+      "datum_verwerkt": "2026-11-20T11:24:48.870427+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Concept-Raadsbesluiten Mandaatverlening duurzame investeringsfacilitatieakkoorden (SIFA’s) van de Europese Unie met resp. Egypte en Jordanië",
+      "commissie_slug": "bho",
+      "commissie_afkorting": "BHO"
+    },
+    "ez|2026D59210": {
+      "datum_verwerkt": "2026-11-20T11:25:14.063099+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Nationaal Programma Defensie Industrie en Innovatie",
+      "commissie_slug": "ez",
+      "commissie_afkorting": "EZ"
+    },
+    "jenv|2026D58326": {
+      "datum_verwerkt": "2026-11-20T11:25:34.157494+00:00",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "onderwerp": "Toezeggingen gedaan tijdens de wetgevingsoverleggen van 2 en 10 november 2026 over het begrotingsonderdeel artikel 31 Politie",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
+    },
+    "ienw|2026D58713": {
+      "datum_verwerkt": "2026-11-20T11:26:36.756388+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Stakeholderrapportage nieuwe beheerconcessie ProRail",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
     }
   },
   "wacht_op_herhaling": {
@@ -2040,6 +2180,6 @@
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "vws"
+    "laatste_commissie_slug": "ienw"
   }
 }

@@ -1925,6 +1925,320 @@
           }
         ]
       }
+    },
+    "ienw|TZ202606-117|2026D59483": {
+      "sleutel": "ienw|TZ202606-117|2026D59483",
+      "eerste_signalering": "2026-11-20T11:22:27.853284+00:00",
+      "commissie_id": "44c341a0-ae41-4f51-9c81-1f94d2fd1107",
+      "commissie_afkorting": "I&W",
+      "commissie_naam": "Vaste commissie voor Infrastructuur en Waterstaat",
+      "commissie_slug": "ienw",
+      "selectiereden": "I&W is voortouwcommissie",
+      "toezeggingnummer": "TZ202606-117",
+      "status_registratie": "Deels Afgedaan",
+      "documentnummer": "2026D59483",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "documentonderwerp": "Onderzoek gedeeltelijk PFAS-lozingsverbod en vervolg",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Inschatting welke mogelijkheden er nationaal zijn om PFAS terug te dringen en welke stappen hiertoe zouden moeten worden gezet"
+      ],
+      "ontbrekende_onderdelen": [
+        "Ingaan op de oproep van de VNG"
+      ],
+      "bewijsfragmenten": [
+        "Met deze brief bied ik, mede namens de staatssecretaris van Infrastructuur en Waterstaat, de Kamer dit onderzoek en de bijbehorende kabinetsreactie aan."
+      ],
+      "motivering": "Het document biedt het onderzoek en de kabinetsreactie aan over de nationale mogelijkheden en stappen om PFAS terug te dringen (naar aanleiding van de eerdere verkenning over een lozingsverbod), maar er wordt in het document niet expliciet ingegaan op de oproep van de VNG.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met deze brief bied ik, mede namens de staatssecretaris van Infrastructuur en Waterstaat, de Kamer dit onderzoek en de bijbehorende kabinetsreactie aan.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ienw|TZ202510-099|2026D59483": {
+      "sleutel": "ienw|TZ202510-099|2026D59483",
+      "eerste_signalering": "2026-11-20T11:22:27.853298+00:00",
+      "commissie_id": "44c341a0-ae41-4f51-9c81-1f94d2fd1107",
+      "commissie_afkorting": "I&W",
+      "commissie_naam": "Vaste commissie voor Infrastructuur en Waterstaat",
+      "commissie_slug": "ienw",
+      "selectiereden": "I&W is voortouwcommissie",
+      "toezeggingnummer": "TZ202510-099",
+      "status_registratie": "Deels Afgedaan",
+      "documentnummer": "2026D59483",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "documentonderwerp": "Onderzoek gedeeltelijk PFAS-lozingsverbod en vervolg",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Meenemen van de dreigende vergunningverlening voor de lozing van pfas op het riool in Weert als casus in de uitwerking van het gedeeltelijke pfas-lozingsverbod"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Met deze brief wordt tevens invulling gegeven aan de toezegging aan lid-Gabriëls om met een uitwerking en implementatieplan te komen en de casus van een afvalverwerker mee te nemen."
+      ],
+      "motivering": "De brief bevestigt expliciet dat invulling is gegeven aan de toezegging aan lid-Gabriëls om met een uitwerking te komen en de casus van een afvalverwerker (de afvalverwerker te Weert) mee te nemen in het onderzoek naar het gedeeltelijk lozingsverbod.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met deze brief wordt tevens invulling gegeven aan de toezegging aan lid-Gabriëls om met een uitwerking en implementatieplan te komen en de casus van een afvalverwerker mee te nemen.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "am|TZ202606-098|2026D58160": {
+      "sleutel": "am|TZ202606-098|2026D58160",
+      "eerste_signalering": "2026-11-20T11:23:04.821234+00:00",
+      "commissie_id": "75337852-6240-4696-83ab-c543ee05cf45",
+      "commissie_afkorting": "AM",
+      "commissie_naam": "Vaste commissie voor Asiel en Migratie",
+      "commissie_slug": "am",
+      "selectiereden": "AM is voortouwcommissie",
+      "toezeggingnummer": "TZ202606-098",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58160",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Diverse onderwerpen migratiebeleid",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "informeren over psychosociale hulp voor kinderen in de noodopvang"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Tijdens het commissiedebat van 11 juni jl. heb ik toegezegd om uw Kamer nader te informeren over de psychosociale ondersteuning aan asielzoekerskinderen in de noodopvang. Met deze reactie geef ik invulling aan beide verzoeken van uw Kamer.",
+        "Samen met verschillende experts uit het veld met kennis op het terrein van psychosociale ondersteuning is een plan uitgewerkt om de kinderen in de asielopvang zo goed mogelijk te ondersteunen."
+      ],
+      "motivering": "In de brief wordt uitvoerig ingegaan op de psychosociale ondersteuning voor asielzoekerskinderen in de opvang, waarmee deze toezegging is afgedaan, ondanks dat het derde kwartaal van 2026 niet expliciet als termijn wordt herhaald.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens het commissiedebat van 11 juni jl. heb ik toegezegd om uw Kamer nader te informeren over de psychosociale ondersteuning aan asielzoekerskinderen in de noodopvang. Met deze reactie geef ik invulling aan beide verzoeken van uw Kamer.",
+            "geldig": true
+          },
+          {
+            "fragment": "Samen met verschillende experts uit het veld met kennis op het terrein van psychosociale ondersteuning is een plan uitgewerkt om de kinderen in de asielopvang zo goed mogelijk te ondersteunen.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "am|TZ202609-070|2026D58160": {
+      "sleutel": "am|TZ202609-070|2026D58160",
+      "eerste_signalering": "2026-11-20T11:23:04.821245+00:00",
+      "commissie_id": "75337852-6240-4696-83ab-c543ee05cf45",
+      "commissie_afkorting": "AM",
+      "commissie_naam": "Vaste commissie voor Asiel en Migratie",
+      "commissie_slug": "am",
+      "selectiereden": "AM is voortouwcommissie",
+      "toezeggingnummer": "TZ202609-070",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58160",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Diverse onderwerpen migratiebeleid",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "brief sturen met een uiteenzetting van de kosten van de tijdelijke asielopvang"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Een reguliere opvangplek kostte in 2025 gemiddeld 33.374 euro. Een noodopvangplek kostte in 2025 een gemiddeld bedrag van 65.137 euro. Dit betekent dat een gemiddelde noodopvang plek ca. 31.763 euro meer kost dan een reguliere opvangplek."
+      ],
+      "motivering": "De brief bevat een gedetailleerde uiteenzetting en cijfermatige vergelijking van de kosten van reguliere opvang versus tijdelijke noodopvang, waarmee de toezegging volledig is nagekomen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Een reguliere opvangplek kostte in 2025 gemiddeld 33.374 euro. Een noodopvangplek kostte in 2025 een gemiddeld bedrag van 65.137 euro. Dit betekent dat een gemiddelde noodopvang plek ca. 31.763 euro meer kost dan een reguliere opvangplek.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vws|TZ202606-009|2026D59183": {
+      "sleutel": "vws|TZ202606-009|2026D59183",
+      "eerste_signalering": "2026-11-20T11:23:56.789272+00:00",
+      "commissie_id": "befe416e-ca1b-4804-97d0-7aca1dcba888",
+      "commissie_afkorting": "VWS",
+      "commissie_naam": "Vaste commissie voor Volksgezondheid, Welzijn en Sport",
+      "commissie_slug": "vws",
+      "selectiereden": "VWS is voortouwcommissie",
+      "toezeggingnummer": "TZ202606-009",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59183",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "documentonderwerp": "Voortgangsbrief seksuele gezondheid en aanpak onbedoelde en/of ongewenste zwangerschap",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informatie over het budgetplafond van de ASG-regeling en PrEP",
+        "Informatie over de vraag of er voldoende informatie wordt verzameld over PrEP-gebruik",
+        "Onderzoek waarom mensen geen PrEP gebruiken"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "In het commissiedebat Leefstijlpreventie van 23 april 2026 is de toezegging gedaan om nader in te gaan op een vraag van het lid Dobbe over het budgetplafond van de ASG-regeling en PrEP. En om na te gaan of er momenteel voldoende informatie wordt verzameld over PrEP-gebruik. Haar vraag was of het kabinet bereid is om te onderzoeken waarom mensen geen PrEP gebruiken."
+      ],
+      "motivering": "Het document gaat expliciet in op de toezegging gedaan in het commissiedebat Leefstijlpreventie over de vraag van het lid Dobbe inzake PrEP en de ASG-regeling, inclusief de bereidheid tot onderzoek en de verzamelde informatie over PrEP-gebruik.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In het commissiedebat Leefstijlpreventie van 23 april 2026 is de toezegging gedaan om nader in te gaan op een vraag van het lid Dobbe over het budgetplafond van de ASG-regeling en PrEP. En om na te gaan of er momenteel voldoende informatie wordt verzameld over PrEP-gebruik. Haar vraag was of het kabinet bereid is om te onderzoeken waarom mensen geen PrEP gebruiken.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vws|TZ202610-261|2026D59183": {
+      "sleutel": "vws|TZ202610-261|2026D59183",
+      "eerste_signalering": "2026-11-20T11:23:56.789283+00:00",
+      "commissie_id": "befe416e-ca1b-4804-97d0-7aca1dcba888",
+      "commissie_afkorting": "VWS",
+      "commissie_naam": "Vaste commissie voor Volksgezondheid, Welzijn en Sport",
+      "commissie_slug": "vws",
+      "selectiereden": "VWS is volgcommissie",
+      "toezeggingnummer": "TZ202610-261",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59183",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "documentonderwerp": "Voortgangsbrief seksuele gezondheid en aanpak onbedoelde en/of ongewenste zwangerschap",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Aankondiging dat een aanvullende analyse zal worden uitgevoerd naar de omstandigheden en ervaringen van vrouwen die later in de zwangerschap (12+ weken) voor een besluit staan."
+      ],
+      "ontbrekende_onderdelen": [
+        "De daadwerkelijke resultaten van de uitgevoerde analyse"
+      ],
+      "bewijsfragmenten": [
+        "Het kabinet zal hierop, conform de motie Bikker, een aanvullende analyse laten uitvoeren."
+      ],
+      "motivering": "Het document meldt dat de aanvullende analyse zal worden uitgevoerd en dat de invulling en planning de komende weken wordt uitgewerkt, maar de definitieve analyse zelf is nog niet opgeleverd in dit document.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Het kabinet zal hierop, conform de motie Bikker, een aanvullende analyse laten uitvoeren.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ez|TZ202603-017|2026D59210": {
+      "sleutel": "ez|TZ202603-017|2026D59210",
+      "eerste_signalering": "2026-11-20T11:25:14.063115+00:00",
+      "commissie_id": "b3418fdf-3caa-49ef-9270-6fe57a6a8501",
+      "commissie_afkorting": "EZ",
+      "commissie_naam": "Vaste commissie voor Economische Zaken",
+      "commissie_slug": "ez",
+      "selectiereden": "EZ is voortouwcommissie",
+      "toezeggingnummer": "TZ202603-017",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59210",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "documentonderwerp": "Nationaal Programma Defensie Industrie en Innovatie",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Onderbouwing van keuzes ten aanzien van de defensie-industrie en beleidsprioriteiten"
+      ],
+      "ontbrekende_onderdelen": [
+        "Uitdrukkelijke coördinatie tussen de verschillende specifieke instrumenten zoals eerder toegezegd"
+      ],
+      "bewijsfragmenten": [
+        "Voor effectief industriebeleid voor de defensie-industrie maken we gerichte keuzes waar industriële versterking plaats dient te vinden; we kunnen niet alles doen.",
+        "Binnen het NPDII vertalen we de strategische prioriteiten naar concrete maatregelen, verantwoordelijkheden en een uitvoerbare fasering."
+      ],
+      "motivering": "Het document gaat op diverse plekken in op de onderbouwing van gemaakte keuzes (zoals de focusgebieden en de kabinetsreactie op de EBA) en de vertaling van strategische prioriteiten. Een expliciete beschrijving van de coördinatie tussen alle verschillende instrumenten zoals in de toezegging bedoeld ontbreekt echter ten dele, waardoor de toezegging op zijn hoogst deels is behandeld.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Voor effectief industriebeleid voor de defensie-industrie maken we gerichte keuzes waar industriële versterking plaats dient te vinden; we kunnen niet alles doen.",
+            "geldig": true
+          },
+          {
+            "fragment": "Binnen het NPDII vertalen we de strategische prioriteiten naar concrete maatregelen, verantwoordelijkheden en een uitvoerbare fasering.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "jenv|TZ202611-054|2026D58326": {
+      "sleutel": "jenv|TZ202611-054|2026D58326",
+      "eerste_signalering": "2026-11-20T11:25:34.157508+00:00",
+      "commissie_id": "14cac666-51cb-4154-80da-9b0e2eeb5014",
+      "commissie_afkorting": "J&V",
+      "commissie_naam": "Vaste commissie voor Justitie en Veiligheid",
+      "commissie_slug": "jenv",
+      "selectiereden": "J&V is voortouwcommissie",
+      "toezeggingnummer": "TZ202611-054",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D58326",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-16T00:00:00+01:00",
+      "documentonderwerp": "Toezeggingen gedaan tijdens de wetgevingsoverleggen van 2 en 10 november 2026 over het begrotingsonderdeel artikel 31 Politie",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "het sturen van een brief aan de Kamer voorafgaand aan de begrotingsbehandeling van Justitie en Veiligheid met een schets van het krachtenveld achter de overwegingen rond artikel 31"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Daarnaast doe ik de toezegging gestand om uw Kamer vóór de begrotingsbehandeling van het ministerie van Justitie en Veiligheid een brief te doen toekomen over de achtergronden, het krachtenveld en de gemaakte keuzes rond artikel 31, naar aanleiding van het informatieverzoek van het lid Vermeer (BBB) en de vraag van het lid Faber (PVV)."
+      ],
+      "motivering": "In de brief wordt expliciet aangegeven dat de toezegging wordt gestand gedaan door de Kamer een brief te sturen over de achtergronden, het krachtenveld en de gemaakte keuzes rond artikel 31 voorafgaand aan de begrotingsbehandeling van het ministerie van Justitie en Veiligheid. Het onderdeel over het krachtenveld wordt in het document uitvoerig behandeld in de sectie 'Krachtenveld'.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Daarnaast doe ik de toezegging gestand om uw Kamer vóór de begrotingsbehandeling van het ministerie van Justitie en Veiligheid een brief te doen toekomen over de achtergronden, het krachtenveld en de gemaakte keuzes rond artikel 31, naar aanleiding van het informatieverzoek van het lid Vermeer (BBB) en de vraag van het lid Faber (PVV).",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
