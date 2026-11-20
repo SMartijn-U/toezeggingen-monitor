@@ -34,7 +34,7 @@ OUTPUT_PATH = Path(
 AANTAL_DAGEN_DOCUMENTEN = 7
 AANTAL_DAGEN_AFGEDAAN = 14
 MAXIMUM_KANDIDATEN_PER_DOCUMENT = 10
-MINIMUM_KANDIDAATSCORE = 0.06
+MINIMUM_KANDIDAATSCORE = 0.05
 
 def bouw_toezeggingen_per_commissie():
     print(
@@ -325,34 +325,6 @@ def verwerk_documenten(
                 if not commissie_toezeggingen:
                     continue
 
-                if (
-                    nummer == "2026D59483"
-                    and slug == "ienw"
-                ):
-                    debug_toezegging = next(
-                        (
-                            toezegging
-                            for toezegging
-                            in commissie_toezeggingen
-                            if toezegging.get("Nummer")
-                            == "TZ202510-099"
-                        ),
-                        None
-                    )
-
-                    print(
-                        "\nDEBUG 2026D59483:",
-                        "TZ202510-099 aanwezig in "
-                        "I&W-selectie:",
-                        debug_toezegging is not None
-                    )
-
-                    if debug_toezegging:
-                        print(
-                            "DEBUG toezegging:",
-                            debug_toezegging
-                        )
-
                 print(
                     "COMMISSIEOVERLAP:",
                     nummer,
@@ -378,46 +350,16 @@ def verwerk_documenten(
                         )
                     ]
                 )
-        
-                debug_geval = (
-                    nummer == "2026D59483"
-                    and slug == "ienw"
-                )
 
                 kandidaten = rangschik_kandidaten(
                     document,
                     tekst,
                     commissie_toezeggingen,
                     maximum=(
-                        1000
-                        if debug_geval
-                        else MAXIMUM_KANDIDATEN_PER_DOCUMENT
+                        MAXIMUM_KANDIDATEN_PER_DOCUMENT
                     )
                 )
-
-                if debug_geval:
-                    debug_kandidaat = next(
-                        (
-                            kandidaat
-                            for kandidaat in kandidaten
-                            if kandidaat.get(
-                                "toezegging",
-                                {}
-                            ).get("Nummer")
-                            == "TZ202510-099"
-                        ),
-                        None
-                    )
-
-                    print(
-                        "DEBUG ranking TZ202510-099:",
-                        debug_kandidaat
-                    )
-
-                kandidaten = kandidaten[
-                    :MAXIMUM_KANDIDATEN_PER_DOCUMENT
-                ]
-
+            
                 kandidaten = [
                     kandidaat
                     for kandidaat in kandidaten
