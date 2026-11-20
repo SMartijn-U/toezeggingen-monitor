@@ -2239,6 +2239,405 @@
           }
         ]
       }
+    },
+    "ocw|TZ202604-085|2026D59717": {
+      "sleutel": "ocw|TZ202604-085|2026D59717",
+      "eerste_signalering": "2026-11-20T22:10:09.143581+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202604-085",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59717",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "documentonderwerp": "Oprichting EDU-EDIC, Europese samenwerking digitale autonomie in het funderend onderwijs",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Aankondiging dat het Regieplan digitalisering funderend onderwijs voor het eind van het jaar naar de Kamer wordt gezonden"
+      ],
+      "ontbrekende_onderdelen": [
+        "Het Regieplan zelf in het najaar van 2026",
+        "Informatie in het plan over het terugdringen van de afhankelijkheid van Big Tech",
+        "Informatie over het aantal scholen dat een AI-beleid heeft",
+        "Informatie over de huidige ondersteuningsstructuur",
+        "Informatie over de professionalisering van leraren",
+        "Een richtlijn over AI-gebruik op de basisschool"
+      ],
+      "bewijsfragmenten": [
+        "De geleerde lessen vanuit Europa kunnen we inbedden in het Regieplan Digitalisering Funderend Onderwijs (dat uw Kamer voor het eind van het jaar van mij ontvangt) en vice versa."
+      ],
+      "motivering": "Het document kondigt slechts aan dat het Regieplan Digitalisering Funderend Onderwijs voor het eind van het jaar zal worden ontvangen. Het Regieplan zelf en de daarin toegezegde specifieke onderdelen zijn nog niet geleverd in dit document.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "De geleerde lessen vanuit Europa kunnen we inbedden in het Regieplan Digitalisering Funderend Onderwijs (dat uw Kamer voor het eind van het jaar van mij ontvangt) en vice versa.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202609-086|2026D59717": {
+      "sleutel": "ocw|TZ202609-086|2026D59717",
+      "eerste_signalering": "2026-11-20T22:10:09.143644+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202609-086",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59717",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "documentonderwerp": "Oprichting EDU-EDIC, Europese samenwerking digitale autonomie in het funderend onderwijs",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Aankondiging dat het Regieplan digitalisering funderend onderwijs voor het eind van het 2026 naar de Kamer wordt gezonden"
+      ],
+      "ontbrekende_onderdelen": [
+        "Het Regieplan zelf",
+        "Informatie over het gebruik van mobiele telefoons op school en laptopgebruik in de klas"
+      ],
+      "bewijsfragmenten": [
+        "De geleerde lessen vanuit Europa kunnen we inbedden in het Regieplan Digitalisering Funderend Onderwijs (dat uw Kamer voor het eind van het jaar van mij ontvangt) en vice versa."
+      ],
+      "motivering": "Het document kondigt de komst van het Regieplan voor het eind van het jaar aan, maar gaat niet in op de specifieke inhoudelijke punten over mobiele telefoons op school en laptopgebruik in de klas.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "De geleerde lessen vanuit Europa kunnen we inbedden in het Regieplan Digitalisering Funderend Onderwijs (dat uw Kamer voor het eind van het jaar van mij ontvangt) en vice versa.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "bho|TZ202609-075|2026D59861": {
+      "sleutel": "bho|TZ202609-075|2026D59861",
+      "eerste_signalering": "2026-11-20T22:10:29.166986+00:00",
+      "commissie_id": "90f412fa-d124-49d1-a550-37a4220b0b69",
+      "commissie_afkorting": "BHO",
+      "commissie_naam": "Vaste commissie voor Buitenlandse Handel en Ontwikkelingssamenwerking",
+      "commissie_slug": "bho",
+      "selectiereden": "BHO is voortouwcommissie",
+      "toezeggingnummer": "TZ202609-075",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59861",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "documentonderwerp": "Moties en toezeggingen Soedan",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informatie over de inzet van de €10 miljoen voor de opvang van vluchtelingen in de regio Oost-Tsjaad, inclusief investeringen in watervoorzieningen en de bestrijding van seksueel geweld.",
+        "Informatie over de aanvullende stappen tegen seksueel geweld waarbij de suggestie van het lid Kröger voor een veilige plek voor vrouwen is betrokken."
+      ],
+      "ontbrekende_onderdelen": [
+        "Een specifieke opgave van hoe het aanvullende bedrag van €2 miljoen ten behoeve van het UN Sudan Humanitarian Fund feitelijk wordt besteed (in de brief staat expliciet dat de specifieke besteding niet te bepalen is)."
+      ],
+      "bewijsfragmenten": [
+        "Zoals toegezegd informeert het kabinet u over een nieuw programma voor Soedanese vluchtelingen en hun gastgemeenschappen in Oost-Tsjaad, namelijk ‘One System for all’ in de provincie Wadi Fira.",
+        "Tijdens het commissiedebat over Soedan van 10 september jl. heb ik tevens toegezegd uw Kamer voor de begrotingsbehandeling BHOS te informeren over de aanvullende stappen tegen seksueel geweld en de gevolgen daarvan, waarbij de suggestie van het lid Kröger voor een veilige plek voor vrouwen in vluchtelingenkampen wordt betrokken.",
+        "De specifieke besteding van de EUR 2 miljoen is niet te bepalen omdat het een gemeenschappelijk fonds betreft."
+      ],
+      "motivering": "De toezegging is deels afgedaan. De brief informeert over het project in Oost-Tsjaad en over de aanvullende stappen tegen seksueel geweld inclusief veilige plekken voor vrouwen. Echter, ten aanzien van de €2 miljoen voor het Sudan Humanitarian Fund wordt vermeld dat de specifieke besteding niet te bepalen is, waardoor dit wezenlijke onderdeel niet volledig kan worden ingevuld.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Zoals toegezegd informeert het kabinet u over een nieuw programma voor Soedanese vluchtelingen en hun gastgemeenschappen in Oost-Tsjaad, namelijk ‘One System for all’ in de provincie Wadi Fira.",
+            "geldig": true
+          },
+          {
+            "fragment": "Tijdens het commissiedebat over Soedan van 10 september jl. heb ik tevens toegezegd uw Kamer voor de begrotingsbehandeling BHOS te informeren over de aanvullende stappen tegen seksueel geweld en de gevolgen daarvan, waarbij de suggestie van het lid Kröger voor een veilige plek voor vrouwen in vluchtelingenkampen wordt betrokken.",
+            "geldig": true
+          },
+          {
+            "fragment": "De specifieke besteding van de EUR 2 miljoen is niet te bepalen omdat het een gemeenschappelijk fonds betreft.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "bho|TZ202606-182|2026D59861": {
+      "sleutel": "bho|TZ202606-182|2026D59861",
+      "eerste_signalering": "2026-11-20T22:10:29.167005+00:00",
+      "commissie_id": "90f412fa-d124-49d1-a550-37a4220b0b69",
+      "commissie_afkorting": "BHO",
+      "commissie_naam": "Vaste commissie voor Buitenlandse Handel en Ontwikkelingssamenwerking",
+      "commissie_slug": "bho",
+      "selectiereden": "BHO is voortouwcommissie",
+      "toezeggingnummer": "TZ202606-182",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59861",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "documentonderwerp": "Moties en toezeggingen Soedan",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "De Kamer schriftelijk informeren over de uitkomsten en conclusies van de regionale aanklagersconferentie in Nairobi op 14 en 15 oktober 2026."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Tijdens het commissiedebat over conflict-gerelateerd seksueel geweld op 28 mei jl. heb ik tevens toegezegd u nader te informeren over de regionale aanklagersconferentie die op 14 en 15 oktober jl. plaatsvond in Nairobi en door Nederland medegefinancierd werd."
+      ],
+      "motivering": "De toezegging is zeker afgedaan. Het document bevat een uitgebreide alinea waarin de Kamer wordt geïnformeerd over de uitkomsten, deelnemers en besproken onderwerpen van de regionale aanklagersconferentie in Nairobi op 14 en 15 oktober.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens het commissiedebat over conflict-gerelateerd seksueel geweld op 28 mei jl. heb ik tevens toegezegd u nader te informeren over de regionale aanklagersconferentie die op 14 en 15 oktober jl. plaatsvond in Nairobi en door Nederland medegefinancierd werd.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "bho|TZ202609-076|2026D59861": {
+      "sleutel": "bho|TZ202609-076|2026D59861",
+      "eerste_signalering": "2026-11-20T22:10:29.167021+00:00",
+      "commissie_id": "90f412fa-d124-49d1-a550-37a4220b0b69",
+      "commissie_afkorting": "BHO",
+      "commissie_naam": "Vaste commissie voor Buitenlandse Handel en Ontwikkelingssamenwerking",
+      "commissie_slug": "bho",
+      "selectiereden": "BHO is voortouwcommissie",
+      "toezeggingnummer": "TZ202609-076",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59861",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "documentonderwerp": "Moties en toezeggingen Soedan",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "De Kamer schriftelijk informeren voorafgaand aan de begrotingsbehandeling BHO over de aanvullende stappen tegen seksueel geweld en de gevolgen daarvan.",
+        "Betrekken van de suggestie van het lid Kröger om een veilige plek voor vrouwen in vluchtelingenkampen te creëren."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Tijdens het commissiedebat over Soedan van 10 september jl. heb ik tevens toegezegd uw Kamer voor de begrotingsbehandeling BHOS te informeren over de aanvullende stappen tegen seksueel geweld en de gevolgen daarvan, waarbij de suggestie van het lid Kröger voor een veilige plek voor vrouwen in vluchtelingenkampen wordt betrokken.",
+        "Op 22 oktober heeft het kabinet uw Kamer geïnformeerd dat het de inzet op conflict-gerelateerd seksueel geweld (CRSV) intensiveert."
+      ],
+      "motivering": "De toezegging is zeker afgedaan. De brief gaat expliciet in op de aanvullende stappen om seksueel geweld te bestrijden in aanloop naar de begrotingsbehandeling en betrekt hierbij de suggestie van het lid Kröger voor veilige plekken voor vrouwen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens het commissiedebat over Soedan van 10 september jl. heb ik tevens toegezegd uw Kamer voor de begrotingsbehandeling BHOS te informeren over de aanvullende stappen tegen seksueel geweld en de gevolgen daarvan, waarbij de suggestie van het lid Kröger voor een veilige plek voor vrouwen in vluchtelingenkampen wordt betrokken.",
+            "geldig": true
+          },
+          {
+            "fragment": "Op 22 oktober heeft het kabinet uw Kamer geïnformeerd dat het de inzet op conflict-gerelateerd seksueel geweld (CRSV) intensiveert.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "jenv|TZ202406-008|2026D59759": {
+      "sleutel": "jenv|TZ202406-008|2026D59759",
+      "eerste_signalering": "2026-11-20T22:11:22.444718+00:00",
+      "commissie_id": "14cac666-51cb-4154-80da-9b0e2eeb5014",
+      "commissie_afkorting": "J&V",
+      "commissie_naam": "Vaste commissie voor Justitie en Veiligheid",
+      "commissie_slug": "jenv",
+      "selectiereden": "J&V is voortouwcommissie",
+      "toezeggingnummer": "TZ202406-008",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59759",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "documentonderwerp": "Invoeringstoets Wet gegevensverwerkingen door samenwerkingsverbanden (Wgs)",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Invoeringstoets/monitoring na één jaar"
+      ],
+      "ontbrekende_onderdelen": [
+        "Monitoring middels een expertmeeting",
+        "Evaluatie 4 jaar na inwerkingtreding"
+      ],
+      "bewijsfragmenten": [
+        "Hiermee bieden wij uw Kamer het onderzoeksrapport ‘Invoeringstoets Wet gegevensverwerking door samenwerkingsverbanden’ aan, dat is uitgevoerd door Hooghiemstra & Partners.",
+        "Zoals toegezegd aan de Eerste Kamer op verzoek van het lid Van Toorenburg (CDA) en conform het kabinetsbeleid over invoeringstoetsen is een jaar na inwerkingtreding van deze wet een invoeringstoets uitgevoerd."
+      ],
+      "motivering": "Het document biedt de invoeringstoets aan die een jaar na inwerkingtreding is uitgevoerd. Het onderdeel over de monitoring middels een expertmeeting en de latere evaluatie na 4 jaar worden in deze brief echter niet behandeld, waardoor de toezegging slechts deels is gedekt.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Hiermee bieden wij uw Kamer het onderzoeksrapport ‘Invoeringstoets Wet gegevensverwerking door samenwerkingsverbanden’ aan, dat is uitgevoerd door Hooghiemstra & Partners.",
+            "geldig": true
+          },
+          {
+            "fragment": "Zoals toegezegd aan de Eerste Kamer op verzoek van het lid Van Toorenburg (CDA) en conform het kabinetsbeleid over invoeringstoetsen is een jaar na inwerkingtreding van deze wet een invoeringstoets uitgevoerd.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ienw|TZ202610-120|2026D59502": {
+      "sleutel": "ienw|TZ202610-120|2026D59502",
+      "eerste_signalering": "2026-11-20T22:11:58.287119+00:00",
+      "commissie_id": "44c341a0-ae41-4f51-9c81-1f94d2fd1107",
+      "commissie_afkorting": "I&W",
+      "commissie_naam": "Vaste commissie voor Infrastructuur en Waterstaat",
+      "commissie_slug": "ienw",
+      "selectiereden": "I&W is volgcommissie",
+      "toezeggingnummer": "TZ202610-120",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59502",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief Water",
+      "oordeel": "waarschijnlijk_afgedaan",
+      "rapportagecategorie": "Mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Betrokkenheid van een klankbordgroep waaronder Water Alliance bij de wijziging van regelgeving rondom risicogestuurde metingen voor legionella",
+        "Informatie hierover per brief aan de Kamer"
+      ],
+      "ontbrekende_onderdelen": [
+        "Expliciete vermelding van een gesprek dat voorafgaand aan het WGO Water heeft plaatsgevonden met partijen van de Wateralliantie over de gevolgen voor regeldruk"
+      ],
+      "bewijsfragmenten": [
+        "Zowel bij de uitvoering van het evaluatie-onderzoek als de wijziging van regelgeving is een breed samengestelde klankbordgroep betrokken, waaronder Water Alliance.",
+        "Hiermee wordt voldaan aan de toezegging aan het lid Van Brenk."
+      ],
+      "motivering": "In de brief wordt expliciet aangegeven dat aan de toezegging aan het lid Van Brenk is voldaan en wordt toegelicht dat Water Alliance betrokken is bij de klankbordgroep rondom de regelgeving voor risicogestuurde metingen. Het voorafgaande fysieke gesprek specifiek over regeldruk wordt echter niet letterlijk benoemd, waardoor het oordeel op waarschijnlijk_afgedaan komt te staan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Zowel bij de uitvoering van het evaluatie-onderzoek als de wijziging van regelgeving is een breed samengestelde klankbordgroep betrokken, waaronder Water Alliance.",
+            "geldig": true
+          },
+          {
+            "fragment": "Hiermee wordt voldaan aan de toezegging aan het lid Van Brenk.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202505-026|2026D59782": {
+      "sleutel": "szw|TZ202505-026|2026D59782",
+      "eerste_signalering": "2026-11-20T22:13:04.166914+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is volgcommissie",
+      "toezeggingnummer": "TZ202505-026",
+      "status_registratie": "Deels Afgedaan",
+      "documentnummer": "2026D59782",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "documentonderwerp": "Naar een Participatiewet die werkt",
+      "oordeel": "zeer_waarschijnlijk_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informatie sturen over hoe het kabinet om wil gaan met de groep mensen in de Participatiewet zonder of met een beperkt arbeidsvermogen (chronisch zieken/beperking) en een visie op een oplossing buiten de Participatiewet binnen het brede arbeidsongeschiktheidsstelsel."
+      ],
+      "ontbrekende_onderdelen": [
+        "Specifieke planning 'voor de zomer' wordt in de tekst niet expliciet gekoppeld aan de definitieve afronding van deze specifieke briefhoofdvraag in die exacte bewoording (wel wordt gesproken over de algemene voortgang voor de zomer)."
+      ],
+      "bewijsfragmenten": [
+        "Hiermee informeer ik uw Kamer, conform mijn toezegging, over hoe ik voornemens ben de positie van mensen in de Participatiewet zonder of met een beperkt arbeidsvermogen te verbeteren.",
+        "Langere termijn: een individuele uitkering mogelijk maken"
+      ],
+      "motivering": "De bewindspersoon gaat in de brief uitgebreid in op de groep mensen in de Participatiewet zonder of met een beperkt arbeidsvermogen (zoals chronisch zieken of mensen met een beperking) en adresseert expliciet de problematiek dat deze groep eigenlijk niet onder de Participatiewet zou moeten vallen. Er wordt uiteengezet dat op de korte termijn verbeteringen binnen de Participatiewet worden bezien en dat op de langere termijn wordt toegewerkt naar een passende individuele regeling buiten de Participatiewet inpassing in het brede arbeidsongeschiktheidsstelsel. Daarmee is de toezegging inhoudelijk zeer volledig behandeld.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Hiermee informeer ik uw Kamer, conform mijn toezegging, over hoe ik voornemens ben de positie van mensen in de Participatiewet zonder of met een beperkt arbeidsvermogen te verbeteren.",
+            "geldig": true
+          },
+          {
+            "fragment": "Langere termijn: een individuele uitkering mogelijk maken",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "bho|TZ202611-026|2026D59856": {
+      "sleutel": "bho|TZ202611-026|2026D59856",
+      "eerste_signalering": "2026-11-20T22:13:57.748629+00:00",
+      "commissie_id": "90f412fa-d124-49d1-a550-37a4220b0b69",
+      "commissie_afkorting": "BHO",
+      "commissie_naam": "Vaste commissie voor Buitenlandse Handel en Ontwikkelingssamenwerking",
+      "commissie_slug": "bho",
+      "selectiereden": "BHO is volgcommissie",
+      "toezeggingnummer": "TZ202611-026",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59856",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "documentonderwerp": "Ontwikkelingssamenwerking met Afghanistan ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "ontwikkelingssamenwerking met Afghanistan",
+        "humanitaire hulp",
+        "basisvoorzieningen",
+        "opvang in de regio",
+        "speciale aandacht voor de Afghanen die recent vanuit Pakistan en Iran zijn gedwongen om naar Afghanistan terug te keren"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Naar aanleiding van het verzoek van uw Kamer d.d. 1 oktober 2026 om een brief over ontwikkelingssamenwerking met Afghanistan, met name op het gebied van humanitaire hulp, opvang in de regio en basisvoorzieningen, informeer ik uw Kamer, mede namens de minister van Buitenlandse Zaken, middels deze brief over de Nederlandse inzet.",
+        "Sinds september 2023 zijn ruim 6 miljoen vluchtelingen teruggekeerd naar Afghanistan.",
+        "De programmering in Afghanistan richt zich op het ondersteunen van Afghanen die vaak gedwongen terugkeren naar Afghanistan vanuit Pakistan en Iran."
+      ],
+      "motivering": "De brief behandelt uitputtend de ontwikkelingssamenwerking met Afghanistan, inclusief de specifieke onderdelen humanitaire hulp, basisvoorzieningen, opvang in de regio en de situatie van gedwongen terugkeer vanuit Pakistan en Iran.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Naar aanleiding van het verzoek van uw Kamer d.d. 1 oktober 2026 om een brief over ontwikkelingssamenwerking met Afghanistan, met name op het gebied van humanitaire hulp, opvang in de regio en basisvoorzieningen, informeer ik uw Kamer, mede namens de minister van Buitenlandse Zaken, middels deze brief over de Nederlandse inzet.",
+            "geldig": true
+          },
+          {
+            "fragment": "Sinds september 2023 zijn ruim 6 miljoen vluchtelingen teruggekeerd naar Afghanistan.",
+            "geldig": true
+          },
+          {
+            "fragment": "De programmering in Afghanistan richt zich op het ondersteunen van Afghanen die vaak gedwongen terugkeren naar Afghanistan vanuit Pakistan en Iran.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
