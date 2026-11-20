@@ -2008,6 +2008,13 @@
       "onderwerp": "Monitor representatie 2025 Commissariaat voor de Media",
       "commissie_slug": "ocw",
       "commissie_afkorting": "OCW"
+    },
+    "vws|2026D59581": {
+      "datum_verwerkt": "2026-11-20T10:48:50.952343+00:00",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over een stand-van-zakenbrief inzake het dossier Villa ExpertCare",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
     }
   },
   "wacht_op_herhaling": {
@@ -2040,6 +2047,6 @@
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "ocw"
+    "laatste_commissie_slug": "vws"
   }
 }
