@@ -2638,6 +2638,56 @@
           }
         ]
       }
+    },
+    "jenv|TZ202609-019|2026D59735": {
+      "sleutel": "jenv|TZ202609-019|2026D59735",
+      "eerste_signalering": "2026-11-21T02:02:46.663325+00:00",
+      "commissie_id": "14cac666-51cb-4154-80da-9b0e2eeb5014",
+      "commissie_afkorting": "J&V",
+      "commissie_naam": "Vaste commissie voor Justitie en Veiligheid",
+      "commissie_slug": "jenv",
+      "selectiereden": "J&V is voortouwcommissie",
+      "toezeggingnummer": "TZ202609-019",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59735",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief strafrechtelijke onderwerpen",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Het OM heeft aangegeven de gevraagde informatie te kunnen aanleveren",
+        "Overleg met het OM over een mogelijk overzicht van de aantallen sepots per sepotcodes over de afgelopen vijf jaar"
+      ],
+      "ontbrekende_onderdelen": [
+        "Het feitelijke overzicht van de sepots over de afgelopen 5 jaar (er wordt slechts aangegeven dat wordt gestreefd de informatie dit jaar aan te bieden)"
+      ],
+      "bewijsfragmenten": [
+        "Tijdens het commissiedebat over de strafrechtketen op 10 september jl. deed de minister van Justitie en Veiligheid  uw Kamer de toezegging om met het OM te gaan kijken naar een mogelijk overzicht van de aantallen sepots per sepotcodes over de afgelopen vijf jaar.",
+        "Het OM heeft aangegeven de gevraagde informatie te kunnen aanleveren.",
+        "De minister van Justitie en Veiligheid streeft ernaar de informatie dit jaar aan uw Kamer aan te bieden."
+      ],
+      "motivering": "De minister meldt dat er met het OM is gekeken naar de mogelijkheid om het overzicht te leveren en dat het OM dit kan aanleveren, maar het feitelijke overzicht zelf wordt in deze brief nog niet verstrekt; er wordt slechts gestreefd dit dit jaar aan te bieden.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens het commissiedebat over de strafrechtketen op 10 september jl. deed de minister van Justitie en Veiligheid  uw Kamer de toezegging om met het OM te gaan kijken naar een mogelijk overzicht van de aantallen sepots per sepotcodes over de afgelopen vijf jaar.",
+            "geldig": true
+          },
+          {
+            "fragment": "Het OM heeft aangegeven de gevraagde informatie te kunnen aanleveren.",
+            "geldig": true
+          },
+          {
+            "fragment": "De minister van Justitie en Veiligheid streeft ernaar de informatie dit jaar aan uw Kamer aan te bieden.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
