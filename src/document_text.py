@@ -1,5 +1,8 @@
 import io
 import requests
+import zipfile
+
+from xml.etree import ElementTree
 
 from docx import Document
 from pypdf import PdfReader
@@ -29,6 +32,93 @@ def download_document(document_id):
         )
     )
 
+def extract_docx_footnotes(content):
+    teksten = []
+
+    try:
+        with zipfile.ZipFile(
+            io.BytesIO(content)
+        ) as zip_bestand:
+            pad = "word/footnotes.xml"
+
+            if pad not in zip_bestand.namelist():
+                return []
+
+            xml_data = zip_bestand.read(
+                pad
+            )
+
+        root = ElementTree.fromstring(
+            xml_data
+        )
+
+        namespace = {
+            "w": (
+                "http://schemas.openxmlformats.org/"
+                "wordprocessingml/2006/main"
+            )
+        }
+
+        for footnote in root.findall(
+            "w:footnote",
+            namespace
+        ):
+            footnote_id = footnote.get(
+                (
+                    "{http://schemas.openxmlformats.org/"
+                    "wordprocessingml/2006/main}"
+                    "id"
+                )
+            )
+
+            # Word bevat technische voetnoten
+            # met negatieve IDs. Die bevatten
+            # geen inhoudelijke voetnoottekst.
+            try:
+                if (
+                    footnote_id is not None
+                    and int(footnote_id) < 0
+                ):
+                    continue
+            except ValueError:
+                pass
+
+            delen = []
+
+            for text_node in footnote.findall(
+                ".//w:t",
+                namespace
+            ):
+                if (
+                    text_node.text
+                    and text_node.text.strip()
+                ):
+                    delen.append(
+                        text_node.text.strip()
+                    )
+
+            tekst = " ".join(
+                delen
+            ).strip()
+
+            if tekst:
+                teksten.append(
+                    tekst
+                )
+
+    except (
+        zipfile.BadZipFile,
+        KeyError,
+        ElementTree.ParseError,
+    ) as fout:
+        print(
+            "WAARSCHUWING: voetnoten "
+            "konden niet worden uitgelezen:",
+            fout
+        )
+
+    return teksten
+
 
 def extract_docx_text(content):
     bestand = io.BytesIO(content)
@@ -40,9 +130,27 @@ def extract_docx_text(content):
         tekst = paragraph.text.strip()
 
         if tekst:
-            teksten.append(tekst)
+            teksten.append(
+                tekst
+            )
 
-    return "\n".join(teksten)
+    voetnoten = extract_docx_footnotes(
+        content
+    )
+
+    if voetnoten:
+        print(
+            "DOCX-voetnoten uitgelezen:",
+            len(voetnoten)
+        )
+
+        teksten.extend(
+            voetnoten
+        )
+
+    return "\n".join(
+        teksten
+    )
 
 
 def extract_pdf_text(content):
