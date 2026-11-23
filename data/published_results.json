@@ -2974,6 +2974,49 @@
           }
         ]
       }
+    },
+    "lvvn|TZ202610-209|2026D60294": {
+      "sleutel": "lvvn|TZ202610-209|2026D60294",
+      "eerste_signalering": "2026-11-23T21:48:04.261063+00:00",
+      "commissie_id": "d8c4982c-be0d-4d55-a6a7-074b3f8dd5ab",
+      "commissie_afkorting": "LVVN",
+      "commissie_naam": "Vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "commissie_slug": "lvvn",
+      "selectiereden": "LVVN is voortouwcommissie",
+      "toezeggingnummer": "TZ202610-209",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60294",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "documentonderwerp": "Gesprekken Fair2Breed en Raad van Beheer",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Brief sturen voor de begrotingsbehandeling over gesprekken met Fair2Breed en Raad van Beheer",
+        "Uitkomsten van de gesprekken met de Kamer delen"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "In het Commissiedebat dieren buiten de veehouderij en dierproeven van 15 oktober 2026 heb ik toegezegd uw Kamer vóór de begrotingsbehandeling te informeren over de uitkomsten van de gesprekken die ik met Fair2Breed en de Raad van Beheer tot nu toe heb gevoerd (TZ202610-209).",
+        "Ik beschouw hiermee de toezegging 2026Z15706, en de toezegging aan het lid Den Hollander om de Kamer vóór de begrotingsbehandeling van LVVN een brief te sturen over de uitkomst van de gesprekken met Fair2Breed en de Raad van Beheer (TZ202610-209), als afgedaan."
+      ],
+      "motivering": "De staatssecretaris informeert de Kamer in deze brief voor de begrotingsbehandeling over de gesprekken met Fair2Breed en de Raad van Beheer en de uitkomsten daarvan. De toezegging en het toezeggingnummer worden expliciet genoemd en als afgedaan beschouwd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In het Commissiedebat dieren buiten de veehouderij en dierproeven van 15 oktober 2026 heb ik toegezegd uw Kamer vóór de begrotingsbehandeling te informeren over de uitkomsten van de gesprekken die ik met Fair2Breed en de Raad van Beheer tot nu toe heb gevoerd (TZ202610-209).",
+            "geldig": true
+          },
+          {
+            "fragment": "Ik beschouw hiermee de toezegging 2026Z15706, en de toezegging aan het lid Den Hollander om de Kamer vóór de begrotingsbehandeling van LVVN een brief te sturen over de uitkomst van de gesprekken met Fair2Breed en de Raad van Beheer (TZ202610-209), als afgedaan.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }

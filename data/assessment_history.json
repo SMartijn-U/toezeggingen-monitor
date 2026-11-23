@@ -2575,6 +2575,27 @@
       "onderwerp": "Memorie van toelichting",
       "commissie_slug": "biza",
       "commissie_afkorting": "BIZA"
+    },
+    "ienw|2026D59502": {
+      "datum_verwerkt": "2026-11-23T21:45:04.460524+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Verzamelbrief Water",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "jenv|2026D60190": {
+      "datum_verwerkt": "2026-11-23T21:46:45.967841+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Toezeggingen uit het wetgevingsoverleg over de Implementatiewet herziene richtlijn consumentenkrediet (Kamerstuk 36924) ",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
+    },
+    "lvvn|2026D60294": {
+      "datum_verwerkt": "2026-11-23T21:48:04.261045+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Gesprekken Fair2Breed en Raad van Beheer",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
     }
   },
   "wacht_op_herhaling": {
@@ -2605,36 +2626,9 @@
       "commissie_afkorting": "DiZa",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
     },
-    "ienw|2026D59502": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-23T21:15:52.084027+00:00",
-      "documentdatum": "2026-11-19T00:00:00+01:00",
-      "onderwerp": "Verzamelbrief Water",
-      "commissie_slug": "ienw",
-      "commissie_afkorting": "I&W",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
-    },
-    "jenv|2026D60190": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-23T21:16:50.681751+00:00",
-      "documentdatum": "2026-11-23T00:00:00+01:00",
-      "onderwerp": "Toezeggingen uit het wetgevingsoverleg over de Implementatiewet herziene richtlijn consumentenkrediet (Kamerstuk 36924) ",
-      "commissie_slug": "jenv",
-      "commissie_afkorting": "J&V",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
-    },
-    "lvvn|2026D60294": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-23T21:21:19.746172+00:00",
-      "documentdatum": "2026-11-23T00:00:00+01:00",
-      "onderwerp": "Gesprekken Fair2Breed en Raad van Beheer",
-      "commissie_slug": "lvvn",
-      "commissie_afkorting": "LVVN",
-      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}"
-    },
     "lvvn|2026D60256": {
-      "pogingen": 1,
-      "laatste_poging": "2026-11-23T21:24:42.536416+00:00",
+      "pogingen": 2,
+      "laatste_poging": "2026-11-23T21:48:47.537893+00:00",
       "documentdatum": "2026-11-23T00:00:00+01:00",
       "onderwerp": "Reactie op verzoeken van de commissie over o.a. vertraagde uitbetaling beheersubsidie 2025 door RVO",
       "commissie_slug": "lvvn",
