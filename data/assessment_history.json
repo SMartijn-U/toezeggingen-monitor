@@ -2442,6 +2442,34 @@
       "onderwerp": "Verruiming eindverlof",
       "commissie_slug": "jenv",
       "commissie_afkorting": "J&V"
+    },
+    "eu|2026D59984": {
+      "datum_verwerkt": "2026-11-23T13:06:29.864024+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Verslag van de informele Europese Raad van 13 november 2026",
+      "commissie_slug": "eu",
+      "commissie_afkorting": "EU"
+    },
+    "biza|2026D60007": {
+      "datum_verwerkt": "2026-11-23T13:11:19.234862+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Nadere informatie over voorwaardelijke finaliteit externe inhuur  schadeafhandeling Groningen",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "fin|2026D59940": {
+      "datum_verwerkt": "2026-11-23T13:13:37.588138+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Kabinetsappreciatie conceptconclusies Meerjarig Financieel Kader buitengewone Europese Raad 27-28 november ",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "jenv|2026D60070": {
+      "datum_verwerkt": "2026-11-23T13:13:54.980492+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "36940 Nota van wijziging inzake regels voor de inzet van arbeidsrechtelijke instrumenten en loonsubsidie om werkgevers in staat te stellen zoveel mogelijk werknemers te behouden in tijden van crises (Wet personeelsbehoud bij crisis)",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
     }
   },
   "wacht_op_herhaling": {
@@ -2471,9 +2499,72 @@
       "commissie_slug": "diza",
       "commissie_afkorting": "DiZa",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "lvvn|2026D59896": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T13:07:08.708191+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Voortgang Wolvenbeleid",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "vro|2026D60057": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T13:08:11.965417+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Voortgang aanpak fysieke leefomgeving Bonaire, Sint Eustatius en Saba",
+      "commissie_slug": "vro",
+      "commissie_afkorting": "VRO",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "bho|2026D59984": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T13:08:56.392016+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Verslag van de informele Europese Raad van 13 november 2026",
+      "commissie_slug": "bho",
+      "commissie_afkorting": "BHO",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "kr|2026D60057": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T13:10:59.957456+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Voortgang aanpak fysieke leefomgeving Bonaire, Sint Eustatius en Saba",
+      "commissie_slug": "kr",
+      "commissie_afkorting": "KR",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "buza|2026D59984": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T13:13:21.013648+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Verslag van de informele Europese Raad van 13 november 2026",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}"
+    },
+    "eu|2026D59940": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T13:14:39.756569+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Kabinetsappreciatie conceptconclusies Meerjarig Financieel Kader buitengewone Europese Raad 27-28 november ",
+      "commissie_slug": "eu",
+      "commissie_afkorting": "EU",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "biza|2026D59850": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T13:15:16.914085+00:00",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "onderwerp": "Reactie op het verzoek van het lid Vermeer, gedaan tijdens o.a. het debat over het Pakket Belastingplan, over politieke contacten rond het Belastingplan en het amendement van de leden Klaver en Dassen",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "jenv"
+    "laatste_commissie_slug": "biza"
   }
 }

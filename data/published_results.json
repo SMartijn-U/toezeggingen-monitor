@@ -2688,6 +2688,93 @@
           }
         ]
       }
+    },
+    "biza|TZ202610-088|2026D60007": {
+      "sleutel": "biza|TZ202610-088|2026D60007",
+      "eerste_signalering": "2026-11-23T13:11:19.234880+00:00",
+      "commissie_id": "177eb895-6307-4268-94f6-a0f80dc3e358",
+      "commissie_afkorting": "BIZA",
+      "commissie_naam": "Vaste commissie voor Binnenlandse Zaken",
+      "commissie_slug": "biza",
+      "selectiereden": "BIZA is voortouwcommissie",
+      "toezeggingnummer": "TZ202610-088",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60007",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "documentonderwerp": "Nadere informatie over voorwaardelijke finaliteit externe inhuur  schadeafhandeling Groningen",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Geïnformeerd over de praktijkervaringen met voorwaardelijke finaliteit",
+        "Ingegaan op de impact op het kerngebied wanneer de werkwijze van voorwaardelijke finaliteit niet zou gelden"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Zoals toegezegd tijdens het commissiedebat Herstel Groningen op 7 oktober jl. informeer ik uw Kamer met deze brief aanvullend over het gebruik van voorwaardelijke finaliteit in de schadeafhandeling door het Instituut Mijnbouwschade Groningen (hierna: IMG).",
+        "Zoals hierboven al aangestipt is een belangrijk gevolg van voorwaardelijke finaliteit dat de focus van de schadeafhandeling kan verschuiven naar de gebieden waar nog steeds nieuwe of verergerde mijnbouwschade op kan treden en waar ook historisch de impact van de bevingen het grootst is (het ‘kerngebied’)."
+      ],
+      "motivering": "In de brief wordt uitgebreid ingegaan op het gebruik en de praktijkervaringen van voorwaardelijke finaliteit bij de schadeafhandeling door het IMG. Daarnaast wordt specifiek ingegaan op de consequenties en de impact op het kerngebied indien niet met voorwaardelijke finaliteit zou worden gewerkt.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Zoals toegezegd tijdens het commissiedebat Herstel Groningen op 7 oktober jl. informeer ik uw Kamer met deze brief aanvullend over het gebruik van voorwaardelijke finaliteit in de schadeafhandeling door het Instituut Mijnbouwschade Groningen (hierna: IMG).",
+            "geldig": true
+          },
+          {
+            "fragment": "Zoals hierboven al aangestipt is een belangrijk gevolg van voorwaardelijke finaliteit dat de focus van de schadeafhandeling kan verschuiven naar de gebieden waar nog steeds nieuwe of verergerde mijnbouwschade op kan treden en waar ook historisch de impact van de bevingen het grootst is (het ‘kerngebied’).",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "biza|TZ202610-090|2026D60007": {
+      "sleutel": "biza|TZ202610-090|2026D60007",
+      "eerste_signalering": "2026-11-23T13:11:19.234888+00:00",
+      "commissie_id": "177eb895-6307-4268-94f6-a0f80dc3e358",
+      "commissie_afkorting": "BIZA",
+      "commissie_naam": "Vaste commissie voor Binnenlandse Zaken",
+      "commissie_slug": "biza",
+      "selectiereden": "BIZA is voortouwcommissie",
+      "toezeggingnummer": "TZ202610-090",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60007",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "documentonderwerp": "Nadere informatie over voorwaardelijke finaliteit externe inhuur  schadeafhandeling Groningen",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Geïnformeerd over voorwaardelijke finaliteit",
+        "Een goede onderbouwing van deze werkwijze",
+        "Gekwantificeerd wat dit oplevert"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Onderstaand besteed ik specifiek aandacht aan de overwegingen die ten grondslag liggen aan voorwaardelijke finaliteit, de onderbouwing van de werkwijze van het IMG, en de impact ervan op het gebied waar nog steeds bevingen plaatsvinden en waar dat niet het geval is.",
+        "Uit cijfers van het IMG over het doorbreken van deze grenswaarden blijkt dat de finaliteitsgrenzen in de praktijk veelvuldig worden overschreden: In 2025 waren er 22 bevingen die een trillingssnelheid van minimaal 2 mm/s hebben veroorzaakt. Die 22 bevingen hebben in totaal meer dan 270.000 keer op een adres een trillingssnelheid van minimaal 2 mm/s behaald"
+      ],
+      "motivering": "De brief bevat een gedetailleerde toelichting en onderbouwing van de werkwijze rond voorwaardelijke finaliteit en geeft concrete cijfers en kwantificeringen over de overschreden grenswaarden en het aantal geraakte adressen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Onderstaand besteed ik specifiek aandacht aan de overwegingen die ten grondslag liggen aan voorwaardelijke finaliteit, de onderbouwing van de werkwijze van het IMG, en de impact ervan op het gebied waar nog steeds bevingen plaatsvinden en waar dat niet het geval is.",
+            "geldig": true
+          },
+          {
+            "fragment": "Uit cijfers van het IMG over het doorbreken van deze grenswaarden blijkt dat de finaliteitsgrenzen in de praktijk veelvuldig worden overschreden: In 2025 waren er 22 bevingen die een trillingssnelheid van minimaal 2 mm/s hebben veroorzaakt. Die 22 bevingen hebben in totaal meer dan 270.000 keer op een adres een trillingssnelheid van minimaal 2 mm/s behaald",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
