@@ -31,7 +31,7 @@ EXPLICIETE_TOEZEGGINGSFORMULERINGEN = (
 
 
 BONUS_EXACT_NUMMER = 0.50
-BONUS_EXPLICIETE_VERWIJZING = 0.03
+BONUS_EXPLICIETE_VERWIJZING = 0.0
 
 MINIMUM_LOKALE_SCORE_VOOR_VERWIJZINGSBONUS = 0.02
 
@@ -418,6 +418,35 @@ def rangschik_kandidaten(
             volledige_tekst
         )
     )
+
+    # Tijdelijke diagnose voor 2026D59502:
+    # controleren of het afwijkend geschreven
+    # toezeggingnummer uit de voetnoot daadwerkelijk
+    # in volledige_tekst terechtkomt.
+    if (
+        document.get("Nummer")
+        == "2026D59502"
+    ):
+        print(
+            "\nDEBUG GEVONDEN "
+            "TOEZEGGINGNUMMERS:",
+            sorted(
+                document_toezeggingnummers
+            )
+        )
+
+        print(
+            "DEBUG BEVAT 202607-72:",
+            "202607-72"
+            in volledige_tekst
+        )
+
+        print(
+            "DEBUG BEVAT "
+            "TOEZEGGINGSNUMMER:",
+            "toezeggingsnummer"
+            in volledige_tekst.lower()
+        )
 
     resultaten = []
 
