@@ -242,6 +242,43 @@ def maak_kandidaat_record(
             kandidaat["similarity"],
             6
         ),
+        "volledige_documentscore": round(
+            kandidaat.get(
+                "volledige_documentscore",
+                kandidaat["similarity"]
+            ),
+            6
+        ),
+        "lokale_score": round(
+            kandidaat.get(
+                "lokale_score",
+                0.0
+            ),
+            6
+        ),
+        "beste_blokindex": (
+            kandidaat.get(
+                "beste_blokindex"
+            )
+        ),
+        "expliciete_verwijzing_selectie": (
+            kandidaat.get(
+                "expliciete_verwijzing",
+                False
+            )
+        ),
+        "genormaliseerde_nummermatch": (
+            kandidaat.get(
+                "genormaliseerde_nummermatch",
+                False
+            )
+        ),
+        "bonusredenen": (
+            kandidaat.get(
+                "bonusredenen",
+                []
+            )
+        ),
         "bonus": round(
             kandidaat["bonus"],
             6
@@ -410,6 +447,27 @@ def verwerk_documenten(
                                     0.0
                                 ),
                                 6
+                            ),
+                            "| volledig:",
+                            round(
+                                kandidaat.get(
+                                    "volledige_documentscore",
+                                    0.0
+                                ),
+                                6
+                            ),
+                            "| lokaal:",
+                            round(
+                                kandidaat.get(
+                                    "lokale_score",
+                                    0.0
+                                ),
+                                6
+                            ),
+                            "| bonusredenen:",
+                            kandidaat.get(
+                                "bonusredenen",
+                                []
                             ),
                             "| status:",
                             toezegging.get("Status"),
