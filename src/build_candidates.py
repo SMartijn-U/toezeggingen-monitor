@@ -351,15 +351,76 @@ def verwerk_documenten(
                     ]
                 )
 
+                debug_geval = (
+                    nummer == "2026D59502"
+                    and slug == "ienw"
+                )
+
                 kandidaten = rangschik_kandidaten(
                     document,
                     tekst,
                     commissie_toezeggingen,
                     maximum=(
-                        MAXIMUM_KANDIDATEN_PER_DOCUMENT
+                        1000
+                        if debug_geval
+                        else MAXIMUM_KANDIDATEN_PER_DOCUMENT
                     )
                 )
-            
+
+                if debug_geval:
+                    print(
+                        "\nDEBUG ALLE SCORES "
+                        "2026D59502 | I&W:"
+                    )
+
+                    for debug_positie, kandidaat in enumerate(
+                        kandidaten,
+                        start=1
+                    ):
+                        toezegging = kandidaat.get(
+                            "toezegging",
+                            {}
+                        )
+
+                        print(
+                            "DEBUG SCORE:",
+                            debug_positie,
+                            "|",
+                            toezegging.get("Nummer"),
+                            "| tfidf:",
+                            round(
+                                kandidaat.get(
+                                    "similarity",
+                                    0.0
+                                ),
+                                6
+                            ),
+                            "| bonus:",
+                            round(
+                                kandidaat.get(
+                                    "bonus",
+                                    0.0
+                                ),
+                                6
+                            ),
+                            "| totaal:",
+                            round(
+                                kandidaat.get(
+                                    "score",
+                                    0.0
+                                ),
+                                6
+                            ),
+                            "| status:",
+                            toezegging.get("Status"),
+                            "| tekst:",
+                            toezegging.get("Tekst"),
+                        )
+
+                kandidaten = kandidaten[
+                    :MAXIMUM_KANDIDATEN_PER_DOCUMENT
+                ]
+
                 kandidaten = [
                     kandidaat
                     for kandidaat in kandidaten
