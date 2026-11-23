@@ -2596,6 +2596,83 @@
       "onderwerp": "Gesprekken Fair2Breed en Raad van Beheer",
       "commissie_slug": "lvvn",
       "commissie_afkorting": "LVVN"
+    },
+    "lvvn|2026D60256": {
+      "datum_verwerkt": "2026-11-23T22:18:57.121234+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoeken van de commissie over o.a. vertraagde uitbetaling beheersubsidie 2025 door RVO",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "bho|2026D59705": {
+      "datum_verwerkt": "2026-11-23T22:20:18.308443+00:00",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "onderwerp": "Voortgang Afrikastrategie",
+      "commissie_slug": "bho",
+      "commissie_afkorting": "BHO"
+    },
+    "ienw|2026D59491": {
+      "datum_verwerkt": "2026-11-23T22:21:38.686322+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie het vrachtwagenverbod op de Merwedebrug A27",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "def|2026D59335": {
+      "datum_verwerkt": "2026-11-23T22:24:05.469310+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over misstanden bij Stichting ECHOS Homes",
+      "commissie_slug": "def",
+      "commissie_afkorting": "DEF"
+    },
+    "lvvn|2026D59493": {
+      "datum_verwerkt": "2026-11-23T22:25:09.978878+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Beantwoording resterende vragen gesteld tijdens het wetgevingsoverleg Fonds voor stikstof, landbouw en natuur van 16 november 2026",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "eu|2026D58862": {
+      "datum_verwerkt": "2026-11-23T22:25:26.567835+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Verslag Energieraad 29 oktober 2026 (Luxemburg)",
+      "commissie_slug": "eu",
+      "commissie_afkorting": "EU"
+    },
+    "buza|2026D59940": {
+      "datum_verwerkt": "2026-11-23T22:27:00.715697+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Kabinetsappreciatie conceptconclusies Meerjarig Financieel Kader buitengewone Europese Raad 27-28 november ",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "fin|2026D59788": {
+      "datum_verwerkt": "2026-11-23T22:27:17.342211+00:00",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "onderwerp": "Voorlopige beoordeling RRF betaalverzoeken Tsjechië en Letland ",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "ez|2026D59168": {
+      "datum_verwerkt": "2026-11-23T22:28:10.817404+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Kabinetsreactie onderzoek ViDA Sira Consulting B.V. ",
+      "commissie_slug": "ez",
+      "commissie_afkorting": "EZ"
+    },
+    "lvvn|2026D58423": {
+      "datum_verwerkt": "2026-11-23T22:28:37.243398+00:00",
+      "documentdatum": "2026-11-17T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over Nationaal Vleesonderzoek 2026",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "kgg|2026D59075": {
+      "datum_verwerkt": "2026-11-23T22:29:13.198777+00:00",
+      "documentdatum": "2026-11-18T00:00:00+01:00",
+      "onderwerp": "Voortgang Convenant Beethoven",
+      "commissie_slug": "kgg",
+      "commissie_afkorting": "KGG"
     }
   },
   "wacht_op_herhaling": {
@@ -2626,17 +2703,89 @@
       "commissie_afkorting": "DiZa",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
     },
-    "lvvn|2026D60256": {
-      "pogingen": 2,
-      "laatste_poging": "2026-11-23T21:48:47.537893+00:00",
+    "szw|2026D60070": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T22:19:44.790244+00:00",
       "documentdatum": "2026-11-23T00:00:00+01:00",
-      "onderwerp": "Reactie op verzoeken van de commissie over o.a. vertraagde uitbetaling beheersubsidie 2025 door RVO",
-      "commissie_slug": "lvvn",
-      "commissie_afkorting": "LVVN",
+      "onderwerp": "36940 Nota van wijziging inzake regels voor de inzet van arbeidsrechtelijke instrumenten en loonsubsidie om werkgevers in staat te stellen zoveel mogelijk werknemers te behouden in tijden van crises (Wet personeelsbehoud bij crisis)",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "buza|2026D59856": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T22:21:03.008849+00:00",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "onderwerp": "Ontwikkelingssamenwerking met Afghanistan ",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "fin|2026D59726": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T22:22:18.344623+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting ",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "jenv|2026D59726": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T22:22:59.432775+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting ",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "vro|2026D60115": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T22:23:31.126690+00:00",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "vro",
+      "commissie_afkorting": "VRO",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.6-flash, description: Generate content input tokens per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 28.884043862s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content input tokens per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '28s'}]}}"
+    },
+    "ez|2026D59726": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T22:24:40.964267+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting ",
+      "commissie_slug": "ez",
+      "commissie_afkorting": "EZ",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "kgg|2026D59483": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T22:26:00.811433+00:00",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "onderwerp": "Onderzoek gedeeltelijk PFAS-lozingsverbod en vervolg",
+      "commissie_slug": "kgg",
+      "commissie_afkorting": "KGG",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 9h33m59.199076816s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '34439s'}]}}"
+    },
+    "biza|2026D60115": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T22:26:44.074047+00:00",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 9h33m15.937491294s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '34395s'}]}}"
+    },
+    "jenv|2026D60174": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-23T22:27:54.451932+00:00",
+      "documentdatum": "2026-11-20T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "biza"
+    "laatste_commissie_slug": "kgg"
   }
 }

@@ -3017,6 +3017,84 @@
           }
         ]
       }
+    },
+    "lvvn|TZ202607-047|2026D59493": {
+      "sleutel": "lvvn|TZ202607-047|2026D59493",
+      "eerste_signalering": "2026-11-23T22:25:09.978899+00:00",
+      "commissie_id": "d8c4982c-be0d-4d55-a6a7-074b3f8dd5ab",
+      "commissie_afkorting": "LVVN",
+      "commissie_naam": "Vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "commissie_slug": "lvvn",
+      "selectiereden": "LVVN is volgcommissie",
+      "toezeggingnummer": "TZ202607-047",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59493",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "documentonderwerp": "Beantwoording resterende vragen gesteld tijdens het wetgevingsoverleg Fonds voor stikstof, landbouw en natuur van 16 november 2026",
+      "oordeel": "waarschijnlijk_afgedaan",
+      "rapportagecategorie": "Mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "In het Natuurpact zal de borging en financiering ook vastgelegd worden. U ontvangt hierover binnenkort een brief."
+      ],
+      "ontbrekende_onderdelen": [
+        "De daadwerkelijke verzending van de brief voor 1 januari 2027 is nog niet volledig afgerond als zijnde reeds ontvangen in dit specifieke stuk."
+      ],
+      "bewijsfragmenten": [
+        "In het Natuurpact zal de borging en financiering ook vastgelegd worden. U ontvangt hierover binnenkort een brief."
+      ],
+      "motivering": "De minister geeft aan dat in het Natuurpact de borging en financiering worden vastgelegd en dat de Kamer hierover binnenkort een brief ontvangt. Hiermee wordt de toezegging bijna volbracht, maar de brief zelf is in dit document nog niet als bijlage toegevoegd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In het Natuurpact zal de borging en financiering ook vastgelegd worden. U ontvangt hierover binnenkort een brief.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "lvvn|TZ202611-008|2026D59493": {
+      "sleutel": "lvvn|TZ202611-008|2026D59493",
+      "eerste_signalering": "2026-11-23T22:25:09.978918+00:00",
+      "commissie_id": "d8c4982c-be0d-4d55-a6a7-074b3f8dd5ab",
+      "commissie_afkorting": "LVVN",
+      "commissie_naam": "Vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "commissie_slug": "lvvn",
+      "selectiereden": "LVVN is voortouwcommissie",
+      "toezeggingnummer": "TZ202611-008",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59493",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "documentonderwerp": "Beantwoording resterende vragen gesteld tijdens het wetgevingsoverleg Fonds voor stikstof, landbouw en natuur van 16 november 2026",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Het betrekken en benoemen van de WUR-analyse en de reflectie daarop door het kabinet."
+      ],
+      "ontbrekende_onderdelen": [
+        "Het expliciet gelijktijdig meesturen of opleveren van het WUR-rapport eind oktober 2026 zelf wordt in deze brief slechts besproken en niet als fysiek document toegevoegd."
+      ],
+      "bewijsfragmenten": [
+        "Het kabinet heeft WSER gevraagd om de gevolgen van het pakket in beeld te brengen, en heeft daarbij ook nadrukkelijk naar de effecten op voedselzekerheid gevraagd."
+      ],
+      "motivering": "De sociaaleconomische onderdelen en de WUR-analyse worden in de tekst wel aangehaald en gereflecteerd, maar de toezegging ging specifiek over het sturen van het rapport en de appreciatie naar de Kamer rond die periode.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Het kabinet heeft WSER gevraagd om de gevolgen van het pakket in beeld te brengen, en heeft daarbij ook nadrukkelijk naar de effecten op voedselzekerheid gevraagd.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
