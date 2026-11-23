@@ -493,7 +493,7 @@ def genereer_statusfeed(
     item = fg.add_entry()
 
     item.id(
-        f"status-{slug}-"
+        f"status|{slug}|{afkorting}|"
         f"{nu.isoformat()}"
     )
 
