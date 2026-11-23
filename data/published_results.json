@@ -2775,6 +2775,205 @@
           }
         ]
       }
+    },
+    "lvvn|TZ202609-040|2026D59896": {
+      "sleutel": "lvvn|TZ202609-040|2026D59896",
+      "eerste_signalering": "2026-11-23T21:11:28.144408+00:00",
+      "commissie_id": "d8c4982c-be0d-4d55-a6a7-074b3f8dd5ab",
+      "commissie_afkorting": "LVVN",
+      "commissie_naam": "Vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "commissie_slug": "lvvn",
+      "selectiereden": "LVVN is volgcommissie",
+      "toezeggingnummer": "TZ202609-040",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59896",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "documentonderwerp": "Voortgang Wolvenbeleid",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Ingaan op hoe het rapport relateert aan de gezamenlijke staat van instandhouding met onze buurlanden",
+        "Ingaan op hoe dan tot een zo goed mogelijk getal voor Nederland te komen"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Met bovenstaande geef ik invulling aan de toezegging aan uw Kamer om bij ontvangst van het Apollonio rapport ook in te gaan op hoe het rapport relateert aan de gezamenlijke staat van instandhouding met onze buurlanden en hoe dan tot een zo goed mogelijk getal voor Nederland te komen (toezegging TZ202609-040)."
+      ],
+      "motivering": "In de brief wordt expliciet gerefereerd aan toezegging TZ202609-040. De staatssecretaris gaat in op de relatie tussen het Apollonio-rapport en de gezamenlijke staat van instandhouding met buurlanden (zoals Duitsland) en licht toe dat er geen absoluut streefgetal voor roedels moet worden nagestreefd, maar dat de focus moet liggen op een genetisch gezonde populatie in geschikte gebieden in afstemming met buurlanden.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met bovenstaande geef ik invulling aan de toezegging aan uw Kamer om bij ontvangst van het Apollonio rapport ook in te gaan op hoe het rapport relateert aan de gezamenlijke staat van instandhouding met onze buurlanden en hoe dan tot een zo goed mogelijk getal voor Nederland te komen (toezegging TZ202609-040).",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "lvvn|TZ202609-039|2026D59896": {
+      "sleutel": "lvvn|TZ202609-039|2026D59896",
+      "eerste_signalering": "2026-11-23T21:11:28.144427+00:00",
+      "commissie_id": "d8c4982c-be0d-4d55-a6a7-074b3f8dd5ab",
+      "commissie_afkorting": "LVVN",
+      "commissie_naam": "Vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "commissie_slug": "lvvn",
+      "selectiereden": "LVVN is volgcommissie",
+      "toezeggingnummer": "TZ202609-039",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59896",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "documentonderwerp": "Voortgang Wolvenbeleid",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Bespreken in gesprekken met provincies om kuddebeschermingshonden subsidieerbaar te maken",
+        "De Kamer hierover informeren"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Uw Kamer is toegezegd, naar aanleiding van een vraag van het lid Grinwis, om in mijn gesprekken met provincies ook de optie te bespreken om kuddebeschermingshonden subsidieerbaar te maken en hierover de Kamer te informeren (toezegging TZ202609-039).",
+        "Dit is op ambtelijk niveau besproken met de provincies. Uit deze gesprekken blijkt dat er op provinciaal niveau geen éénduidige behoefte is aan ondersteuning voor de inzet van kuddebeschermingshonden."
+      ],
+      "motivering": "De brief bevat een expliciete terugkoppeling over deze toezegging. Er wordt gerapporteerd dat de optie om kuddebeschermingshonden subsidieerbaar te maken is besproken met de provincies en dat daaruit geen éénduidige behoefte bleek op provinciaal niveau.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Uw Kamer is toegezegd, naar aanleiding van een vraag van het lid Grinwis, om in mijn gesprekken met provincies ook de optie te bespreken om kuddebeschermingshonden subsidieerbaar te maken en hierover de Kamer te informeren (toezegging TZ202609-039).",
+            "geldig": true
+          },
+          {
+            "fragment": "Dit is op ambtelijk niveau besproken met de provincies. Uit deze gesprekken blijkt dat er op provinciaal niveau geen éénduidige behoefte is aan ondersteuning voor de inzet van kuddebeschermingshonden.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "lvvn|TZ202609-041|2026D59896": {
+      "sleutel": "lvvn|TZ202609-041|2026D59896",
+      "eerste_signalering": "2026-11-23T21:11:28.144476+00:00",
+      "commissie_id": "d8c4982c-be0d-4d55-a6a7-074b3f8dd5ab",
+      "commissie_afkorting": "LVVN",
+      "commissie_naam": "Vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "commissie_slug": "lvvn",
+      "selectiereden": "LVVN is volgcommissie",
+      "toezeggingnummer": "TZ202609-041",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59896",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "documentonderwerp": "Voortgang Wolvenbeleid",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "De wens tot openbaarmaking van de DNA-analyses van provincies met de provincies delen"
+      ],
+      "ontbrekende_onderdelen": [
+        "De Kamer informeren over de definitieve uitkomst of het vervolg nadat het bestuurlijk overleg heeft plaatsgevonden"
+      ],
+      "bewijsfragmenten": [
+        "Uw Kamer is toegezegd, naar aanleiding van een vraag van het lid Ten Hove, om de wens tot openbaarmaking van de DNA-analyses van provincies met de provincies te delen en de Kamer hierover te informeren (toezegging TZ202609-040).",
+        "De wens is op ambtelijk niveau gedeeld met de provincie als bevoegd gezag. Er vindt hierover nog bestuurlijk overleg plaats. Begin 2027 zal ik uw Kamer hierover nader informeren."
+      ],
+      "motivering": "De staatssecretaris heeft de wens gedeeld met de provincies, maar vermeldt dat er nog bestuurlijk overleg plaatsvindt en dat de Kamer begin 2027 nader wordt geïnformeerd. Hiermee is de toezegging nog niet volledig afgedaan omdat het traject nog loopt en er een vervolginformatie is toegezegd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Uw Kamer is toegezegd, naar aanleiding van een vraag van het lid Ten Hove, om de wens tot openbaarmaking van de DNA-analyses van provincies met de provincies te delen en de Kamer hierover te informeren (toezegging TZ202609-040).",
+            "geldig": true
+          },
+          {
+            "fragment": "De wens is op ambtelijk niveau gedeeld met de provincie als bevoegd gezag. Er vindt hierover nog bestuurlijk overleg plaats. Begin 2027 zal ik uw Kamer hierover nader informeren.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "kr|TZ202510-013|2026D60057": {
+      "sleutel": "kr|TZ202510-013|2026D60057",
+      "eerste_signalering": "2026-11-23T21:12:58.586425+00:00",
+      "commissie_id": "af1f56ee-1f1f-4bed-b0ab-31097ecdddef",
+      "commissie_afkorting": "KR",
+      "commissie_naam": "Vaste commissie voor Koninkrijksrelaties",
+      "commissie_slug": "kr",
+      "selectiereden": "KR is voortouwcommissie",
+      "toezeggingnummer": "TZ202510-013",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60057",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "documentonderwerp": "Voortgang aanpak fysieke leefomgeving Bonaire, Sint Eustatius en Saba",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Kabinetsreactie op het Rli-advies over het fysieke domein in Caribisch Nederland"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Op 7 november 2025 heeft het vorige kabinet haar reactie gedeeld op de adviezen van de Raad voor de leefomgeving en infrastructuur, de Raad voor het Openbaar Bestuur en AEF inzake de fysieke leefomgeving van Bonaire, Sint Eustatius en Saba."
+      ],
+      "motivering": "In de tekst wordt expliciet gereferd aan de kabinetsreactie op de adviezen van onder andere de Rli over de fysieke leefomgeving van Bonaire, Sint Eustatius en Saba.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Op 7 november 2025 heeft het vorige kabinet haar reactie gedeeld op de adviezen van de Raad voor de leefomgeving en infrastructuur, de Raad voor het Openbaar Bestuur en AEF inzake de fysieke leefomgeving van Bonaire, Sint Eustatius en Saba.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "kr|TZ202510-010|2026D60057": {
+      "sleutel": "kr|TZ202510-010|2026D60057",
+      "eerste_signalering": "2026-11-23T21:12:58.586441+00:00",
+      "commissie_id": "af1f56ee-1f1f-4bed-b0ab-31097ecdddef",
+      "commissie_afkorting": "KR",
+      "commissie_naam": "Vaste commissie voor Koninkrijksrelaties",
+      "commissie_slug": "kr",
+      "selectiereden": "KR is voortouwcommissie",
+      "toezeggingnummer": "TZ202510-010",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60057",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "documentonderwerp": "Voortgang aanpak fysieke leefomgeving Bonaire, Sint Eustatius en Saba",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Gezamenlijke agenda fysieke leefomgeving"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "In nauwe samenwerking met de eilandsbesturen zijn voor Bonaire, Sint Eustatius en Saba afzonderlijke fysieke agenda’s opgesteld, die als bijlagen bij deze brief aan uw Kamer worden aangeboden."
+      ],
+      "motivering": "De fysieke agenda's per eiland zijn als bijlage bij de brief aan de Kamer aangeboden.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In nauwe samenwerking met de eilandsbesturen zijn voor Bonaire, Sint Eustatius en Saba afzonderlijke fysieke agenda’s opgesteld, die als bijlagen bij deze brief aan uw Kamer worden aangeboden.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
