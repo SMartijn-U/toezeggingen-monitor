@@ -2925,6 +2925,104 @@
       "onderwerp": "Reactie op verzoek commissie over de notitie \"Als de prijs verdubbeld, wie kan dan nog ons dagelijks voedsel betalen??\"",
       "commissie_slug": "lvvn",
       "commissie_afkorting": "LVVN"
+    },
+    "fin|2026D60446": {
+      "datum_verwerkt": "2026-11-24T23:44:04.490884+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Voortgangsbrief Jeugd",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "jenv|2026D60446": {
+      "datum_verwerkt": "2026-11-24T23:44:45.319247+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Voortgangsbrief Jeugd",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
+    },
+    "vws|2026D60446": {
+      "datum_verwerkt": "2026-11-24T23:45:05.443650+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Voortgangsbrief Jeugd",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "vws|2026D60443": {
+      "datum_verwerkt": "2026-11-24T23:45:24.926448+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Kabinetsreactie op de initiatiefnota van het lid Stoffer over het versterken van gezinnen en gemeenschappen (Kamerstuk 36965)",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "am|2026D60580": {
+      "datum_verwerkt": "2026-11-24T23:45:41.365435+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Geannoteerde agenda JBZ-Raad, 3-4 december 2026",
+      "commissie_slug": "am",
+      "commissie_afkorting": "AM"
+    },
+    "eu|2026D60580": {
+      "datum_verwerkt": "2026-11-24T23:45:58.197409+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Geannoteerde agenda JBZ-Raad, 3-4 december 2026",
+      "commissie_slug": "eu",
+      "commissie_afkorting": "EU"
+    },
+    "buza|2026D60606": {
+      "datum_verwerkt": "2026-11-24T23:46:15.212724+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Commissievoorstel voor financiële steun aan Oekraïne",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "ienw|2026D60617": {
+      "datum_verwerkt": "2026-11-24T23:46:32.689215+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Uitvoering motie-Kostić c.s. over volledig terugdraaien van de tariefstijging voor 2027 bij de NS (Kamerstuk 23645-913) en enkele gerelateerde moties",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "fin|2026D60190": {
+      "datum_verwerkt": "2026-11-24T23:46:52.212388+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Toezeggingen uit het wetgevingsoverleg over de Implementatiewet herziene richtlijn consumentenkrediet (Kamerstuk 36924) ",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "jenv|2026D60580": {
+      "datum_verwerkt": "2026-11-24T23:47:09.209923+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Geannoteerde agenda JBZ-Raad, 3-4 december 2026",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
+    },
+    "def|2026D60606": {
+      "datum_verwerkt": "2026-11-24T23:47:27.165991+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Commissievoorstel voor financiële steun aan Oekraïne",
+      "commissie_slug": "def",
+      "commissie_afkorting": "DEF"
+    },
+    "lvvn|2026D60578": {
+      "datum_verwerkt": "2026-11-24T23:47:44.224177+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Toezichtcapaciteit slachthuizen",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "fin|2026D60606": {
+      "datum_verwerkt": "2026-11-24T23:48:19.699776+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Commissievoorstel voor financiële steun aan Oekraïne",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "fin|2026D60585": {
+      "datum_verwerkt": "2026-11-24T23:48:37.181666+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Derde vervolgonderzoek monitoren grenseffecten verlaging brandstofaccijns",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
     }
   },
   "wacht_op_herhaling": {
@@ -2963,45 +3061,9 @@
       "commissie_slug": "lvvn",
       "commissie_afkorting": "LVVN",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 8h50m30.704101577s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31830s'}]}}"
-    },
-    "fin|2026D60446": {
-      "pogingen": 2,
-      "laatste_poging": "2026-11-24T16:36:53.276818+00:00",
-      "documentdatum": "2026-11-24T00:00:00+01:00",
-      "onderwerp": "Voortgangsbrief Jeugd",
-      "commissie_slug": "fin",
-      "commissie_afkorting": "FIN",
-      "laatste_fout": "Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-20b` in organization `org_01m8738ks8e3tbyxgkhf7587h7` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 28958, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-    },
-    "jenv|2026D60446": {
-      "pogingen": 2,
-      "laatste_poging": "2026-11-24T16:37:58.605821+00:00",
-      "documentdatum": "2026-11-24T00:00:00+01:00",
-      "onderwerp": "Voortgangsbrief Jeugd",
-      "commissie_slug": "jenv",
-      "commissie_afkorting": "J&V",
-      "laatste_fout": "Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-20b` in organization `org_01m8738ks8e3tbyxgkhf7587h7` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 28934, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-    },
-    "vws|2026D60446": {
-      "pogingen": 2,
-      "laatste_poging": "2026-11-24T16:41:08.145406+00:00",
-      "documentdatum": "2026-11-24T00:00:00+01:00",
-      "onderwerp": "Voortgangsbrief Jeugd",
-      "commissie_slug": "vws",
-      "commissie_afkorting": "VWS",
-      "laatste_fout": "Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-20b` in organization `org_01m8738ks8e3tbyxgkhf7587h7` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 28799, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-    },
-    "vws|2026D60443": {
-      "pogingen": 2,
-      "laatste_poging": "2026-11-24T16:45:43.181349+00:00",
-      "documentdatum": "2026-11-24T00:00:00+01:00",
-      "onderwerp": "Kabinetsreactie op de initiatiefnota van het lid Stoffer over het versterken van gezinnen en gemeenschappen (Kamerstuk 36965)",
-      "commissie_slug": "vws",
-      "commissie_afkorting": "VWS",
-      "laatste_fout": "Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-20b` in organization `org_01m8738ks8e3tbyxgkhf7587h7` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 11808, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "lvvn"
+    "laatste_commissie_slug": "fin"
   }
 }

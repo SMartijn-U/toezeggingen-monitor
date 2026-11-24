@@ -3645,6 +3645,156 @@
           }
         ]
       }
+    },
+    "fin|TZ202603-167|2026D60446": {
+      "sleutel": "fin|TZ202603-167|2026D60446",
+      "eerste_signalering": "2026-11-24T23:44:04.490910+00:00",
+      "commissie_id": "d38afba0-042f-4f3b-b0c8-b2df24eba6a7",
+      "commissie_afkorting": "FIN",
+      "commissie_naam": "Vaste commissie voor Financiën",
+      "commissie_slug": "fin",
+      "selectiereden": "FIN is voortouwcommissie",
+      "toezeggingnummer": "TZ202603-167",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60446",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Voortgangsbrief Jeugd",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Aandacht geven aan emotioneel herstel naast financieel herstel in de voortgangsrapportages."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Naast erkenning en een geldbedrag worden er binnen de kindregeling verschillende andere vormen van ondersteuning geboden zoals brede ondersteuning, hulp bij probleemschulden en een aanvullend aanbod voor emotioneel herstel."
+      ],
+      "motivering": "In de brief wordt in het kader van het herstel voor kinderen en jongeren expliciet vermeld dat er naast financiële compensatie binnen de kindregeling een aanvullend aanbod voor emotioneel herstel wordt geboden, waarmee aan de toezegging is voldaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Naast erkenning en een geldbedrag worden er binnen de kindregeling verschillende andere vormen van ondersteuning geboden zoals brede ondersteuning, hulp bij probleemschulden en een aanvullend aanbod voor emotioneel herstel.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "jenv|TZ202412-133|2026D60446": {
+      "sleutel": "jenv|TZ202412-133|2026D60446",
+      "eerste_signalering": "2026-11-24T23:44:45.319269+00:00",
+      "commissie_id": "14cac666-51cb-4154-80da-9b0e2eeb5014",
+      "commissie_afkorting": "J&V",
+      "commissie_naam": "Vaste commissie voor Justitie en Veiligheid",
+      "commissie_slug": "jenv",
+      "selectiereden": "J&V is voortouwcommissie",
+      "toezeggingnummer": "TZ202412-133",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60446",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Voortgangsbrief Jeugd",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Rechtsbescherming gezinshuizen"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "De toezegging aan het lid Paulusma (D66) inzake rechtsbescherming gezinshuizen is reeds afgedaan met een eerdere voortgangsbrief Jeugd, maar stond per abuis nog geregistreerd als openstaand."
+      ],
+      "motivering": "In de bijlage onder het kopje 'Moties en toezeggingen pleegzorg en gezinshuizen' wordt expliciet vermeld dat de toezegging aan het lid Paulusma (D66) reeds is afgedaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "De toezegging aan het lid Paulusma (D66) inzake rechtsbescherming gezinshuizen is reeds afgedaan met een eerdere voortgangsbrief Jeugd, maar stond per abuis nog geregistreerd als openstaand.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vws|TZ202509-026|2026D60446": {
+      "sleutel": "vws|TZ202509-026|2026D60446",
+      "eerste_signalering": "2026-11-24T23:45:05.443674+00:00",
+      "commissie_id": "befe416e-ca1b-4804-97d0-7aca1dcba888",
+      "commissie_afkorting": "VWS",
+      "commissie_naam": "Vaste commissie voor Volksgezondheid, Welzijn en Sport",
+      "commissie_slug": "vws",
+      "selectiereden": "VWS is voortouwcommissie",
+      "toezeggingnummer": "TZ202509-026",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60446",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Voortgangsbrief Jeugd",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Terugkomen op de uitwerking van het wettelijk recht om tot 21 jaar bij pleegouders te kunnen blijven wonen."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "De toezeggingen aan het lid Ceder (CU) om gemeenten te wijzen op het wettelijk recht voor pleegkinderen om tot 21 jaar te blijven wonen in een pleeggezin en de uitbreiding van de bijzondere kostenregeling zijn afgedaan in ambtelijke gesprekken met de VNG."
+      ],
+      "motivering": "In de brief wordt expliciet aangegeven dat de toezegging aan het lid Ceder over het wettelijk recht voor pleegkinderen om tot 21 jaar te blijven wonen in een pleeggezin is afgedaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "De toezeggingen aan het lid Ceder (CU) om gemeenten te wijzen op het wettelijk recht voor pleegkinderen om tot 21 jaar te blijven wonen in een pleeggezin en de uitbreiding van de bijzondere kostenregeling zijn afgedaan in ambtelijke gesprekken met de VNG.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "fin|TZ202512-009|2026D60606": {
+      "sleutel": "fin|TZ202512-009|2026D60606",
+      "eerste_signalering": "2026-11-24T23:48:19.699798+00:00",
+      "commissie_id": "d38afba0-042f-4f3b-b0c8-b2df24eba6a7",
+      "commissie_afkorting": "FIN",
+      "commissie_naam": "Vaste commissie voor Financiën",
+      "commissie_slug": "fin",
+      "selectiereden": "FIN is voortouwcommissie",
+      "toezeggingnummer": "TZ202512-009",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60606",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Commissievoorstel voor financiële steun aan Oekraïne",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Informatie verstrekken over besprekingen in de EU over Russische tegoeden en steun aan Oekraïne via een brief ter voorkoming van versnippering"
+      ],
+      "ontbrekende_onderdelen": [
+        "Een uitdrukkelijke koppeling of opzet als 'separate verzamelbrief' in aanvulling op specifieke verslagen en geannoteerde agenda's van de Eurogroep/Ecofinraad zoals in de toezegging is bedoeld"
+      ],
+      "bewijsfragmenten": [
+        "Met deze brief wordt uw Kamer geïnformeerd over de inhoud van het voorstel van de Commissie, alsmede de Nederlandse appreciatie van dit voorstel."
+      ],
+      "motivering": "Deze brief informeert de Kamer over steun aan Oekraïne en Russische tegoeden, wat thematisch aansluit bij de toezegging. Het is echter niet expliciet gepresenteerd als een separate verzamelbrief in aanvulling op de verslagen en geannoteerde agenda's van de Eurogroep/Ecofinraad.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met deze brief wordt uw Kamer geïnformeerd over de inhoud van het voorstel van de Commissie, alsmede de Nederlandse appreciatie van dit voorstel.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
