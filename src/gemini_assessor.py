@@ -10,15 +10,18 @@ from pydantic import BaseModel, Field
 
 MODELLEN = [
     "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite",
     "gemini-3.8-flash",
     "gemini-3.6-flash",
 ]
 
 MAX_POGINGEN_PER_MODEL = {
     "gemini-3.5-flash-lite": 2,
+    "gemini-3.1-flash-lite": 2,
     "gemini-3.8-flash": 1,
     "gemini-3.6-flash": 1,
 }
+
 
 class Beoordeling(BaseModel):
     toezeggingnummer: str
