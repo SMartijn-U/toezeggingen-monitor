@@ -3430,6 +3430,50 @@
           }
         ]
       }
+    },
+    "vws|TZ202606-004|2026D60356": {
+      "sleutel": "vws|TZ202606-004|2026D60356",
+      "eerste_signalering": "2026-11-24T14:48:41.380008+00:00",
+      "commissie_id": "befe416e-ca1b-4804-97d0-7aca1dcba888",
+      "commissie_afkorting": "VWS",
+      "commissie_naam": "Vaste commissie voor Volksgezondheid, Welzijn en Sport",
+      "commissie_slug": "vws",
+      "selectiereden": "VWS is voortouwcommissie",
+      "toezeggingnummer": "TZ202606-004",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60356",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Beleidsreactie advies Gezondheidsraad hepatitis A-  vaccinatie voor mannen die seks hebben met mannen",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "kabinetsreactie op het advies van de Gezondheidsraad"
+      ],
+      "ontbrekende_onderdelen": [
+        "het vraagaspect inzake de eiwittransitie"
+      ],
+      "bewijsfragmenten": [
+        "Met deze brief biedt het kabinet de Kamer het advies en de bijbehorende beleidsreactie aan.",
+        "Het kabinet neemt het advies van de Gezondheidsraad over."
+      ],
+      "motivering": "Het document bevat de toegezegde beleidsreactie (kabinetsreactie) op het advies van de Gezondheidsraad over hepatitis A-vaccinatie voor MSM. Echter, het onderdeel over het vraagaspect inzake de eiwittransitie ontbreekt volledig in deze brief, omdat het een geheel ander onderwerp betreft. De toezegging is daarom slechts deels afgedaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met deze brief biedt het kabinet de Kamer het advies en de bijbehorende beleidsreactie aan.",
+            "geldig": true
+          },
+          {
+            "fragment": "Het kabinet neemt het advies van de Gezondheidsraad over.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }

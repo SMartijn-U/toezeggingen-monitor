@@ -2827,6 +2827,20 @@
       "onderwerp": "Gevolgen bij laat aannemen ontwerpbegroting LVVN en spoedwet emissiedoelen",
       "commissie_slug": "lvvn",
       "commissie_afkorting": "LVVN"
+    },
+    "ienw|2026D60341": {
+      "datum_verwerkt": "2026-11-24T14:36:34.839360+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Geannoteerde Agenda Milieuraad 11 december 2026",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "vws|2026D60356": {
+      "datum_verwerkt": "2026-11-24T14:48:41.379990+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Beleidsreactie advies Gezondheidsraad hepatitis A-  vaccinatie voor mannen die seks hebben met mannen",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
     }
   },
   "wacht_op_herhaling": {
@@ -2865,6 +2879,123 @@
       "commissie_slug": "lvvn",
       "commissie_afkorting": "LVVN",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 8h50m30.704101577s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31830s'}]}}"
+    },
+    "eu|2026D60341": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-24T14:30:56.954386+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Geannoteerde Agenda Milieuraad 11 december 2026",
+      "commissie_slug": "eu",
+      "commissie_afkorting": "EU",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}"
+    },
+    "kgg|2026D60341": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-24T14:33:17.925035+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Geannoteerde Agenda Milieuraad 11 december 2026",
+      "commissie_slug": "kgg",
+      "commissie_afkorting": "KGG",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}"
+    },
+    "ocw|2026D60476": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-24T14:34:15.239743+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Medezeggenschap in het mbo, hbo en wo",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "szw|2026D60418": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-24T14:35:09.262722+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Appreciatie gewijzigde motie van het lid Keijzer c.s. over de Kamer informeren of en hoe de Z-route kan worden aangescherpt (t.v.v. 37020-XV-26)",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "fin|2026D60446": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-24T14:37:34.083635+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Voortgangsbrief Jeugd",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "jenv|2026D60446": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-24T14:39:58.941957+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Voortgangsbrief Jeugd",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}"
+    },
+    "def|2026D60479": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-24T14:41:12.655856+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "A/D-brief Nationale Saab GlobalEye en de Nederlandse bijdrage aan de vervanging van de NAVO E-3A AWACS-vliegtuigen",
+      "commissie_slug": "def",
+      "commissie_afkorting": "DEF",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "vws|2026D60446": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-24T14:43:28.969810+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Voortgangsbrief Jeugd",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "lvvn|2026D60341": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-24T14:44:31.497969+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Geannoteerde Agenda Milieuraad 11 december 2026",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "ienw|2026D60473": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-24T14:46:01.855598+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Schriftelijke beantwoording van vragen gesteld tijdens de eerste termijn van het wetgevingsoverleg, gehouden op 23 november 2026 over water",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "vws|2026D60443": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-24T14:47:09.327228+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Kabinetsreactie op de initiatiefnota van het lid Stoffer over het versterken van gezinnen en gemeenschappen (Kamerstuk 36965)",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "lvvn|2026D60377": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-24T14:48:08.123834+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Voor- en nadelen systemen ammoniaknormen en antwoord op vragen van het lid Bromet over ammoniaknormen",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    "lvvn|2026D60380": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-24T14:50:46.854405+00:00",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "onderwerp": "Voortgang diverse onderwerpen mestbeleid",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN",
+      "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
     }
   },
   "round_robin": {
