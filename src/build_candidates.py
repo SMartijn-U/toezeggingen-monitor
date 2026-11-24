@@ -36,6 +36,30 @@ AANTAL_DAGEN_AFGEDAAN = 14
 MAXIMUM_KANDIDATEN_PER_DOCUMENT = 10
 MINIMUM_KANDIDAATSCORE = 0.05
 
+# Diagnostiek kandidaatselectie.
+#
+# Normale productie:
+DEBUG_DOCUMENTNUMMER = None
+
+# Voorbeeld om één document te onderzoeken:
+# DEBUG_DOCUMENTNUMMER = "2026D59502"
+#
+# Na onderzoek weer terugzetten naar None.
+
+# Optioneel beperken tot één commissie.
+#
+# None betekent:
+# debug alle relevante commissies van het document.
+DEBUG_COMMISSIE_SLUG = None
+
+# Voorbeeld:
+# DEBUG_COMMISSIE_SLUG = "ienw"
+
+# Maximumaantal kandidaten dat tijdens debugging
+# wordt opgevraagd en in de log wordt getoond.
+DEBUG_MAXIMUM_KANDIDATEN = 1000
+
+
 def bouw_toezeggingen_per_commissie():
     print(
         "\nActuele en recent afgedane "
@@ -182,12 +206,14 @@ def bouw_toezeggingen_per_commissie():
 
     return toezeggingen_per_commissie
 
+
 def maak_kandidaat_record(
     document,
     kandidaat,
     positie
 ):
     toezegging = kandidaat["toezegging"]
+
     activiteit = toezegging.get(
         "Activiteit",
         {}
@@ -261,12 +287,6 @@ def maak_kandidaat_record(
                 "beste_blokindex"
             )
         ),
-        "expliciete_verwijzing_selectie": (
-            kandidaat.get(
-                "expliciete_verwijzing",
-                False
-            )
-        ),
         "genormaliseerde_nummermatch": (
             kandidaat.get(
                 "genormaliseerde_nummermatch",
@@ -288,6 +308,92 @@ def maak_kandidaat_record(
             6
         ),
     }
+
+
+def toon_debugscores(
+    nummer,
+    commissiegegevens,
+    kandidaten
+):
+    print(
+        "\nDEBUG ALLE SCORES:",
+        nummer,
+        "|",
+        commissiegegevens[
+            "commissie_afkorting"
+        ]
+    )
+
+    for positie, kandidaat in enumerate(
+        kandidaten,
+        start=1
+    ):
+        toezegging = kandidaat.get(
+            "toezegging",
+            {}
+        )
+
+        print(
+            "DEBUG SCORE:",
+            positie,
+            "|",
+            toezegging.get("Nummer"),
+            "| tfidf:",
+            round(
+                kandidaat.get(
+                    "similarity",
+                    0.0
+                ),
+                6
+            ),
+            "| bonus:",
+            round(
+                kandidaat.get(
+                    "bonus",
+                    0.0
+                ),
+                6
+            ),
+            "| totaal:",
+            round(
+                kandidaat.get(
+                    "score",
+                    0.0
+                ),
+                6
+            ),
+            "| volledig:",
+            round(
+                kandidaat.get(
+                    "volledige_documentscore",
+                    0.0
+                ),
+                6
+            ),
+            "| lokaal:",
+            round(
+                kandidaat.get(
+                    "lokale_score",
+                    0.0
+                ),
+                6
+            ),
+            "| nummermatch:",
+            kandidaat.get(
+                "genormaliseerde_nummermatch",
+                False
+            ),
+            "| bonusredenen:",
+            kandidaat.get(
+                "bonusredenen",
+                []
+            ),
+            "| status:",
+            toezegging.get("Status"),
+            "| tekst:",
+            toezegging.get("Tekst"),
+        )
+
 
 def verwerk_documenten(
     documenten,
@@ -389,92 +495,36 @@ def verwerk_documenten(
                 )
 
                 debug_geval = (
-                    nummer == "2026D59502"
-                    and slug == "ienw"
+                    DEBUG_DOCUMENTNUMMER is not None
+                    and nummer == DEBUG_DOCUMENTNUMMER
+                    and (
+                        DEBUG_COMMISSIE_SLUG is None
+                        or slug == DEBUG_COMMISSIE_SLUG
+                    )
+                )
+
+                maximum_rangschikking = (
+                    DEBUG_MAXIMUM_KANDIDATEN
+                    if debug_geval
+                    else MAXIMUM_KANDIDATEN_PER_DOCUMENT
                 )
 
                 kandidaten = rangschik_kandidaten(
                     document,
                     tekst,
                     commissie_toezeggingen,
-                    maximum=(
-                        1000
-                        if debug_geval
-                        else MAXIMUM_KANDIDATEN_PER_DOCUMENT
-                    )
+                    maximum=maximum_rangschikking
                 )
 
                 if debug_geval:
-                    print(
-                        "\nDEBUG ALLE SCORES "
-                        "2026D59502 | I&W:"
+                    toon_debugscores(
+                        nummer,
+                        commissiegegevens,
+                        kandidaten
                     )
 
-                    for debug_positie, kandidaat in enumerate(
-                        kandidaten,
-                        start=1
-                    ):
-                        toezegging = kandidaat.get(
-                            "toezegging",
-                            {}
-                        )
-
-                        print(
-                            "DEBUG SCORE:",
-                            debug_positie,
-                            "|",
-                            toezegging.get("Nummer"),
-                            "| tfidf:",
-                            round(
-                                kandidaat.get(
-                                    "similarity",
-                                    0.0
-                                ),
-                                6
-                            ),
-                            "| bonus:",
-                            round(
-                                kandidaat.get(
-                                    "bonus",
-                                    0.0
-                                ),
-                                6
-                            ),
-                            "| totaal:",
-                            round(
-                                kandidaat.get(
-                                    "score",
-                                    0.0
-                                ),
-                                6
-                            ),
-                            "| volledig:",
-                            round(
-                                kandidaat.get(
-                                    "volledige_documentscore",
-                                    0.0
-                                ),
-                                6
-                            ),
-                            "| lokaal:",
-                            round(
-                                kandidaat.get(
-                                    "lokale_score",
-                                    0.0
-                                ),
-                                6
-                            ),
-                            "| bonusredenen:",
-                            kandidaat.get(
-                                "bonusredenen",
-                                []
-                            ),
-                            "| status:",
-                            toezegging.get("Status"),
-                            "| tekst:",
-                            toezegging.get("Tekst"),
-                        )
-
+                # Ook tijdens debugging verandert
+                # de uiteindelijke productieselectie niet.
                 kandidaten = kandidaten[
                     :MAXIMUM_KANDIDATEN_PER_DOCUMENT
                 ]
@@ -500,7 +550,7 @@ def verwerk_documenten(
                     "| aantal:",
                     len(kandidaten)
                 )
-                
+
                 kandidaat_records = [
                     maak_kandidaat_record(
                         document,
@@ -595,14 +645,17 @@ def verwerk_documenten(
                 "fout": str(fout),
             }
 
-            fouten.append(fout_record)
+            fouten.append(
+                fout_record
+            )
 
             print(
                 f"FOUT bij {nummer}: {fout}"
             )
 
     return resultaten, fouten
-    
+
+
 def schrijf_resultaten(
     documenten,
     resultaten,
@@ -623,6 +676,12 @@ def schrijf_resultaten(
             ),
             "minimum_kandidaatscore": (
                 MINIMUM_KANDIDAATSCORE
+            ),
+            "debug_documentnummer": (
+                DEBUG_DOCUMENTNUMMER
+            ),
+            "debug_commissie_slug": (
+                DEBUG_COMMISSIE_SLUG
             ),
             "opmerking": (
                 "De scores meten tekstuele overeenkomst "
