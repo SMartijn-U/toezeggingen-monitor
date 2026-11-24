@@ -3095,6 +3095,43 @@
           }
         ]
       }
+    },
+    "kgg|TZ202610-032|2026D59495": {
+      "sleutel": "kgg|TZ202610-032|2026D59495",
+      "eerste_signalering": "2026-11-24T07:45:32.550596+00:00",
+      "commissie_id": "4e2ced14-ec17-43f1-8b5f-4eadc05b4589",
+      "commissie_afkorting": "KGG",
+      "commissie_naam": "Vaste commissie voor Klimaat en Groene Groei",
+      "commissie_slug": "kgg",
+      "selectiereden": "KGG is voortouwcommissie",
+      "toezeggingnummer": "TZ202610-032",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59495",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "documentonderwerp": "Ontwikkelingen Carbon Capture and Storage (CCS)",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informatie verstrekken over de voortgang van Aramis."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Met deze brief wordt tevens invulling gegeven aan de toezegging om uw Kamer over de voortgang van Aramis te informeren."
+      ],
+      "motivering": "De minister geeft in het document expliciet aan dat invulling wordt gegeven aan de toezegging om de Kamer te informeren over de voortgang van Aramis. Vervolgens wordt in een specifieke paragraaf over Aramis gedetailleerde informatie gedeeld over onder andere de volloopsubsidie, de planning en de verdere voortgang.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met deze brief wordt tevens invulling gegeven aan de toezegging om uw Kamer over de voortgang van Aramis te informeren.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
