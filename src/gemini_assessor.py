@@ -6,21 +6,26 @@ from typing import Literal
 
 from google import genai
 from google.genai import types
+from groq import Groq
 from pydantic import BaseModel, Field
-
-MODELLEN = [
-    "gemini-3.5-flash-lite",
-    "gemini-3.1-flash-lite",
-    "gemini-3.8-flash",
-    "gemini-3.6-flash",
-]
 
 MAX_POGINGEN_PER_MODEL = {
     "gemini-3.5-flash-lite": 2,
     "gemini-3.1-flash-lite": 2,
+    "openai/gpt-oss-20b": 2,
+    "qwen/qwen3.8-27b": 1,
     "gemini-3.8-flash": 1,
     "gemini-3.6-flash": 1,
 }
+
+MODELROUTE = [
+    ("gemini", "gemini-3.5-flash-lite"),
+    ("gemini", "gemini-3.1-flash-lite"),
+    ("groq", "openai/gpt-oss-20b"),
+    ("groq", "qwen/qwen3.8-27b"),
+    ("gemini", "gemini-3.8-flash"),
+    ("gemini", "gemini-3.6-flash"),
+]
 
 
 class Beoordeling(BaseModel):
@@ -49,6 +54,15 @@ class Beoordeling(BaseModel):
 class Beoordelingen(BaseModel):
     beoordelingen: list[Beoordeling]
 
+class GestructureerdAntwoord:
+    def __init__(
+        self,
+        parsed
+    ):
+        self.parsed = parsed
+        self.text = parsed.model_dump_json(
+            ensure_ascii=False
+        )
 
 def maak_prompt(
     document,
@@ -197,13 +211,77 @@ KANDIDAAT-TOEZEGGINGEN
 {kandidaten_blok}
 """
 
-def roep_gemini_aan(
+def roep_groq_model_aan(
     client,
+    model,
+    prompt
+):
+    schema = (
+        Beoordelingen.model_json_schema()
+    )
+
+    completion = (
+        client.chat.completions.create(
+            model=model,
+            messages=[
+                {
+                    "role": "system",
+                    "content": (
+                        "Voer de beoordeling exact "
+                        "volgens de instructies uit. "
+                        "Geef uitsluitend JSON terug "
+                        "dat aan het opgegeven schema "
+                        "voldoet."
+                    ),
+                },
+                {
+                    "role": "user",
+                    "content": prompt,
+                },
+            ],
+            temperature=0,
+            response_format={
+                "type": "json_schema",
+                "json_schema": {
+                    "name":
+                        "toezeggingenbeoordelingen",
+                    "strict": False,
+                    "schema": schema,
+                },
+            },
+        )
+    )
+
+    inhoud = (
+        completion
+        .choices[0]
+        .message
+        .content
+    )
+
+    if not inhoud:
+        raise ValueError(
+            "Groq gaf geen antwoordtekst terug."
+        )
+
+    parsed = (
+        Beoordelingen.model_validate_json(
+            inhoud
+        )
+    )
+
+    return GestructureerdAntwoord(
+        parsed
+    )
+
+def roep_gemini_aan(
+    gemini_client,
+    groq_client,
     prompt
 ):
     laatste_fout = None
 
-    for model in MODELLEN:
+    for aanbieder, model in MODELROUTE:
         max_pogingen = (
             MAX_POGINGEN_PER_MODEL.get(
                 model,
@@ -211,68 +289,132 @@ def roep_gemini_aan(
             )
         )
 
-        print(
-            f"Gemini-model proberen: {model}"
-        )
-
         for poging in range(
             1,
             max_pogingen + 1
         ):
             try:
-                response = (
-                    client.models.generate_content(
-                        model=model,
-                        contents=prompt,
-                        config={
-                            "response_mime_type":
-                                "application/json",
-                            "response_schema":
-                                Beoordelingen,
-                        },
-                    )
+                print(
+                    f"Model proberen: "
+                    f"{aanbieder} | {model}"
                 )
+
+                if aanbieder == "gemini":
+                    response = (
+                        gemini_client
+                        .models
+                        .generate_content(
+                            model=model,
+                            contents=prompt,
+                            config={
+                                "response_mime_type":
+                                    "application/json",
+                                "response_schema":
+                                    Beoordelingen,
+                            },
+                        )
+                    )
+
+                elif aanbieder == "groq":
+                    if groq_client is None:
+                        print(
+                            "Groq overslaan: "
+                            "GROQ_API_KEY ontbreekt."
+                        )
+                        break
+
+                    response = (
+                        roep_groq_model_aan(
+                            groq_client,
+                            model,
+                            prompt
+                        )
+                    )
+
+                else:
+                    raise ValueError(
+                        f"Onbekende aanbieder: "
+                        f"{aanbieder}"
+                    )
 
                 print(
-                    f"Gemini geslaagd met: "
-                    f"{model}"
+                    f"Model geslaagd: "
+                    f"{aanbieder} | {model}"
                 )
 
-                return response, model
+                return (
+                    response,
+                    f"{aanbieder}:{model}"
+                )
 
             except Exception as fout:
                 laatste_fout = fout
-
-                fouttekst = str(fout).lower()
+                fouttekst = str(
+                    fout
+                ).lower()
 
                 tijdelijk = (
-                    "503" in fouttekst
+                    "429" in fouttekst
+                    or "503" in fouttekst
                     or "504" in fouttekst
+                    or "404" in fouttekst
+                    or "rate limit" in fouttekst
+                    or "resource_exhausted"
+                        in fouttekst
                     or "unavailable" in fouttekst
                     or "high demand" in fouttekst
-                    or "429" in fouttekst
-                    or "resource_exhausted" in fouttekst
-                    or "deadline_exceeded" in fouttekst
-                    or "deadline exceeded" in fouttekst
-                    or "deadline expired" in fouttekst
+                    or "deadline_exceeded"
+                        in fouttekst
+                    or "deadline exceeded"
+                        in fouttekst
+                    or "deadline expired"
+                        in fouttekst
                     or "timeout" in fouttekst
                     or "timed out" in fouttekst
+                    or "connection" in fouttekst
+                    or "model not found"
+                        in fouttekst
+                    or "model_not_found"
+                        in fouttekst
+                    or "decommissioned"
+                        in fouttekst
                 )
 
-                if not tijdelijk:
+                # Ongeldige JSON of een tijdelijke
+                # schema-afwijking mag bij Groq ook
+                # opnieuw worden geprobeerd.
+                groq_outputfout = (
+                    aanbieder == "groq"
+                    and (
+                        "validation error"
+                            in fouttekst
+                        or "json" in fouttekst
+                        or "response_format"
+                            in fouttekst
+                    )
+                )
+
+                if (
+                    not tijdelijk
+                    and not groq_outputfout
+                ):
                     raise
 
                 print(
-                    f"Tijdelijke Gemini-fout "
-                    f"met {model}. "
+                    f"Tijdelijke modelfout met "
+                    f"{aanbieder} | {model}. "
                     f"Poging {poging} van "
-                    f"{max_pogingen}."
+                    f"{max_pogingen}. "
+                    f"Fout: {fout}"
                 )
 
                 if poging < max_pogingen:
                     wachttijd = (
                         15
-                        + random.uniform(0, 2)
+                        + random.uniform(
+                            0,
+                            2
+                        )
                     )
 
                     print(
@@ -285,13 +427,14 @@ def roep_gemini_aan(
                     )
 
         print(
-            f"{model} blijft onbeschikbaar. "
-            f"Fallbackmodel proberen."
+            f"{aanbieder} | {model} "
+            f"blijft onbeschikbaar. "
+            f"Volgend model proberen."
         )
 
     raise RuntimeError(
-        "Alle Gemini-modellen zijn "
-        "tijdelijk onbeschikbaar. "
+        "Alle Gemini- en Groq-modellen "
+        "zijn tijdelijk onbeschikbaar. "
         f"Laatste fout: {laatste_fout}"
     )
 
@@ -300,20 +443,34 @@ def beoordeel_document(
     documenttekst,
     kandidaten
 ):
-    api_key = os.environ.get(
+    gemini_api_key = os.environ.get(
         "GEMINI_API_KEY"
     )
 
-    if not api_key:
+    if not gemini_api_key:
         raise RuntimeError(
             "GEMINI_API_KEY ontbreekt."
         )
 
-    client = genai.Client(
-        api_key=api_key,
+    gemini_client = genai.Client(
+        api_key=gemini_api_key,
         http_options=types.HttpOptions(
             timeout=90_000
         ),
+    )
+
+    groq_api_key = os.environ.get(
+        "GROQ_API_KEY"
+    )
+
+    groq_client = (
+        Groq(
+            api_key=groq_api_key,
+            timeout=90.0,
+            max_retries=0,
+        )
+        if groq_api_key
+        else None
     )
 
 
@@ -325,7 +482,8 @@ def beoordeel_document(
 
     response, gebruikt_model = (
         roep_gemini_aan(
-            client,
+            gemini_client,
+            groq_client,
             prompt
         )
     )
