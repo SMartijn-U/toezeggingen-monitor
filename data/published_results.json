@@ -3132,6 +3132,304 @@
           }
         ]
       }
+    },
+    "ienw|TZ202607-072|2026D59502": {
+      "sleutel": "ienw|TZ202607-072|2026D59502",
+      "eerste_signalering": "2026-11-24T09:11:47.689915+00:00",
+      "commissie_id": "44c341a0-ae41-4f51-9c81-1f94d2fd1107",
+      "commissie_afkorting": "I&W",
+      "commissie_naam": "Vaste commissie voor Infrastructuur en Waterstaat",
+      "commissie_slug": "ienw",
+      "selectiereden": "I&W is voortouwcommissie",
+      "toezeggingnummer": "TZ202607-072",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D59502",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-19T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief Water",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Ingaan op innovatieve mogelijkheden om lekverliezen in drinkwaterleidingen verder te verkleinen in de Toekomstagenda Drinkwater."
+      ],
+      "ontbrekende_onderdelen": [
+        "Het bekijken van de effecten van de tariefverhoging bij Brabant Water en het meenemen daarvan in de Nationale Drinkwaterstrategie."
+      ],
+      "bewijsfragmenten": [
+        "Conform de toezegging aan leden Schutz en Goudzwaard ga ik in de Toekomstagenda Drinkwater in op innovatie mogelijkheden om deze lekverliezen nog verder te verkleinen."
+      ],
+      "motivering": "De minister geeft aan dat in de Toekomstagenda Drinkwater zal worden ingegaan op innovatiemogelijkheden om lekverliezen te verkleinen, maar over de effecten van de tariefverhoging bij Brabant Water wordt in de tekst niet gerept.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Conform de toezegging aan leden Schutz en Goudzwaard ga ik in de Toekomstagenda Drinkwater in op innovatie mogelijkheden om deze lekverliezen nog verder te verkleinen.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202609-084|2026D60303": {
+      "sleutel": "ocw|TZ202609-084|2026D60303",
+      "eerste_signalering": "2026-11-24T09:12:08.308195+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202609-084",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60303",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Versterkingsagenda Taal en andere basisvaardigheden: terug- en vooruitblik ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Een brief aan de Kamer voor de Kerst van 2026 over meetbare resultaten met betrekking tot het Masterplan basisvaardigheden."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Hiermee geef ik uitvoering aan toezegging TZ 202609-084 , die stelt dat u w Kamer voor de Kerst van 2026 een brief ontvangt over meetbare resultaten met betrekking tot het Masterplan basisvaardigheden."
+      ],
+      "motivering": "In de brief wordt expliciet verwezen naar toezegging TZ 202609-084 en wordt de gevraagde informatie over de meetbare resultaten en de evaluatie van de tussendoelen van het Masterplan basisvaardigheden geleverd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Hiermee geef ik uitvoering aan toezegging TZ 202609-084 , die stelt dat u w Kamer voor de Kerst van 2026 een brief ontvangt over meetbare resultaten met betrekking tot het Masterplan basisvaardigheden.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202609-091|2026D60303": {
+      "sleutel": "ocw|TZ202609-091|2026D60303",
+      "eerste_signalering": "2026-11-24T09:12:08.308216+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202609-091",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60303",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Versterkingsagenda Taal en andere basisvaardigheden: terug- en vooruitblik ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informatie over de referentieniveaus naar aanleiding van de motie."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Conform toezegging TZ202609-091."
+      ],
+      "motivering": "De brief bevat de toegezegde informatie over de actualisatie van de referentieniveaus en vermeldt daarbij expliciet de toezegging.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Conform toezegging TZ202609-091.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202410-126|2026D60303": {
+      "sleutel": "ocw|TZ202410-126|2026D60303",
+      "eerste_signalering": "2026-11-24T09:12:08.308230+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202410-126",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60303",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Versterkingsagenda Taal en andere basisvaardigheden: terug- en vooruitblik ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Terugkoppeling over de nieuwe tabellen studielasturen."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "In de bijlage zijn de nieuwe studielasturentabellen voor havo en vwo opgenomen met een toelichting op de belangrijkste uitgangspunten. Deze deel ik met de Kamer conform toezegging TZ202410-126."
+      ],
+      "motivering": "De nieuwe studielasturentabellen en de toelichting zijn als bijlage opgenomen en er wordt expliciet aan de toezegging gerefereerd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In de bijlage zijn de nieuwe studielasturentabellen voor havo en vwo opgenomen met een toelichting op de belangrijkste uitgangspunten. Deze deel ik met de Kamer conform toezegging TZ202410-126.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202604-090|2026D60303": {
+      "sleutel": "ocw|TZ202604-090|2026D60303",
+      "eerste_signalering": "2026-11-24T09:12:08.308248+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202604-090",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60303",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Versterkingsagenda Taal en andere basisvaardigheden: terug- en vooruitblik ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Een brief over de ontwikkelingen op de ondersteuning- en adviseringsmarkt in het najaar van 2026."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "TZ202604-090"
+      ],
+      "motivering": "De brief behandelt de stand van zaken en de resultaten van het onderzoek naar de onderwijsadviesmarkt, waarmee conform de toezegging wordt gerapporteerd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "TZ202604-090",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202610-275|2026D60303": {
+      "sleutel": "ocw|TZ202610-275|2026D60303",
+      "eerste_signalering": "2026-11-24T09:12:08.308262+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is volgcommissie",
+      "toezeggingnummer": "TZ202610-275",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60303",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Versterkingsagenda Taal en andere basisvaardigheden: terug- en vooruitblik ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informatie over hoe wordt gezorgd dat geen school zonder schoolbibliotheek kan, voorafgaand aan de behandeling van de Bibliotheekwet."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "TZ202610-275 . Met deze brief beschouw ik deze toezegging als afgedaan."
+      ],
+      "motivering": "In de bijlage en de tekst over de leescultuur wordt uitgebreid ingegaan op de verantwoordelijkheden van scholen en de communicatie hierover, en de toezegging wordt expliciet als afgedaan beschouwd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "TZ202610-275 . Met deze brief beschouw ik deze toezegging als afgedaan.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202606-191|2026D60303": {
+      "sleutel": "ocw|TZ202606-191|2026D60303",
+      "eerste_signalering": "2026-11-24T09:12:08.308279+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202606-191",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60303",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Versterkingsagenda Taal en andere basisvaardigheden: terug- en vooruitblik ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Een brief in het najaar van 2026 over de Versterkingsagenda Taal en andere Basisvaardigheden."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Op 16 oktober jl. heb ik de Versterkingsagenda Taal en andere basisvaardigheden aan uw Kamer gestuurd."
+      ],
+      "motivering": "De brief vormt de opvolging en rapportage over de Versterkingsagenda Taal en andere basisvaardigheden in het najaar van 2026.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Op 16 oktober jl. heb ik de Versterkingsagenda Taal en andere basisvaardigheden aan uw Kamer gestuurd.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202606-035|2026D60303": {
+      "sleutel": "ocw|TZ202606-035|2026D60303",
+      "eerste_signalering": "2026-11-24T09:12:08.308290+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202606-035",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60303",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Versterkingsagenda Taal en andere basisvaardigheden: terug- en vooruitblik ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Resultaten van het onderzoek van het Nationaal Kennisinstituut Onderwijs naar de toetsresultaten en de afnemende leesvaardigheid."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Dit onderzoek ontvangt u als bijlage bij deze brief."
+      ],
+      "motivering": "Het gevraagde onderzoek van het NKO naar de achtergronden van de PISA-resultaten en de leesvaardigheid is als bijlage bijgevoegd en wordt in de tekst besproken.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Dit onderzoek ontvangt u als bijlage bij deze brief.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
