@@ -3474,6 +3474,177 @@
           }
         ]
       }
+    },
+    "ocw|TZ202412-092|2026D60476": {
+      "sleutel": "ocw|TZ202412-092|2026D60476",
+      "eerste_signalering": "2026-11-24T16:34:40.361555+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202412-092",
+      "status_registratie": "Deels Afgedaan",
+      "documentnummer": "2026D60476",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Medezeggenschap in het mbo, hbo en wo",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Het verzenden van de Monitor Medezeggenschap Mbo naar de Kamer voor de zomer",
+        "Het geven van een terugkoppeling over de gesprekken met JOBmbo over de medezeggenschapsrechten van mbo-studenten"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Op 27 mei jl. heb ik de Monitor Medezeggenschap Mbo (hierna: Monitor Mbo) aan uw Kamer doen toekomen.",
+        "Hiervoor heb ik gesprekken gevoerd met betrokkenen uit het veld, zoals de MBO Raad en JOBmbo, en de uitkomsten van de monitor mbo betrokken."
+      ],
+      "motivering": "De minister geeft in de brief aan dat de Monitor Medezeggenschap Mbo op 27 mei jl. (voor de zomer) aan de Kamer is gezonden. Tevens wordt er een uitgebreide terugkoppeling gegeven van de gesprekken met JOBmbo en de MBO Raad over de uitbreiding/gelijktrekking van de formele medezeggenschapsrechten van mbo-studenten.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Op 27 mei jl. heb ik de Monitor Medezeggenschap Mbo (hierna: Monitor Mbo) aan uw Kamer doen toekomen.",
+            "geldig": true
+          },
+          {
+            "fragment": "Hiervoor heb ik gesprekken gevoerd met betrokkenen uit het veld, zoals de MBO Raad en JOBmbo, en de uitkomsten van de monitor mbo betrokken.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202404-116|2026D60476": {
+      "sleutel": "ocw|TZ202404-116|2026D60476",
+      "eerste_signalering": "2026-11-24T16:34:40.361569+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "toezeggingnummer": "TZ202404-116",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60476",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Medezeggenschap in het mbo, hbo en wo",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Informeren van de Kamer over het onderzoek naar welke vormen van medezeggenschap in het mbo wettelijk verankerd kunnen worden"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Naar aanleiding van de motie van de leden Teunissen, El Yassini en Westerveld heb ik onderzocht of de formele taken en bevoegdheden van medezeggenschapsorganen in het mbo gelijkgetrokken kunnen worden met die in het hbo en wo.",
+        "Mijn conclusie is dat het voor het mbo niet passend is om de formele medezeggenschap uit te breiden, bijvoorbeeld door het toevoegen van wettelijk verankerde decentrale medezeggenschapsorganen naast de centrale medezeggenschapsraad."
+      ],
+      "motivering": "In paragraaf 3 rapporteert de minister expliciet over het onderzoek naar de uitbreiding van wettelijk verankerde formele taken, bevoegdheden en decentrale medezeggenschapsorganen in het mbo, en concludeert dat dit niet passend is.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Naar aanleiding van de motie van de leden Teunissen, El Yassini en Westerveld heb ik onderzocht of de formele taken en bevoegdheden van medezeggenschapsorganen in het mbo gelijkgetrokken kunnen worden met die in het hbo en wo.",
+            "geldig": true
+          },
+          {
+            "fragment": "Mijn conclusie is dat het voor het mbo niet passend is om de formele medezeggenschap uit te breiden, bijvoorbeeld door het toevoegen van wettelijk verankerde decentrale medezeggenschapsorganen naast de centrale medezeggenschapsraad.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202611-139|2026D60418": {
+      "sleutel": "szw|TZ202611-139|2026D60418",
+      "eerste_signalering": "2026-11-24T16:36:00.284593+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "toezeggingnummer": "TZ202611-139",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60418",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Appreciatie gewijzigde motie van het lid Keijzer c.s. over de Kamer informeren of en hoe de Z-route kan worden aangescherpt (t.v.v. 37020-XV-26)",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informatie over mogelijkheden tot sturen op instroom Z-route",
+        "Informatie over mogelijkheden tot aanscherping Z-route",
+        "Informatie over koppeling Z-route aan toeleiden naar (betaald) werk"
+      ],
+      "ontbrekende_onderdelen": [
+        "Resultaten onderzoek werkprikkel Reba",
+        "Problemen met rijbewijs",
+        "Verplichte taallessen voor kansrijke asielzoekers"
+      ],
+      "bewijsfragmenten": [
+        "Ik zal de Kamer in het eerste kwartaal van 2027 informeren over de mogelijkheden tot het sturen op de instroom in de Z-route (inclusief de mogelijkheden tot aanscherping), en om de Z-route meer te koppelen aan het toeleiden naar (betaald) werk, conform de doelstelling van het programma ‘Werk en meedoen nieuwkomers’."
+      ],
+      "motivering": "De toezegging vereist een voortgangsbrief in Q1 met onder andere een aanscherping van de Z-route. Het document bevestigt expliciet dat de minister de Kamer in het eerste kwartaal van 2027 zal informeren over de mogelijkheden tot aanscherping van de Z-route en het sturen op de instroom. Hoewel de toezegging ook andere onderdelen noemt (werkprikkel Reba, rijbewijs, taallessen), is het onderdeel over de Z-route hier expliciet en volledig gedekt door de toezegging in dit document. Aangezien de toezegging een samengesteld geheel is en dit document slechts één specifiek onderdeel (de Z-route) dekt, is het oordeel 'mogelijk_deels_afgedaan'.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Ik zal de Kamer in het eerste kwartaal van 2027 informeren over de mogelijkheden tot het sturen op de instroom in de Z-route (inclusief de mogelijkheden tot aanscherping), en om de Z-route meer te koppelen aan het toeleiden naar (betaald) werk, conform de doelstelling van het programma ‘Werk en meedoen nieuwkomers’.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "lvvn|TZ202609-013|2026D60506": {
+      "sleutel": "lvvn|TZ202609-013|2026D60506",
+      "eerste_signalering": "2026-11-24T16:49:24.892975+00:00",
+      "commissie_id": "d8c4982c-be0d-4d55-a6a7-074b3f8dd5ab",
+      "commissie_afkorting": "LVVN",
+      "commissie_naam": "Vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "commissie_slug": "lvvn",
+      "selectiereden": "LVVN is voortouwcommissie",
+      "toezeggingnummer": "TZ202609-013",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60506",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-24T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief Natuur november 2026",
+      "oordeel": "waarschijnlijk_afgedaan",
+      "rapportagecategorie": "Mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "informeren over stand van zaken van biodiversiteitvriendelijker maken van fiscale en financiële rijksmiddelen",
+        "oplevering handreiking"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Tijdens het debat van 3 september jl. heb ik toegezegd uw Kamer dit najaar te informeren over de stand van zaken van het biodiversiteitvriendelijker maken van fiscale en financiële rijksmiddelen in het kader van Actiedoel 18 van het Kumming-Montreal Global Biodiversity Framework (TZ202609-013).",
+        "Hiervoor is in oktober een Handreiking opgeleverd, die ik u als bijlage bij deze brief stuur."
+      ],
+      "motivering": "De minister heeft voldaan aan de toezegging om de Kamer dit najaar te informeren over de stand van zaken van biodiversiteitvriendelijke rijksmiddelen en heeft hiertoe een handreiking als bijlage bijgevoegd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens het debat van 3 september jl. heb ik toegezegd uw Kamer dit najaar te informeren over de stand van zaken van het biodiversiteitvriendelijker maken van fiscale en financiële rijksmiddelen in het kader van Actiedoel 18 van het Kumming-Montreal Global Biodiversity Framework (TZ202609-013).",
+            "geldig": true
+          },
+          {
+            "fragment": "Hiervoor is in oktober een Handreiking opgeleverd, die ik u als bijlage bij deze brief stuur.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
