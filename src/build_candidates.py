@@ -261,6 +261,14 @@ def maak_kandidaat_record(
         "activiteitdatum": (
             activiteit.get("Datum")
         ),
+        "activiteitvoortouw": (
+            activiteit.get(
+                "VoortouwCommissieAfkorting"
+            )
+            or activiteit.get(
+                "Voortouwafkorting"
+            )
+        ),
         "datum_nakoming": (
             toezegging.get("DatumNakoming")
         ),
