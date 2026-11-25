@@ -3023,6 +3023,27 @@
       "onderwerp": "Derde vervolgonderzoek monitoren grenseffecten verlaging brandstofaccijns",
       "commissie_slug": "fin",
       "commissie_afkorting": "FIN"
+    },
+    "lvvn|2026D60630": {
+      "datum_verwerkt": "2026-11-25T10:13:21.898507+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over visserij op blauwvintonijn op de Noordzee",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "kgg|2026D60626": {
+      "datum_verwerkt": "2026-11-25T10:13:38.774875+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Amortisatie waterstoftransportnetwerk",
+      "commissie_slug": "kgg",
+      "commissie_afkorting": "KGG"
+    },
+    "ocw|2026D60680": {
+      "datum_verwerkt": "2026-11-25T10:13:58.213851+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Verslag informele Onderwijsraad 15-16 oktober 2026 - Dublin, Ierland",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
     }
   },
   "wacht_op_herhaling": {
@@ -3064,6 +3085,6 @@
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "fin"
+    "laatste_commissie_slug": "ocw"
   }
 }

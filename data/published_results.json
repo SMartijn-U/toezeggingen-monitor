@@ -3795,6 +3795,51 @@
           }
         ]
       }
+    },
+    "ocw|TZ202606-191|2026D60680": {
+      "sleutel": "ocw|TZ202606-191|2026D60680",
+      "eerste_signalering": "2026-11-25T10:13:58.213871+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "activiteitnummer": "2026A02575",
+      "activiteitsoort": "Notaoverleg",
+      "activiteitonderwerp": "Initiatiefnota van de leden Rooderkerk en Vijlbrief “Lezen voor je leven”",
+      "activiteitdatum": "2026-06-22T10:00:00+02:00",
+      "activiteitvoortouw": "OCW",
+      "toezeggingnummer": "TZ202606-191",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60680",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "documentonderwerp": "Verslag informele Onderwijsraad 15-16 oktober 2026 - Dublin, Ierland",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "De Versterkingsagenda Taal en andere basisvaardigheden wordt genoemd."
+      ],
+      "ontbrekende_onderdelen": [
+        "Een brief over de Versterkingsagenda",
+        "Ingaan op de motie over leesbevordering in de lerarenopleiding en onder leraren (Kamerstuk 36699, nr. 33)"
+      ],
+      "bewijsfragmenten": [
+        "Nederland heeft de nieuwe Versterkingsagenda Taal en andere basisvaardigheden toegelicht."
+      ],
+      "motivering": "In het document wordt slechts vermeld dat Nederland de nieuwe Versterkingsagenda Taal en andere basisvaardigheden heeft toegelicht tijdens de informele Onderwijsraad. De gevraagde brief en de specifieke beantwoording van de motie over leesbevordering worden in het document niet geleverd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Nederland heeft de nieuwe Versterkingsagenda Taal en andere basisvaardigheden toegelicht.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
