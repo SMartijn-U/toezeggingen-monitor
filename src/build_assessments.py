@@ -447,6 +447,11 @@ def maak_beoordelingsrecord(
                 "activiteitdatum"
             ),
 
+        "activiteitvoortouw":
+            kandidaat.get(
+                "activiteitvoortouw"
+            ),
+        
         "toezeggingnummer":
             beoordeling.toezeggingnummer,
 
@@ -792,6 +797,11 @@ def bewaar_publiceerbare_resultaten(
             "activiteitdatum":
                 beoordeling.get(
                     "activiteitdatum"
+                ),
+
+            "activiteitvoortouw":
+                beoordeling.get(
+                    "activiteitvoortouw"
                 ),
 
             "toezeggingnummer":
