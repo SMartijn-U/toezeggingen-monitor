@@ -3840,6 +3840,137 @@
           }
         ]
       }
+    },
+    "jenv|TZ202604-177|2026D60706": {
+      "sleutel": "jenv|TZ202604-177|2026D60706",
+      "eerste_signalering": "2026-11-25T12:10:30.555454+00:00",
+      "commissie_id": "14cac666-51cb-4154-80da-9b0e2eeb5014",
+      "commissie_afkorting": "J&V",
+      "commissie_naam": "Vaste commissie voor Justitie en Veiligheid",
+      "commissie_slug": "jenv",
+      "selectiereden": "J&V is voortouwcommissie",
+      "activiteitnummer": "2024A09497",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Justitieketen van het Caribisch deel van het Koninkrijk",
+      "activiteitdatum": "2026-04-23T10:00:00+02:00",
+      "activiteitvoortouw": "J&V",
+      "toezeggingnummer": "TZ202604-177",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60706",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "documentonderwerp": "Uitbreiding mandaat Nationaal Rapporteur Mensenhandel en Seksueel Geweld Tegen Kinderen naar de BES eilanden",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "informeren over het mandaat van de Nationaal Rapporteur Mensenhandel en Seksueel Geweld Tegen Kinderen naar de BES-eilanden"
+      ],
+      "ontbrekende_onderdelen": [
+        "schriftelijk terugkomen op de gestelde vragen over drugs en drugsbeleid"
+      ],
+      "bewijsfragmenten": [
+        "Tijdens het Commissiedebat over de justitieketen van het Caribisch deel van het Koninkrijk op 23 april 2026 heb ik toegezegd uw Kamer te informeren over een mogelijke uitbreiding van het mandaat van de Nationaal Rapporteur Mensenhandel en Seksueel Geweld Tegen Kinderen (hierna: Nationaal Rapporteur) naar de BES-eilanden (TZ202604-177)."
+      ],
+      "motivering": "Het document behandelt wel de toezegging over het mandaat van de coördinator/Nationaal Rapporteur Mensenhandel naar de BES-eilanden (TZ202604-177), maar er wordt in de brief met geen woord gerept over de gestelde vragen over drugs en drugsbeleid die ook onderdeel uitmaakten van deze toezegging. Daarom is de toezegging slechts deels afgedaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens het Commissiedebat over de justitieketen van het Caribisch deel van het Koninkrijk op 23 april 2026 heb ik toegezegd uw Kamer te informeren over een mogelijke uitbreiding van het mandaat van de Nationaal Rapporteur Mensenhandel en Seksueel Geweld Tegen Kinderen (hierna: Nationaal Rapporteur) naar de BES-eilanden (TZ202604-177).",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202512-022|2026D60711": {
+      "sleutel": "ocw|TZ202512-022|2026D60711",
+      "eerste_signalering": "2026-11-25T12:13:26.207065+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is volgcommissie",
+      "activiteitnummer": "2025A05387",
+      "activiteitsoort": "Plenair debat (wetgeving)",
+      "activiteitonderwerp": "Wijziging van de Wet subsidiëring landelijke onderwijsondersteunende activiteiten 2013 en enige andere onderwijswetten in verband met de landelijke borging van de uitvoering van ondersteuning van scholen en instellingen bij het onderwijs aan zieke leerlingen (Wet onderwijsondersteuning zieke leerlingen) (36530)",
+      "activiteitdatum": "2025-12-03T11:00:00+01:00",
+      "activiteitvoortouw": "TK",
+      "toezeggingnummer": "TZ202512-022",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60711",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "documentonderwerp": "Kaderbrief Stichting Ziezon",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informatie over gesprekken/overleg met KPN",
+        "Status van KlasseContact (gestopt voor VO/MBO, beschikbaar voor PO)",
+        "Geen verandering door overleg",
+        "Beschikbaarheid van alternatieven"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Tenslotte informeer ik u over toezegging TZ202512-022, gedaan tijdens de wetsbehandeling. Zoals bekend, is KPN Mooiste Contact Fonds gestopt met het beschikbaar stellen van KlasseContact (ICT-voorziening) voor het voortgezet onderwijs en het mbo. Voor het primair onderwijs is KlasseContact wel  beschikbaar. Overleg tussen een vertegenwoordiging van de ozl-organisaties en KPN Mooiste Contact Fonds heeft niet tot verandering geleid. Er zijn alternatieve ICT-voorzieningen beschikbaar die nu in het voortgezet onderwijs worden ingezet. In de Startbrief geef ik Stichting Ziezon opdracht om de inzet van deze alternatieven te bevorderen en hierover in de eerste monitoringsrapportage te rapporteren."
+      ],
+      "motivering": "Het document bevat een expliciete verwijzing naar toezegging TZ202512-022. De staatssecretaris informeert de Kamer over de uitkomst van het overleg met KPN Mooiste Contact Fonds (dat er geen verandering is) en de huidige status van de ICT-voorziening KlasseContact. Dit voldoet aan de toezegging om terugkoppeling te geven over de gesprekken en de ondersteuning.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tenslotte informeer ik u over toezegging TZ202512-022, gedaan tijdens de wetsbehandeling. Zoals bekend, is KPN Mooiste Contact Fonds gestopt met het beschikbaar stellen van KlasseContact (ICT-voorziening) voor het voortgezet onderwijs en het mbo. Voor het primair onderwijs is KlasseContact wel  beschikbaar. Overleg tussen een vertegenwoordiging van de ozl-organisaties en KPN Mooiste Contact Fonds heeft niet tot verandering geleid. Er zijn alternatieve ICT-voorzieningen beschikbaar die nu in het voortgezet onderwijs worden ingezet. In de Startbrief geef ik Stichting Ziezon opdracht om de inzet van deze alternatieven te bevorderen en hierover in de eerste monitoringsrapportage te rapporteren.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202512-019|2026D60711": {
+      "sleutel": "ocw|TZ202512-019|2026D60711",
+      "eerste_signalering": "2026-11-25T12:13:26.207084+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is volgcommissie",
+      "activiteitnummer": "2025A05387",
+      "activiteitsoort": "Plenair debat (wetgeving)",
+      "activiteitonderwerp": "Wijziging van de Wet subsidiëring landelijke onderwijsondersteunende activiteiten 2013 en enige andere onderwijswetten in verband met de landelijke borging van de uitvoering van ondersteuning van scholen en instellingen bij het onderwijs aan zieke leerlingen (Wet onderwijsondersteuning zieke leerlingen) (36530)",
+      "activiteitdatum": "2025-12-03T11:00:00+01:00",
+      "activiteitvoortouw": "TK",
+      "toezeggingnummer": "TZ202512-019",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60711",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "documentonderwerp": "Kaderbrief Stichting Ziezon",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Aankondiging van een verslag/monitorrapport na drie jaar"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Binnen drie jaar na de inwerkingtreding van de wet ontvangt uw Kamer een verslag over de doeltreffendheid en de effecten van de wet in de praktijk."
+      ],
+      "motivering": "De toezegging luidt dat de Kamer drie jaar na inwerkingtreding een monitorrapport ontvangt. Het document bevestigt in paragraaf 10 dat de Kamer binnen drie jaar na inwerkingtreding een verslag ontvangt over de doeltreffendheid en effecten. Dit komt overeen met de inhoud van de toezegging.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Binnen drie jaar na de inwerkingtreding van de wet ontvangt uw Kamer een verslag over de doeltreffendheid en de effecten van de wet in de praktijk.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }

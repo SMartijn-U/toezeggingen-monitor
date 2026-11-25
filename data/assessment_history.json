@@ -3044,6 +3044,55 @@
       "onderwerp": "Verslag informele Onderwijsraad 15-16 oktober 2026 - Dublin, Ierland",
       "commissie_slug": "ocw",
       "commissie_afkorting": "OCW"
+    },
+    "szw|2026D60768": {
+      "datum_verwerkt": "2026-11-25T12:09:54.532331+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Bestuurlijke afspraken BRC-regeling 2027-2029",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "jenv|2026D60706": {
+      "datum_verwerkt": "2026-11-25T12:10:30.555430+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Uitbreiding mandaat Nationaal Rapporteur Mensenhandel en Seksueel Geweld Tegen Kinderen naar de BES eilanden",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
+    },
+    "kr|2026D60706": {
+      "datum_verwerkt": "2026-11-25T12:11:28.926738+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Uitbreiding mandaat Nationaal Rapporteur Mensenhandel en Seksueel Geweld Tegen Kinderen naar de BES eilanden",
+      "commissie_slug": "kr",
+      "commissie_afkorting": "KR"
+    },
+    "vws|2026D60766": {
+      "datum_verwerkt": "2026-11-25T12:12:07.665321+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over de factsheet van Artsencollectief Windwiki m.b.t. windturbinegeluid",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "ocw|2026D60711": {
+      "datum_verwerkt": "2026-11-25T12:13:26.207044+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Kaderbrief Stichting Ziezon",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "vws|2026D60768": {
+      "datum_verwerkt": "2026-11-25T12:14:24.256602+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Bestuurlijke afspraken BRC-regeling 2027-2029",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "ocw|2026D60768": {
+      "datum_verwerkt": "2026-11-25T12:14:45.420732+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Bestuurlijke afspraken BRC-regeling 2027-2029",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
     }
   },
   "wacht_op_herhaling": {
