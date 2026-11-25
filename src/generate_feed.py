@@ -41,6 +41,159 @@ def parse_datum(waarde):
         )
     )
 
+def formatteer_activiteitdatum(
+    waarde
+):
+    if not waarde:
+        return ""
+
+    try:
+        datum = parse_datum(
+            waarde
+        )
+
+        return datum.strftime(
+            "%d-%m-%Y"
+        )
+
+    except (
+        TypeError,
+        ValueError,
+    ):
+        return str(
+            waarde
+        )
+
+
+def maak_activiteit_url(
+    activiteitnummer,
+    activiteitvoortouw
+):
+    if not activiteitnummer:
+        return None
+
+    voortouw = (
+        activiteitvoortouw
+        or ""
+    ).strip().upper()
+
+    if voortouw == "TK":
+        return (
+            "https://www.tweedekamer.nl/"
+            "debat_en_vergadering/"
+            "plenaire_vergaderingen/"
+            "details/activiteit"
+            f"?id={activiteitnummer}"
+        )
+
+    return (
+        "https://www.tweedekamer.nl/"
+        "debat_en_vergadering/"
+        "commissievergaderingen/details"
+        f"?id={activiteitnummer}"
+    )
+
+
+def maak_activiteit_html(
+    resultaat
+):
+    activiteitnummer = (
+        resultaat.get(
+            "activiteitnummer"
+        )
+        or ""
+    ).strip()
+
+    activiteitsoort = (
+        resultaat.get(
+            "activiteitsoort"
+        )
+        or ""
+    ).strip()
+
+    activiteitonderwerp = (
+        resultaat.get(
+            "activiteitonderwerp"
+        )
+        or ""
+    ).strip()
+
+    activiteitvoortouw = (
+        resultaat.get(
+            "activiteitvoortouw"
+        )
+        or ""
+    ).strip()
+
+    activiteitdatum = (
+        formatteer_activiteitdatum(
+            resultaat.get(
+                "activiteitdatum"
+            )
+        )
+    )
+
+    onderdelen = []
+
+    if activiteitsoort:
+        weergegeven_soort = (
+            activiteitsoort[0].lower()
+            + activiteitsoort[1:]
+        )
+
+        onderdelen.append(
+            weergegeven_soort
+        )
+
+    if activiteitonderwerp:
+        onderdelen.append(
+            activiteitonderwerp
+        )
+
+    activiteittekst = " ".join(
+        onderdelen
+    ).strip()
+
+    if activiteitdatum:
+        activiteittekst = (
+            f"{activiteittekst} "
+            f"({activiteitdatum})"
+        ).strip()
+
+    if not activiteittekst:
+        return ""
+
+    activiteit_url = (
+        maak_activiteit_url(
+            activiteitnummer,
+            activiteitvoortouw
+        )
+    )
+
+    if activiteit_url:
+        weergegeven_activiteit = (
+            f'&lt;a href="'
+            f'{escape(activiteit_url)}'
+            f'"&gt;'
+            f'{escape(activiteittekst)}'
+            f'&lt;/a&gt;'
+        )
+    else:
+        weergegeven_activiteit = (
+            escape(
+                activiteittekst
+            )
+        )
+
+    return (
+        "&lt;p&gt;"
+        "&lt;strong&gt;"
+        "Activiteit:"
+        "&lt;/strong&gt;"
+        "&lt;br&gt;"
+        f"{weergegeven_activiteit}"
+        "&lt;/p&gt;"
+    )
 
 def maak_beschrijving(resultaat):
     bewijs = resultaat.get(
@@ -51,6 +204,12 @@ def maak_beschrijving(resultaat):
     ontbreekt = resultaat.get(
         "ontbrekende_onderdelen",
         []
+    )
+
+    activiteit_html = (
+        maak_activiteit_html(
+            resultaat
+        )
     )
 
     bewijs_html = "".join(
@@ -121,6 +280,8 @@ een mogelijke afdoening.
     )
 )}
 </p>
+
+{activiteit_html}
 
 <p>
 <strong>Herkomst commissieselectie:</strong>
