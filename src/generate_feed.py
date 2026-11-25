@@ -64,7 +64,6 @@ def formatteer_activiteitdatum(
             waarde
         )
 
-
 def maak_activiteit_url(
     activiteitnummer,
     activiteitvoortouw
@@ -86,13 +85,15 @@ def maak_activiteit_url(
             f"?id={activiteitnummer}"
         )
 
-    return (
-        "https://www.tweedekamer.nl/"
-        "debat_en_vergadering/"
-        "commissievergaderingen/details"
-        f"?id={activiteitnummer}"
-    )
+    if voortouw:
+        return (
+            "https://www.tweedekamer.nl/"
+            "debat_en_vergadering/"
+            "commissievergaderingen/details"
+            f"?id={activiteitnummer}"
+        )
 
+    return None
 
 def maak_activiteit_html(
     resultaat
