@@ -258,6 +258,9 @@ def maak_kandidaat_record(
         "activiteitonderwerp": (
             activiteit.get("Onderwerp")
         ),
+        "activiteitdatum": (
+            activiteit.get("Datum")
+        ),
         "datum_nakoming": (
             toezegging.get("DatumNakoming")
         ),
