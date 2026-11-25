@@ -3107,6 +3107,27 @@
       "onderwerp": "Voortgangsbrief Hoofdlijnenakkoord Ouderenzorg",
       "commissie_slug": "vws",
       "commissie_afkorting": "VWS"
+    },
+    "biza|2026D60878": {
+      "datum_verwerkt": "2026-11-25T15:21:29.782583+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Beter uitvoerbare Wet open overheid",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "ocw|2026D60894": {
+      "datum_verwerkt": "2026-11-25T15:23:22.405581+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Versterking taalonderwijs in het mbo",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "ocw|2026D60891": {
+      "datum_verwerkt": "2026-11-25T15:26:06.258466+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Werken aan goed beroepsonderwijs  agenda voor docenten focus op innovatie en structurele financiering",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
     }
   },
   "wacht_op_herhaling": {
@@ -3145,9 +3166,18 @@
       "commissie_slug": "lvvn",
       "commissie_afkorting": "LVVN",
       "laatste_fout": "Alle Gemini-modellen zijn tijdelijk onbeschikbaar. Laatste fout: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 8h50m30.704101577s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31830s'}]}}"
+    },
+    "biza|2026D60859": {
+      "pogingen": 1,
+      "laatste_poging": "2026-11-25T15:24:15.958281+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA",
+      "laatste_fout": "Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-20b` in organization `org_01m8738ks8e3tbyxgkhf7587h7` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8301, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "vws"
+    "laatste_commissie_slug": "ocw"
   }
 }

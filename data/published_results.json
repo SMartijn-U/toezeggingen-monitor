@@ -4069,6 +4069,53 @@
           }
         ]
       }
+    },
+    "biza|TZ202606-134|2026D60878": {
+      "sleutel": "biza|TZ202606-134|2026D60878",
+      "eerste_signalering": "2026-11-25T15:21:29.782609+00:00",
+      "commissie_id": "177eb895-6307-4268-94f6-a0f80dc3e358",
+      "commissie_afkorting": "BIZA",
+      "commissie_naam": "Vaste commissie voor Binnenlandse Zaken",
+      "commissie_slug": "biza",
+      "selectiereden": "BIZA is voortouwcommissie",
+      "activiteitnummer": "2026A02552",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Wet open overheid ",
+      "activiteitdatum": "2026-06-11T14:30:00+02:00",
+      "activiteitvoortouw": "BiZa",
+      "toezeggingnummer": "TZ202606-134",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60878",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "documentonderwerp": "Beter uitvoerbare Wet open overheid",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informatie over mogelijke en toegepaste versimpelingen inzake de uitvoering van de Wet open overheid"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Begin 2027 zal ik uw Kamer informeren over de voortgang van deze voorbereidingen.",
+        "Zoals ik aan uw Kamer heb toegezegd werken we in de tussentijd aan een betere en simpelere uitvoering van de Woo binnen de huidige wettelijke kaders, in deze brief ga ik daar nader op in."
+      ],
+      "motivering": "De toezegging luidt dat de Kamer na de zomer 2026 geïnformeerd wordt over versimpelingen. Het document is gedateerd 25 november 2026 (na de zomer 2026) en bevat expliciet de informatie over de maatregelen en versimpelingen die in de tussentijd worden toegepast (zoals het standaardproces, best practices, en aanpak misbruik). De toezegging wordt hiermee inhoudelijk afgedaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Begin 2027 zal ik uw Kamer informeren over de voortgang van deze voorbereidingen.",
+            "geldig": true
+          },
+          {
+            "fragment": "Zoals ik aan uw Kamer heb toegezegd werken we in de tussentijd aan een betere en simpelere uitvoering van de Woo binnen de huidige wettelijke kaders, in deze brief ga ik daar nader op in.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
