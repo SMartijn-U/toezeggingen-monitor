@@ -427,6 +427,26 @@ def maak_beoordelingsrecord(
                 "selectiereden"
             ),
 
+        "activiteitnummer":
+            kandidaat.get(
+                "activiteitnummer"
+            ),
+
+        "activiteitsoort":
+            kandidaat.get(
+                "activiteitsoort"
+            ),
+
+        "activiteitonderwerp":
+            kandidaat.get(
+                "activiteitonderwerp"
+            ),
+
+        "activiteitdatum":
+            kandidaat.get(
+                "activiteitdatum"
+            ),
+
         "toezeggingnummer":
             beoordeling.toezeggingnummer,
 
@@ -753,7 +773,27 @@ def bewaar_publiceerbare_resultaten(
                 beoordeling.get(
                     "selectiereden"
                 ),
-            
+
+            "activiteitnummer":
+                beoordeling.get(
+                    "activiteitnummer"
+                ),
+
+            "activiteitsoort":
+                beoordeling.get(
+                    "activiteitsoort"
+                ),
+
+            "activiteitonderwerp":
+                beoordeling.get(
+                    "activiteitonderwerp"
+                ),
+
+            "activiteitdatum":
+                beoordeling.get(
+                    "activiteitdatum"
+                ),
+
             "toezeggingnummer":
                 toezeggingnummer,
 
