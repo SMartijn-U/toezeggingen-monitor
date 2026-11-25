@@ -3093,6 +3093,20 @@
       "onderwerp": "Bestuurlijke afspraken BRC-regeling 2027-2029",
       "commissie_slug": "ocw",
       "commissie_afkorting": "OCW"
+    },
+    "jenv|2026D60819": {
+      "datum_verwerkt": "2026-11-25T13:08:52.666521+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Overzichtsbrief insolventie-en goederenrecht 2026",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
+    },
+    "vws|2026D60825": {
+      "datum_verwerkt": "2026-11-25T13:10:02.783633+00:00",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "onderwerp": "Voortgangsbrief Hoofdlijnenakkoord Ouderenzorg",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
     }
   },
   "wacht_op_herhaling": {
@@ -3134,6 +3148,6 @@
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "ocw"
+    "laatste_commissie_slug": "vws"
   }
 }

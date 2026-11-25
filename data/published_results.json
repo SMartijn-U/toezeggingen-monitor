@@ -3971,6 +3971,104 @@
           }
         ]
       }
+    },
+    "jenv|TZ202604-200|2026D60819": {
+      "sleutel": "jenv|TZ202604-200|2026D60819",
+      "eerste_signalering": "2026-11-25T13:08:52.666542+00:00",
+      "commissie_id": "14cac666-51cb-4154-80da-9b0e2eeb5014",
+      "commissie_afkorting": "J&V",
+      "commissie_naam": "Vaste commissie voor Justitie en Veiligheid",
+      "commissie_slug": "jenv",
+      "selectiereden": "J&V is voortouwcommissie",
+      "activiteitnummer": "2024A09209",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Civielrechtelijke onderwerpen",
+      "activiteitdatum": "2026-04-22T10:00:00+02:00",
+      "activiteitvoortouw": "J&V",
+      "toezeggingnummer": "TZ202604-200",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60819",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "documentonderwerp": "Overzichtsbrief insolventie-en goederenrecht 2026",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "informeren over het onderzoek naar legeboedelproblematiek",
+        "stappen die gezet worden om de WHOA meer bekendheid te geven bij ondernemers",
+        "advies van de commissie Insolventierecht over het toezicht van de rechter-commissaris op de rol van de curator"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "In deze brief zal ik, overeenkomstig mijn toezegging gedaan tijdens het Commissiedebat civielrechtelijke onderwerpen van 22 april 2026, ook ingaan op:",
+        "de stappen die gezet worden om de Wet homologatie onderhands akkoord (“WHOA”) meer bekendheid te geven bij ondernemers (zie paragraaf 2C);",
+        "het advies van de commissie insolventierecht over het toezicht van de rechter-commissaris op de rol van de curator bij de afwikkeling van faillissementen (zie paragraaf 2E)."
+      ],
+      "motivering": "De staatssecretaris heeft in de overzichtsbrief expliciet verwezen naar de toezeggingen gedaan tijdens het Commissiedebat civielrechtelijke onderwerpen van 22 april 2026 en behandelt in de brief uitgebreid het onderzoek naar de legeboedelproblematiek, de stappen rondom de bekendheid van de WHOA en het advies van de commissie Insolventierecht over het toezicht van de rechter-commissaris.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In deze brief zal ik, overeenkomstig mijn toezegging gedaan tijdens het Commissiedebat civielrechtelijke onderwerpen van 22 april 2026, ook ingaan op:",
+            "geldig": true
+          },
+          {
+            "fragment": "de stappen die gezet worden om de Wet homologatie onderhands akkoord (“WHOA”) meer bekendheid te geven bij ondernemers (zie paragraaf 2C);",
+            "geldig": true
+          },
+          {
+            "fragment": "het advies van de commissie insolventierecht over het toezicht van de rechter-commissaris op de rol van de curator bij de afwikkeling van faillissementen (zie paragraaf 2E).",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "jenv|TZ202406-008|2026D60819": {
+      "sleutel": "jenv|TZ202406-008|2026D60819",
+      "eerste_signalering": "2026-11-25T13:08:52.666556+00:00",
+      "commissie_id": "14cac666-51cb-4154-80da-9b0e2eeb5014",
+      "commissie_afkorting": "J&V",
+      "commissie_naam": "Vaste commissie voor Justitie en Veiligheid",
+      "commissie_slug": "jenv",
+      "selectiereden": "J&V is voortouwcommissie",
+      "activiteitnummer": "2024A02452",
+      "activiteitsoort": "Wetgevingsoverleg",
+      "activiteitonderwerp": "Wet opheffing verpandingsverboden (35482)",
+      "activiteitdatum": "2024-06-03T14:30:00+02:00",
+      "activiteitvoortouw": "J&V",
+      "toezeggingnummer": "TZ202406-008",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D60819",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-25T00:00:00+01:00",
+      "documentonderwerp": "Overzichtsbrief insolventie-en goederenrecht 2026",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "monitoren middels een expertmeeting na één jaar"
+      ],
+      "ontbrekende_onderdelen": [
+        "evaluatie 4 jaar na inwerkingtreding (deze termijn is nog niet verstreken en vormt een volgend evaluatiemoment)"
+      ],
+      "bewijsfragmenten": [
+        "Tijdens de parlementaire behandeling van de wet is een toezegging gedaan om een jaar na inwerkingtreding een expertbijeenkomst te organiseren. Deze bijeenkomst heeft op 15 juni jl. plaatsgevonden."
+      ],
+      "motivering": "Het onderdeel van de toezegging dat ziet op het organiseren van een expertmeeting één jaar na inwerkingtreding van de Wet opheffing verpandingsverboden is volledig uitgevoerd en beschreven in de brief. Het latere onderdeel (de evaluatie na vier jaar) is prematuur en maakt logischerwijs nog geen deel uit van deze afdoening.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens de parlementaire behandeling van de wet is een toezegging gedaan om een jaar na inwerkingtreding een expertbijeenkomst te organiseren. Deze bijeenkomst heeft op 15 juni jl. plaatsgevonden.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
