@@ -491,7 +491,9 @@ def genereer_commissiefeed(
         if not sleutel:
             continue
 
-        item = fg.add_entry()
+        item = fg.add_entry(
+            order="append"
+        )
 
         delen = sleutel.split("|", 1)
 
