@@ -3254,6 +3254,48 @@
       "onderwerp": "Evaluatierapport Van Pro naar Prof",
       "commissie_slug": "ocw",
       "commissie_afkorting": "OCW"
+    },
+    "buza|2026D61375": {
+      "datum_verwerkt": "2026-11-26T23:14:28.045830+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Aanbod vertrouwelijke technische briefing inzake sancties tegen het Internationaal Strafhof ",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "vro|2026D61377": {
+      "datum_verwerkt": "2026-11-26T23:14:48.515535+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Antwoorden op vragen van de rapporteurs over resultaten begrotingsonderzoek Volkshuisvesting en Ruimtelijke Ordening (XXII) 2027",
+      "commissie_slug": "vro",
+      "commissie_afkorting": "VRO"
+    },
+    "vws|2026D61346": {
+      "datum_verwerkt": "2026-11-26T23:15:07.179877+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Reactie op verzoek commissie over petitie \"Vrouwengezondheid en de duurzame inzetbaarheid van vrouwen op de arbeidsmarkt.\"",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "biza|2026D61363": {
+      "datum_verwerkt": "2026-11-26T23:15:27.625396+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Weerbaar Bestuur en Monitor Integriteit en Veiligheid 2026",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "szw|2026D61380": {
+      "datum_verwerkt": "2026-11-26T23:15:45.423377+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Veiligheid, regeldruk en toezicht kinderopvang",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "biza|2026D61350": {
+      "datum_verwerkt": "2026-11-26T23:16:04.758227+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Inzet zelfstandigen bij de NCG",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
     }
   },
   "wacht_op_herhaling": {
@@ -3295,6 +3337,6 @@
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "ocw"
+    "laatste_commissie_slug": "biza"
   }
 }

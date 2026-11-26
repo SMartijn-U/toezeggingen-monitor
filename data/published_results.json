@@ -4505,6 +4505,191 @@
           }
         ]
       }
+    },
+    "vws|TZ202501-093|2026D61346": {
+      "sleutel": "vws|TZ202501-093|2026D61346",
+      "eerste_signalering": "2026-11-26T23:15:07.179896+00:00",
+      "commissie_id": "befe416e-ca1b-4804-97d0-7aca1dcba888",
+      "commissie_afkorting": "VWS",
+      "commissie_naam": "Vaste commissie voor Volksgezondheid, Welzijn en Sport",
+      "commissie_slug": "vws",
+      "selectiereden": "VWS is volgcommissie",
+      "activiteitnummer": "2024A06540",
+      "activiteitsoort": "Plenair debat (debat)",
+      "activiteitonderwerp": "Debat over het VN-verdrag voor de rechten van personen met een handicap ",
+      "activiteitdatum": "2024-12-10T16:15:00+01:00",
+      "activiteitvoortouw": "TK",
+      "toezeggingnummer": "TZ202501-093",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61346",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "documentonderwerp": "Reactie op verzoek commissie over petitie \"Vrouwengezondheid en de duurzame inzetbaarheid van vrouwen op de arbeidsmarkt.\"",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Informatie over de nationale strategie vrouwengezondheid en de werkagenda."
+      ],
+      "ontbrekende_onderdelen": [
+        "Een expliciete stand-van-zakenbrief over de uitvoering en voortgang zoals toegezegd in het kader van het VN-verdrag."
+      ],
+      "bewijsfragmenten": [
+        "Het kabinet onderschrijft het belang van aandacht voor vrouwspecifieke gezondheid en zet zich hiervoor in via de Nationale Strategie Vrouwengezondheid en de Nationale Werkagenda Vrouwengezondheid."
+      ],
+      "motivering": "Het document is gedateerd in november 2026 (laatste kwartaal) en bespreekt de Nationale Strategie Vrouwengezondheid en de Nationale Werkagenda Vrouwengezondheid, maar is specifiek geschreven als reactie op een petitie van WOMEN Inc. in plaats van een algemene stand-van-zakenbrief over de uitvoering in het kader van het VN-verdrag.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Het kabinet onderschrijft het belang van aandacht voor vrouwspecifieke gezondheid en zet zich hiervoor in via de Nationale Strategie Vrouwengezondheid en de Nationale Werkagenda Vrouwengezondheid.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "biza|TZ202609-034|2026D61363": {
+      "sleutel": "biza|TZ202609-034|2026D61363",
+      "eerste_signalering": "2026-11-26T23:15:27.625418+00:00",
+      "commissie_id": "177eb895-6307-4268-94f6-a0f80dc3e358",
+      "commissie_afkorting": "BIZA",
+      "commissie_naam": "Vaste commissie voor Binnenlandse Zaken",
+      "commissie_slug": "biza",
+      "selectiereden": "BIZA is voortouwcommissie",
+      "activiteitnummer": "2025A06109",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Versterking decentraal bestuur",
+      "activiteitdatum": "2026-09-09T13:00:00+02:00",
+      "activiteitvoortouw": "BiZa",
+      "toezeggingnummer": "TZ202609-034",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61363",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "documentonderwerp": "Weerbaar Bestuur en Monitor Integriteit en Veiligheid 2026",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "monitor integriteit en veiligheid delen met de Kamer in november 2026",
+        "ingaan op bedreiging en intimidatie van specifiek vrouwelijke politieke ambtsdragers en politieke ambtsdragers met een migratieachtergrond of uit andere minderheden",
+        "bezien of het wenselijk is om aanvullende preventieve maatregelen te treffen voor deze groepen politieke ambtsdragers"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Met deze brief bied ik u de Monitor Integriteit en Veiligheid 2026 van IPSOS aan (hierna: de Monitor) en informeer ik u over het Programma Weerbaar Bestuur.",
+        "Daarbij rapporteren vrouwelijke, jongere en in sommige gevallen ambtsdragers met een niet-westerse migratieachtergrond vaker agressie, bedreiging en intimidatie dan hun mannelijke en oudere collega’s (55% van de vrouwen tegenover 42% van de mannen).",
+        "Ik heb uw Kamer toegezegd te zullen bezien of aanvullende preventieve maatregelen voor deze ondervertegenwoordigde groepen wenselijk zijn."
+      ],
+      "motivering": "De minister deelt in deze brief van november 2026 expliciet de Monitor Integriteit en Veiligheid 2026, gaat uitgebreid in op de cijfers en gevolgen voor vrouwelijke ambtsdragers en ambtsdragers met een migratieachtergrond, en beschrijft de stappen en gesprekken om te bezien welke aanvullende preventieve maatregelen wenselijk zijn.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met deze brief bied ik u de Monitor Integriteit en Veiligheid 2026 van IPSOS aan (hierna: de Monitor) en informeer ik u over het Programma Weerbaar Bestuur.",
+            "geldig": true
+          },
+          {
+            "fragment": "Daarbij rapporteren vrouwelijke, jongere en in sommige gevallen ambtsdragers met een niet-westerse migratieachtergrond vaker agressie, bedreiging en intimidatie dan hun mannelijke en oudere collega’s (55% van de vrouwen tegenover 42% van de mannen).",
+            "geldig": true
+          },
+          {
+            "fragment": "Ik heb uw Kamer toegezegd te zullen bezien of aanvullende preventieve maatregelen voor deze ondervertegenwoordigde groepen wenselijk zijn.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "biza|TZ202609-035|2026D61363": {
+      "sleutel": "biza|TZ202609-035|2026D61363",
+      "eerste_signalering": "2026-11-26T23:15:27.625442+00:00",
+      "commissie_id": "177eb895-6307-4268-94f6-a0f80dc3e358",
+      "commissie_afkorting": "BIZA",
+      "commissie_naam": "Vaste commissie voor Binnenlandse Zaken",
+      "commissie_slug": "biza",
+      "selectiereden": "BIZA is voortouwcommissie",
+      "activiteitnummer": "2025A06109",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Versterking decentraal bestuur",
+      "activiteitdatum": "2026-09-09T13:00:00+02:00",
+      "activiteitvoortouw": "BiZa",
+      "toezeggingnummer": "TZ202609-035",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61363",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "documentonderwerp": "Weerbaar Bestuur en Monitor Integriteit en Veiligheid 2026",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "informeren over de eenduidige landelijke aanpak voor intimidatie en bedreiging van politieke ambtsdragers"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Met verzending van de Kamerbrief over de Strafrechtelijke aanpak Veilig Publieke Taak waaronder de herziene Eenduidige Landelijke Afspraken is toezegging TZ202609-35 afgedaan (Kamerstukken II, 2025/2026, 28684-866)."
+      ],
+      "motivering": "De minister meldt in het document expliciet dat toezegging TZ202609-35 is afgedaan met de verzending van de Kamerbrief over de Strafrechtelijke aanpak Veilig Publieke Taak inclusief de herziene Eenduidige Landelijke Afspraken.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met verzending van de Kamerbrief over de Strafrechtelijke aanpak Veilig Publieke Taak waaronder de herziene Eenduidige Landelijke Afspraken is toezegging TZ202609-35 afgedaan (Kamerstukken II, 2025/2026, 28684-866).",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "biza|TZ202610-087|2026D61350": {
+      "sleutel": "biza|TZ202610-087|2026D61350",
+      "eerste_signalering": "2026-11-26T23:16:04.758251+00:00",
+      "commissie_id": "177eb895-6307-4268-94f6-a0f80dc3e358",
+      "commissie_afkorting": "BIZA",
+      "commissie_naam": "Vaste commissie voor Binnenlandse Zaken",
+      "commissie_slug": "biza",
+      "selectiereden": "BIZA is voortouwcommissie",
+      "activiteitnummer": "2026A05188",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Herstel Groningen",
+      "activiteitdatum": "2026-10-07T13:00:00+02:00",
+      "activiteitvoortouw": "BiZa",
+      "toezeggingnummer": "TZ202610-087",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61350",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "documentonderwerp": "Inzet zelfstandigen bij de NCG",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "informeren over de uitkomsten van gesprekken over mogelijke vertragingen in de versterkingsoperatie",
+        "ingaan op de impact die vertraging heeft en wat zal worden gedaan om deze impact te voorkomen"
+      ],
+      "ontbrekende_onderdelen": [
+        "specifieke timing voorafgaand aan het wetgevingsoverleg Begrotingsonderdeel Herstel Groningen (niet expliciet vermeld als zijnde voor dat overleg)"
+      ],
+      "bewijsfragmenten": [
+        "In deze brief licht ik de uitkomsten toe van de aanpak tot nu toe, welke keuze ik op basis daarvan heb gemaakt en welke vervolgstappen ik ga zetten."
+      ],
+      "motivering": "De brief informeert de Kamer over de gevolgen en de aanpak rondom de zelfstandigen bij de NCG en de effecten op de versterking, maar er is geen expliciete koppeling of vermelding van het wetgevingsoverleg 'Begrotingsonderdeel Herstel Groningen'.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In deze brief licht ik de uitkomsten toe van de aanpak tot nu toe, welke keuze ik op basis daarvan heb gemaakt en welke vervolgstappen ik ga zetten.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
