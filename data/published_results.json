@@ -4116,6 +4116,395 @@
           }
         ]
       }
+    },
+    "vws|TZ202210-012|2026D61271": {
+      "sleutel": "vws|TZ202210-012|2026D61271",
+      "eerste_signalering": "2026-11-26T15:46:43.410162+00:00",
+      "commissie_id": "befe416e-ca1b-4804-97d0-7aca1dcba888",
+      "commissie_afkorting": "VWS",
+      "commissie_naam": "Vaste commissie voor Volksgezondheid, Welzijn en Sport",
+      "commissie_slug": "vws",
+      "selectiereden": "VWS is voortouwcommissie",
+      "activiteitnummer": "2022A05735",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Kabinetsreactie op het WRR–rapport \"Kiezen voor houdbare zorg. Mensen middelen en maatschappelijk draagvlak\"",
+      "activiteitdatum": "2022-09-29T13:30:00+02:00",
+      "activiteitvoortouw": "VWS",
+      "toezeggingnummer": "TZ202210-012",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61271",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief gehandicaptenzorg Wlz",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "kennisinfrastructuur langdurige zorg / EVB+ of LVB+"
+      ],
+      "ontbrekende_onderdelen": [
+        "een brede brief specifiek gewijd aan de kennisinfrastructuur van de langdurige zorg naar aanleiding van het WRR-rapport"
+      ],
+      "bewijsfragmenten": [
+        "Voor kennisontwikkeling zijn belangrijke stappen gezet voor een landelijke kennisinfrastructuur voor mensen met EVB+ of LVB+ (ernstige of licht verstandelijke beperking en bijkomende problematiek)."
+      ],
+      "motivering": "Het document meldt weliswaar dat stappen zijn gezet voor een landelijke kennisinfrastructuur voor EVB+ en LVB+, maar dit is onderdeel van een bredere verzamelbrief en vormt geen expliciete afdoening van een brief over de kennisinfrastructuur van de langdurige zorg in bredere zin.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Voor kennisontwikkeling zijn belangrijke stappen gezet voor een landelijke kennisinfrastructuur voor mensen met EVB+ of LVB+ (ernstige of licht verstandelijke beperking en bijkomende problematiek).",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vws|TZ202501-093|2026D61271": {
+      "sleutel": "vws|TZ202501-093|2026D61271",
+      "eerste_signalering": "2026-11-26T15:46:43.410176+00:00",
+      "commissie_id": "befe416e-ca1b-4804-97d0-7aca1dcba888",
+      "commissie_afkorting": "VWS",
+      "commissie_naam": "Vaste commissie voor Volksgezondheid, Welzijn en Sport",
+      "commissie_slug": "vws",
+      "selectiereden": "VWS is volgcommissie",
+      "activiteitnummer": "2024A06540",
+      "activiteitsoort": "Plenair debat (debat)",
+      "activiteitonderwerp": "Debat over het VN-verdrag voor de rechten van personen met een handicap ",
+      "activiteitdatum": "2024-12-10T16:15:00+01:00",
+      "activiteitvoortouw": "TK",
+      "toezeggingnummer": "TZ202501-093",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61271",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief gehandicaptenzorg Wlz",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "voortgang van de werkagenda en uitvoering daarvan ten aanzien van het VN-verdrag"
+      ],
+      "ontbrekende_onderdelen": [
+        "een integrale stand-van-zakenbrief specifiek over de gehele nationale strategie en de voortgang van de werkagenda als hoofdonderwerp"
+      ],
+      "bewijsfragmenten": [
+        "Met het aflopen van de Toekomstagenda eind 2026 is de landelijke inzet en subsidie van IVH voor de komende vijf jaar ondergebracht in de werkagenda VN-verdrag Handicap."
+      ],
+      "motivering": "Het document noemt wel elementen van de werkagenda rondom het VN-Verdrag Handicap, maar het is primair een verzamelbrief over de gehandicaptenzorg Wlz en vormt geen volledige stand-van-zakenbrief over de nationale strategie.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met het aflopen van de Toekomstagenda eind 2026 is de landelijke inzet en subsidie van IVH voor de komende vijf jaar ondergebracht in de werkagenda VN-verdrag Handicap.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vws|TZ202607-154|2026D61271": {
+      "sleutel": "vws|TZ202607-154|2026D61271",
+      "eerste_signalering": "2026-11-26T15:46:43.410186+00:00",
+      "commissie_id": "befe416e-ca1b-4804-97d0-7aca1dcba888",
+      "commissie_afkorting": "VWS",
+      "commissie_naam": "Vaste commissie voor Volksgezondheid, Welzijn en Sport",
+      "commissie_slug": "vws",
+      "selectiereden": "VWS is voortouwcommissie",
+      "activiteitnummer": "2026A03129",
+      "activiteitsoort": "Notaoverleg",
+      "activiteitonderwerp": "Initiatiefnota van het lid Westerveld: ons land is beperkt ",
+      "activiteitdatum": "2026-06-22T10:00:00+02:00",
+      "activiteitvoortouw": "VWS",
+      "toezeggingnummer": "TZ202607-154",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61271",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief gehandicaptenzorg Wlz",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "aandacht voor kwetsbaarheid van mensen met een lichte verstandelijke beperking in beleid"
+      ],
+      "ontbrekende_onderdelen": [
+        "expliciete borging in de voortgangsbrief van de werkagenda zoals in de toezegging bedoeld"
+      ],
+      "bewijsfragmenten": [
+        "De NZa deed onderzoek naar de naleving van de zorgplicht door zorgkantoren voor jongeren met een licht verstandelijke beperking (LVG-profiel) tussen de 18 en 23 jaar."
+      ],
+      "motivering": "Het document besteedt wel specifiek aandacht aan mensen met een lichte verstandelijke beperking (LVG), maar dit is opgenomen in een verzamelbrief over de gehandicaptenzorg Wlz en niet als specifiek onderdeel van een voortgangsbrief van de werkagenda VN-verdrag.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "De NZa deed onderzoek naar de naleving van de zorgplicht door zorgkantoren voor jongeren met een licht verstandelijke beperking (LVG-profiel) tussen de 18 en 23 jaar.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202611-006|2026D61193": {
+      "sleutel": "szw|TZ202611-006|2026D61193",
+      "eerste_signalering": "2026-11-26T15:48:01.688087+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "activiteitnummer": "2026A06351",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Armoede- en Schuldenbeleid",
+      "activiteitdatum": "2026-10-14T14:00:00+02:00",
+      "activiteitvoortouw": "SZW",
+      "toezeggingnummer": "TZ202611-006",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61193",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "documentonderwerp": "Opvolging aanbevelingen CSM Europees Nederland ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Toelichten welke aanbevelingen van de Commissie Sociaal Minimum niet zijn opgevolgd",
+        "Toelichten hoe de regering daartegenover staat"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Tijdens het Commissiedebat Armoede en Schulden van 14 oktober jl. heb ik het lid Bolhuis (PRO) toegezegd om toe te lichten welke aanbevelingen van de Commissie Sociaal Minimum voor Europees Nederland (CSM) niet zijn opgevolgd en hoe de regering daartegenover staat."
+      ],
+      "motivering": "De brief is specifiek opgesteld naar aanleiding van de toezegging tijdens het commissiedebat van 14 oktober om toe te lichten welke CSM-aanbevelingen niet zijn opgevolgd en hoe de regering daartegenover staat. Het document behandelt dit volledig (namelijk het niet overnemen van het vierjaarlijks advies door een expertcommissie).",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens het Commissiedebat Armoede en Schulden van 14 oktober jl. heb ik het lid Bolhuis (PRO) toegezegd om toe te lichten welke aanbevelingen van de Commissie Sociaal Minimum voor Europees Nederland (CSM) niet zijn opgevolgd en hoe de regering daartegenover staat.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202512-087|2026D61193": {
+      "sleutel": "szw|TZ202512-087|2026D61193",
+      "eerste_signalering": "2026-11-26T15:48:01.688099+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "activiteitnummer": "2025A06384",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Uitvoering sociale zekerheid ",
+      "activiteitdatum": "2025-12-17T13:00:00+01:00",
+      "activiteitvoortouw": "SZW",
+      "toezeggingnummer": "TZ202512-087",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61193",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "documentonderwerp": "Opvolging aanbevelingen CSM Europees Nederland ",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Aandacht en reactie op de stapeling van zorgkosten"
+      ],
+      "ontbrekende_onderdelen": [
+        "Uitgebreide informatie voorafgaand aan het specifieke commissiedebat zoals destijds gevraagd; de brief nodigt nu uit tot verdere gesprekken hierover"
+      ],
+      "bewijsfragmenten": [
+        "Het kabinet heeft oog voor de stapeling van zorgkosten, zoals aangegeven in de brieven over de uitvoering van de motie Stoffer c.s. en de motie Bikker c.s. De komende tijd gaat het kabinet graag in gesprek met de Kamer over de uitwerking en vormgeving van het pakket aan maatregelen in de zorg."
+      ],
+      "motivering": "Het document meldt dat er oog voor is en verwijst naar eerdere brieven en toekomstige gesprekken, maar levert geen volledige nieuwe rapportage specifiek voor een commissiedebat armoede en schulden.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Het kabinet heeft oog voor de stapeling van zorgkosten, zoals aangegeven in de brieven over de uitvoering van de motie Stoffer c.s. en de motie Bikker c.s. De komende tijd gaat het kabinet graag in gesprek met de Kamer over de uitwerking en vormgeving van het pakket aan maatregelen in de zorg.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202510-139|2026D61242": {
+      "sleutel": "ocw|TZ202510-139|2026D61242",
+      "eerste_signalering": "2026-11-26T15:48:22.628134+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "activiteitnummer": "2025A01064",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "mbo",
+      "activiteitdatum": "2025-10-01T10:00:00+02:00",
+      "activiteitvoortouw": "OCW",
+      "toezeggingnummer": "TZ202510-139",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61242",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "documentonderwerp": "Gelijke kansen in het mbo",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Aangeven dat mbo-afgestudeerden met een migratieachtergrond minder eenvoudig een baan kunnen vinden."
+      ],
+      "ontbrekende_onderdelen": [
+        "Volledige en diepgaande uiteenzetting van alle mogelijke oorzaken voor het feit dat mbo-afgestudeerden met een migratieachtergrond minder eenvoudig een baan kunnen vinden."
+      ],
+      "bewijsfragmenten": [
+        "Zo vinden mbo-afgestudeerden met een migratieachtergrond minder eenvoudig een baan."
+      ],
+      "motivering": "Het document benoemt dat mbo-afgestudeerden met een migratieachtergrond minder eenvoudig een baan vinden en dat dit in onderzoek deels wordt toegeschreven aan opleidingskeuze, voorkeuren en arbeidsmarktdiscriminatie. Echter wordt niet uitgebreid en diepgaand op alle mogelijke oorzaken ingegaan zoals in de toezegging gevraagd, waardoor het deelmatig is behandeld.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Zo vinden mbo-afgestudeerden met een migratieachtergrond minder eenvoudig een baan.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202606-259|2026D61242": {
+      "sleutel": "ocw|TZ202606-259|2026D61242",
+      "eerste_signalering": "2026-11-26T15:48:22.628146+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "activiteitnummer": "2026A00740",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Mentale gezondheid scholieren en studenten",
+      "activiteitdatum": "2026-06-24T10:00:00+02:00",
+      "activiteitvoortouw": "OCW",
+      "toezeggingnummer": "TZ202606-259",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61242",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "documentonderwerp": "Gelijke kansen in het mbo",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Het delen van de visie op kansengelijkheid in het mbo en de inzet voor de komende periode na de zomer in een Kamerbrief."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Conform mijn toezegging aan uw Kamer deel ik in deze brief mijn visie op kansengelijkheid in het mbo en mijn inzet voor de komende periode."
+      ],
+      "motivering": "De minister geeft in deze Kamerbrief expliciet aan dat zij conform haar toezegging haar visie op kansengelijkheid in het mbo en haar inzet voor de komende periode deelt, waarmee de toezegging volledig is nagekomen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Conform mijn toezegging aan uw Kamer deel ik in deze brief mijn visie op kansengelijkheid in het mbo en mijn inzet voor de komende periode.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202606-018|2026D61242": {
+      "sleutel": "ocw|TZ202606-018|2026D61242",
+      "eerste_signalering": "2026-11-26T15:48:22.628154+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "activiteitnummer": "2026A00473",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Mbo en studiefinanciering",
+      "activiteitdatum": "2026-05-28T13:30:00+02:00",
+      "activiteitvoortouw": "OCW",
+      "toezeggingnummer": "TZ202606-018",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61242",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "documentonderwerp": "Gelijke kansen in het mbo",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Terugkomen op de omgang met de schoolkosten in de brief over de herziening van de bekostiging mbo."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Zoals aangekondigd in mijn brief over de herziening van de bekostiging in het mbo ben ik voornemens leermiddelen voor alle minderjarige mbo-studenten gratis te maken."
+      ],
+      "motivering": "De minister komt in deze brief expliciet terug op de schoolkosten door aan te geven dat zij voornemens is leermiddelen voor alle minderjarige mbo-studenten gratis te maken, refererend aan de brief over de herziening van de bekostiging.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Zoals aangekondigd in mijn brief over de herziening van de bekostiging in het mbo ben ik voornemens leermiddelen voor alle minderjarige mbo-studenten gratis te maken.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202502-102|2026D61242": {
+      "sleutel": "ocw|TZ202502-102|2026D61242",
+      "eerste_signalering": "2026-11-26T15:48:22.628165+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is volgcommissie",
+      "activiteitnummer": "2024A09203",
+      "activiteitsoort": "Plenair debat (tweeminutendebat)",
+      "activiteitonderwerp": "Tweeminutendebat Mbo (CD 11/12)",
+      "activiteitdatum": "2025-01-23T16:00:00+01:00",
+      "activiteitvoortouw": "TK",
+      "toezeggingnummer": "TZ202502-102",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61242",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "documentonderwerp": "Gelijke kansen in het mbo",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Delen van nog niet eerder naar de Kamer verzonden rapporten en onderzoeken m.b.t. de doorstroom mbo-hbo."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Het eindrapport van deze evaluatie is bijgevoegd bij deze brief."
+      ],
+      "motivering": "De minister heeft als bijlage bij de brief het eindrapport van het evaluatieonderzoek naar de VABOK-regeling en RAP-middelen gevoegd, waarmee de onderzoeken met betrekking tot de doorstroom met de Kamer zijn gedeeld.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Het eindrapport van deze evaluatie is bijgevoegd bij deze brief.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }

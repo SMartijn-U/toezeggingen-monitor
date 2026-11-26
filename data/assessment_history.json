@@ -3170,6 +3170,90 @@
       "onderwerp": "Werkagenda mbo en Stagepact mbo: werk in uitvoering",
       "commissie_slug": "ocw",
       "commissie_afkorting": "OCW"
+    },
+    "fin|2026D61007": {
+      "datum_verwerkt": "2026-11-26T15:45:39.780284+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Evaluatierapport kleineondernemersregeling (KOR)",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "lvvn|2026D61138": {
+      "datum_verwerkt": "2026-11-26T15:46:01.880867+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Schriftelijke antwoorden op vragen gesteld tijdens de eerste termijn van de begrotingsbehandeling van Landbouw, Visserij, Voedselzekerheid en Natuur op 25 november 2026",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "ienw|2026D61253": {
+      "datum_verwerkt": "2026-11-26T15:46:21.444863+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Kennisgeving inwerkingtreding wijziging Bal in verband met het uitzonderen van organisaties met minder dan 250 werknemers",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "vws|2026D61271": {
+      "datum_verwerkt": "2026-11-26T15:46:43.410143+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Verzamelbrief gehandicaptenzorg Wlz",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "diza|2026D61120": {
+      "datum_verwerkt": "2026-11-26T15:47:00.568551+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Reactie op doorlichting SSC-ICT ",
+      "commissie_slug": "diza",
+      "commissie_afkorting": "DiZa"
+    },
+    "ez|2026D61278": {
+      "datum_verwerkt": "2026-11-26T15:47:20.825361+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Wettelijke zbo-evaluatie van de Stichting Raad voor Accreditatie (RvA) 2026",
+      "commissie_slug": "ez",
+      "commissie_afkorting": "EZ"
+    },
+    "biza|2026D60288": {
+      "datum_verwerkt": "2026-11-26T15:47:39.173358+00:00",
+      "documentdatum": "2026-11-23T00:00:00+01:00",
+      "onderwerp": "Zbo-evaluatie Huis voor Klokkenluiders",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "szw|2026D61193": {
+      "datum_verwerkt": "2026-11-26T15:48:01.688067+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Opvolging aanbevelingen CSM Europees Nederland ",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "ocw|2026D61242": {
+      "datum_verwerkt": "2026-11-26T15:48:22.628116+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Gelijke kansen in het mbo",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "biza|2026D61120": {
+      "datum_verwerkt": "2026-11-26T15:48:39.795018+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Reactie op doorlichting SSC-ICT ",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "szw|2026D60977": {
+      "datum_verwerkt": "2026-11-26T15:49:00.605974+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Knelpuntenanalyse Vereenvoudigen poortwachterproces",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "ocw|2026D61181": {
+      "datum_verwerkt": "2026-11-26T15:49:18.441351+00:00",
+      "documentdatum": "2026-11-26T00:00:00+01:00",
+      "onderwerp": "Evaluatierapport Van Pro naar Prof",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
     }
   },
   "wacht_op_herhaling": {
