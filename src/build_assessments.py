@@ -27,7 +27,6 @@ OUTPUT_PATH = Path(
 
 
 MAX_BEOORDELINGSEENHEDEN = 20
-MAX_KANDIDATEN_PER_COMMISSIE = 10
 
 BEKEND_TESTDOCUMENT = "2026D56295"
 
@@ -527,7 +526,7 @@ def verwerk_beoordelingseenheid(
     kandidaten = commissie.get(
         "kandidaten",
         []
-    )[:MAX_KANDIDATEN_PER_COMMISSIE]
+    )
 
     print(
         f"Aantal kandidaten voor "
@@ -943,9 +942,6 @@ def schrijf_output(
         "samenvatting": {
             "maximum_beoordelingseenheden":
                 MAX_BEOORDELINGSEENHEDEN,
-
-            "maximum_kandidaten_per_commissie":
-                MAX_KANDIDATEN_PER_COMMISSIE,
 
             "documenten_verwerkt":
                 len(resultaten),
