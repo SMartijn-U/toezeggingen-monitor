@@ -652,11 +652,18 @@ def get_toezeggingen_per_commissie(
     commissies,
     commissie_afkorting,
     uitgesloten_activiteitnummers=None,
+    vragenuur_koppelingen=None,
 ):
     uitgesloten_activiteitnummers = (
         uitgesloten_activiteitnummers
         or set()
-    )    
+    )
+
+    vragenuur_koppelingen = (
+        vragenuur_koppelingen
+        or {}
+    )
+
     geselecteerd = []
 
     zonder_activiteit = 0
@@ -961,7 +968,77 @@ def get_toezeggingen_per_commissie(
 
             else:
                 plenair_zonder_volgcommissie += 1
+        
+        # Route 3: Vragenuur.
+        elif soort == "Vragenuur":
+            toezeggingnummer = (
+                toezegging.get(
+                    "Nummer"
+                )
+            )
 
+            resolver_resultaat = (
+                vragenuur_koppelingen.get(
+                    toezeggingnummer,
+                    {}
+                )
+            )
+
+            resolver_commissies = (
+                resolver_resultaat.get(
+                    "commissies",
+                    []
+                )
+            )
+
+            huidige_koppeling = next(
+                (
+                    koppeling
+                    for koppeling
+                    in resolver_commissies
+                    if koppeling.get(
+                        "commissie_slug"
+                    )
+                    == commissie_slug
+                ),
+                None
+            )
+
+            if huidige_koppeling:
+                is_geselecteerd = True
+
+                resolver_positie = (
+                    huidige_koppeling.get(
+                        "positie"
+                    )
+                )
+
+                if (
+                    len(
+                        resolver_commissies
+                    )
+                    == 1
+                ):
+                    selectiereden = (
+                        resolver_resultaat.get(
+                            "selectiereden"
+                        )
+                        or (
+                            "Vragenuur: gekoppeld "
+                            f"aan {nette_afkorting}"
+                        )
+                    )
+
+                else:
+                    selectiereden = (
+                        "Vragenuur: "
+                        f"{nette_afkorting} is "
+                        f"resolverpositie "
+                        f"{resolver_positie} van "
+                        f"{len(resolver_commissies)} "
+                        "plausibele commissies"
+                    )
+        
         if is_geselecteerd:
             # Maak een kopie. Daardoor kan dezelfde
             # toezegging later veilig voor meerdere
@@ -987,6 +1064,55 @@ def get_toezeggingen_per_commissie(
                 "CommissieSlug"
             ] = commissie_slug
 
+            if soort == "Vragenuur":
+                geselecteerde_toezegging[
+                    "VragenuurResolver"
+                ] = (
+                    resolver_resultaat
+                )
+
+                geselecteerde_toezegging[
+                    "CommissieResolverPositie"
+                ] = (
+                    huidige_koppeling.get(
+                        "positie"
+                    )
+                    if huidige_koppeling
+                    else None
+                )
+
+                geselecteerde_toezegging[
+                    "CommissieKoppelbron"
+                ] = (
+                    huidige_koppeling.get(
+                        "koppelbron"
+                    )
+                    if huidige_koppeling
+                    else None
+                )
+
+                geselecteerde_toezegging[
+                    "CommissieKoppelscore"
+                ] = (
+                    huidige_koppeling.get(
+                        "inhoudelijke_score"
+                    )
+                    if (
+                        huidige_koppeling
+                        and huidige_koppeling.get(
+                            "inhoudelijke_score"
+                        )
+                        is not None
+                    )
+                    else (
+                        huidige_koppeling.get(
+                            "ministerie_aandeel"
+                        )
+                        if huidige_koppeling
+                        else None
+                    )
+                )
+            
             geselecteerd.append(
                 geselecteerde_toezegging
             )
