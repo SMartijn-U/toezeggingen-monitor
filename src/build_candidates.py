@@ -34,6 +34,15 @@ OUTPUT_PATH = Path(
 AANTAL_DAGEN_DOCUMENTEN = 7
 AANTAL_DAGEN_AFGEDAAN = 14
 MAXIMUM_KANDIDATEN_PER_DOCUMENT = 10
+
+MAXIMUM_KANDIDATEN_MIDDELLANG = 15
+MAXIMUM_KANDIDATEN_LANG = 20
+MAXIMUM_KANDIDATEN_ZEER_LANG = 25
+
+GRENS_MIDDELLANG_DOCUMENT = 15000
+GRENS_LANG_DOCUMENT = 30000
+GRENS_ZEER_LANG_DOCUMENT = 60000
+
 MINIMUM_KANDIDAATSCORE = 0.05
 
 # Diagnostiek kandidaatselectie.
@@ -405,6 +414,40 @@ def toon_debugscores(
             toezegging.get("Tekst"),
         )
 
+def bepaal_maximum_kandidaten(
+    tekst
+):
+    aantal_tekens = len(
+        tekst or ""
+    )
+
+    if (
+        aantal_tekens
+        >= GRENS_ZEER_LANG_DOCUMENT
+    ):
+        return (
+            MAXIMUM_KANDIDATEN_ZEER_LANG
+        )
+
+    if (
+        aantal_tekens
+        >= GRENS_LANG_DOCUMENT
+    ):
+        return (
+            MAXIMUM_KANDIDATEN_LANG
+        )
+
+    if (
+        aantal_tekens
+        >= GRENS_MIDDELLANG_DOCUMENT
+    ):
+        return (
+            MAXIMUM_KANDIDATEN_MIDDELLANG
+        )
+
+    return (
+        MAXIMUM_KANDIDATEN_PER_DOCUMENT
+    )
 
 def verwerk_documenten(
     documenten,
@@ -436,6 +479,21 @@ def verwerk_documenten(
                 document
             )
 
+            maximum_kandidaten = (
+                bepaal_maximum_kandidaten(
+                    tekst
+                )
+            )
+
+            print(
+                "Maximum kandidaten voor document:",
+                nummer,
+                "| tekens:",
+                len(tekst),
+                "| maximum:",
+                maximum_kandidaten
+            )
+            
             commissieresultaten = []
 
             for slug, commissiegegevens in (
@@ -524,7 +582,11 @@ def verwerk_documenten(
                     document,
                     tekst,
                     commissie_toezeggingen,
-                    maximum=maximum_rangschikking
+                    maximum=(
+                        DEBUG_MAXIMUM_KANDIDATEN
+                        if debug_geval
+                        else maximum_kandidaten
+                    )
                 )
 
                 if debug_geval:
@@ -537,7 +599,7 @@ def verwerk_documenten(
                 # Ook tijdens debugging verandert
                 # de uiteindelijke productieselectie niet.
                 kandidaten = kandidaten[
-                    :MAXIMUM_KANDIDATEN_PER_DOCUMENT
+                    :maximum_kandidaten
                 ]
 
                 kandidaten = [
