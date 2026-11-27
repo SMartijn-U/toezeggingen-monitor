@@ -17,7 +17,10 @@ from get_toezeggingen import (
 from vragenuur_commission_resolver import (
     MINIMUM_WAARNEMINGEN,
     MINIMUM_DOMINANT_AANDEEL,
+    MINIMUM_INHOUDELIJKE_SCORE,
+    MINIMUM_INHOUDELIJKE_MARGE,
     bouw_ministerie_commissie_index,
+    bouw_commissieprofielen,
     koppel_vragenuurtoezegging,
 )
 
@@ -101,6 +104,22 @@ def main():
         maak_commissieslug
     )
 
+    commissieprofielen = (
+        bouw_commissieprofielen(
+            toezeggingen,
+            activiteiten,
+            vaste_commissies,
+            maak_commissieslug
+        )
+    )
+
+    print(
+        "Commissieprofielen opgebouwd:",
+        len(
+            commissieprofielen
+        )
+    )
+    
     vragenuur_resultaten = []
 
     for toezegging in toezeggingen:
@@ -130,7 +149,8 @@ def main():
                 toezegging,
                 activiteit,
                 ministerie_index,
-                vaste_commissie_index
+                vaste_commissie_index,
+                commissieprofielen
             )
         )
 
@@ -224,6 +244,12 @@ def main():
 
             "productie_actief":
                 False,
+
+            "minimum_inhoudelijke_score":
+                MINIMUM_INHOUDELIJKE_SCORE,
+
+            "minimum_inhoudelijke_marge":
+                MINIMUM_INHOUDELIJKE_MARGE,
         },
 
         "ministerie_commissie_index":
@@ -231,6 +257,15 @@ def main():
 
         "vragenuurtoezeggingen":
             vragenuur_resultaten,
+
+        "commissieprofielen": {
+            commissie_slug: {
+                "aantal_profielteksten":
+                    len(teksten)
+            }
+            for commissie_slug, teksten
+            in commissieprofielen.items()
+        },
     }
 
     OUTPUT_PATH.parent.mkdir(
