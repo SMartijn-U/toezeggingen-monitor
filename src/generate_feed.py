@@ -122,7 +122,45 @@ def maak_activiteit_html(
             f"{escape(activiteitnummer)}"
         )
 
-    if activiteitsoort
+    if activiteitsoort:
+        regels.append(
+            "&lt;strong&gt;"
+            "Activiteitsoort:"
+            "&lt;/strong&gt; "
+            f"{escape(activiteitsoort)}"
+        )
+
+    if activiteitonderwerp:
+        regels.append(
+            "&lt;strong&gt;"
+            "Activiteitonderwerp:"
+            "&lt;/strong&gt; "
+            f"{escape(activiteitonderwerp)}"
+        )
+
+    if activiteitdatum:
+        regels.append(
+            "&lt;strong&gt;"
+            "Activiteitdatum:"
+            "&lt;/strong&gt; "
+            f"{escape(activiteitdatum)}"
+        )
+
+    if activiteitvoortouw:
+        regels.append(
+            "&lt;strong&gt;"
+            "Activiteitvoortouw:"
+            "&lt;/strong&gt; "
+            f"{escape(activiteitvoortouw)}"
+        )
+
+    return (
+        "&lt;p&gt;"
+        + "&lt;br&gt;".join(
+            regels
+        )
+        + "&lt;/p&gt;"
+    )
     
 def maak_beschrijving(resultaat):
     bewijs = resultaat.get(
