@@ -3296,6 +3296,104 @@
       "onderwerp": "Inzet zelfstandigen bij de NCG",
       "commissie_slug": "biza",
       "commissie_afkorting": "BIZA"
+    },
+    "kr|2026D61571": {
+      "datum_verwerkt": "2026-11-27T13:28:57.068037+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Vervolg onderzoek consumentenbescherming Caribisch Nederland",
+      "commissie_slug": "kr",
+      "commissie_afkorting": "KR"
+    },
+    "vws|2026D61487": {
+      "datum_verwerkt": "2026-11-27T13:29:15.467527+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Digitale en Fysieke weerbaarheid in de Zorg",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "diza|2026D61650": {
+      "datum_verwerkt": "2026-11-27T13:29:34.712307+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Verzoek tot omwisseling Commissiedebatten Digitale infrastructuur & economie en Digitale Grondrechten en Data-ethiek",
+      "commissie_slug": "diza",
+      "commissie_afkorting": "DiZa"
+    },
+    "szw|2026D61640": {
+      "datum_verwerkt": "2026-11-27T13:29:56.784618+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Verzamelbrief Pensioenonderwerpen ",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "fin|2026D61589": {
+      "datum_verwerkt": "2026-11-27T13:30:15.281159+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Meer uren werken",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "vro|2026D61613": {
+      "datum_verwerkt": "2026-11-27T13:30:34.396572+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Toezegging gedaan tijdens het commissiedebat Volkshuisvesting en Fiscaliteit van 24 september 2026, over de ontwikkeling van het eigenwoningbezit",
+      "commissie_slug": "vro",
+      "commissie_afkorting": "VRO"
+    },
+    "lvvn|2026D61653": {
+      "datum_verwerkt": "2026-11-27T13:30:51.751424+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Voedselverspilling in Nederland - Stand van zaken en rapportage Verliezen en verspilling van voedsel in Nederland in 2024",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "eu|2026D61601": {
+      "datum_verwerkt": "2026-11-27T13:31:09.004058+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Positie Nederland ten aanzien van de Transparantierichtlijn",
+      "commissie_slug": "eu",
+      "commissie_afkorting": "EU"
+    },
+    "biza|2026D61610": {
+      "datum_verwerkt": "2026-11-27T13:31:27.135886+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Voorstel kabinet uitwerking lobbyregister",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "vws|2026D61644": {
+      "datum_verwerkt": "2026-11-27T13:31:44.781920+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Sluiskandidaten eerste helft 2027",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "szw|2026D61589": {
+      "datum_verwerkt": "2026-11-27T13:32:03.517411+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Meer uren werken",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "lvvn|2026D61607": {
+      "datum_verwerkt": "2026-11-27T13:32:22.441223+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Kabinetsreactie op het SER-advies ‘Samenwerken aan een duurzaam en toekomstbestendig agrosysteem’",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "szw|2026D61592": {
+      "datum_verwerkt": "2026-11-27T13:32:41.403837+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Toekomst van de fondsensystematiek werknemersverzekeringen",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "lvvn|2026D61633": {
+      "datum_verwerkt": "2026-11-27T13:32:58.736693+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Reactie op een burgerbrief over notitie 'Als de prijs verdubbeld, wie kan dan nog ons dagelijks voedsel betalen??'",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
     }
   },
   "wacht_op_herhaling": {
@@ -3337,6 +3435,6 @@
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "biza"
+    "laatste_commissie_slug": "lvvn"
   }
 }

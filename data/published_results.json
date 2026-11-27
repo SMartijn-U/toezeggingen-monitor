@@ -4690,6 +4690,691 @@
           }
         ]
       }
+    },
+    "vws|TZ202606-014|2026D61487": {
+      "sleutel": "vws|TZ202606-014|2026D61487",
+      "eerste_signalering": "2026-11-27T13:29:15.467551+00:00",
+      "commissie_id": "befe416e-ca1b-4804-97d0-7aca1dcba888",
+      "commissie_afkorting": "VWS",
+      "commissie_naam": "Vaste commissie voor Volksgezondheid, Welzijn en Sport",
+      "commissie_slug": "vws",
+      "selectiereden": "VWS is voortouwcommissie",
+      "activiteitnummer": "2025A02753",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Digitale ontwikkelingen in de zorg",
+      "activiteitdatum": "2026-05-21T13:00:00+02:00",
+      "activiteitvoortouw": "VWS",
+      "toezeggingnummer": "TZ202606-014",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61487",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Digitale en Fysieke weerbaarheid in de Zorg",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Informatie over ICT-zorg en leveranciers in de context van digitale autonomie"
+      ],
+      "ontbrekende_onderdelen": [
+        "Specifieke bredere voortgangsbrief Zorgmarkt met daarin alle aspecten van databeschikbaarheid zoals destijds bedoeld"
+      ],
+      "bewijsfragmenten": [
+        "De zorg digitaliseert in hoog tempo en wordt hiermee steeds meer afhankelijk van verschillende digitale systemen en leveranciers."
+      ],
+      "motivering": "De brief gaat weliswaar in op digitalisering, leveranciersafhankelijkheden en digitale autonomie in de zorg, maar dit betreft een specifieke brief over de implementatie van de NIS2-richtlijn en CER-richtlijn en niet de bredere voortgangsbrief over de Zorgmarkt waarin alle aspecten van ICT-zorg en databeschikbaarheid uit de oorspronkelijke toezegging worden geadresseerd.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "De zorg digitaliseert in hoog tempo en wordt hiermee steeds meer afhankelijk van verschillende digitale systemen en leveranciers.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202607-056|2026D61640": {
+      "sleutel": "szw|TZ202607-056|2026D61640",
+      "eerste_signalering": "2026-11-27T13:29:56.784643+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "activiteitnummer": "2026A04313",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Arbeidsmarktbeleid en arbeidsmarktdiscriminatie ",
+      "activiteitdatum": "2026-06-24T18:00:00+02:00",
+      "activiteitvoortouw": "SZW",
+      "toezeggingnummer": "TZ202607-056",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61640",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief Pensioenonderwerpen ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "In deze brief wil ik verder van de mogelijkheid gebruik maken om de toezegging af te doen die ik dit voorjaar heb gedaan aan de heer Flach (SGP) over het afschaffen van de transitievergoeding na langdurige arbeidsongeschiktheid in samenhang met ondernemers die met pensioen gaan of hun bedrijf beëindigen.",
+        "Voor wat betreft de toezegging rondom werkgevers die hun bedrijf beëindigen vanwege pensionering: het streven is om de Compensatieregeling bij bedrijfsbeëindiging (hierna: Compensatieregeling BE) net als de Compensatieregeling bij langdurige arbeidsongeschiktheid per 1 januari 2028 af te schaffen."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "In deze brief wil ik verder van de mogelijkheid gebruik maken om de toezegging af te doen die ik dit voorjaar heb gedaan aan de heer Flach (SGP) over het afschaffen van de transitievergoeding na langdurige arbeidsongeschiktheid in samenhang met ondernemers die met pensioen gaan of hun bedrijf beëindigen.",
+        "Voor wat betreft de toezegging rondom werkgevers die hun bedrijf beëindigen vanwege pensionering: het streven is om de Compensatieregeling bij bedrijfsbeëindiging (hierna: Compensatieregeling BE) net als de Compensatieregeling bij langdurige arbeidsongeschiktheid per 1 januari 2028 af te schaffen."
+      ],
+      "motivering": "De minister verwijst expliciet naar de toezegging aan de heer Flach over ondernemers die met pensioen gaan of hun bedrijf beëindigen in verband met de transitievergoeding en geeft hier in de brief inhoudelijk een reactie op.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In deze brief wil ik verder van de mogelijkheid gebruik maken om de toezegging af te doen die ik dit voorjaar heb gedaan aan de heer Flach (SGP) over het afschaffen van de transitievergoeding na langdurige arbeidsongeschiktheid in samenhang met ondernemers die met pensioen gaan of hun bedrijf beëindigen.",
+            "geldig": true
+          },
+          {
+            "fragment": "Voor wat betreft de toezegging rondom werkgevers die hun bedrijf beëindigen vanwege pensionering: het streven is om de Compensatieregeling bij bedrijfsbeëindiging (hierna: Compensatieregeling BE) net als de Compensatieregeling bij langdurige arbeidsongeschiktheid per 1 januari 2028 af te schaffen.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202609-081|2026D61640": {
+      "sleutel": "szw|TZ202609-081|2026D61640",
+      "eerste_signalering": "2026-11-27T13:29:56.784668+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "activiteitnummer": "2026A00998",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Pensioenonderwerpen",
+      "activiteitdatum": "2026-09-10T10:00:00+02:00",
+      "activiteitvoortouw": "SZW",
+      "toezeggingnummer": "TZ202609-081",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61640",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief Pensioenonderwerpen ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "brief sturen voorafgaand aan de begrotingsbehandeling",
+        "rendementen van pensioenfondsen",
+        "rendement per beleidsdoel (ESG-beleid)",
+        "renteafdekking",
+        "pensioenadvisering via de werkkostenregeling",
+        "mensen die achterblijven in het oude stelsel (niet invaren)",
+        "actuele stand van zaken van de transitie"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Tijdens het commissiedebat Pensioenonderwerpen heb ik toegezegd uw Kamer voorafgaand aan de begrotingsbehandeling te informeren over de laatste stand van zaken van de pensioentransitie.",
+        "Om tegemoet te komen aan de wensen van uw Kamer zal ik onafhankelijk kwantitatief onderzoek laten verrichten door Nederlandse en buitenlandse wetenschappelijk onderzoekers naar de prestaties en achterliggende redenen voor de prestaties van Nederlandse pensioenfondsen.",
+        "In het commissiedebat pensioenonderwerpen heb ik tevens toegezegd op vragen van het lid Van Ark (CDA) in deze brief terug te komen op het gebruik van de werkkostenregeling voor persoonlijk pensioenadvies."
+      ],
+      "motivering": "Alle onderdelen van de samengestelde toezegging (de brief voorafgaand aan de begrotingsbehandeling, de onderzoeksopzet naar rendementen, renteafdekking, werkkostenregeling, niet invaren/oude stelsel en de stand van zaken van de transitie) zijn uitgebreid en expliciet behandeld in de verzamelbrief.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens het commissiedebat Pensioenonderwerpen heb ik toegezegd uw Kamer voorafgaand aan de begrotingsbehandeling te informeren over de laatste stand van zaken van de pensioentransitie.",
+            "geldig": true
+          },
+          {
+            "fragment": "Om tegemoet te komen aan de wensen van uw Kamer zal ik onafhankelijk kwantitatief onderzoek laten verrichten door Nederlandse en buitenlandse wetenschappelijk onderzoekers naar de prestaties en achterliggende redenen voor de prestaties van Nederlandse pensioenfondsen.",
+            "geldig": true
+          },
+          {
+            "fragment": "In het commissiedebat pensioenonderwerpen heb ik tevens toegezegd op vragen van het lid Van Ark (CDA) in deze brief terug te komen op het gebruik van de werkkostenregeling voor persoonlijk pensioenadvies.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202609-080|2026D61640": {
+      "sleutel": "szw|TZ202609-080|2026D61640",
+      "eerste_signalering": "2026-11-27T13:29:56.784687+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "activiteitnummer": "2026A00998",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Pensioenonderwerpen",
+      "activiteitdatum": "2026-09-10T10:00:00+02:00",
+      "activiteitvoortouw": "SZW",
+      "toezeggingnummer": "TZ202609-080",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61640",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief Pensioenonderwerpen ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "tussenstand-brief over de transitie voorafgaand aan de begrotingsbehandeling"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Tijdens het commissiedebat Pensioenonderwerpen heb ik toegezegd uw Kamer voorafgaand aan de begrotingsbehandeling te informeren over de laatste stand van zaken van de pensioentransitie. In deze paragraaf geef ik invulling aan deze toezegging."
+      ],
+      "motivering": "De minister geeft in de brief expliciet de tussenstand van de pensioentransitie waarmee deze toezegging volledig is afgedaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens het commissiedebat Pensioenonderwerpen heb ik toegezegd uw Kamer voorafgaand aan de begrotingsbehandeling te informeren over de laatste stand van zaken van de pensioentransitie. In deze paragraaf geef ik invulling aan deze toezegging.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202609-082|2026D61640": {
+      "sleutel": "szw|TZ202609-082|2026D61640",
+      "eerste_signalering": "2026-11-27T13:29:56.784703+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "activiteitnummer": "2026A00998",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Pensioenonderwerpen",
+      "activiteitdatum": "2026-09-10T10:00:00+02:00",
+      "activiteitvoortouw": "SZW",
+      "toezeggingnummer": "TZ202609-082",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61640",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief Pensioenonderwerpen ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "terugkomen op communicatie rondom het partner- en nabestaandenpensioen"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Ik heb uw Kamer toegezegd met de pensioensector te overleggen over de informatievoorziening rond het partner- en nabestaandenpensioen en hierover in de brief voor de begrotingsbehandeling van SZW op terug te komen."
+      ],
+      "motivering": "De minister komt in de brief uitgebreid terug op de informatievoorziening en communicatie rond het partner- en nabestaandenpensioen, inclusief afspraken met de sector over de UPO-modellen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Ik heb uw Kamer toegezegd met de pensioensector te overleggen over de informatievoorziening rond het partner- en nabestaandenpensioen en hierover in de brief voor de begrotingsbehandeling van SZW op terug te komen.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202609-083|2026D61640": {
+      "sleutel": "szw|TZ202609-083|2026D61640",
+      "eerste_signalering": "2026-11-27T13:29:56.784718+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "activiteitnummer": "2026A00998",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Pensioenonderwerpen",
+      "activiteitdatum": "2026-09-10T10:00:00+02:00",
+      "activiteitvoortouw": "SZW",
+      "toezeggingnummer": "TZ202609-083",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61640",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief Pensioenonderwerpen ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "terugkomen op het nabestaandenpensioen in de startbrief"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Ik heb uw Kamer toegezegd om de informatieverstrekking over de hoogte van het partnerpensioen te regelen in de startbrief."
+      ],
+      "motivering": "De minister gaat in de brief expliciet in op het regelen van de informatieverstrekking over de hoogte van het partnerpensioen in de startbrief (via het Besluit toezeggingen Wtp en andere pensioenonderwerpen).",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Ik heb uw Kamer toegezegd om de informatieverstrekking over de hoogte van het partnerpensioen te regelen in de startbrief.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202607-055|2026D61640": {
+      "sleutel": "szw|TZ202607-055|2026D61640",
+      "eerste_signalering": "2026-11-27T13:29:56.784733+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "activiteitnummer": "2026A04313",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Arbeidsmarktbeleid en arbeidsmarktdiscriminatie ",
+      "activiteitdatum": "2026-06-24T18:00:00+02:00",
+      "activiteitvoortouw": "SZW",
+      "toezeggingnummer": "TZ202607-055",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61640",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief Pensioenonderwerpen ",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "compensatieregeling"
+      ],
+      "ontbrekende_onderdelen": [
+        "uitdrukkelijke samenhang met LLO (leven lang ontwikkelen)"
+      ],
+      "bewijsfragmenten": [
+        "Parallel hieraan werk ik mogelijke maatregelen rondom de hervorming van de transitievergoeding en leven lang ontwikkelen uit."
+      ],
+      "motivering": "Het document bespreekt weliswaar de compensatieregeling en de transitievergoeding in relatie tot bedrijfsbeëindiging, maar de specifieke drieluikse samenhang met Leven Lang Ontwikkelen (LLO) wordt slechts heel marginaal benoemd (\"leven lang ontwikkelen uit\"), waardoor dit onderdeel slechts deels is behandeld.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Parallel hieraan werk ik mogelijke maatregelen rondom de hervorming van de transitievergoeding en leven lang ontwikkelen uit.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202604-002|2026D61640": {
+      "sleutel": "szw|TZ202604-002|2026D61640",
+      "eerste_signalering": "2026-11-27T13:29:56.784749+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is volgcommissie",
+      "activiteitnummer": "2026A01121",
+      "activiteitsoort": "Plenair debat (tweeminutendebat)",
+      "activiteitonderwerp": "Tweeminutendebat Pensioenonderwerpen (CD 29/01)",
+      "activiteitdatum": "2026-03-31T17:15:00+02:00",
+      "activiteitvoortouw": "TK",
+      "toezeggingnummer": "TZ202604-002",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61640",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Verzamelbrief Pensioenonderwerpen ",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "in gesprek gaan met de sector over het bedrag ineens",
+        "de Kamer per brief laten weten waar dat toe leidt (demonstratie tool Nibud)"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Tijdens de parlementaire behandeling in de Eerste Kamer op 9 juni 2026 zegde ik toe dat mijn ambtenaren samen met het Nibud in de Eerste en Tweede Kamer een demonstratie kunnen geven van hoe die tool kan gaan werken."
+      ],
+      "motivering": "De minister doet in de brief verslag van de totstandkoming van de Nibud-tool voor het 'bedrag ineens' en biedt de Kamer een demonstratie hiervan aan, waarmee de toezegging is afgedaan.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens de parlementaire behandeling in de Eerste Kamer op 9 juni 2026 zegde ik toe dat mijn ambtenaren samen met het Nibud in de Eerste en Tweede Kamer een demonstratie kunnen geven van hoe die tool kan gaan werken.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "vro|TZ202609-106|2026D61613": {
+      "sleutel": "vro|TZ202609-106|2026D61613",
+      "eerste_signalering": "2026-11-27T13:30:34.396591+00:00",
+      "commissie_id": "48c117dc-4dd3-410e-ac30-14437c2a2f08",
+      "commissie_afkorting": "VRO",
+      "commissie_naam": "Vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+      "commissie_slug": "vro",
+      "selectiereden": "VRO is voortouwcommissie",
+      "activiteitnummer": "2025A05305",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Volkshuisvesting en fiscaliteit",
+      "activiteitdatum": "2026-09-24T17:00:00+02:00",
+      "activiteitvoortouw": "VRO",
+      "toezeggingnummer": "TZ202609-106",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61613",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Toezegging gedaan tijdens het commissiedebat Volkshuisvesting en Fiscaliteit van 24 september 2026, over de ontwikkeling van het eigenwoningbezit",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Informatie over de ontwikkeling van het eigenwoningbezit."
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "In het commissiedebat Volkshuisvesting en Fiscaliteit van 24 september jongstleden, heb ik op verzoek van het lid Clemminck (JA21) toegezegd voor de begrotingsbehandeling van aanstaande 1 december uw Kamer te informeren over de ontwikkeling van het eigenwoningbezit. De bijlage bij deze brief bevat een korte notitie van ABF Research met hierover de belangrijkste cijfers.",
+        "Uit de notitie blijkt dat het eigen woningbezit de komende 15 jaar zal kunnen toenemen van 4,7 miljoen woningen naar 5,5 miljoen woningen."
+      ],
+      "motivering": "De minister heeft de Kamer geïnformeerd over de ontwikkeling van het eigenwoningbezit middels een brief met daarbij een notitie van ABF Research die de belangrijkste cijfers bevat. Hiermee is de toezegging volledig nagekomen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In het commissiedebat Volkshuisvesting en Fiscaliteit van 24 september jongstleden, heb ik op verzoek van het lid Clemminck (JA21) toegezegd voor de begrotingsbehandeling van aanstaande 1 december uw Kamer te informeren over de ontwikkeling van het eigenwoningbezit. De bijlage bij deze brief bevat een korte notitie van ABF Research met hierover de belangrijkste cijfers.",
+            "geldig": true
+          },
+          {
+            "fragment": "Uit de notitie blijkt dat het eigen woningbezit de komende 15 jaar zal kunnen toenemen van 4,7 miljoen woningen naar 5,5 miljoen woningen.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "lvvn|TZ202610-019|2026D61653": {
+      "sleutel": "lvvn|TZ202610-019|2026D61653",
+      "eerste_signalering": "2026-11-27T13:30:51.751438+00:00",
+      "commissie_id": "d8c4982c-be0d-4d55-a6a7-074b3f8dd5ab",
+      "commissie_afkorting": "LVVN",
+      "commissie_naam": "Vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "commissie_slug": "lvvn",
+      "selectiereden": "LVVN is voortouwcommissie",
+      "activiteitnummer": "2026A03083",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Voedselzekerheid",
+      "activiteitdatum": "2026-09-23T14:00:00+02:00",
+      "activiteitvoortouw": "LVVN",
+      "toezeggingnummer": "TZ202610-019",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61653",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Voedselverspilling in Nederland - Stand van zaken en rapportage Verliezen en verspilling van voedsel in Nederland in 2024",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "uitwerking van de uitkomsten van het Nationaal Burgerberaad Klimaat over voedselverspilling"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Zoals toegezegd (TZ202610-019) infomeer ik uw Kamer met deze brief ook over uitwerking van de uitkomsten van het Nationaal Burgerberaad Klimaat over voedselverspilling."
+      ],
+      "motivering": "De staatssecretaris verwijst expliciet naar toezegging TZ202610-019 en informeert de Kamer uitgebreid over de uitwerking van de uitkomsten van het Nationaal Burgerberaad Klimaat over voedselverspilling, inclusief de opvolging van adviezen over houdbaarheidsiconen en bewaarregels.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Zoals toegezegd (TZ202610-019) infomeer ik uw Kamer met deze brief ook over uitwerking van de uitkomsten van het Nationaal Burgerberaad Klimaat over voedselverspilling.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "biza|TZ202609-093|2026D61610": {
+      "sleutel": "biza|TZ202609-093|2026D61610",
+      "eerste_signalering": "2026-11-27T13:31:27.135904+00:00",
+      "commissie_id": "177eb895-6307-4268-94f6-a0f80dc3e358",
+      "commissie_afkorting": "BIZA",
+      "commissie_naam": "Vaste commissie voor Binnenlandse Zaken",
+      "commissie_slug": "biza",
+      "selectiereden": "BIZA is voortouwcommissie",
+      "activiteitnummer": "2026A03940",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Integriteit openbaar bestuur ",
+      "activiteitdatum": "2026-09-24T14:00:00+02:00",
+      "activiteitvoortouw": "BiZa",
+      "toezeggingnummer": "TZ202609-093",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61610",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Voorstel kabinet uitwerking lobbyregister",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "informeren over de verschillende lobbyregisters van andere landen",
+        "informeren over het tijdspad van de invoering van het lobbyregister in Nederland",
+        "informeren over de samenhang met transparantie"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "In de bijlage vindt u zoals toegezegd tijdens het commissiedebat een internationale vergelijking van lobbyregisters, en een toelichting op de samenhang met andere transparantie-instrumenten.",
+        "Het kabinet streeft ernaar voor de zomer 2027 een wetsvoorstel in consultatie te brengen, er wordt nog onderzocht in hoeverre 1 januari 2029 als startdatum mogelijk is.",
+        "Hiermee kom ik tegemoet aan het eerste deel van toezegging TZ202609-093, die ik heb gedaan tijdens het commissiedebat van 24 september jl."
+      ],
+      "motivering": "Alle onderdelen van de toezegging zijn behandeld. De minister informeert de Kamer in deze brief en de bijlagen over de internationale vergelijking van lobbyregisters, het tijdspad en de samenhang met andere transparantie-instrumenten. Bovendien wordt in de tekst expliciet verwezen naar de toezegging.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In de bijlage vindt u zoals toegezegd tijdens het commissiedebat een internationale vergelijking van lobbyregisters, en een toelichting op de samenhang met andere transparantie-instrumenten.",
+            "geldig": true
+          },
+          {
+            "fragment": "Het kabinet streeft ernaar voor de zomer 2027 een wetsvoorstel in consultatie te brengen, er wordt nog onderzocht in hoeverre 1 januari 2029 als startdatum mogelijk is.",
+            "geldig": true
+          },
+          {
+            "fragment": "Hiermee kom ik tegemoet aan het eerste deel van toezegging TZ202609-093, die ik heb gedaan tijdens het commissiedebat van 24 september jl.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202607-058|2026D61589": {
+      "sleutel": "szw|TZ202607-058|2026D61589",
+      "eerste_signalering": "2026-11-27T13:32:03.517428+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "activiteitnummer": "2026A04313",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Arbeidsmarktbeleid en arbeidsmarktdiscriminatie ",
+      "activiteitdatum": "2026-06-24T18:00:00+02:00",
+      "activiteitvoortouw": "SZW",
+      "toezeggingnummer": "TZ202607-058",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61589",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Meer uren werken",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "brief over meer uren werken",
+        "ingaan op de voltijdsbonus"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "Met deze brief informeren we de Kamer over de concrete stappen die dit kabinet zet om meer uren werken te stimuleren, en over de mogelijkheden die er zijn om hier verdere stappen op te zetten indien de Tweede Kamer dat wenst.",
+        "De Staatssecretaris van Onderwijs en Emancipatie experimenteert momenteel met een bonus (zowel in financiële als niet-financiële vorm) in de pilot Meerurenmaatwerk."
+      ],
+      "motivering": "Het document is een brief over het stimuleren van meer uren werken waarin expliciet wordt ingegaan op de voltijdsbonus en de daaraan gerelateerde experimenten en regelgeving. Hiermee zijn alle onderdelen van de toezegging volledig nagekomen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Met deze brief informeren we de Kamer over de concrete stappen die dit kabinet zet om meer uren werken te stimuleren, en over de mogelijkheden die er zijn om hier verdere stappen op te zetten indien de Tweede Kamer dat wenst.",
+            "geldig": true
+          },
+          {
+            "fragment": "De Staatssecretaris van Onderwijs en Emancipatie experimenteert momenteel met een bonus (zowel in financiële als niet-financiële vorm) in de pilot Meerurenmaatwerk.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "lvvn|TZ202611-010|2026D61607": {
+      "sleutel": "lvvn|TZ202611-010|2026D61607",
+      "eerste_signalering": "2026-11-27T13:32:22.441243+00:00",
+      "commissie_id": "d8c4982c-be0d-4d55-a6a7-074b3f8dd5ab",
+      "commissie_afkorting": "LVVN",
+      "commissie_naam": "Vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "commissie_slug": "lvvn",
+      "selectiereden": "LVVN is voortouwcommissie",
+      "activiteitnummer": "2025A05313",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Verdienvermogen en grondbeleid",
+      "activiteitdatum": "2026-10-14T15:00:00+02:00",
+      "activiteitvoortouw": "LVVN",
+      "toezeggingnummer": "TZ202611-010",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61607",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Kabinetsreactie op het SER-advies ‘Samenwerken aan een duurzaam en toekomstbestendig agrosysteem’",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Het sturen van de kabinetsappreciatie ten aanzien van het SER-advies aan de Kamer."
+      ],
+      "ontbrekende_onderdelen": [
+        "Het expliciet terugkomen op de inzet van een verkenner op de manier zoals in de toezegging is bedoeld (of de toezegging vraagt om een specifiek moment/termijn dat gedeeltelijk afwijkt)."
+      ],
+      "bewijsfragmenten": [
+        "In deze kabinetsreactie volgt het kabinet de opbouw van het advies: (1) Werk aan het versterken van vertrouwen, (2) Verduurzaming moet lonen voor toekomstperspectief, (3) Zet in op daadkracht voor innoveren, leren en een vitaal platteland en (4) Werk samen aan een duurzame toekomst."
+      ],
+      "motivering": "Dit document is de kabinetsreactie op het SER-advies, waarmee het eerste deel van de toezegging (het sturen van de appreciatie voor begin 2027) is geleverd. Over de verkenner wordt wel gesproken in het document, maar de toezegging spreekt specifiek over het terugkomen op de inzet van een verkenner in relatie tot de timing en planning, waardoor het niet volledig gedekt is als een definitieve afdoening van dat specifieke element.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In deze kabinetsreactie volgt het kabinet de opbouw van het advies: (1) Werk aan het versterken van vertrouwen, (2) Verduurzaming moet lonen voor toekomstperspectief, (3) Zet in op daadkracht voor innoveren, leren en een vitaal platteland en (4) Werk samen aan een duurzame toekomst.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202610-001|2026D61592": {
+      "sleutel": "szw|TZ202610-001|2026D61592",
+      "eerste_signalering": "2026-11-27T13:32:41.403854+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "activiteitnummer": "2025A08402",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Uitvoering Sociale Zekerheid",
+      "activiteitdatum": "2026-09-23T10:00:00+02:00",
+      "activiteitvoortouw": "SZW",
+      "toezeggingnummer": "TZ202610-001",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61592",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Toekomst van de fondsensystematiek werknemersverzekeringen",
+      "oordeel": "zeker_afgedaan",
+      "rapportagecategorie": "Hoge zekerheid: mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "brief over de toekomst van het Arbeidsongeschiktheidsfonds en de fondsensystematiek",
+        "betrekken van de motie-Grinwis/Patijn"
+      ],
+      "ontbrekende_onderdelen": [],
+      "bewijsfragmenten": [
+        "In navolging van de 17e Studiegroep Begrotingsruimte die naar de premie- en fondsensystematiek van de sociale verzekeringen en zorg heeft gekeken. Hierbij is ook de motie-Grinwis/Patijn over de juridische houdbaarheid en maatschappelijke wenselijkheid van de stijgende Aof-premie betrokken."
+      ],
+      "motivering": "De brief is een vervolg op de toezegging en gaat expliciet in op de fondsensystematiek van de werknemersverzekeringen (waaronder het Aof) en betrekt daarbij nadrukkelijk de motie-Grinwis/Patijn over de stijgende Aof-premie.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In navolging van de 17e Studiegroep Begrotingsruimte die naar de premie- en fondsensystematiek van de sociale verzekeringen en zorg heeft gekeken. Hierbij is ook de motie-Grinwis/Patijn over de juridische houdbaarheid en maatschappelijke wenselijkheid van de stijgende Aof-premie betrokken.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "szw|TZ202604-136|2026D61592": {
+      "sleutel": "szw|TZ202604-136|2026D61592",
+      "eerste_signalering": "2026-11-27T13:32:41.403876+00:00",
+      "commissie_id": "b18e6abf-15b8-445f-a177-e1823ee63424",
+      "commissie_afkorting": "SZW",
+      "commissie_naam": "Vaste commissie voor Sociale Zaken en Werkgelegenheid",
+      "commissie_slug": "szw",
+      "selectiereden": "SZW is voortouwcommissie",
+      "activiteitnummer": "2026A01094",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Werknemersverzekeringen",
+      "activiteitdatum": "2026-04-08T13:30:00+02:00",
+      "activiteitvoortouw": "SZW",
+      "toezeggingnummer": "TZ202604-136",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61592",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Toekomst van de fondsensystematiek werknemersverzekeringen",
+      "oordeel": "waarschijnlijk_afgedaan",
+      "rapportagecategorie": "Mogelijke afdoening",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "brief sturen over de relatie tussen budget, begroting en de premies en fondsen"
+      ],
+      "ontbrekende_onderdelen": [
+        "expliciete verslaglegging voorafgaand gesprek met sociale partners in de vorm van een afgerond sociaal akkoord (wordt in de brief juist aangekondigd als vervolgstap)"
+      ],
+      "bewijsfragmenten": [
+        "Tijdens het commissiedebat werknemersverzekeringen van 8 april jl. heb ik een brief over de toekomst van de fondsensystematiek werknemersverzekeringen (hierna: fondsensystematiek) aan uw Kamer toegezegd."
+      ],
+      "motivering": "De brief over de fondsensystematiek, de werking van de fondsen en de relatie met de begroting (EMU-saldo) is exact zoals toegezegd gestuurd in het najaar (27 november). Het element van het gesprek met sociale partners wordt in deze brief echter neergezet als een vervolgstap die nog plaats moet vinden.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tijdens het commissiedebat werknemersverzekeringen van 8 april jl. heb ik een brief over de toekomst van de fondsensystematiek werknemersverzekeringen (hierna: fondsensystematiek) aan uw Kamer toegezegd.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
