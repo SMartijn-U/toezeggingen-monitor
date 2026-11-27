@@ -64,37 +64,6 @@ def formatteer_activiteitdatum(
             waarde
         )
 
-def maak_activiteit_url(
-    activiteitnummer,
-    activiteitvoortouw
-):
-    if not activiteitnummer:
-        return None
-
-    voortouw = (
-        activiteitvoortouw
-        or ""
-    ).strip().upper()
-
-    if voortouw == "TK":
-        return (
-            "https://www.tweedekamer.nl/"
-            "debat_en_vergadering/"
-            "plenaire_vergaderingen/"
-            "details/activiteit"
-            f"?id={activiteitnummer}"
-        )
-
-    if voortouw:
-        return (
-            "https://www.tweedekamer.nl/"
-            "debat_en_vergadering/"
-            "commissievergaderingen/details"
-            f"?id={activiteitnummer}"
-        )
-
-    return None
-
 def maak_activiteit_html(
     resultaat
 ):
@@ -134,68 +103,27 @@ def maak_activiteit_html(
         )
     )
 
-    onderdelen = []
-
-    if activiteitsoort:
-        weergegeven_soort = (
-            activiteitsoort[0].lower()
-            + activiteitsoort[1:]
-        )
-
-        onderdelen.append(
-            weergegeven_soort
-        )
-
-    if activiteitonderwerp:
-        onderdelen.append(
-            activiteitonderwerp
-        )
-
-    activiteittekst = " ".join(
-        onderdelen
-    ).strip()
-
-    if activiteitdatum:
-        activiteittekst = (
-            f"{activiteittekst} "
-            f"({activiteitdatum})"
-        ).strip()
-
-    if not activiteittekst:
+    if not (
+        activiteitnummer
+        or activiteitsoort
+        or activiteitonderwerp
+        or activiteitdatum
+        or activiteitvoortouw
+    ):
         return ""
 
-    activiteit_url = (
-        maak_activiteit_url(
-            activiteitnummer,
-            activiteitvoortouw
-        )
-    )
+    regels = []
 
-    if activiteit_url:
-        weergegeven_activiteit = (
-            f'&lt;a href="'
-            f'{escape(activiteit_url)}'
-            f'"&gt;'
-            f'{escape(activiteittekst)}'
-            f'&lt;/a&gt;'
-        )
-    else:
-        weergegeven_activiteit = (
-            escape(
-                activiteittekst
-            )
+    if activiteitnummer:
+        regels.append(
+            "&lt;strong&gt;"
+            "Activiteitnummer:"
+            "&lt;/strong&gt; "
+            f"{escape(activiteitnummer)}"
         )
 
-    return (
-        "&lt;p&gt;"
-        "&lt;strong&gt;"
-        "Activiteit:"
-        "&lt;/strong&gt;"
-        "&lt;br&gt;"
-        f"{weergegeven_activiteit}"
-        "&lt;/p&gt;"
-    )
-
+    if activiteitsoort
+    
 def maak_beschrijving(resultaat):
     bewijs = resultaat.get(
         "bewijsfragmenten",
