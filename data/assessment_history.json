@@ -3527,6 +3527,146 @@
       "onderwerp": "Correcte betaling uitzendkrachten",
       "commissie_slug": "szw",
       "commissie_afkorting": "SZW"
+    },
+    "fin|2026D57158": {
+      "datum_verwerkt": "2026-11-27T16:51:21.563315+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "vws|2026D57109": {
+      "datum_verwerkt": "2026-11-27T16:51:45.263448+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "jenv|2026D57138": {
+      "datum_verwerkt": "2026-11-27T16:52:05.393368+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "jenv",
+      "commissie_afkorting": "J&V"
+    },
+    "ocw|2026D57128": {
+      "datum_verwerkt": "2026-11-27T16:52:27.518973+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "kgg|2026D57085": {
+      "datum_verwerkt": "2026-11-27T16:52:47.020823+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "kgg",
+      "commissie_afkorting": "KGG"
+    },
+    "lvvn|2026D61806": {
+      "datum_verwerkt": "2026-11-27T16:53:06.705026+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Uitvoering ETS2 opt-in glastuinbouw",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "vro|2026D57096": {
+      "datum_verwerkt": "2026-11-27T16:53:28.363931+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "vro",
+      "commissie_afkorting": "VRO"
+    },
+    "kr|2026D57160": {
+      "datum_verwerkt": "2026-11-27T16:53:47.102257+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "kr",
+      "commissie_afkorting": "KR"
+    },
+    "def|2026D57149": {
+      "datum_verwerkt": "2026-11-27T16:54:04.974458+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "def",
+      "commissie_afkorting": "DEF"
+    },
+    "bho|2026D57105": {
+      "datum_verwerkt": "2026-11-27T16:54:26.852016+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "bho",
+      "commissie_afkorting": "BHO"
+    },
+    "ienw|2026D57124": {
+      "datum_verwerkt": "2026-11-27T16:54:47.596580+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "biza|2026D57179": {
+      "datum_verwerkt": "2026-11-27T16:55:05.343091+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "buza|2026D57142": {
+      "datum_verwerkt": "2026-11-27T16:55:24.451756+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "buza",
+      "commissie_afkorting": "BUZA"
+    },
+    "szw|2026D57116": {
+      "datum_verwerkt": "2026-11-27T16:55:48.058490+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "szw",
+      "commissie_afkorting": "SZW"
+    },
+    "fin|2026D57197": {
+      "datum_verwerkt": "2026-11-27T16:56:11.517722+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Najaarsnota 2026",
+      "commissie_slug": "fin",
+      "commissie_afkorting": "FIN"
+    },
+    "vws|2026D61799": {
+      "datum_verwerkt": "2026-11-27T16:56:28.032622+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Afschrift reactie op de brief van Onderwijscoalitie Zuid-West over de noodzaak om te investeren in onderwijs gedurende de transformatie van de gesloten jeugdhulp",
+      "commissie_slug": "vws",
+      "commissie_afkorting": "VWS"
+    },
+    "ocw|2026D61799": {
+      "datum_verwerkt": "2026-11-27T16:56:45.668963+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Afschrift reactie op de brief van Onderwijscoalitie Zuid-West over de noodzaak om te investeren in onderwijs gedurende de transformatie van de gesloten jeugdhulp",
+      "commissie_slug": "ocw",
+      "commissie_afkorting": "OCW"
+    },
+    "kgg|2026D61806": {
+      "datum_verwerkt": "2026-11-27T16:57:04.363644+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Uitvoering ETS2 opt-in glastuinbouw",
+      "commissie_slug": "kgg",
+      "commissie_afkorting": "KGG"
+    },
+    "lvvn|2026D57118": {
+      "datum_verwerkt": "2026-11-27T16:57:25.381789+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "lvvn",
+      "commissie_afkorting": "LVVN"
+    },
+    "def|2026D57126": {
+      "datum_verwerkt": "2026-11-27T16:57:43.410701+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "def",
+      "commissie_afkorting": "DEF"
     }
   },
   "wacht_op_herhaling": {
@@ -3568,6 +3708,6 @@
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "szw"
+    "laatste_commissie_slug": "def"
   }
 }

@@ -5562,6 +5562,283 @@
           }
         ]
       }
+    },
+    "fin|TZ202603-167|2026D57158": {
+      "sleutel": "fin|TZ202603-167|2026D57158",
+      "eerste_signalering": "2026-11-27T16:51:21.563343+00:00",
+      "commissie_id": "d38afba0-042f-4f3b-b0c8-b2df24eba6a7",
+      "commissie_afkorting": "FIN",
+      "commissie_naam": "Vaste commissie voor Financiën",
+      "commissie_slug": "fin",
+      "selectiereden": "FIN is voortouwcommissie",
+      "activiteitnummer": "2025A07293",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Hersteloperatie kinderopvangtoeslag",
+      "activiteitdatum": "2026-03-19T17:00:00+01:00",
+      "activiteitvoortouw": "FIN",
+      "toezeggingnummer": "TZ202603-167",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57158",
+      "documentsoort": "Memorie van toelichting",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Memorie van toelichting",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "aandacht geven aan emotioneel herstel"
+      ],
+      "ontbrekende_onderdelen": [
+        "structurele voortgangsrapportages over emotioneel herstel"
+      ],
+      "bewijsfragmenten": [
+        "Bovendien vallen de uitgaven voor emotioneel herstel volgens de laatste prognose lager uit in 2026 (€ 6 mln.)."
+      ],
+      "motivering": "Het document noomt kort de uitgaven en prognoses voor emotioneel herstel binnen de toeslagenhersteloperatie, maar biedt geen volledige voortgangsrapportage over dit onderwerp.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Bovendien vallen de uitgaven voor emotioneel herstel volgens de laatste prognose lager uit in 2026 (€ 6 mln.).",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ocw|TZ202611-051|2026D57128": {
+      "sleutel": "ocw|TZ202611-051|2026D57128",
+      "eerste_signalering": "2026-11-27T16:52:27.518998+00:00",
+      "commissie_id": "3126fff1-9188-4cfc-9bd3-8bf0edfe032a",
+      "commissie_afkorting": "OCW",
+      "commissie_naam": "Vaste commissie voor Onderwijs, Cultuur en Wetenschap",
+      "commissie_slug": "ocw",
+      "selectiereden": "OCW is voortouwcommissie",
+      "activiteitnummer": "2026A04923",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Onderzoeks- en Wetenschapsbeleid",
+      "activiteitdatum": "2026-11-05T13:00:00+01:00",
+      "activiteitvoortouw": "OCW",
+      "toezeggingnummer": "TZ202611-051",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57128",
+      "documentsoort": "Memorie van toelichting",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Memorie van toelichting",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "Haalbaarheidsanalyse screening kennisveiligheid (vertraging/opschorting toegelicht)"
+      ],
+      "ontbrekende_onderdelen": [
+        "Eindconclusies van de haalbaarheidsanalyse"
+      ],
+      "bewijsfragmenten": [
+        "Door de keuze om eerst een haalbaarheidsanalyse naar een meer gerichte vorm van screening uit te voeren, kan in 2026 nog geen opdracht aan Justis worden verstrekt die gekoppeld is aan de voorgenomen screeningswetgeving."
+      ],
+      "motivering": "Het document meldt dat de haalbaarheidsanalyse naar een meer gerichte vorm van screening wordt uitgevoerd, maar geeft nog geen eindconclusies (deze worden in het voorjaar van 2027 verwacht).",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Door de keuze om eerst een haalbaarheidsanalyse naar een meer gerichte vorm van screening uit te voeren, kan in 2026 nog geen opdracht aan Justis worden verstrekt die gekoppeld is aan de voorgenomen screeningswetgeving.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "lvvn|TZ202611-038|2026D61806": {
+      "sleutel": "lvvn|TZ202611-038|2026D61806",
+      "eerste_signalering": "2026-11-27T16:53:06.705048+00:00",
+      "commissie_id": "d8c4982c-be0d-4d55-a6a7-074b3f8dd5ab",
+      "commissie_afkorting": "LVVN",
+      "commissie_naam": "Vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "commissie_slug": "lvvn",
+      "selectiereden": "LVVN is voortouwcommissie",
+      "activiteitnummer": "2025A05310",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Tuinbouw en biotechnologie",
+      "activiteitdatum": "2026-11-05T13:00:00+01:00",
+      "activiteitvoortouw": "LVVN",
+      "toezeggingnummer": "TZ202611-038",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61806",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Uitvoering ETS2 opt-in glastuinbouw",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "informeren over de uitkomsten van de gesprekken met de sector, energieleveranciers en de Nederlandse Emissieautoriteit over mogelijke nadere inzichten over de opt-in",
+        "waarom uitzondering technisch slecht uitvoerbaar is",
+        "de situatie in België en Duitsland"
+      ],
+      "ontbrekende_onderdelen": [
+        "informeren voor het einde van het jaar (brief is gedateerd 27 november, maar de toezegging vraagt specifiek om de stand van zaken en vervolg te koppelen aan het einde van het jaar in de verdere uitwerking, en niet alle eindresultaten zijn er nu al omdat er nog wordt doorgepraat)"
+      ],
+      "bewijsfragmenten": [
+        "Daarom zijn de ministeries van EZK, LVVN en Financiën afgelopen 18 november in gesprek gegaan met vertegenwoordigers van Glastuinbouw Nederland, Energie-Nederland en de Nederlandse Emissieautoriteit (NEa).",
+        "Uw Kamer heeft eerder gevraagd waarom uitzondering van de glastuinbouw technisch slecht uitvoerbaar is., Kortgezegd komt het erop neer dat energieleveranciers op basis van de voor hen beschikbare informatie niet goed kunnen bepalen welk energieverbruik uitgezonderd zou moeten worden van ETS2.",
+        "Aangezien hier meermaals door uw Kamer naar gevraagd is, heb ik ook nog nadere informatie ingewonnen bij onze buurlanden.  Bij navraag geven Duitse collega’s bovendien aan dat zij een opt-in besluit aan het voorbereiden zijn."
+      ],
+      "motivering": "De brief gaat in op de gesprekken met de sector, energieleveranciers en de NEa, verklaart waarom uitzondering technisch slecht uitvoerbaar is en bespreekt de situatie in Duitsland en België. Het proces loopt echter nog door (de sporen worden de komende maanden uitgewerkt), waardoor de toezegging als deels/mogelijk deels afgedaan kan worden beschouwd in het licht van de voortgang.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 3,
+        "aantal_geldig": 3,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Daarom zijn de ministeries van EZK, LVVN en Financiën afgelopen 18 november in gesprek gegaan met vertegenwoordigers van Glastuinbouw Nederland, Energie-Nederland en de Nederlandse Emissieautoriteit (NEa).",
+            "geldig": true
+          },
+          {
+            "fragment": "Uw Kamer heeft eerder gevraagd waarom uitzondering van de glastuinbouw technisch slecht uitvoerbaar is., Kortgezegd komt het erop neer dat energieleveranciers op basis van de voor hen beschikbare informatie niet goed kunnen bepalen welk energieverbruik uitgezonderd zou moeten worden van ETS2.",
+            "geldig": true
+          },
+          {
+            "fragment": "Aangezien hier meermaals door uw Kamer naar gevraagd is, heb ik ook nog nadere informatie ingewonnen bij onze buurlanden.  Bij navraag geven Duitse collega’s bovendien aan dat zij een opt-in besluit aan het voorbereiden zijn.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "bho|TZ202607-121|2026D57105": {
+      "sleutel": "bho|TZ202607-121|2026D57105",
+      "eerste_signalering": "2026-11-27T16:54:26.852038+00:00",
+      "commissie_id": "90f412fa-d124-49d1-a550-37a4220b0b69",
+      "commissie_afkorting": "BHO",
+      "commissie_naam": "Vaste commissie voor Buitenlandse Handel en Ontwikkelingssamenwerking",
+      "commissie_slug": "bho",
+      "selectiereden": "BHO is voortouwcommissie",
+      "activiteitnummer": "2026A03485",
+      "activiteitsoort": "Wetgevingsoverleg",
+      "activiteitonderwerp": "Jaarverantwoording BHO 2025 (nieuwe tijd)",
+      "activiteitdatum": "2026-06-18T15:00:00+02:00",
+      "activiteitvoortouw": "BHO",
+      "toezeggingnummer": "TZ202607-121",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57105",
+      "documentsoort": "Memorie van toelichting",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Memorie van toelichting",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Bepaalde onderdelen overzicht begroting"
+      ],
+      "ontbrekende_onderdelen": [
+        "Factsheets van de revolverende fondsen in de begroting",
+        "Overzicht van dotaties en onttrekkingen in de memorie van toelichting"
+      ],
+      "bewijsfragmenten": [
+        "In de Voorjaarsnota (Kamerstukken II 2024/25, 36 725, nr. 1) is dit nader toegelicht. Een van de stappen die in dit kader gezet wordt, is om informatie niet op verschillende plekken meer aan te bieden. Om deze reden zijn de verdiepingsbijlage en het overzicht moties en toezeggingen geen onderdeel meer van de begroting 2026."
+      ],
+      "motivering": "Hoewel de begroting is aangepast en bepaalde overzichten op grond van de groeiparagraaf zijn verwijderd, zijn de specifieke elementsvereisten van deze toezegging (zoals de factsheets van revolverende fondsen en het volledige overzicht van dotaties en onttrekkingen) niet aantoonbaar volledig in deze memorie van toelichting opgenomen.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "In de Voorjaarsnota (Kamerstukken II 2024/25, 36 725, nr. 1) is dit nader toegelicht. Een van de stappen die in dit kader gezet wordt, is om informatie niet op verschillende plekken meer aan te bieden. Om deze reden zijn de verdiepingsbijlage en het overzicht moties en toezeggingen geen onderdeel meer van de begroting 2026.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ienw|TZ202610-013|2026D57124": {
+      "sleutel": "ienw|TZ202610-013|2026D57124",
+      "eerste_signalering": "2026-11-27T16:54:47.596603+00:00",
+      "commissie_id": "44c341a0-ae41-4f51-9c81-1f94d2fd1107",
+      "commissie_afkorting": "I&W",
+      "commissie_naam": "Vaste commissie voor Infrastructuur en Waterstaat",
+      "commissie_slug": "ienw",
+      "selectiereden": "I&W is voortouwcommissie",
+      "activiteitnummer": "2026A02089",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Maritiem",
+      "activiteitdatum": "2026-09-30T13:00:00+02:00",
+      "activiteitvoortouw": "I&W",
+      "toezeggingnummer": "TZ202610-013",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57124",
+      "documentsoort": "Memorie van toelichting",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Memorie van toelichting",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Subsidie verduurzaming binnenvaartschepen"
+      ],
+      "ontbrekende_onderdelen": [
+        "Uitgebreide informatie over de besteding aan (hybride-) elektrisch varen na een openstellingsperiode"
+      ],
+      "bewijsfragmenten": [
+        "Subsidie verduurzaming binnenvaartschepen 0 156 156"
+      ],
+      "motivering": "In de tabellen op artikel 18 (Scheepvaart en Havens) wordt een bedrag genoemd voor de 'Subsidie verduurzaming binnenvaartschepen', maar de gevraagde inhoudelijke informatie over de openstellingsperiode en de besteding aan (hybride-) elektrisch varen ontbreekt.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Subsidie verduurzaming binnenvaartschepen 0 156 156",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "fin|TZ202603-167|2026D57197": {
+      "sleutel": "fin|TZ202603-167|2026D57197",
+      "eerste_signalering": "2026-11-27T16:56:11.517750+00:00",
+      "commissie_id": "d38afba0-042f-4f3b-b0c8-b2df24eba6a7",
+      "commissie_afkorting": "FIN",
+      "commissie_naam": "Vaste commissie voor Financiën",
+      "commissie_slug": "fin",
+      "selectiereden": "FIN is voortouwcommissie",
+      "activiteitnummer": "2025A07293",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Hersteloperatie kinderopvangtoeslag",
+      "activiteitdatum": "2026-03-19T17:00:00+01:00",
+      "activiteitvoortouw": "FIN",
+      "toezeggingnummer": "TZ202603-167",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D57197",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Najaarsnota 2026",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "vermelding van de onderuitputting en bestedingen op het gebied van Toeslagen Herstel"
+      ],
+      "ontbrekende_onderdelen": [
+        "expliciete toelichting of structurele aandacht in rapportages over emotioneel herstel naast financieel herstel"
+      ],
+      "bewijsfragmenten": [
+        "De overige onderuitputting wordt voornamelijk veroorzaakt door minder uitgaven in 2026 dan verwacht aan dwangsommen, private schulden en emotioneel herstel."
+      ],
+      "motivering": "Het document noemt weliswaar dat er minder uitgaven zijn geweest aan onder andere emotioneel herstel, maar het geeft geen verdere rapportage of invulling over meer aandacht voor emotioneel herstel ten opzichte van financieel herstel in voortgangsrapportages.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "De overige onderuitputting wordt voornamelijk veroorzaakt door minder uitgaven in 2026 dan verwacht aan dwangsommen, private schulden en emotioneel herstel.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
