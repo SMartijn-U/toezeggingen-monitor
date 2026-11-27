@@ -15,8 +15,7 @@ MINIMUM_DOMINANT_AANDEEL = 0.80
 MINIMUM_MINISTERIE_AANDEEL_VOOR_INHOUD = 0.05
 MAXIMUM_INHOUDELIJKE_KANDIDATEN = 5
 
-MINIMUM_INHOUDELIJKE_SCORE = 0.10
-MINIMUM_INHOUDELIJKE_MARGE = 0.03
+MAXIMUM_VRAGENUURCOMMISSIES = 3
 
 AANTAL_BESTE_PROFIELMATCHES = 3
 
@@ -539,6 +538,92 @@ def rangschik_commissies_op_inhoud(
 
     return resultaat
 
+def maak_commissiekoppeling(
+    commissie,
+    positie,
+    vaste_commissie_index,
+    koppelbron
+):
+    commissie_slug = (
+        commissie.get(
+            "commissie_slug"
+        )
+    )
+
+    commissiegegevens = (
+        vaste_commissie_index.get(
+            commissie_slug,
+            commissie
+        )
+    )
+
+    ministerie_aandeel = (
+        commissie.get(
+            "aandeel",
+            0.0
+        )
+    )
+
+    inhoudelijke_score = (
+        commissie.get(
+            "inhoudelijke_score"
+        )
+    )
+
+    return {
+        "commissie_id":
+            commissiegegevens.get(
+                "commissie_id"
+            ),
+
+        "commissie_slug":
+            commissie_slug,
+
+        "commissie_afkorting":
+            (
+                commissiegegevens.get(
+                    "commissie_afkorting"
+                )
+                or commissie_slug.upper()
+            ),
+
+        "commissie_naam":
+            commissiegegevens.get(
+                "commissie_naam"
+            ),
+
+        "positie":
+            positie,
+
+        "koppelbron":
+            koppelbron,
+
+        "ministerie_aandeel":
+            ministerie_aandeel,
+
+        "inhoudelijke_score":
+            inhoudelijke_score,
+
+        "aantal_ministeriewaarnemingen":
+            commissie.get(
+                "aantal",
+                0
+            ),
+
+        "beste_profielscores":
+            commissie.get(
+                "beste_profielscores",
+                []
+            ),
+
+        "aantal_profielteksten":
+            commissie.get(
+                "aantal_profielteksten",
+                0
+            ),
+    }
+
+
 def koppel_vragenuurtoezegging(
     toezegging,
     activiteit,
@@ -556,6 +641,9 @@ def koppel_vragenuurtoezegging(
 
             "reden":
                 "activiteit_is_geen_vragenuur",
+
+            "commissies":
+                [],
         }
 
     ministerie_bronwaarde = (
@@ -574,6 +662,9 @@ def koppel_vragenuurtoezegging(
 
             "reden":
                 "ministerie_ontbreekt",
+
+            "commissies":
+                [],
         }
 
     gegevens = ministerie_index.get(
@@ -590,27 +681,15 @@ def koppel_vragenuurtoezegging(
 
             "ministerie":
                 ministerie_bronwaarde,
+
+            "commissies":
+                [],
         }
 
     totaal = gegevens.get(
         "totaal",
         0
     )
-
-    if totaal < MINIMUM_WAARNEMINGEN:
-        return {
-            "status":
-                "onvoldoende_data",
-
-            "reden":
-                "te_weinig_waarnemingen",
-
-            "ministerie":
-                ministerie_bronwaarde,
-
-            "waarnemingen":
-                totaal,
-        }
 
     gerangschikte_commissies = sorted(
         gegevens.get(
@@ -635,6 +714,12 @@ def koppel_vragenuurtoezegging(
 
             "ministerie":
                 ministerie_bronwaarde,
+
+            "waarnemingen":
+                totaal,
+
+            "commissies":
+                [],
         }
 
     beste = gerangschikte_commissies[0]
@@ -644,157 +729,43 @@ def koppel_vragenuurtoezegging(
         0.0
     )
 
+    # Een dominante ministerie-relatie levert
+    # één commissie op.
     if (
-        beste_aandeel
-        < MINIMUM_DOMINANT_AANDEEL
+        totaal >= MINIMUM_WAARNEMINGEN
+        and beste_aandeel
+        >= MINIMUM_DOMINANT_AANDEEL
     ):
-        inhoudelijke_kandidaten = [
-            commissie
-            for commissie
-            in gerangschikte_commissies
-            if commissie.get(
-                "aandeel",
-                0.0
-            )
-            >= (
-                MINIMUM_MINISTERIE_AANDEEL_VOOR_INHOUD
-            )
-        ][
-            :MAXIMUM_INHOUDELIJKE_KANDIDATEN
-        ]
-
-        inhoudelijke_rangschikking = (
-            rangschik_commissies_op_inhoud(
-                toezegging,
-                activiteit,
-                inhoudelijke_kandidaten,
-                commissieprofielen
+        commissiekoppeling = (
+            maak_commissiekoppeling(
+                beste,
+                positie=1,
+                vaste_commissie_index=(
+                    vaste_commissie_index
+                ),
+                koppelbron=(
+                    "dominante_ministeriecommissie"
+                )
             )
         )
 
-        if inhoudelijke_rangschikking:
-            inhoudelijk_beste = (
-                inhoudelijke_rangschikking[0]
-            )
+        percentage = round(
+            beste_aandeel * 100,
+            1
+        )
 
-            beste_inhoudelijke_score = (
-                inhoudelijk_beste.get(
-                    "inhoudelijke_score",
-                    0.0
-                )
-            )
-
-            if (
-                len(
-                    inhoudelijke_rangschikking
-                )
-                > 1
-            ):
-                tweede_inhoudelijke_score = (
-                    inhoudelijke_rangschikking[
-                        1
-                    ].get(
-                        "inhoudelijke_score",
-                        0.0
-                    )
-                )
-            else:
-                tweede_inhoudelijke_score = 0.0
-
-            inhoudelijke_marge = (
-                beste_inhoudelijke_score
-                - tweede_inhoudelijke_score
-            )
-
-            if (
-                beste_inhoudelijke_score
-                >= MINIMUM_INHOUDELIJKE_SCORE
-                and inhoudelijke_marge
-                >= MINIMUM_INHOUDELIJKE_MARGE
-            ):
-                commissie_slug = (
-                    inhoudelijk_beste.get(
-                        "commissie_slug"
-                    )
-                )
-
-                commissiegegevens = (
-                    vaste_commissie_index.get(
-                        commissie_slug,
-                        inhoudelijk_beste
-                    )
-                )
-
-                commissie_afkorting = (
-                    commissiegegevens.get(
-                        "commissie_afkorting"
-                    )
-                    or commissie_slug.upper()
-                )
-
-                return {
-                    "status":
-                        "gekoppeld",
-
-                    "reden":
-                        "ministerie_en_inhoud",
-
-                    "commissie_id":
-                        commissiegegevens.get(
-                            "commissie_id"
-                        ),
-
-                    "commissie_slug":
-                        commissie_slug,
-
-                    "commissie_afkorting":
-                        commissie_afkorting,
-
-                    "commissie_naam":
-                        commissiegegevens.get(
-                            "commissie_naam"
-                        ),
-
-                    "score":
-                        beste_inhoudelijke_score,
-
-                    "inhoudelijke_marge":
-                        round(
-                            inhoudelijke_marge,
-                            6
-                        ),
-
-                    "waarnemingen":
-                        totaal,
-
-                    "ministerie":
-                        ministerie_bronwaarde,
-
-                    "selectiereden": (
-                        "Vragenuur: ministerie "
-                        f"{ministerie_bronwaarde} "
-                        "en inhoudelijke overeenkomst "
-                        "gekoppeld aan "
-                        f"{commissie_afkorting}"
-                    ),
-
-                    "ministerie_kandidaten":
-                        deepcopy(
-                            inhoudelijke_kandidaten
-                        ),
-
-                    "inhoudelijke_rangschikking":
-                        deepcopy(
-                            inhoudelijke_rangschikking
-                        ),
-                }
+        commissie_afkorting = (
+            commissiekoppeling[
+                "commissie_afkorting"
+            ]
+        )
 
         return {
             "status":
-                "ambigu",
+                "gekoppeld",
 
             "reden":
-                "inhoud_onvoldoende_onderscheidend",
+                "dominante_ministeriecommissie",
 
             "ministerie":
                 ministerie_bronwaarde,
@@ -802,85 +773,162 @@ def koppel_vragenuurtoezegging(
             "waarnemingen":
                 totaal,
 
-            "ministerie_kandidaten":
-                deepcopy(
-                    inhoudelijke_kandidaten
-                ),
+            "selectiereden": (
+                "Vragenuur: ministerie "
+                f"{ministerie_bronwaarde} "
+                "historisch gekoppeld aan "
+                f"{commissie_afkorting} "
+                f"({percentage}%, "
+                f"{totaal} waarnemingen)"
+            ),
 
-            "inhoudelijke_rangschikking":
+            "commissies": [
+                commissiekoppeling
+            ],
+
+            "ministerie_rangschikking":
                 deepcopy(
-                    inhoudelijke_rangschikking
+                    gerangschikte_commissies
                 ),
         }
 
-    commissie_slug = beste.get(
-        "commissie_slug"
-    )
+    # Bij een niet-dominant ministerie worden
+    # alle enigszins plausibele commissies eerst
+    # inhoudelijk gerangschikt.
+    ministerie_kandidaten = [
+        commissie
+        for commissie
+        in gerangschikte_commissies
+        if commissie.get(
+            "aandeel",
+            0.0
+        )
+        >= (
+            MINIMUM_MINISTERIE_AANDEEL_VOOR_INHOUD
+        )
+    ][
+        :MAXIMUM_INHOUDELIJKE_KANDIDATEN
+    ]
 
-    commissiegegevens = (
-        vaste_commissie_index.get(
-            commissie_slug,
-            beste
+    if not ministerie_kandidaten:
+        # Wanneer geen commissie de grens van
+        # vijf procent haalt, gebruiken we toch
+        # de historische top drie.
+        ministerie_kandidaten = (
+            gerangschikte_commissies[
+                :MAXIMUM_VRAGENUURCOMMISSIES
+            ]
+        )
+
+    inhoudelijke_rangschikking = (
+        rangschik_commissies_op_inhoud(
+            toezegging,
+            activiteit,
+            ministerie_kandidaten,
+            commissieprofielen
         )
     )
 
-    commissie_afkorting = (
-        commissiegegevens.get(
+    # Als er onvoldoende profielinformatie is,
+    # blijft de historische volgorde behouden.
+    if inhoudelijke_rangschikking:
+        uiteindelijke_rangschikking = (
+            inhoudelijke_rangschikking
+        )
+        koppelbron = (
+            "ministerie_en_inhoudelijke_rangschikking"
+        )
+    else:
+        uiteindelijke_rangschikking = (
+            ministerie_kandidaten
+        )
+        koppelbron = (
+            "ministerie_rangschikking"
+        )
+
+    geselecteerde_commissies = []
+
+    for positie, commissie in enumerate(
+        uiteindelijke_rangschikking[
+            :MAXIMUM_VRAGENUURCOMMISSIES
+        ],
+        start=1
+    ):
+        koppeling = maak_commissiekoppeling(
+            commissie,
+            positie=positie,
+            vaste_commissie_index=(
+                vaste_commissie_index
+            ),
+            koppelbron=koppelbron
+        )
+
+        geselecteerde_commissies.append(
+            koppeling
+        )
+
+    if not geselecteerde_commissies:
+        return {
+            "status":
+                "niet_gekoppeld",
+
+            "reden":
+                "geen_bruikbare_commissies",
+
+            "ministerie":
+                ministerie_bronwaarde,
+
+            "waarnemingen":
+                totaal,
+
+            "commissies":
+                [],
+        }
+
+    afkortingen = [
+        commissie.get(
             "commissie_afkorting"
         )
-        or commissie_slug.upper()
-    )
-
-    percentage = round(
-        beste_aandeel * 100,
-        1
-    )
+        for commissie
+        in geselecteerde_commissies
+        if commissie.get(
+            "commissie_afkorting"
+        )
+    ]
 
     return {
         "status":
-            "gekoppeld",
+            "gekoppeld_meervoudig",
 
         "reden":
-            "dominante_ministeriecommissie",
-
-        "commissie_id":
-            commissiegegevens.get(
-                "commissie_id"
-            ),
-
-        "commissie_slug":
-            commissie_slug,
-
-        "commissie_afkorting":
-            commissie_afkorting,
-
-        "commissie_naam":
-            commissiegegevens.get(
-                "commissie_naam"
-            ),
-
-        "score":
-            beste_aandeel,
-
-        "waarnemingen":
-            totaal,
+            koppelbron,
 
         "ministerie":
             ministerie_bronwaarde,
 
+        "waarnemingen":
+            totaal,
+
         "selectiereden": (
-            "Vragenuur: ministerie "
-            f"{ministerie_bronwaarde} "
-            "historisch gekoppeld aan "
-            f"{commissie_afkorting} "
-            f"({percentage}%, "
-            f"{totaal} waarnemingen)"
+            "Vragenuur: top "
+            f"{len(geselecteerde_commissies)} "
+            "plausibele commissies op basis "
+            "van ministerie en inhoud: "
+            + ", ".join(
+                afkortingen
+            )
         ),
 
-        "kandidaten":
+        "commissies":
+            geselecteerde_commissies,
+
+        "ministerie_rangschikking":
             deepcopy(
-                gerangschikte_commissies[
-                    :3
-                ]
+                gerangschikte_commissies
+            ),
+
+        "inhoudelijke_rangschikking":
+            deepcopy(
+                inhoudelijke_rangschikking
             ),
     }
