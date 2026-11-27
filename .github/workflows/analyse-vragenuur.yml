@@ -1,0 +1,39 @@
+name: Analyseer Vragenuurcommissies
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  analyse:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository ophalen
+        uses: actions/checkout@v6
+
+      - name: Python instellen
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pakketten installeren
+        run: pip install -r requirements.txt
+
+      - name: Python-syntax controleren
+        run: python -m compileall -q src
+
+      - name: Vragenuurcommissies analyseren
+        run: |
+          python -u \
+            src/analyse_vragenuur_commissies.py
+
+      - name: Diagnostiek uploaden
+        uses: actions/upload-artifact@v4
+        with:
+          name: vragenuur-commissieanalyse
+          path: |
+            data/vragenuur_commission_diagnostics.json
+          retention-days: 14
