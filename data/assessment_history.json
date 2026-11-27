@@ -3667,6 +3667,48 @@
       "onderwerp": "Memorie van toelichting",
       "commissie_slug": "def",
       "commissie_afkorting": "DEF"
+    },
+    "ienw|2026D57154": {
+      "datum_verwerkt": "2026-11-27T22:44:46.035789+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "biza|2026D57132": {
+      "datum_verwerkt": "2026-11-27T22:45:06.700967+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "ienw|2026D57189": {
+      "datum_verwerkt": "2026-11-27T22:45:28.990403+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "ienw",
+      "commissie_afkorting": "I&W"
+    },
+    "biza|2026D57169": {
+      "datum_verwerkt": "2026-11-27T22:45:47.301300+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "biza|2026D57173": {
+      "datum_verwerkt": "2026-11-27T22:46:04.562588+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
+    },
+    "biza|2026D57184": {
+      "datum_verwerkt": "2026-11-27T22:46:22.370332+00:00",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "onderwerp": "Memorie van toelichting",
+      "commissie_slug": "biza",
+      "commissie_afkorting": "BIZA"
     }
   },
   "wacht_op_herhaling": {
@@ -3708,6 +3750,6 @@
     }
   },
   "round_robin": {
-    "laatste_commissie_slug": "def"
+    "laatste_commissie_slug": "biza"
   }
 }
