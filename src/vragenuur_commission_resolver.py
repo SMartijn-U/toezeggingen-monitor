@@ -1,9 +1,21 @@
 from collections import Counter
 from copy import deepcopy
 
+from sklearn.feature_extraction.text import (
+    TfidfVectorizer,
+)
+from sklearn.metrics.pairwise import (
+    cosine_similarity,
+)
 
-MINIMUM_WAARNEMINGEN = 10
-MINIMUM_DOMINANT_AANDEEL = 0.80
+
+MINIMUM_MINISTERIE_AANDEEL_VOOR_INHOUD = 0.05
+MAXIMUM_INHOUDELIJKE_KANDIDATEN = 5
+
+MINIMUM_INHOUDELIJKE_SCORE = 0.10
+MINIMUM_INHOUDELIJKE_MARGE = 0.03
+
+AANTAL_BESTE_PROFIELMATCHES = 3
 
 
 def normaliseer_ministerie(
@@ -34,6 +46,19 @@ def normaliseer_ministerie(
         waarde.split()
     )
 
+def normaliseer_profieltekst(
+    tekst
+):
+    waarde = (
+        tekst
+        or ""
+    ).lower()
+
+    waarde = " ".join(
+        waarde.split()
+    )
+
+    return waarde
 
 def maak_vaste_commissie_index(
     vaste_commissies,
@@ -273,12 +298,250 @@ def bouw_ministerie_commissie_index(
         vaste_commissie_index,
     )
 
+def bouw_commissieprofielen(
+    toezeggingen,
+    activiteiten,
+    vaste_commissies,
+    maak_commissieslug
+):
+    activiteiten_op_nummer = {
+        activiteit.get("Nummer"):
+            activiteit
+        for activiteit in activiteiten
+        if activiteit.get("Nummer")
+    }
+
+    vaste_commissie_index = (
+        maak_vaste_commissie_index(
+            vaste_commissies,
+            maak_commissieslug
+        )
+    )
+
+    commissieprofielen = {
+        commissie_slug: []
+        for commissie_slug
+        in vaste_commissie_index
+    }
+
+    for toezegging in toezeggingen:
+        activiteitnummer = (
+            toezegging.get(
+                "ActiviteitNummer"
+            )
+        )
+
+        activiteit = (
+            activiteiten_op_nummer.get(
+                activiteitnummer
+            )
+        )
+
+        if not activiteit:
+            continue
+
+        commissie_slugs = (
+            bepaal_betrouwbare_commissies(
+                toezegging,
+                activiteit,
+                vaste_commissie_index,
+                maak_commissieslug
+            )
+        )
+
+        # Alleen ondubbelzinnig gekoppelde
+        # reguliere toezeggingen gebruiken.
+        if len(commissie_slugs) != 1:
+            continue
+
+        commissie_slug = (
+            commissie_slugs[0]
+        )
+
+        onderdelen = [
+            toezegging.get("Tekst") or "",
+            activiteit.get("Onderwerp") or "",
+        ]
+
+        profieltekst = (
+            normaliseer_profieltekst(
+                " ".join(
+                    onderdelen
+                )
+            )
+        )
+
+        if not profieltekst:
+            continue
+
+        commissieprofielen.setdefault(
+            commissie_slug,
+            []
+        ).append(
+            profieltekst
+        )
+
+    return commissieprofielen
+
+def rangschik_commissies_op_inhoud(
+    toezegging,
+    activiteit,
+    kandidaatcommissies,
+    commissieprofielen
+):
+    vraagtekst = normaliseer_profieltekst(
+        " ".join([
+            toezegging.get("Tekst") or "",
+            activiteit.get("Onderwerp") or "",
+        ])
+    )
+
+    if not vraagtekst:
+        return []
+
+    profielteksten = []
+    profiel_slugs = []
+
+    for commissie in kandidaatcommissies:
+        commissie_slug = (
+            commissie.get(
+                "commissie_slug"
+            )
+        )
+
+        if not commissie_slug:
+            continue
+
+        teksten = commissieprofielen.get(
+            commissie_slug,
+            []
+        )
+
+        for tekst in teksten:
+            if not tekst:
+                continue
+
+            profielteksten.append(
+                tekst
+            )
+
+            profiel_slugs.append(
+                commissie_slug
+            )
+
+    if not profielteksten:
+        return []
+
+    corpus = [
+        vraagtekst,
+        *profielteksten,
+    ]
+
+    vectorizer = TfidfVectorizer(
+        ngram_range=(1, 2),
+        min_df=1,
+        sublinear_tf=True
+    )
+
+    matrix = vectorizer.fit_transform(
+        corpus
+    )
+
+    scores = cosine_similarity(
+        matrix[0:1],
+        matrix[1:]
+    ).flatten()
+
+    scores_per_commissie = {}
+
+    for commissie_slug, score in zip(
+        profiel_slugs,
+        scores
+    ):
+        scores_per_commissie.setdefault(
+            commissie_slug,
+            []
+        ).append(
+            float(score)
+        )
+
+    resultaat = []
+
+    kandidaten_op_slug = {
+        commissie.get(
+            "commissie_slug"
+        ): commissie
+        for commissie in kandidaatcommissies
+        if commissie.get(
+            "commissie_slug"
+        )
+    }
+
+    for (
+        commissie_slug,
+        commissie_scores
+    ) in scores_per_commissie.items():
+        commissie_scores.sort(
+            reverse=True
+        )
+
+        beste_scores = commissie_scores[
+            :AANTAL_BESTE_PROFIELMATCHES
+        ]
+
+        inhoudelijke_score = (
+            sum(beste_scores)
+            / len(beste_scores)
+        )
+
+        commissiegegevens = (
+            kandidaten_op_slug.get(
+                commissie_slug,
+                {}
+            )
+        )
+
+        resultaat.append({
+            **commissiegegevens,
+
+            "inhoudelijke_score":
+                round(
+                    inhoudelijke_score,
+                    6
+                ),
+
+            "beste_profielscores": [
+                round(
+                    score,
+                    6
+                )
+                for score
+                in beste_scores
+            ],
+
+            "aantal_profielteksten":
+                len(
+                    commissie_scores
+                ),
+        })
+
+    resultaat.sort(
+        key=lambda item:
+            item.get(
+                "inhoudelijke_score",
+                0.0
+            ),
+        reverse=True
+    )
+
+    return resultaat
 
 def koppel_vragenuurtoezegging(
     toezegging,
     activiteit,
     ministerie_index,
-    vaste_commissie_index
+    vaste_commissie_index,
+    commissieprofielen
 ):
     if (
         activiteit.get("Soort")
@@ -382,12 +645,153 @@ def koppel_vragenuurtoezegging(
         beste_aandeel
         < MINIMUM_DOMINANT_AANDEEL
     ):
+        inhoudelijke_kandidaten = [
+            commissie
+            for commissie
+            in gerangschikte_commissies
+            if commissie.get(
+                "aandeel",
+                0.0
+            )
+            >= (
+                MINIMUM_MINISTERIE_AANDEEL_VOOR_INHOUD
+            )
+        ][
+            :MAXIMUM_INHOUDELIJKE_KANDIDATEN
+        ]
+
+        inhoudelijke_rangschikking = (
+            rangschik_commissies_op_inhoud(
+                toezegging,
+                activiteit,
+                inhoudelijke_kandidaten,
+                commissieprofielen
+            )
+        )
+
+        if inhoudelijke_rangschikking:
+            inhoudelijk_beste = (
+                inhoudelijke_rangschikking[0]
+            )
+
+            beste_inhoudelijke_score = (
+                inhoudelijk_beste.get(
+                    "inhoudelijke_score",
+                    0.0
+                )
+            )
+
+            if (
+                len(
+                    inhoudelijke_rangschikking
+                )
+                > 1
+            ):
+                tweede_inhoudelijke_score = (
+                    inhoudelijke_rangschikking[
+                        1
+                    ].get(
+                        "inhoudelijke_score",
+                        0.0
+                    )
+                )
+            else:
+                tweede_inhoudelijke_score = 0.0
+
+            inhoudelijke_marge = (
+                beste_inhoudelijke_score
+                - tweede_inhoudelijke_score
+            )
+
+            if (
+                beste_inhoudelijke_score
+                >= MINIMUM_INHOUDELIJKE_SCORE
+                and inhoudelijke_marge
+                >= MINIMUM_INHOUDELIJKE_MARGE
+            ):
+                commissie_slug = (
+                    inhoudelijk_beste.get(
+                        "commissie_slug"
+                    )
+                )
+
+                commissiegegevens = (
+                    vaste_commissie_index.get(
+                        commissie_slug,
+                        inhoudelijk_beste
+                    )
+                )
+
+                commissie_afkorting = (
+                    commissiegegevens.get(
+                        "commissie_afkorting"
+                    )
+                    or commissie_slug.upper()
+                )
+
+                return {
+                    "status":
+                        "gekoppeld",
+
+                    "reden":
+                        "ministerie_en_inhoud",
+
+                    "commissie_id":
+                        commissiegegevens.get(
+                            "commissie_id"
+                        ),
+
+                    "commissie_slug":
+                        commissie_slug,
+
+                    "commissie_afkorting":
+                        commissie_afkorting,
+
+                    "commissie_naam":
+                        commissiegegevens.get(
+                            "commissie_naam"
+                        ),
+
+                    "score":
+                        beste_inhoudelijke_score,
+
+                    "inhoudelijke_marge":
+                        round(
+                            inhoudelijke_marge,
+                            6
+                        ),
+
+                    "waarnemingen":
+                        totaal,
+
+                    "ministerie":
+                        ministerie_bronwaarde,
+
+                    "selectiereden": (
+                        "Vragenuur: ministerie "
+                        f"{ministerie_bronwaarde} "
+                        "en inhoudelijke overeenkomst "
+                        "gekoppeld aan "
+                        f"{commissie_afkorting}"
+                    ),
+
+                    "ministerie_kandidaten":
+                        deepcopy(
+                            inhoudelijke_kandidaten
+                        ),
+
+                    "inhoudelijke_rangschikking":
+                        deepcopy(
+                            inhoudelijke_rangschikking
+                        ),
+                }
+
         return {
             "status":
                 "ambigu",
 
             "reden":
-                "geen_dominante_commissie",
+                "inhoud_onvoldoende_onderscheidend",
 
             "ministerie":
                 ministerie_bronwaarde,
@@ -395,11 +799,14 @@ def koppel_vragenuurtoezegging(
             "waarnemingen":
                 totaal,
 
-            "kandidaten":
+            "ministerie_kandidaten":
                 deepcopy(
-                    gerangschikte_commissies[
-                        :3
-                    ]
+                    inhoudelijke_kandidaten
+                ),
+
+            "inhoudelijke_rangschikking":
+                deepcopy(
+                    inhoudelijke_rangschikking
                 ),
         }
 
