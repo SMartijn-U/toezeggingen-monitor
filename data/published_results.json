@@ -5375,6 +5375,193 @@
           }
         ]
       }
+    },
+    "def|TZ202505-065|2026D61672": {
+      "sleutel": "def|TZ202505-065|2026D61672",
+      "eerste_signalering": "2026-11-27T15:49:23.189642+00:00",
+      "commissie_id": "524d5de6-83dd-4754-9e1e-c10fc49ad9be",
+      "commissie_afkorting": "DEF",
+      "commissie_naam": "Vaste commissie voor Defensie",
+      "commissie_slug": "def",
+      "selectiereden": "DEF is voortouwcommissie",
+      "activiteitnummer": "2024A08720",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Raad Buitenlandse Zaken Defensie van 20 mei 2025",
+      "activiteitdatum": "2025-05-15T10:00:00+02:00",
+      "activiteitvoortouw": "DEF",
+      "toezeggingnummer": "TZ202505-065",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61672",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Weerbaar spoor & Militaire mobiliteit via spoor",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "informeren over prioriteiten en knelpunten op het gebied van militaire mobiliteit (zoals de delta-analyse spoor en het aankomende Nationaal Plan Militaire Mobiliteit)"
+      ],
+      "ontbrekende_onderdelen": [
+        "het specifieke onderzoek naar welke documenten beschikbaar zijn"
+      ],
+      "bewijsfragmenten": [
+        "Op de planvorming voor de toename van militaire transporten gaat het kabinet in met het nieuwe Nationaal Plan Militaire Mobiliteit (NPMM) dat uw Kamer aan het begin van 2027 ontvangt."
+      ],
+      "motivering": "Het document informeert de Kamer over militaire mobiliteit via het spoor en kondigt het Nationaal Plan Militaire Mobiliteit (NPMM) aan begin 2027, maar er wordt niet expliciet ingegaan op het toegezegde onderzoek naar welke documenten precies beschikbaar zijn.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Op de planvorming voor de toename van militaire transporten gaat het kabinet in met het nieuwe Nationaal Plan Militaire Mobiliteit (NPMM) dat uw Kamer aan het begin van 2027 ontvangt.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ienw|TZ202606-264|2026D61672": {
+      "sleutel": "ienw|TZ202606-264|2026D61672",
+      "eerste_signalering": "2026-11-27T15:50:00.377709+00:00",
+      "commissie_id": "44c341a0-ae41-4f51-9c81-1f94d2fd1107",
+      "commissie_afkorting": "I&W",
+      "commissie_naam": "Vaste commissie voor Infrastructuur en Waterstaat",
+      "commissie_slug": "ienw",
+      "selectiereden": "I&W is voortouwcommissie",
+      "activiteitnummer": "2026A03614",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Strategische keuzes bereikbaarheid",
+      "activiteitdatum": "2026-06-23T16:30:00+02:00",
+      "activiteitvoortouw": "I&W",
+      "toezeggingnummer": "TZ202606-264",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61672",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Weerbaar spoor & Militaire mobiliteit via spoor",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "In gesprek gaan met Defensie en andere departementen over hoe zij financieel kunnen bijdragen aan de aanleg- en onderhoudsopgave van onze infrastructuur."
+      ],
+      "ontbrekende_onderdelen": [
+        "Informatie over de specifieke situatie bij Staphorst."
+      ],
+      "bewijsfragmenten": [
+        "Tevens heb ik uw Kamer tijdens het Commissiedebat Strategische Keuzes Bereikbaarheid van 23 juni jl. toegezegd om met Defensie en andere departementen in gesprek te gaan, over hoe zij financieel kunnen bijdragen aan de aanleg- en onderhoudsopgave van onze infrastructuur.",
+        "IenW en Defensie brengen gezamenlijk in beeld welke afwijkingen op de militaire corridors daadwerkelijk tot knelpunten kunnen leiden en welke maatregelen daarbij passend zijn en zijn in gesprek over de budgettaire effecten van mogelijke maatregelen."
+      ],
+      "motivering": "De brief gaat in op de gesprekken met Defensie en andere departementen over een financiële bijdrage aan de aanleg- en onderhoudsopgave voor infrastructuur. Het specifieke element over de situatie bij Staphorst wordt echter niet in het document behandeld, waardoor de toezegging slechts deels is behandeld.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Tevens heb ik uw Kamer tijdens het Commissiedebat Strategische Keuzes Bereikbaarheid van 23 juni jl. toegezegd om met Defensie en andere departementen in gesprek te gaan, over hoe zij financieel kunnen bijdragen aan de aanleg- en onderhoudsopgave van onze infrastructuur.",
+            "geldig": true
+          },
+          {
+            "fragment": "IenW en Defensie brengen gezamenlijk in beeld welke afwijkingen op de militaire corridors daadwerkelijk tot knelpunten kunnen leiden en welke maatregelen daarbij passend zijn en zijn in gesprek over de budgettaire effecten van mogelijke maatregelen.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ienw|TZ202611-021|2026D61672": {
+      "sleutel": "ienw|TZ202611-021|2026D61672",
+      "eerste_signalering": "2026-11-27T15:50:00.377735+00:00",
+      "commissie_id": "44c341a0-ae41-4f51-9c81-1f94d2fd1107",
+      "commissie_afkorting": "I&W",
+      "commissie_naam": "Vaste commissie voor Infrastructuur en Waterstaat",
+      "commissie_slug": "ienw",
+      "selectiereden": "I&W is volgcommissie",
+      "activiteitnummer": "2026A07734",
+      "activiteitsoort": "Plenair debat (wetgeving)",
+      "activiteitonderwerp": "Begroting Infrastructuur en Waterstaat (37020-XII) voortzetting",
+      "activiteitdatum": "2026-10-29T19:00:00+01:00",
+      "activiteitvoortouw": "TK",
+      "toezeggingnummer": "TZ202611-021",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61672",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Weerbaar spoor & Militaire mobiliteit via spoor",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": false,
+      "gedekte_onderdelen": [
+        "Informatie over bedragen die zijn gemoeid met het op orde brengen van de corridors voor militaire mobiliteit en spoorweerbaarheid."
+      ],
+      "ontbrekende_onderdelen": [
+        "Een expliciet overzicht van het specifiek resterende bedrag dat nog nodig is om de corridors voor militaire mobiliteit volledig op orde te brengen."
+      ],
+      "bewijsfragmenten": [
+        "Het bedrag van dat startpakket van het OFL-rapport is inmiddels herijkt naar €624 mln. Van dit bedrag is €374 mln. gericht op militaire mobiliteit spoor en €250 mln. op weerbaarheidsmaatregelen spoor.",
+        "Inmiddels heeft IenW in totaal bijna €400 mln. van dit startpakket gedekt."
+      ],
+      "motivering": "Het document noemt wel de bedragen van het startpakket, de herijking en het reeds gedekte bedrag door IenW, maar geeft geen specifiek overzicht van het definitieve resterende bedrag dat nog nodig is voor de militaire corridors.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 2,
+        "aantal_geldig": 2,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "Het bedrag van dat startpakket van het OFL-rapport is inmiddels herijkt naar €624 mln. Van dit bedrag is €374 mln. gericht op militaire mobiliteit spoor en €250 mln. op weerbaarheidsmaatregelen spoor.",
+            "geldig": true
+          },
+          {
+            "fragment": "Inmiddels heeft IenW in totaal bijna €400 mln. van dit startpakket gedekt.",
+            "geldig": true
+          }
+        ]
+      }
+    },
+    "ienw|TZ202610-043|2026D61711": {
+      "sleutel": "ienw|TZ202610-043|2026D61711",
+      "eerste_signalering": "2026-11-27T15:51:33.580767+00:00",
+      "commissie_id": "44c341a0-ae41-4f51-9c81-1f94d2fd1107",
+      "commissie_afkorting": "I&W",
+      "commissie_naam": "Vaste commissie voor Infrastructuur en Waterstaat",
+      "commissie_slug": "ienw",
+      "selectiereden": "I&W is voortouwcommissie",
+      "activiteitnummer": "2026A04986",
+      "activiteitsoort": "Commissiedebat",
+      "activiteitonderwerp": "Spoorgoederenvervoer",
+      "activiteitdatum": "2026-10-01T14:30:00+02:00",
+      "activiteitvoortouw": "I&W",
+      "toezeggingnummer": "TZ202610-043",
+      "status_registratie": "Openstaand",
+      "documentnummer": "2026D61711",
+      "documentsoort": "Brief regering",
+      "documentdatum": "2026-11-27T00:00:00+01:00",
+      "documentonderwerp": "Voortgang spoorveiligheid & Beleidsagenda spoorveiligheid 2026-2030",
+      "oordeel": "mogelijk_deels_afgedaan",
+      "rapportagecategorie": "Mogelijk gedeeltelijk afgedaan",
+      "expliciete_verwijzing": true,
+      "gedekte_onderdelen": [
+        "het informeren over de toezegging gedaan tijdens het commissiedebat spoorgoederenvervoer over de Barendrechttunnel"
+      ],
+      "ontbrekende_onderdelen": [
+        "de totale economische schade van de stremming in Barendrecht",
+        "het meenemen van de drie concrete vragen van het lid Van der Plas hierover"
+      ],
+      "bewijsfragmenten": [
+        "De uitkomsten van de onderzoeken naar de oorzaak van de afwijking, een mogelijk eerdere onderkenning en evaluatie van de afhandeling zijn op dit moment nog niet bekend en zullen zo spoedig mogelijk via voortgangsbrieven met de Kamer worden gedeeld."
+      ],
+      "motivering": "De staatssecretaris gaat in de brief wel in op de Barendrechttunnel en de toezegging hierover, maar meldt expliciet dat de uitkomsten van onderzoeken (en daarmee de gevraagde informatie over de economische schade en de specifieke vragen) nog niet bekend zijn en pas later worden gedeeld. De toezegging is hiermee slechts deels behandeld.",
+      "bewijsvalidatie": {
+        "aantal_fragmenten": 1,
+        "aantal_geldig": 1,
+        "alle_geldig": true,
+        "fragmenten": [
+          {
+            "fragment": "De uitkomsten van de onderzoeken naar de oorzaak van de afwijking, een mogelijk eerdere onderkenning en evaluatie van de afhandeling zijn op dit moment nog niet bekend en zullen zo spoedig mogelijk via voortgangsbrieven met de Kamer worden gedeeld.",
+            "geldig": true
+          }
+        ]
+      }
     }
   }
 }
