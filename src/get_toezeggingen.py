@@ -13,6 +13,7 @@ RELEVANTE_ACTIVITEITSOORTEN = {
     "Commissiedebat",
     "Notaoverleg",
     "Wetgevingsoverleg",
+    "Vragenuur",
     "Plenair debat (debat)",
     "Plenair debat (dertigledendebat)",
     "Plenair debat (initiatiefwetgeving)",
@@ -332,11 +333,6 @@ def get_open_toezeggingen():
         skip += batch_size
 
     return alle_toezeggingen
-
-from datetime import datetime, timezone
-
-
-from datetime import datetime, timezone
 
 def get_recent_afgedane_toezeggingen(
     aantal_dagen=14
