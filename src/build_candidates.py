@@ -14,6 +14,12 @@ from get_toezeggingen import (
     get_toezeggingen_per_commissie,
 )
 
+from vragenuur_commission_resolver import (
+    bouw_ministerie_commissie_index,
+    bouw_commissieprofielen,
+    koppel_vragenuurtoezegging,
+)
+
 from get_kamerbrieven import (
     get_recente_documenten,
 )
@@ -125,6 +131,83 @@ def bouw_toezeggingen_per_commissie():
     )
 
     print(
+        "\nVragenuur-commissieindex opbouwen..."
+    )
+
+    (
+        ministerie_index,
+        vaste_commissie_index,
+    ) = bouw_ministerie_commissie_index(
+        toezeggingen,
+        activiteiten,
+        vaste_commissies,
+        maak_commissieslug
+    )
+
+    commissieprofielen = (
+        bouw_commissieprofielen(
+            toezeggingen,
+            activiteiten,
+            vaste_commissies,
+            maak_commissieslug
+        )
+    )
+
+    activiteiten_op_nummer = {
+        activiteit.get("Nummer"):
+            activiteit
+        for activiteit in activiteiten
+        if activiteit.get("Nummer")
+    }
+
+    vragenuur_koppelingen = {}
+
+    for toezegging in toezeggingen:
+        activiteitnummer = (
+            toezegging.get(
+                "ActiviteitNummer"
+            )
+        )
+
+        activiteit = (
+            activiteiten_op_nummer.get(
+                activiteitnummer
+            )
+        )
+
+        if not activiteit:
+            continue
+
+        if (
+            activiteit.get("Soort")
+            != "Vragenuur"
+        ):
+            continue
+
+        toezeggingnummer = (
+            toezegging.get("Nummer")
+        )
+
+        if not toezeggingnummer:
+            continue
+
+        vragenuur_koppelingen[
+            toezeggingnummer
+        ] = koppel_vragenuurtoezegging(
+            toezegging,
+            activiteit,
+            ministerie_index,
+            vaste_commissie_index,
+            commissieprofielen
+        )
+
+    print(
+        "Vragenuurtoezeggingen met "
+        "resolverresultaat:",
+        len(vragenuur_koppelingen)
+    )
+
+    print(
         f"Actuele vaste commissies: "
         f"{len(vaste_commissies)}"
     )
@@ -163,6 +246,9 @@ def bouw_toezeggingen_per_commissie():
                 commissie_afkorting=slug,
                 uitgesloten_activiteitnummers=(
                     uitgesloten_activiteitnummers
+                ),
+                vragenuur_koppelingen=(
+                    vragenuur_koppelingen
                 ),
             )
         )
