@@ -17,13 +17,11 @@ from get_toezeggingen import (
 from vragenuur_commission_resolver import (
     MINIMUM_WAARNEMINGEN,
     MINIMUM_DOMINANT_AANDEEL,
-    MINIMUM_INHOUDELIJKE_SCORE,
-    MINIMUM_INHOUDELIJKE_MARGE,
+    MAXIMUM_VRAGENUURCOMMISSIES,
     bouw_ministerie_commissie_index,
     bouw_commissieprofielen,
     koppel_vragenuurtoezegging,
 )
-
 
 OUTPUT_PATH = Path(
     "data/"
@@ -197,6 +195,20 @@ def main():
         in vragenuur_resultaten
     )
 
+    aantal_commissiekoppelingen = sum(
+        len(
+            resultaat.get(
+                "resolver",
+                {}
+            ).get(
+                "commissies",
+                []
+            )
+        )
+        for resultaat
+        in vragenuur_resultaten
+    )
+
     ministerie_overzicht = {}
 
     for ministerie, gegevens in (
@@ -242,14 +254,14 @@ def main():
             "minimum_dominant_aandeel":
                 MINIMUM_DOMINANT_AANDEEL,
 
+            "maximum_vragenuurcommissies":
+                MAXIMUM_VRAGENUURCOMMISSIES,
+
+            "aantal_commissiekoppelingen":
+                aantal_commissiekoppelingen,
+
             "productie_actief":
                 False,
-
-            "minimum_inhoudelijke_score":
-                MINIMUM_INHOUDELIJKE_SCORE,
-
-            "minimum_inhoudelijke_marge":
-                MINIMUM_INHOUDELIJKE_MARGE,
         },
 
         "ministerie_commissie_index":
